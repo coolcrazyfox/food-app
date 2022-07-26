@@ -93,7 +93,7 @@ export const data = [
       category: 'salad',
       image:
         'https://images.unsplash.com/photo-1564093497595-593b96d80180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-      price: '$',
+      price: '7$',
     },
     {
       id: 13,
@@ -101,7 +101,7 @@ export const data = [
       category: 'chicken',
       image:
         'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-      price: '$$',
+      price: '8$',
     },
     {
       id: 14,
@@ -109,7 +109,7 @@ export const data = [
       category: 'chicken',
       image:
         'https://images.unsplash.com/photo-1594221708779-94832f4320d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-      price: '$$$$',
+      price: '9$',
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ export const data = [
       category: 'chicken',
       image:
         'https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-      price: '$',
+      price: '10$',
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ export const data = [
       category: 'chicken',
       image:
         'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-      price: '$$$',
+      price: '11$',
     },
   ];
 
