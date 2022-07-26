@@ -5,7 +5,7 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60',
-      price: '5$',
+      price: '10$',
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60',
-      price: '5$',
+      price: '10$',
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60',
-      price: '5$',
+      price: '6$',
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ export const data = [
       category: 'pizza',
       image:
         'https://images.unsplash.com/photo-1548369937-47519962c11a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hlZXNlJTIwcGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-      price: '10$',
+      price: '20$',
     },
     {
       id: 9,
