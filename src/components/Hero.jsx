@@ -1,8 +1,7 @@
 import React from "react";
 
 const Hero = () => {
-  const imageUrl =
-    "https://www.maxim.com/wp-content/uploads/2021/10/worlds-most-expensive-burger-de-daltons-golden-boy-promo.jpg";
+  const imageUrl = "https://restorany.org/uploads/624ad34ef11d7_1649070926.jpg";
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <div className="max-h-[500px] relative">
