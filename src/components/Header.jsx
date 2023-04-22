@@ -17,7 +17,6 @@ const Header = () => {
         isClick={isClick}
         setIsClick={setIsClick}
       />
-
       {/* Search Input */}
       <Search />
       {/* Cart button */}
