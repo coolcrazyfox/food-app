@@ -3,10 +3,16 @@ import { data } from "../data/data.js";
 
 const Food = () => {
   const [foods, setFoods] = useState(data);
+  const titleBtn = ["All", "Burger", "Pizza", "Salad", "Chicken"];
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category) => {
-    setFoods(data.filter((item) => item.category === category));
+    if (category) {
+      setFoods(data.filter((item) => item.category === category.toLowerCase()));
+    }
+    if (category === "All") {
+      setFoods(data);
+    }
   };
 
   //   Filter by price
@@ -26,13 +32,23 @@ const Food = () => {
         <div>
           <p className="font-bold text-gray-700">Filter Type</p>
           <div className="flex justfiy-between flex-wrap">
-            <button
+            {/* <button
               onClick={() => setFoods(data)}
               className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             >
               All
-            </button>
-            <button
+            </button> */}
+            {titleBtn.map((b, index) => (
+              <button
+                key={index}
+                // onClick={() => setFoods(data)}
+                onClick={() => filterType(b)}
+                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+              >
+                {b}
+              </button>
+            ))}
+            {/* <button
               onClick={() => filterType("burger")}
               className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             >
@@ -55,7 +71,7 @@ const Food = () => {
               className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             >
               Chicken
-            </button>
+            </button> */}
           </div>
         </div>
 
