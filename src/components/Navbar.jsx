@@ -1,17 +1,12 @@
-import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import BurgerMenu from "./BurgerMenu";
-import CartButton from "./CartButton";
-import Search from "./Search";
+import React from "react";
 import ThemeButton from "./ThemeButton";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [isClick, setIsClick] = useState(false);
+import BurgerMenu from "./BurgerMenu";
 
+const NavBar = ({ nav, setNav, isClick, setIsClick }) => {
   return (
-    <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
-      {/* Left side */}
+    <>
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={31} className="text-orange-500 mt-1" />
@@ -22,12 +17,6 @@ const Navbar = () => {
         {/* Themes */}
         <ThemeButton isClick={isClick} setIsClick={setIsClick} />
       </div>
-
-      {/* Search Input */}
-      <Search />
-      {/* Cart button */}
-      <CartButton />
-
       {/* Mobile Menu */}
       {/* Overlay */}
       {nav ? (
@@ -53,8 +42,8 @@ const Navbar = () => {
           <BurgerMenu />
         </nav>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Navbar;
+export default NavBar;
