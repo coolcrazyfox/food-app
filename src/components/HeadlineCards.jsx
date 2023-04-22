@@ -12,7 +12,7 @@ const HeadlineCards = () => {
       id: 2,
       title: "New Restaurants",
       text: "Added Daily",
-      url: "https://images.unsplash.com/photo-1613769049987-b31b641f25b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGJyZWFrZmFzdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60",
+      url: "https://media-cdn.tripadvisor.com/media/photo-s/1b/30/f5/ee/caption.jpg",
     },
     {
       id: 3,
