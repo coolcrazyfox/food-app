@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BsFillCartFill } from "react-icons/bs";
 import BurgerMenu from "./BurgerMenu";
+import CartButton from "./CartButton";
+import Search from "./Search";
+import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,50 +19,15 @@ const Navbar = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best <span className="font-bold">Eats</span>
         </h1>
-        <div
-          className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-pointer"
-          onClick={() => setIsClick(!isClick)}
-        >
-          <p
-            className={
-              isClick
-                ? "text-black p-2 min-w-4"
-                : "bg-black text-white rounded-full p-2 min-w-4"
-            }
-          >
-            Dark
-          </p>{" "}
-          <p
-            className={
-              !isClick ? "p-2" : "bg-black text-white rounded-full p-2 min-w-4"
-            }
-          >
-            Light
-          </p>
-        </div>
+        {/* Themes */}
+        <ThemeButton isClick={isClick} setIsClick={setIsClick} />
       </div>
 
       {/* Search Input */}
-      <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
-        <AiOutlineSearch size={25} />
-        <input
-          className="bg-transparent p-2 w-full focus:outline-none"
-          type="text"
-          placeholder="Search foods"
-        />
-      </div>
+      <Search />
       {/* Cart button */}
-      <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full ">
-        <BsFillCartFill size={20} className="mr-2 text-orange-500" /> Cart
-        <span
-          className="ml-2 bg-white text-black rounded-full max-h-full max-w-1"
-          style={{
-            width: "1rem",
-          }}
-        >
-          0
-        </span>
-      </button>
+      <CartButton />
+
       {/* Mobile Menu */}
       {/* Overlay */}
       {nav ? (
