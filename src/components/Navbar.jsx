@@ -5,6 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isClick, setIsClick] = useState(false);
 
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
@@ -16,9 +17,26 @@ const Navbar = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best <span className="font-bold">Eats</span>
         </h1>
-        <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
-          <p className="bg-black text-white rounded-full p-2">Delivery</p>
-          <p className="p-2">Pickup</p>
+        <div
+          className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-pointer"
+          onClick={() => setIsClick(!isClick)}
+        >
+          <p
+            className={
+              isClick
+                ? "text-black p-2 min-w-4"
+                : "bg-black text-white rounded-full p-2 min-w-4"
+            }
+          >
+            Dark
+          </p>{" "}
+          <p
+            className={
+              !isClick ? "p-2" : "bg-black text-white rounded-full p-2 min-w-4"
+            }
+          >
+            Light
+          </p>
         </div>
       </div>
 
