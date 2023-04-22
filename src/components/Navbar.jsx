@@ -11,9 +11,9 @@ const Navbar = () => {
       {/* Left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
-          <AiOutlineMenu size={30} />
+          <AiOutlineMenu size={31} className="text-orange-500 mt-1" />
         </div>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best <span className="font-bold">Eats</span>
         </h1>
         <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
@@ -35,33 +35,27 @@ const Navbar = () => {
       <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full ">
         <BsFillCartFill size={20} className="mr-2 text-orange-500" /> Cart
         <span
+          className="ml-2 bg-white text-black rounded-full max-h-full max-w-1"
           style={{
-            marginLeft: "4px",
-            borderRadius: "50%",
-            background: "white",
             width: "1rem",
-            height: "auto",
-            color: "black",
           }}
         >
           0
         </span>
       </button>
-
       {/* Mobile Menu */}
       {/* Overlay */}
       {nav ? (
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0 "></div>
       ) : (
         ""
       )}
-
       {/* Side drawer menu */}
       <div
         className={
           nav
-            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300"
-            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300"
+            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
+            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-1000"
         }
       >
         <AiOutlineClose
