@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 import { SiInstagram, SiLinkedin } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const contacts = [
   {
@@ -37,13 +38,14 @@ const Contact = () => {
       {/* Categories */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6">
         {contacts.map((c, index) => (
-          <div
-            key={index}
+          <Link
+            to={c.link}
+            key={c.id}
             className="bg-gray-100 rounded-lg p-4 flex text-center justify-center items-center cursor-pointer"
           >
             <h2 className="font-bold sm:text-xl">{c.title}</h2>
             <span className="ml-5 w-20">{c.icon}</span>
-          </div>
+          </Link>
         ))}
       </div>
       <p className="text-center">2023 Andrei Malets </p>

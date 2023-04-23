@@ -1,21 +1,20 @@
 import React from "react";
 import { BsFillCartFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const CartButton = () => {
   return (
-    <>
-      <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full ">
+    <Link to="/">
+      <button
+        onClick={() => alert("cart onClick ")}
+        className="bg-black text-white hidden md:flex items-center py-2 rounded-full "
+      >
         <BsFillCartFill size={20} className="mr-2 text-orange-500" /> Cart
-        <span
-          className="ml-2 bg-white text-black rounded-full max-h-full max-w-1"
-          style={{
-            width: "1rem",
-          }}
-        >
+        <span className="ml-2 bg-white text-black rounded-full max-h-full w-6">
           0
         </span>
       </button>
-    </>
+    </Link>
   );
 };
 
