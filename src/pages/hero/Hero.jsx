@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/Header/Header";
+
 import HeadlineCards from "../../components/Header/Main/HeadlineCards";
 import Food from "../../components/FoodList/Food";
 import Category from "../../components/Footer/Category";
@@ -9,7 +9,6 @@ const Hero = () => {
   const imageUrl = "https://restorany.org/uploads/624ad34ef11d7_1649070926.jpg";
   return (
     <>
-      <Header />
       <div className="max-w-[1640px] mx-auto p-4">
         <div className="max-h-[500px] relative">
           {/* Overlay */}

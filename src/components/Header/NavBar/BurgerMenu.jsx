@@ -4,6 +4,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { GoHome } from "react-icons/go";
+import {MdOutlineConnectWithoutContact} from 'react-icons/md'
 import { Link } from "react-router-dom";
 
 export const initialState = [
@@ -55,6 +56,13 @@ export const initialState = [
     title: "Help",
     color: "#8BB92CFF",
     icon: <MdHelp size={27} />,
+  },
+  {
+    id: 8,
+    link: "/contact",
+    title: "Contact",
+    color: "#8BB92CFF",
+    icon: <MdOutlineConnectWithoutContact size={27} />,
   },
 ];
 
