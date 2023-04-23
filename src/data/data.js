@@ -137,24 +137,24 @@ export const data = [
   },
   {
     id: 18,
-    name: "Chicken Kabob",
-    category: "chicken",
+    name: "Stake BBQ",
+    category: "bbq",
     image:
       "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    price: "15",
+    price: "40",
   },
   {
     id: 19,
-    name: "Chicken Kabob",
-    category: "chicken",
+    name: "Sushi",
+    category: "jpfood",
     image:
       "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     price: "40",
   },
   {
     id: 20,
-    name: "Chicken Kabob",
-    category: "chicken",
+    name: "Chocolate cake",
+    category: "dessert",
     image:
       "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     price: "25",
