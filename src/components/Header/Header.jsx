@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import CartButton from "./CartButton";
-import Search from "./Search";
-import NavBar from "./NavBar";
+import CartButton from "./Cart/CartButton";
+import Search from "./SearchForm/Search";
+import NavBar from "./NavBar/NavBar";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
