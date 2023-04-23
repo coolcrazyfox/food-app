@@ -4,6 +4,7 @@ import { data } from "../../data/data.js";
 const Food = () => {
   const [foods, setFoods] = useState(data);
   const titleBtn = ["All", "Burger", "Pizza", "Salad", "Chicken"];
+  const price = ["5", "6", "10", "15", "20", "25", "40"];
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category) => {
@@ -30,12 +31,11 @@ const Food = () => {
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Fliter Type */}
         <div>
-          <p className="font-bold text-gray-700">Filter Type</p>
+          <p className="font-bold text-gray-700">Filter Type:</p>
           <div className="flex justfiy-between flex-wrap">
             {titleBtn.map((b, index) => (
               <button
                 key={index}
-                // onClick={() => setFoods(data)}
                 onClick={() => filterType(b)}
                 className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
               >
@@ -47,32 +47,17 @@ const Food = () => {
 
         {/* Filter Price */}
         <div>
-          <p className="font-bold text-gray-700">Filter Price</p>
-          <div className="flex justify-between max-w-[390px] w-full">
-            <button
-              onClick={() => filterPrice("5$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              5$
-            </button>
-            <button
-              onClick={() => filterPrice("6$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              6$
-            </button>
-            <button
-              onClick={() => filterPrice("10$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              10$
-            </button>
-            <button
-              onClick={() => filterPrice("20$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              20$
-            </button>
+          <p className="font-bold text-gray-700">Filter Price:</p>
+          <div className="flex justify-between max-w-[690px] w-full">
+            {price.map((p, index) => (
+              <button
+                key={p}
+                onClick={() => filterPrice(p)}
+                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+              >
+                {p}$
+              </button>
+            ))}
           </div>
         </div>
       </div>
