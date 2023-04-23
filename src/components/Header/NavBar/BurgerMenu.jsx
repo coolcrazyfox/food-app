@@ -3,22 +3,23 @@ import { AiFillTag } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
+import { GoHome } from "react-icons/go";
 import { Link } from "react-router-dom";
 
 export const initialState = [
   {
     id: 1,
     link: "/",
-    title: "Orders",
+    title: "Home",
     color: "#D73486FF",
-    icon: <TbTruckDelivery size={27} />,
+    icon: <GoHome size={27} />,
   },
   {
     id: 2,
-    link: "/favorites",
-    title: "Favorites",
+    link: "/orders",
+    title: "Orders",
     color: "#dbc711",
-    icon: <MdFavorite size={27} />,
+    icon: <TbTruckDelivery size={27} />,
   },
   {
     id: 3,
@@ -29,10 +30,10 @@ export const initialState = [
   },
   {
     id: 4,
-    link: "/help",
-    title: "Help",
-    color: "#8BB92CFF",
-    icon: <MdHelp size={27} />,
+    link: "/favorites",
+    title: "Favorites",
+    color: "#dbc711",
+    icon: <MdFavorite size={27} />,
   },
   {
     id: 5,
@@ -47,6 +48,13 @@ export const initialState = [
     title: "Invite Friends",
     color: "#793b92",
     icon: <FaUserFriends size={27} />,
+  },
+  {
+    id: 7,
+    link: "/help",
+    title: "Help",
+    color: "#8BB92CFF",
+    icon: <MdHelp size={27} />,
   },
 ];
 
