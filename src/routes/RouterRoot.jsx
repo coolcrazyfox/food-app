@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import App from "../App";
 import Error404 from "../pages/notFound/Error404";
 import CartPage from "../pages/cart/CartPage";
+import Hero from "../pages/hero/Hero";
 
 export const PATH = {
   ORDERS: "/orders",
@@ -18,7 +19,7 @@ const RouterRoot = () => {
   return (
     <div>
       <Routes>
-        <Route path={PATH.HERO} element={<App />} />
+        <Route path={PATH.HERO} element={<Hero />} />
         <Route path={PATH.ORDERS} element={<CartPage />} />
         {/* <Route path={PATH.WALLET} element={<RegistrationPage />} />
         <Route path={PATH.FAVORITES} element={<Blogger />} />
