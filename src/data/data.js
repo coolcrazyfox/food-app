@@ -4,7 +4,7 @@ export const data = [
     name: "Double Cheeseburger",
     category: "burger",
     image:
-      "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60",
+      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     price: "10",
   },
   {
@@ -12,7 +12,7 @@ export const data = [
     name: "Bacon Cheeseburger",
     category: "burger",
     image:
-      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
+      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
     price: "10",
   },
   {
@@ -25,11 +25,11 @@ export const data = [
   },
   {
     id: 4,
-    name: "Loaded Burger",
+    name: "Pulled pork Burger",
     category: "burger",
     image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60",
-    price: "6",
+      "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
+    price: "15",
   },
   {
     id: 5,
