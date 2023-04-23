@@ -24,7 +24,7 @@ const Contact = () => {
           </div>
         ))}
       </div>
-      <p className="text-center">2023 Malets Andrei </p>
+      <p className="text-center">2023 Andrei Malets </p>
     </div>
   );
 };
