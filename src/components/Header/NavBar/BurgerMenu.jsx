@@ -1,9 +1,9 @@
 import React from "react";
 import { AiFillTag } from "react-icons/ai";
-import { BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const initialState = [
   {
@@ -15,42 +15,35 @@ export const initialState = [
   },
   {
     id: 2,
-    link: "/blogger",
+    link: "/favorites",
     title: "Favorites",
     color: "#dbc711",
     icon: <MdFavorite size={27} />,
   },
   {
     id: 3,
-    link: "/posts",
+    link: "/wallet",
     title: "Wallet",
     color: "#6a99ff",
     icon: <FaWallet size={27} />,
   },
   {
     id: 4,
-    link: "/users",
+    link: "/help",
     title: "Help",
     color: "#8BB92CFF",
     icon: <MdHelp size={27} />,
   },
   {
     id: 5,
-    link: "/registration",
+    link: "/promotions",
     title: "Promotions",
     color: "#ec8434",
     icon: <AiFillTag size={27} />,
   },
   {
     id: 6,
-    link: "/settings",
-    title: "Best Ones",
-    color: "#793b92",
-    icon: <BsFillSaveFill size={27} />,
-  },
-  {
-    id: 7,
-    link: "/settings",
+    link: "/invite_friends",
     title: "Invite Friends",
     color: "#793b92",
     icon: <FaUserFriends size={27} />,
@@ -62,12 +55,14 @@ const BurgerMenu = () => {
     <>
       <ul className="flex flex-col p-4 text-gray-800">
         {initialState.map((c) => (
-          <li className="text-xl py-4 flex" key={c.id}>
-            <div className="mr-4 flex flex-row">
-              {c.icon} <span className="ml-5 pb-3">{c.title}</span>
-            </div>
-            {/* <TbTruckDelivery size={25} className="mr-4" /> Orders */}
-          </li>
+          <Link to={c.link}>
+            <li className="text-xl py-4 flex" key={c.id}>
+              <div className="mr-4 flex flex-row">
+                {c.icon} <span className="ml-5 pb-3">{c.title}</span>
+              </div>
+              {/* <TbTruckDelivery size={25} className="mr-4" /> Orders */}
+            </li>
+          </Link>
         ))}
       </ul>
     </>
