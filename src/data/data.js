@@ -140,23 +140,39 @@ export const data = [
     name: "Stake BBQ",
     category: "bbq",
     image:
-      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://www.1news.ig.com.br/wp-content/uploads/2019/10/170622201910225daf613ede9fc.jpg",
     price: "40",
   },
   {
     id: 19,
-    name: "Sushi",
+    name: "Sashimi",
     category: "jpfood",
     image:
-      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://www.mashed.com/img/gallery/the-untold-truth-of-sashimi/l-intro-1642188243.jpg",
     price: "40",
   },
   {
     id: 20,
+    name: "Sushi set",
+    category: "jpfood",
+    image:
+      "https://img4.goodfon.ru/wallpaper/nbig/6/2f/moreprodukty-rolly-sushi-ryba.jpg",
+    price: "40",
+  },
+  {
+    id: 21,
+    name: "Sushi",
+    category: "jpfood",
+    image:
+      "https://www.tastingtable.com/img/gallery/sushi-lovers-tell-tasting-table-their-go-to-sushi-roll-exclusive-survey/l-intro-1670519473.jpg",
+    price: "25",
+  },
+  {
+    id: 22,
     name: "Chocolate cake",
     category: "dessert",
     image:
-      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://curlygirlkitchen.com/wp-content/uploads/2022/08/Chocolate-Cake-Buttercream-Best-Moist-High-Altitude-006.jpg",
     price: "25",
   },
 ];
