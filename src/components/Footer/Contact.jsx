@@ -1,10 +1,32 @@
 import React from "react";
+import { FaGithub, FaTelegram } from "react-icons/fa";
+import { SiInstagram, SiLinkedin } from "react-icons/si";
 
 const contacts = [
-  { id: 1, link: "", title: "Instagram", icon: "</>" },
-  { id: 2, link: "", title: "Telegram", icon: "</>" },
-  { id: 3, link: "", title: "LinkedIn", icon: "</>" },
-  { id: 4, link: "", title: "GitHub", icon: "</>" },
+  {
+    id: 1,
+    link: "https://www.instagram.com/andreimalets777/",
+    title: "Instagram",
+    icon: <SiInstagram size={25} />,
+  },
+  {
+    id: 2,
+    link: "https://t.me/Andrei_Malets",
+    title: "Telegram",
+    icon: <FaTelegram size={25} />,
+  },
+  {
+    id: 3,
+    link: "https://www.linkedin.com/in/andrei-malets-072827210/",
+    title: "LinkedIn",
+    icon: <SiLinkedin size={25} />,
+  },
+  {
+    id: 4,
+    link: "https://github.com/coolcrazyfox",
+    title: "GitHub",
+    icon: <FaGithub size={25} />,
+  },
 ];
 const Contact = () => {
   return (
@@ -17,10 +39,10 @@ const Contact = () => {
         {contacts.map((c, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-lg p-4 flex justify-between items-center"
+            className="bg-gray-100 rounded-lg p-4 flex text-center justify-center items-center cursor-pointer"
           >
             <h2 className="font-bold sm:text-xl">{c.title}</h2>
-            <div className="w-20">{c.icon}</div>
+            <span className="ml-5 w-20">{c.icon}</span>
           </div>
         ))}
       </div>
