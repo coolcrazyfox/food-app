@@ -1,4 +1,7 @@
 import React from "react";
+import App from "../App";
+import Error404 from "../pages/notFound/Error404";
+
 export const PATH = {
   ORDERS: "/orders",
   HERO: "/",
@@ -13,15 +16,14 @@ const RouterRoot = () => {
   return (
     <div>
       <Routes>
-        <Route path={PATH.HERO} element={<Hero />} />
-        <Route path={PATH.USERS} element={<UsersPage />} />
-        <Route path={PATH.REGISTRATION} element={<RegistrationPage />} />
-        <Route path={PATH.BLOGGER} element={<Blogger />} />
-        <Route path={PATH.POSTS} element={<PostsPage />} />
-        <Route path={PATH.DETAILS} element={<DetailsBlog />} />
-        <Route path={PATH.POST_DETAILS} element={<DetailsPost />} />
-        <Route path={PATH.POST_EDIT} element={<EditPost />} />
-        <Route path={PATH.SETTINGS} element={<Settings />} />
+        <Route path={PATH.HERO} element={<App />} />
+        <Route path={PATH.ORDERS} element={<CartPage />} />
+        <Route path={PATH.WALLET} element={<RegistrationPage />} />
+        <Route path={PATH.FAVORITES} element={<Blogger />} />
+        <Route path={PATH.PROMOTIONS} element={<PostsPage />} />
+        <Route path={PATH.ADD_FRIENDS} element={<DetailsBlog />} />
+        <Route path={PATH.HELP} element={<DetailsPost />} />
+        <Route path={PATH.CONTACT} element={<EditPost />} />
         <Route path={"*"} element={<Error404 />} />
       </Routes>
     </div>
