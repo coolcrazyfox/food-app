@@ -9,7 +9,11 @@ const CartButton = () => {
         onClick={() => alert("cart onClick ")}
         className="bg-black text-white hidden md:flex items-center py-2 rounded-full "
       >
-        <BsFillCartFill size={20} className="mr-2 text-orange-500" /> Cart
+        <BsFillCartFill
+          size={20}
+          className="mr-2 text-orange-500 hover:text-white "
+        />{" "}
+        Cart
         <span className="ml-2 bg-white text-black rounded-full max-h-full w-6">
           0
         </span>
