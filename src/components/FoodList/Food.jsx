@@ -41,7 +41,7 @@ const Food = () => {
         {/* Fliter Type */}
         <div>
           <p className="font-bold text-gray-700">Filter Type:</p>
-          <div className="flex justfiy-between flex-wrap">
+          <div className="flex justify-between flex-wrap">
             {titleBtn.map((b, index) => (
               <button
                 key={index}

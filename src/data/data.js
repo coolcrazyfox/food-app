@@ -100,7 +100,7 @@ export const data = [
     name: "Wings",
     category: "chicken",
     image:
-      "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
     price: "10",
   },
   {
@@ -108,7 +108,7 @@ export const data = [
     name: "Baked Chicken",
     category: "chicken",
     image:
-      "https://images.unsplash.com/photo-1594221708779-94832f4320d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "https://s1.1zoom.me/big0/82/Roast_Chicken_Cutting_board_545758_1280x958.jpg",
     price: "10",
   },
   {
@@ -116,23 +116,23 @@ export const data = [
     name: "Chicken Tenders",
     category: "chicken",
     image:
-      "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://t3.ftcdn.net/jpg/05/84/75/50/360_F_584755024_aGlWeFB5qlCVb6DL2lqDv8UvkK4KvFJO.jpg",
     price: "10",
   },
   {
     id: 16,
-    name: "Chicken Kabob",
+    name: "Chicken Kebab",
     category: "chicken",
     image:
-      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    price: "20",
+      "https://afrifoodnetwork.com/wp-content/uploads/2021/10/7335C5F4-D918-48CA-B517-1383EF88321A-500x500.jpeg",
+    price: "15",
   },
   {
     id: 17,
-    name: "Chicken Kabob",
-    category: "chicken",
+    name: "Ribs BBQ",
+    category: "bbq",
     image:
-      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
     price: "25",
   },
   {
@@ -169,10 +169,26 @@ export const data = [
   },
   {
     id: 22,
+    name: "Ice Cream cake",
+    category: "dessert",
+    image:
+      "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
+    price: "40",
+  },
+  {
+    id: 23,
+    name: "Cheese cake",
+    category: "dessert",
+    image:
+      "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
+    price: "20",
+  },
+  {
+    id: 24,
     name: "Chocolate cake",
     category: "dessert",
     image:
-      "https://curlygirlkitchen.com/wp-content/uploads/2022/08/Chocolate-Cake-Buttercream-Best-Moist-High-Altitude-006.jpg",
+      "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     price: "25",
   },
 ];
