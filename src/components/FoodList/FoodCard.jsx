@@ -1,5 +1,4 @@
 import React from "react";
-import { BsDatabaseFillAdd } from "react-icons/bs";
 
 const FoodCard = ({ food }) => {
   const [addItem, setAddItem] = React.useState(0);
@@ -16,15 +15,19 @@ const FoodCard = ({ food }) => {
       <div className="flex justify-between px-2 py-4">
         <p className="font-bold">{food.name}</p>
 
-        <p className="mr-2 flex flex-row">
+        <p className=" flex flex-row">
           price: &nbsp;{food.price}$&nbsp;
-          <span
+          <div
             onClick={onClickAddItemHandler}
-            className="bg-orange-500 text-white py-1 px-2 rounded-full w-15 cursor-pointer hover:bg-black flex flex-row"
+            className="bg-orange-500 text-white  px-2 rounded-full w-15 cursor-pointer hover:bg-black flex flex-row"
           >
-            <BsDatabaseFillAdd size={21} />
-            {addItem > 0 && <span className="ps-6">{addItem}</span>}
-          </span>
+            Add
+            {addItem > 0 && (
+              <span className="ms-3 w-6  text-center rounded-full bg-white text-orange-500">
+                {addItem}
+              </span>
+            )}
+          </div>
         </p>
       </div>
     </div>
