@@ -1,5 +1,5 @@
 import React from "react";
-import { TbTruckDelivery } from "react-icons/tb";
+import { BsDatabaseFillAdd } from "react-icons/bs";
 
 const FoodCard = ({ food }) => {
   const [addItem, setAddItem] = React.useState(0);
@@ -16,14 +16,12 @@ const FoodCard = ({ food }) => {
       <div className="flex justify-between px-2 py-4">
         <p className="font-bold">{food.name}</p>
 
-        <p>
-          price: &nbsp;
-          <span
-            onClick={onClickAddItemHandler}
-            className="bg-orange-500 text-white p-1 rounded-full w-30 cursor-pointer hover:bg-black"
-          >
-            {food.price}$
-          </span>
+        <p className="mr-2">price: &nbsp;{food.price}$&nbsp;</p>
+        <p
+          onClick={onClickAddItemHandler}
+          className="bg-orange-500 text-white p-1 rounded-full w-20 cursor-pointer hover:bg-black"
+        >
+          <BsDatabaseFillAdd size={20} />
           {addItem > 0 && <span className="ml-2">{addItem}</span>}
         </p>
       </div>
