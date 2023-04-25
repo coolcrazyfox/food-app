@@ -35,7 +35,7 @@ const HeadlineCards = () => {
           <img
             className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
             src={item.url}
-            alt="/"
+            alt="img"
           />
         </div>
       ))}
