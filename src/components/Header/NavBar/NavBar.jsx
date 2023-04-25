@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeButton from "./ThemeButton";
+import { GiFullPizza } from "react-icons/gi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import BurgerMenu from "./BurgerMenu";
@@ -9,10 +10,11 @@ const NavBar = ({ nav, setNav, isClick, setIsClick }) => {
     <>
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
-          <AiOutlineMenu size={31} className="text-orange-500 mt-1" />
+          <GiFullPizza size={31} className="text-orange-500 mt-1" />
         </div>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 ">
-          Best <span className="font-bold">Eats</span>
+        <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
+          Best
+          <span className=" font-bold">Delivery</span>
         </h1>
         {/* Themes */}
         <ThemeButton isClick={isClick} setIsClick={setIsClick} />
