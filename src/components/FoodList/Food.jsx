@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { data } from "../../data/data.js";
 import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
+import PriceFood from "./PriceFood.jsx";
 
 const Food = () => {
   const [foods, setFoods] = useState(data);
@@ -45,7 +46,7 @@ const Food = () => {
               <CategoriesFood
                 title={b}
                 key={index}
-                filterTypeHandel={() => filterType(b)}
+                filterTypeHandler={() => filterType(b)}
                 className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
               />
             ))}
@@ -56,13 +57,12 @@ const Food = () => {
           <p className="font-bold text-gray-700">Filter Price:</p>
           <div className="flex justify-between max-w-[690px] w-full">
             {price.map((p) => (
-              <button
+              <PriceFood
+                pr={p}
                 key={p}
-                onClick={() => filterPrice(p)}
+                filterPriceHandler={() => filterPrice(p)}
                 className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-              >
-                {p}$
-              </button>
+              />
             ))}
           </div>
         </div>

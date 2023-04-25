@@ -1,14 +1,14 @@
 import React from "react";
 
-const CategoriesFood = ({ title, filterTypeHandler }) => {
+const PriceFood = ({ pr, filterPriceHandler }) => {
   return (
     <button
-      onClick={filterTypeHandler}
+      onClick={filterPriceHandler}
       className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
     >
-      {title}
+      {pr}$
     </button>
   );
 };
 
-export default CategoriesFood;
+export default PriceFood;
