@@ -4,7 +4,7 @@ const HeadlineCards = () => {
   const headlineCardState = [
     {
       id: 1,
-      title: "New Restaurants",
+      title: "NEW Restaurants",
       text: "Added Daily",
       url: "https://media-cdn.tripadvisor.com/media/photo-s/1b/30/f5/ee/caption.jpg",
     },
