@@ -5,6 +5,7 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 
 const Food = () => {
+  const [activeIndex, setActiveIndex] = React.useState(0);
   const [foods, setFoods] = useState(data);
   const titleBtn = [
     "All",
@@ -47,7 +48,6 @@ const Food = () => {
                 title={b}
                 key={index}
                 filterTypeHandler={() => filterType(b)}
-                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
               />
             ))}
           </div>
@@ -61,7 +61,6 @@ const Food = () => {
                 pr={p}
                 key={p}
                 filterPriceHandler={() => filterPrice(p)}
-                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
               />
             ))}
           </div>
