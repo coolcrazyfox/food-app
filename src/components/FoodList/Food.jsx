@@ -20,8 +20,7 @@ const Food = () => {
   const price = ["5", "6", "10", "15", "20", "25", "40"];
 
   //   Filter Type burgers/pizza/etc
-  const filterType = (category, i) => {
-    setActiveIndex(i);
+  const filterType = (category) => {
     if (category) {
       setFoods(data.filter((item) => item.category === category.toLowerCase()));
     }
