@@ -4,7 +4,7 @@ const HeadlineCards = () => {
   const headlineCardState = [
     {
       id: 3,
-      title: "New seasonal MENU",
+      title: "NEW Seasonal MENU",
       text: "Through 6/21",
       url: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJicXxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60",
     },
