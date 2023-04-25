@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { data } from "../../data/data.js";
 import FoodCard from "./FoodCard.jsx";
-import { CategoriesFood } from "./CategoriesFood";
+import CategoriesFood from "./CategoriesFood.jsx";
 
 const Food = () => {
   const [foods, setFoods] = useState(data);
@@ -45,7 +45,7 @@ const Food = () => {
               <CategoriesFood
                 title={b}
                 key={index}
-                filterTypeHandel={filterType}
+                filterTypeHandel={() => filterType(b)}
                 className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
               />
             ))}
