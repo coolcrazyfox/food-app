@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { data } from "../../data/data.js";
 import FoodCard from "./FoodCard.jsx";
+import { CategoriesFood } from "./CategoriesFood";
 
 const Food = () => {
   const [foods, setFoods] = useState(data);
@@ -36,18 +37,17 @@ const Food = () => {
       <h1 className="text-orange-600 font-bold text-4xl text-center">Menu</h1>
       {/* Filter Row */}
       <div className="flex flex-col lg:flex-row justify-between">
-        {/* Fliter Type */}
+        {/* Filter Type */}
         <div>
           <p className="font-bold text-gray-700">Filter Type:</p>
           <div className="flex justify-between flex-wrap">
             {titleBtn.map((b, index) => (
-              <button
+              <CategoriesFood
+                title={b}
                 key={index}
-                onClick={() => filterType(b)}
+                filterTypeHandel={filterType}
                 className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-              >
-                {b}
-              </button>
+              />
             ))}
           </div>
         </div>
