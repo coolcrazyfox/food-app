@@ -20,7 +20,8 @@ const Food = () => {
   const price = ["5", "6", "10", "15", "20", "25", "40"];
 
   //   Filter Type burgers/pizza/etc
-  const filterType = (category) => {
+  const filterType = (category, i) => {
+    setActiveIndex(i);
     if (category) {
       setFoods(data.filter((item) => item.category === category.toLowerCase()));
     }
@@ -45,6 +46,7 @@ const Food = () => {
           <div className="flex justify-between flex-wrap">
             {titleBtn.map((b, index) => (
               <CategoriesFood
+                activeIndex={index}
                 title={b}
                 key={index}
                 filterTypeHandler={() => filterType(b)}
