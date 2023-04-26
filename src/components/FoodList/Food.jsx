@@ -17,7 +17,7 @@ const Food = () => {
     "BBQ",
     "JpFood",
   ];
-  const price = ["5", "6", "10", "15", "20", "25", "40"];
+  const price = [5, 6, 10, 15, 20, 25, 40];
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
