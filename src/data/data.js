@@ -69,7 +69,7 @@ export const data = [
     id: 6,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-    name: "Пепперони",
+    name: "Pepperoni pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 675,
@@ -80,7 +80,7 @@ export const data = [
     id: 7,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
-    name: "Маргарита",
+    name: "Margarita pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 450,
@@ -91,7 +91,7 @@ export const data = [
     id: 8,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-    name: "Четыре сезона",
+    name: "Four season pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 395,
@@ -102,12 +102,12 @@ export const data = [
     id: 9,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-    name: "Овощи и грибы 🌱",
+    name: "Vegetables & mushrooms 🌱",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 285,
     category: 5,
-    rating: 7,
+    rating: 2,
   },
   {
     id: 10,
