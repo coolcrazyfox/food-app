@@ -4,11 +4,14 @@ export const data = [
     imageUrl:
       "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     name: "Double Cheeseburger",
-    category: "burger",
+    types: [0, 1],
+    sizes: [26, 30, 40],
+    category: 0,
     price: "10",
+    rating: 4,
   },
   {
-    id: 1,
+    id: 10,
     name: "Double Cheeseburger",
     category: "burger",
     imageUrl:
@@ -16,7 +19,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 2,
+    id: 11,
     name: "Bacon Cheeseburger",
     category: "burger",
     imageUrl:
@@ -24,7 +27,15 @@ export const data = [
     price: "10",
   },
   {
-    id: 3,
+    id: 12,
+    name: "Bacon Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+    price: "10",
+  },
+  {
+    id: 13,
     name: "Mushroom Burger",
     category: "burger",
     imageUrl:
@@ -32,7 +43,7 @@ export const data = [
     price: "5",
   },
   {
-    id: 4,
+    id: 14,
     name: "Pulled pork Burger",
     category: "burger",
     imageUrl:
@@ -40,7 +51,7 @@ export const data = [
     price: "15",
   },
   {
-    id: 5,
+    id: 15,
     name: "Feta & Spinnach",
     category: "pizza",
     imageUrl:
@@ -48,7 +59,7 @@ export const data = [
     price: "6",
   },
   {
-    id: 6,
+    id: 16,
     name: "Supreme Pizza",
     category: "pizza",
     imageUrl:
@@ -56,7 +67,7 @@ export const data = [
     price: "6",
   },
   {
-    id: 7,
+    id: 17,
     name: "Meat Lovers",
     category: "pizza",
     imageUrl:
@@ -64,7 +75,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 8,
+    id: 18,
     name: "Cheese Pizza",
     category: "pizza",
     imageUrl:
@@ -72,7 +83,7 @@ export const data = [
     price: "20",
   },
   {
-    id: 9,
+    id: 19,
     name: "Kale Salad",
     category: "salad",
     imageUrl:
@@ -80,7 +91,7 @@ export const data = [
     price: "20",
   },
   {
-    id: 10,
+    id: 20,
     name: " Salad",
     category: "salad",
     imageUrl:
@@ -88,7 +99,7 @@ export const data = [
     price: "20",
   },
   {
-    id: 11,
+    id: 21,
     name: "Loaded Salad",
     category: "salad",
     imageUrl:
@@ -96,7 +107,7 @@ export const data = [
     price: "6",
   },
   {
-    id: 12,
+    id: 22,
     name: "Fruit Salad",
     category: "salad",
     imageUrl:
@@ -104,7 +115,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 13,
+    id: 23,
     name: "Wings",
     category: "chicken",
     imageUrl:
@@ -112,7 +123,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 14,
+    id: 24,
     name: "Baked Chicken",
     category: "chicken",
     imageUrl:
@@ -120,7 +131,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 15,
+    id: 25,
     name: "Chicken Tenders",
     category: "chicken",
     imageUrl:
@@ -128,7 +139,7 @@ export const data = [
     price: "10",
   },
   {
-    id: 16,
+    id: 26,
     name: "Chicken Kebab",
     category: "chicken",
     imageUrl:
@@ -136,7 +147,7 @@ export const data = [
     price: "15",
   },
   {
-    id: 17,
+    id: 27,
     name: "Ribs BBQ",
     category: "bbq",
     imageUrl:
@@ -144,7 +155,7 @@ export const data = [
     price: "25",
   },
   {
-    id: 18,
+    id: 28,
     name: "Stake BBQ",
     category: "bbq",
     imageUrl:
@@ -152,7 +163,7 @@ export const data = [
     price: "40",
   },
   {
-    id: 19,
+    id: 29,
     name: "Sashimi",
     category: "jpfood",
     imageUrl:
@@ -160,7 +171,7 @@ export const data = [
     price: "40",
   },
   {
-    id: 20,
+    id: 30,
     name: "Sushi set",
     category: "jpfood",
     imageUrl:
@@ -168,7 +179,7 @@ export const data = [
     price: "40",
   },
   {
-    id: 21,
+    id: 31,
     name: "Sushi",
     category: "jpfood",
     imageUrl:
@@ -176,7 +187,7 @@ export const data = [
     price: "25",
   },
   {
-    id: 22,
+    id: 32,
     name: "Ice Cream cake",
     category: "dessert",
     imageUrl:
@@ -184,7 +195,7 @@ export const data = [
     price: "40",
   },
   {
-    id: 23,
+    id: 33,
     name: "Cheese cake",
     category: "dessert",
     imageUrl:
@@ -192,7 +203,7 @@ export const data = [
     price: "20",
   },
   {
-    id: 24,
+    id: 34,
     name: "Chocolate cake",
     category: "dessert",
     imageUrl:
