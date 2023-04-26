@@ -152,6 +152,8 @@ export const data = [
   {
     id: 15,
     name: "Feta & Spinnach",
+    types: [0, 1],
+    sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
       "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
@@ -160,6 +162,8 @@ export const data = [
   {
     id: 16,
     name: "Supreme Pizza",
+    types: [0, 1],
+    sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
       "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
@@ -168,6 +172,8 @@ export const data = [
   {
     id: 17,
     name: "Meat Lovers",
+    types: [0, 1],
+    sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
       "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
@@ -176,6 +182,8 @@ export const data = [
   {
     id: 18,
     name: "Cheese Pizza",
+    types: [0, 1],
+    sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
       "https://images.unsplash.com/photo-1548369937-47519962c11a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hlZXNlJTIwcGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
