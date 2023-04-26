@@ -8,7 +8,7 @@ const FoodCard = ({ food }) => {
   return (
     <div className="border shadow-lg rounded-lg hover:scale-105 duration-400">
       <img
-        src={food.image}
+        src={food.imageUrl}
         alt={food.name}
         className="w-full h-[300px] object-cover rounded-t-lg"
       />
