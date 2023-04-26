@@ -46,7 +46,7 @@ export const data = [
   {
     id: 4,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+      "https://foxeslovelemons.com/wp-content/uploads/2021/01/Cheeseburger-Pizza-2.jpg",
     name: "Cheeseburger pizza ",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -56,9 +56,8 @@ export const data = [
   },
   {
     id: 5,
-    imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-    name: "Crazy pepperoni pizza",
+    imageUrl: "https://wallpapercave.com/wp/wp9953993.jpg",
+    name: "Crazy pepperoni Pizza",
     types: [0],
     sizes: [30, 40],
     price: 20,
@@ -69,7 +68,7 @@ export const data = [
     id: 6,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-    name: "Pepperoni pizza",
+    name: "Pepperoni Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
@@ -79,8 +78,8 @@ export const data = [
   {
     id: 7,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
-    name: "Margarita pizza",
+      "https://restaurant-gloria.ro/wp-content/uploads/2020/03/margherita.png",
+    name: "Margarita Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 10,
@@ -151,13 +150,13 @@ export const data = [
   },
   {
     id: 15,
-    name: "Feta & Spinnach",
+    name: "Seafood pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
       "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
-    price: 6,
+    price: 40,
   },
   {
     id: 16,
@@ -181,12 +180,12 @@ export const data = [
   },
   {
     id: 18,
-    name: "Cheese Pizza",
+    name: "Country Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
-      "https://images.unsplash.com/photo-1548369937-47519962c11a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hlZXNlJTIwcGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "https://food.pibig.info/uploads/posts/2023-04/thumbs/1680674903_food-pibig-info-p-pitstsa-kantri-krasivo-44.jpg",
     price: 20,
   },
   {
