@@ -3,10 +3,10 @@ export const data = [
     id: 0,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    name: "Пепперони Фреш с перцем",
+    name: "Pepperoni Fresh with pepper",
     types: [0, 1],
     sizes: [26, 30, 40],
-    price: 803,
+    price: 15,
     category: 0,
     rating: 4,
   },
@@ -14,7 +14,7 @@ export const data = [
     id: 1,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
-    name: "Сырная",
+    name: "Four Cheese pizza",
     types: [0],
     sizes: [26, 40],
     price: 245,
@@ -25,7 +25,7 @@ export const data = [
     id: 2,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
-    name: "Цыпленок барбекю",
+    name: "BBQ chicken pizza ",
     types: [0],
     sizes: [26, 40],
     price: 295,
@@ -36,7 +36,7 @@ export const data = [
     id: 3,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
-    name: "Кисло-сладкий цыпленок",
+    name: "Sweet & sour chicken pizza",
     types: [1],
     sizes: [26, 30, 40],
     price: 275,
@@ -58,7 +58,7 @@ export const data = [
     id: 5,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-    name: "Крэйзи пепперони",
+    name: "Crazy pepperoni pizza",
     types: [0],
     sizes: [30, 40],
     price: 580,
