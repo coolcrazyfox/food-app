@@ -2,7 +2,7 @@ export const data = [
   {
     id: 0,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+      "https://img.freepik.com/premium-photo/appetizing-italian-pizza-with-ham-cheese-jalapenos-tomatoes-and-bell-pepper-in-a-composition-with-ingredients-on-a-black-table_207126-5105.jpg",
     name: "Pepperoni & pepper",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -13,7 +13,7 @@ export const data = [
   {
     id: 1,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
+      "https://thumbs.dreamstime.com/b/slice-hot-italian-pizza-stretching-cheese-four-cheeses-basil-wooden-background-267372081.jpg",
     name: "Four Cheese pizza",
     types: [0],
     sizes: [26, 40],
@@ -24,7 +24,7 @@ export const data = [
   {
     id: 2,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
+      "https://a.storyblok.com/f/49069/1800x1800/c95594eb81/premium-bbq-chicken-pizza.jpg",
     name: "BBQ chicken pizza ",
     types: [0],
     sizes: [26, 40],
@@ -102,7 +102,7 @@ export const data = [
     id: 9,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-    name: "Vegetables & mushrooms 🌱",
+    name: "Wallpaper pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 25,
