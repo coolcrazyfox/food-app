@@ -35,8 +35,8 @@ export const data = [
   {
     id: 3,
     imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
-    name: "Sweet & sour chicken pizza",
+      "https://recette.supertoinette.com/155529/b/pizza-facon-carbonara.jpg",
+    name: "Carbonara pizza",
     types: [1],
     sizes: [26, 30, 40],
     price: 25,
@@ -156,7 +156,7 @@ export const data = [
     sizes: [26, 30, 40],
     category: "pizza",
     imageUrl:
-      "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
     price: 6,
   },
   {
