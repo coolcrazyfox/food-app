@@ -112,46 +112,6 @@ export const data = [
   },
   {
     id: 10,
-    name: "Double Cheeseburger",
-    category: "burger",
-    imageUrl:
-      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
-    price: 10,
-  },
-  {
-    id: 11,
-    name: "Bacon Cheeseburger",
-    category: "burger",
-    imageUrl:
-      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
-    price: 10,
-  },
-  {
-    id: 12,
-    name: "Bacon Cheeseburger",
-    category: "burger",
-    imageUrl:
-      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
-    price: 10,
-  },
-  {
-    id: 13,
-    name: "Mushroom Burger",
-    category: "burger",
-    imageUrl:
-      "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
-    price: 5,
-  },
-  {
-    id: 14,
-    name: "Pulled pork Burger",
-    category: "burger",
-    imageUrl:
-      "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
-    price: 15,
-  },
-  {
-    id: 15,
     name: "Seafood pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -161,7 +121,7 @@ export const data = [
     price: 40,
   },
   {
-    id: 16,
+    id: 11,
     name: "Supreme Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -171,7 +131,7 @@ export const data = [
     price: 6,
   },
   {
-    id: 17,
+    id: 12,
     name: "Meat Lovers",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -181,7 +141,7 @@ export const data = [
     price: 10,
   },
   {
-    id: 18,
+    id: 13,
     name: "Country Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
@@ -190,6 +150,47 @@ export const data = [
       "https://food.pibig.info/uploads/posts/2023-04/thumbs/1680674903_food-pibig-info-p-pitstsa-kantri-krasivo-44.jpg",
     price: 20,
   },
+  {
+    id: 14,
+    name: "Double Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
+    price: 10,
+  },
+  {
+    id: 15,
+    name: "Bacon Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+    price: 10,
+  },
+  {
+    id: 16,
+    name: "Bacon Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+    price: 10,
+  },
+  {
+    id: 17,
+    name: "Mushroom Burger",
+    category: "burger",
+    imageUrl:
+      "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
+    price: 5,
+  },
+  {
+    id: 18,
+    name: "Pulled pork Burger",
+    category: "burger",
+    imageUrl:
+      "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
+    price: 15,
+  },
+
   {
     id: 19,
     name: "Kale Salad",
