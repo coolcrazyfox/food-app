@@ -152,18 +152,20 @@ export const data = [
   },
   {
     id: 14,
-    name: "Double Cheeseburger",
-    category: "burger",
+    name: "Italy Pizza",
+    types: [0, 1],
+    sizes: [26, 30, 40],
+    category: "pizza",
     imageUrl:
-      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
+      "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
     price: 10,
   },
   {
     id: 15,
-    name: "Bacon Cheeseburger",
+    name: "Double Cheeseburger",
     category: "burger",
     imageUrl:
-      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     price: 10,
   },
   {
@@ -176,6 +178,14 @@ export const data = [
   },
   {
     id: 17,
+    name: "Bacon Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+    price: 10,
+  },
+  {
+    id: 18,
     name: "Mushroom Burger",
     category: "burger",
     imageUrl:
@@ -183,21 +193,12 @@ export const data = [
     price: 5,
   },
   {
-    id: 18,
+    id: 19,
     name: "Pulled pork Burger",
     category: "burger",
     imageUrl:
       "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
     price: 15,
-  },
-
-  {
-    id: 19,
-    name: "Kale Salad",
-    category: "salad",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYWQlMjBjZWFzYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    price: 20,
   },
   {
     id: 20,
@@ -318,6 +319,14 @@ export const data = [
     imageUrl:
       "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     price: 25,
+  },
+  {
+    id: 35,
+    name: "Kale Salad",
+    category: "salad",
+    imageUrl:
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYWQlMjBjZWFzYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    price: 20,
   },
 ];
 
