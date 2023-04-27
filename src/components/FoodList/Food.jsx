@@ -49,7 +49,7 @@ const Food = () => {
                 activeIndex={index}
                 title={b}
                 key={index}
-                filterTypeHandler={() => filterType(b)}
+                filterTypeHandler={() => filterType(b, index)}
               />
             ))}
           </div>
