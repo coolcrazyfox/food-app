@@ -24,30 +24,8 @@ export const data = [
   {
     id: 2,
     imageUrl:
-      "https://a.storyblok.com/f/49069/1800x1800/c95594eb81/premium-bbq-chicken-pizza.jpg",
-    name: "BBQ chicken pizza ",
-    types: [0],
-    sizes: [26, 40],
-    price: 15,
-    category: 1,
-    rating: 4,
-  },
-  {
-    id: 3,
-    imageUrl:
-      "https://recette.supertoinette.com/155529/b/pizza-facon-carbonara.jpg",
-    name: "Carbonara pizza",
-    types: [1],
-    sizes: [26, 30, 40],
-    price: 25,
-    category: 2,
-    rating: 2,
-  },
-  {
-    id: 4,
-    imageUrl:
       "https://foxeslovelemons.com/wp-content/uploads/2021/01/Cheeseburger-Pizza-2.jpg",
-    name: "Cheeseburger pizza ",
+    name: "Cheeseburger Pizza ",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
@@ -55,7 +33,7 @@ export const data = [
     rating: 8,
   },
   {
-    id: 5,
+    id: 3,
     imageUrl: "https://wallpapercave.com/wp/wp9953993.jpg",
     name: "Crazy pepperoni Pizza",
     types: [0],
@@ -65,18 +43,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 6,
-    imageUrl:
-      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-    name: "Pepperoni Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    price: 15,
-    category: 1,
-    rating: 9,
-  },
-  {
-    id: 7,
+    id: 4,
     imageUrl:
       "https://restaurant-gloria.ro/wp-content/uploads/2020/03/margherita.png",
     name: "Margarita Pizza",
@@ -86,6 +53,41 @@ export const data = [
     category: 4,
     rating: 10,
   },
+  {
+    id: 5,
+    imageUrl:
+      "https://a.storyblok.com/f/49069/1800x1800/c95594eb81/premium-bbq-chicken-pizza.jpg",
+    name: "BBQ chicken pizza ",
+    types: [0],
+    sizes: [26, 40],
+    price: 15,
+    category: 1,
+    rating: 4,
+  },
+  {
+    id: 6,
+    imageUrl:
+      "https://recette.supertoinette.com/155529/b/pizza-facon-carbonara.jpg",
+    name: "Carbonara pizza",
+    types: [1],
+    sizes: [26, 30, 40],
+    price: 25,
+    category: 2,
+    rating: 2,
+  },
+
+  {
+    id: 7,
+    imageUrl:
+      "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
+    name: "Pepperoni Pizza",
+    types: [0, 1],
+    sizes: [26, 30, 40],
+    price: 15,
+    category: 1,
+    rating: 9,
+  },
+
   {
     id: 8,
     imageUrl:
