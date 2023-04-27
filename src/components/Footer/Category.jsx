@@ -19,7 +19,7 @@ const Category = () => {
             key={index}
             className={
               active === index
-                ? "text-red border-blue-300"
+                ? "bg-gray-400 rounded-lg p-4 flex justify-between items-center  border-2-blue-500"
                 : "bg-gray-100 rounded-lg p-4 flex justify-between items-center"
             }
           >
