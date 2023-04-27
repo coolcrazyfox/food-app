@@ -57,7 +57,7 @@ export const data = [
     id: 5,
     imageUrl:
       "https://a.storyblok.com/f/49069/1800x1800/c95594eb81/premium-bbq-chicken-pizza.jpg",
-    name: "BBQ chicken pizza ",
+    name: "BBQ chicken Pizza ",
     types: [0],
     sizes: [26, 40],
     price: 15,
@@ -68,7 +68,7 @@ export const data = [
     id: 6,
     imageUrl:
       "https://recette.supertoinette.com/155529/b/pizza-facon-carbonara.jpg",
-    name: "Carbonara pizza",
+    name: "Carbonara Pizza",
     types: [1],
     sizes: [26, 30, 40],
     price: 25,
@@ -92,7 +92,7 @@ export const data = [
     id: 8,
     imageUrl:
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-    name: "Four season pizza",
+    name: "Four season Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
@@ -112,7 +112,7 @@ export const data = [
   },
   {
     id: 10,
-    name: "Seafood pizza",
+    name: "Seafood Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     category: "pizza",
@@ -152,7 +152,7 @@ export const data = [
   },
   {
     id: 14,
-    name: "Italy Pizza",
+    name: "Italian Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
     category: "pizza",
@@ -178,10 +178,10 @@ export const data = [
   },
   {
     id: 17,
-    name: "Bacon Cheeseburger",
+    name: "Chicken Burger",
     category: "burger",
     imageUrl:
-      "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
+      "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
     price: 10,
   },
   {
