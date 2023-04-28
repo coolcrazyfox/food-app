@@ -32,9 +32,9 @@ const FoodCard = ({ food }) => {
         </p>
       </div>
       <div className="flex justify-between px-2 py-1">
-        <ul className="flex flex-row px-1 bg-gray-100 w-full">
+        <ul className="flex flex-row px-1 bg-gray-100 w-full justify-between ">
           {typePizza.map((t, i) => (
-            <li className="mx-2 flex justify-center text-center" key={i}>
+            <li className="mx-4 " key={i}>
               {t}
             </li>
           ))}
