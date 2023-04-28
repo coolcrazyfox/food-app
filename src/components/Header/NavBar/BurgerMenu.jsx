@@ -4,13 +4,13 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { GoHome } from "react-icons/go";
-import {MdOutlineConnectWithoutContact} from 'react-icons/md'
+import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const initialState = [
   {
     id: 1,
-    link: "/",
+    link: "/food-app",
     title: "Home",
     color: "#D73486FF",
     icon: <GoHome size={27} />,
