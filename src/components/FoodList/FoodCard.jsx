@@ -2,6 +2,7 @@ import React from "react";
 
 const FoodCard = ({ food }) => {
   const [addItem, setAddItem] = React.useState(0);
+  const typePizza = ["Thin-crust", "Thick-crust"];
   const onClickAddItemHandler = () => {
     setAddItem((addItem) => addItem + 1);
   };
