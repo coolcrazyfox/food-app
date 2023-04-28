@@ -53,10 +53,10 @@ const FoodCard = ({ food }) => {
           </ul>
         </div>
       )}
-      <div className="flex justify-between px-2 py-1">
-        <ul className="flex flex-row px-1  w-full justify-between ">
-          {food.sizes &&
-            sizePizza.map((s, i) => (
+      {food.sizes && (
+        <div className="flex justify-between px-2 py-1">
+          <ul className="flex flex-row px-1  w-full justify-between ">
+            {sizePizza.map((s, i) => (
               <li
                 onClick={() => setActiveSize(i)}
                 className={
@@ -69,8 +69,9 @@ const FoodCard = ({ food }) => {
                 {s}cm.
               </li>
             ))}
-        </ul>
-      </div>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
