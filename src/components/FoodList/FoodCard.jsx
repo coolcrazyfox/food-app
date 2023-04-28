@@ -34,10 +34,10 @@ const FoodCard = ({ food }) => {
           </div>
         </p>
       </div>
-      <div className="flex justify-between px-2 py-1">
-        <ul className="flex flex-row px-1  w-full justify-between ">
-          {food.types &&
-            typePizza.map((t, i) => (
+      {food.types && (
+        <div className="flex justify-between px-2 py-1">
+          <ul className="flex flex-row px-1  w-full justify-between ">
+            {typePizza.map((t, i) => (
               <li
                 onClick={() => setActiveType(i)}
                 className={
@@ -50,8 +50,9 @@ const FoodCard = ({ food }) => {
                 {t}
               </li>
             ))}
-        </ul>
-      </div>
+          </ul>
+        </div>
+      )}
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
           {food.sizes &&
