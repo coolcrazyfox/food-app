@@ -42,7 +42,7 @@ const FoodCard = ({ food }) => {
                 onClick={() => setActiveType(i)}
                 className={
                   activeType === i
-                    ? "text-white mx-1 rounded-md bg-orange-500  w-full text-center cursor-pointer"
+                    ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
                     : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
                 }
                 key={i}
