@@ -2,6 +2,8 @@ import React from "react";
 
 const FoodCard = ({ food }) => {
   const [addItem, setAddItem] = React.useState(0);
+  const [activeType, setActiveType] = React.useState(0);
+  const [activeSize, setActiveSize] = React.useState(0);
   const typePizza = ["Thin-crust", "Thick-crust"];
   const sizePizza = [26, 30, 40];
   const onClickAddItemHandler = () => {
@@ -41,6 +43,20 @@ const FoodCard = ({ food }) => {
                 key={i}
               >
                 {t}
+              </li>
+            ))}
+        </ul>
+      </div>
+      <div className="flex justify-between px-2 py-1">
+        <ul className="flex flex-row px-1  w-full justify-between ">
+          {food.sizes &&
+            sizePizza.map((s, i) => (
+              <li
+                onClick={() => setActiveSize(i)}
+                className="mx-1 rounded-md bg-gray-100  w-full text-center"
+                key={i}
+              >
+                {s}cm.
               </li>
             ))}
         </ul>
