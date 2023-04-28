@@ -10,7 +10,7 @@ import Category from "../components/Footer/Category";
 
 export const PATH = {
   ORDERS: "/orders",
-  HERO: "/",
+  HERO: "/food-app",
   WALLET: "/wallet",
   FAVORITES: "/favorites",
   PROMOTIONS: "/promotions",
