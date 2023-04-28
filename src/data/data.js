@@ -162,12 +162,15 @@ export const data = [
   },
   {
     id: 15,
-    name: "Double Cheeseburger",
-    category: "burger",
+    name: "Texas Pizza",
+    types: [0, 1],
+    sizes: [26, 30, 40],
+    category: "pizza",
     imageUrl:
-      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
-    price: 10,
+      "https://d3a76jc0ho84i8.cloudfront.net/static/desktop/products/pizza-texas-bbq.jpg",
+    price: 20,
   },
+
   {
     id: 16,
     name: "Bacon Cheeseburger",
@@ -322,11 +325,11 @@ export const data = [
   },
   {
     id: 35,
-    name: "Kale Salad",
-    category: "salad",
+    name: "Double Cheeseburger",
+    category: "burger",
     imageUrl:
-      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYWQlMjBjZWFzYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    price: 20,
+      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
+    price: 10,
   },
 ];
 
