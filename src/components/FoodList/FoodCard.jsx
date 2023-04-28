@@ -39,7 +39,12 @@ const FoodCard = ({ food }) => {
           {food.types &&
             typePizza.map((t, i) => (
               <li
-                className="mx-1 rounded-md bg-gray-100  w-full text-center"
+                onClick={() => setActiveType(i)}
+                className={
+                  activeType === i
+                    ? "text-white mx-1 rounded-md bg-orange-500  w-full text-center cursor-pointer"
+                    : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
+                }
                 key={i}
               >
                 {t}
@@ -53,7 +58,11 @@ const FoodCard = ({ food }) => {
             sizePizza.map((s, i) => (
               <li
                 onClick={() => setActiveSize(i)}
-                className="mx-1 rounded-md bg-gray-100  w-full text-center"
+                className={
+                  activeSize === i
+                    ? "text-white mx-1 rounded-md bg-orange-500  w-full text-center cursor-pointer"
+                    : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
+                }
                 key={i}
               >
                 {s}cm.
