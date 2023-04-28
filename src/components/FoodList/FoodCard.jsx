@@ -31,6 +31,13 @@ const FoodCard = ({ food }) => {
           </div>
         </p>
       </div>
+      <div className="flex justify-between px-2 py-4">
+        <ul>
+          {typePizza.map((t, i) => (
+            <li key={i}>{t}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
