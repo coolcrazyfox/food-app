@@ -39,7 +39,7 @@ const FoodCard = ({ food }) => {
         food={food}
         activeSize={activeSize}
         setActiveSize={setActiveSize}
-        activeType={setActiveType}
+        activeType={activeType}
         setActiveType={setActiveType}
         sizePizza={sizePizza}
         typePizza={typePizza}
