@@ -9,8 +9,8 @@ const Food = () => {
   const [foods, setFoods] = useState(data);
   const titleBtn = [
     "All",
-    "Burger",
     "Pizza",
+    "Burger",
     "Salad",
     "Chicken",
     "Dessert",
@@ -71,7 +71,7 @@ const Food = () => {
 
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-        {foods.map((item, index) => (
+        {foods.map((item) => (
           <FoodCard food={item} key={item} />
         ))}
       </div>

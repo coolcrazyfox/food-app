@@ -7,7 +7,7 @@ export const data = [
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
-    category: 0,
+    category: 1,
     rating: 4,
   },
   {
@@ -18,7 +18,7 @@ export const data = [
     types: [0],
     sizes: [26, 40],
     price: 25,
-    category: 0,
+    category: 1,
     rating: 6,
   },
   {
@@ -29,7 +29,7 @@ export const data = [
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
-    category: 3,
+    category: [1, 2],
     rating: 8,
   },
   {
@@ -39,7 +39,7 @@ export const data = [
     types: [0],
     sizes: [30, 40],
     price: 20,
-    category: 2,
+    category: 1,
     rating: 2,
   },
   {
@@ -50,7 +50,7 @@ export const data = [
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 10,
-    category: 4,
+    category: 1,
     rating: 10,
   },
   {
@@ -61,7 +61,7 @@ export const data = [
     types: [0],
     sizes: [26, 40],
     price: 15,
-    category: 1,
+    category: [1, 6],
     rating: 4,
   },
   {
@@ -72,7 +72,7 @@ export const data = [
     types: [1],
     sizes: [26, 30, 40],
     price: 25,
-    category: 2,
+    category: 1,
     rating: 2,
   },
 
@@ -96,7 +96,7 @@ export const data = [
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 15,
-    category: 5,
+    category: 1,
     rating: 10,
   },
   {
@@ -107,7 +107,7 @@ export const data = [
     types: [0, 1],
     sizes: [26, 30, 40],
     price: 25,
-    category: 5,
+    category: 1,
     rating: 2,
   },
   {
@@ -115,7 +115,7 @@ export const data = [
     name: "Seafood Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
     price: 40,
@@ -125,7 +125,7 @@ export const data = [
     name: "Supreme Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     price: 6,
@@ -135,7 +135,7 @@ export const data = [
     name: "Meat Lovers",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     price: 10,
@@ -145,7 +145,7 @@ export const data = [
     name: "Country Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://food.pibig.info/uploads/posts/2023-04/thumbs/1680674903_food-pibig-info-p-pitstsa-kantri-krasivo-44.jpg",
     price: 20,
@@ -155,7 +155,7 @@ export const data = [
     name: "Italian Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
     price: 10,
@@ -165,7 +165,7 @@ export const data = [
     name: "Texas Pizza",
     types: [0, 1],
     sizes: [26, 30, 40],
-    category: "pizza",
+    category: [1, "pizza"],
     imageUrl:
       "https://d3a76jc0ho84i8.cloudfront.net/static/desktop/products/pizza-texas-bbq.jpg",
     price: 20,
