@@ -1,6 +1,12 @@
 import React from "react";
 
-const FoodBlock = ({ food }) => {
+const FoodBlock = ({
+  food,
+  activeSize,
+  activeType,
+  setActiveSize,
+  setActiveType,
+}) => {
   const typePizzaName = ["Thin crust", "Thick crust"];
   return (
     <>
@@ -8,7 +14,7 @@ const FoodBlock = ({ food }) => {
         <ul className="flex flex-row px-1  w-full justify-between ">
           {food.types.map((typeId) => (
             <li
-              onClick={() => setActiveType(i)}
+              onClick={() => setActiveType(typeId)}
               className={
                 activeType === i
                   ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"

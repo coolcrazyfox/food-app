@@ -73,7 +73,13 @@ const FoodCard = ({ food }) => {
           </ul>
         </div>
       )}
-      <FoodBlock food={food} />
+      <FoodBlock
+        food={food}
+        activeSize={activeSize}
+        setActiveSize={setActiveSize}
+        activeType={setActiveType}
+        setActiveType={setActiveType}
+      />
     </div>
   );
 };
