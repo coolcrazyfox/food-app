@@ -14,17 +14,17 @@ const FoodBlock = ({
       {food.types && (
         <div className="flex justify-between px-2 py-1">
           <ul className="flex flex-row px-1  w-full justify-between ">
-            {typePizza.map((typeId) => (
+            {typePizza.map((type, i) => (
               <li
-                onClick={() => setActiveType(typeId)}
+                onClick={() => setActiveType(i)}
                 className={
-                  activeType === typeId
+                  activeType === i
                     ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
                     : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
                 }
-                key={typeId}
+                key={type}
               >
-                {typePizza[typeId]}
+                {type}
               </li>
             ))}
           </ul>
