@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddFoodItem = () => {
+const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
   return (
     <>
       <div className="flex justify-between px-2 py-4">
