@@ -1,27 +1,27 @@
 import React from "react";
 
-const FoodBlock = () => {
+const FoodBlock = ({ food }) => {
+  const typePizzaName = ["Thin crust", "Thick crust"];
   return (
     <>
-      {food.types && (
-        <div className="flex justify-between px-2 py-1">
-          <ul className="flex flex-row px-1  w-full justify-between ">
-            {typePizza.map((t, i) => (
-              <li
-                onClick={() => setActiveType(i)}
-                className={
-                  activeType === i
-                    ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
-                    : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
-                }
-                key={i}
-              >
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div className="flex justify-between px-2 py-1">
+        <ul className="flex flex-row px-1  w-full justify-between ">
+          {food.types.map((typeIndex) => (
+            <li
+              onClick={() => setActiveType(i)}
+              className={
+                activeType === i
+                  ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
+                  : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
+              }
+              key={typeIndex}
+            >
+              {typePizzaName[typeIndex]}
+            </li>
+          ))}
+        </ul>
+      </div>
+
       {food.sizes && (
         <div className="flex justify-between px-2 py-1">
           <ul className="flex flex-row px-1  w-full justify-between ">
