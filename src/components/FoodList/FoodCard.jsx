@@ -1,4 +1,5 @@
 import React from "react";
+import FoodBlock from "./FoodBlock";
 
 const FoodCard = ({ food }) => {
   const [addItem, setAddItem] = React.useState(0);
@@ -72,6 +73,7 @@ const FoodCard = ({ food }) => {
           </ul>
         </div>
       )}
+      <FoodBlock food={food} />
     </div>
   );
 };
