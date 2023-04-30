@@ -2,7 +2,7 @@ import React from "react";
 import FoodBlock from "./FoodBlock";
 import AddFoodItem from "./AddFoodItem";
 
-const FoodCard = ({ food }) => {
+const FoodCard = ({ ...food }) => {
   const [addItem, setAddItem] = React.useState(0);
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
