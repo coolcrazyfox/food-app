@@ -8,6 +8,7 @@ const Food = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
+  const [openType, setOpenType] = React.useState(false);
   const titleBtn = [
     "All",
     "Pizza",
@@ -20,16 +21,18 @@ const Food = () => {
   ];
   const price = [5, 6, 10, 15, 20, 25, 40];
   const [selected, setSelected] = React.useState(0);
+  const [selectedType, setSelectedType] = React.useState(0);
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
-    setActiveIndex(i);
+    setSelectedType(i);
     if (category) {
       setFoods(data.filter((item) => item.category === category.toLowerCase()));
     }
     if (category === "All") {
       setFoods(data);
     }
+    setOpenType(false);
   };
 
   //   Filter by price
@@ -48,14 +51,26 @@ const Food = () => {
         <div>
           <p className="font-bold text-gray-700">Filter Type:</p>
           <div className="flex justify-between flex-wrap">
-            {titleBtn.map((b, index) => (
-              <CategoriesFood
-                activeIndex={index}
-                title={b}
-                key={index}
-                filterTypeHandler={() => filterType(b, index)}
-              />
-            ))}
+            {openType ? (
+              <>
+                {titleBtn.map((b, i) => (
+                  <CategoriesFood
+                    i={i}
+                    selectedType={selectedType}
+                    title={b}
+                    key={b}
+                    filterTypeHandler={() => filterType(b, i)}
+                  />
+                ))}
+              </>
+            ) : (
+              <button
+                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+                onClick={() => setOpenType(!openType)}
+              >
+                {titleBtn[selectedType]}
+              </button>
+            )}
           </div>
         </div>
         {/* Filter Price */}
