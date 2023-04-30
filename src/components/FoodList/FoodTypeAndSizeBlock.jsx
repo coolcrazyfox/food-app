@@ -1,6 +1,6 @@
 import React from "react";
 
-const FoodBlock = ({
+const FoodTypeAndSizeBlock = ({
   food,
   activeSize,
   activeType,
@@ -53,4 +53,4 @@ const FoodBlock = ({
   );
 };
 
-export default FoodBlock;
+export default FoodTypeAndSizeBlock;

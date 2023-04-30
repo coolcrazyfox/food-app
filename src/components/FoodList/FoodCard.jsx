@@ -1,5 +1,5 @@
 import React from "react";
-import FoodBlock from "./FoodBlock";
+import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
 
 const FoodCard = ({ ...food }) => {
@@ -23,7 +23,7 @@ const FoodCard = ({ ...food }) => {
         addItem={addItem}
         onClickAddItemHandler={onClickAddItemHandler}
       />
-      <FoodBlock
+      <FoodTypeAndSizeBlock
         food={food}
         activeSize={activeSize}
         setActiveSize={setActiveSize}
