@@ -7,6 +7,7 @@ import PriceFood from "./PriceFood.jsx";
 const Food = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [foods, setFoods] = useState(data);
+  const [openPrice, setOpenPrice] = React.useState(false);
   const titleBtn = [
     "All",
     "Pizza",
@@ -57,15 +58,17 @@ const Food = () => {
         {/* Filter Price */}
         <div>
           <p className="font-bold text-gray-700">Filter Price:</p>
-          <div className="flex justify-between max-w-[690px] w-full">
-            {price.map((p) => (
-              <PriceFood
-                pr={p}
-                key={p}
-                filterPriceHandler={() => filterPrice(p)}
-              />
-            ))}
-          </div>
+          {openPrice && (
+            <div className="flex justify-between max-w-[690px] w-full">
+              {price.map((p) => (
+                <PriceFood
+                  pr={p}
+                  key={p}
+                  filterPriceHandler={() => filterPrice(p)}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
