@@ -62,13 +62,7 @@ const Food = () => {
         <div>
           <p className="font-bold text-gray-700">Filter Price:</p>
           <div className="flex justify-between max-w-[690px] w-full">
-            <button
-              className="flex justify-between max-w-[680px] w-full"
-              onClick={() => setOpenPrice(!openPrice)}
-            >
-              {price[selected]}$
-            </button>
-            {openPrice && (
+            {openPrice ? (
               <>
                 {price.map((p, i) => (
                   <PriceFood
@@ -80,6 +74,13 @@ const Food = () => {
                   />
                 ))}
               </>
+            ) : (
+              <button
+                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+                onClick={() => setOpenPrice(!openPrice)}
+              >
+                {price[selected]}$
+              </button>
             )}
           </div>
         </div>
