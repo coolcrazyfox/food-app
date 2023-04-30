@@ -72,7 +72,7 @@ const Food = () => {
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
         {foods.map((food) => (
-          <FoodCard {...food} />
+          <FoodCard {...food} key={food} />
         ))}
       </div>
     </div>
