@@ -6,7 +6,7 @@ const FoodBlock = ({ food }) => {
     <>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {food.types.map((typeIndex) => (
+          {food.types.map((typeId) => (
             <li
               onClick={() => setActiveType(i)}
               className={
@@ -14,9 +14,9 @@ const FoodBlock = ({ food }) => {
                   ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
                   : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
               }
-              key={typeIndex}
+              key={typeId}
             >
-              {typePizzaName[typeIndex]}
+              {typePizzaName[typeId]}
             </li>
           ))}
         </ul>
