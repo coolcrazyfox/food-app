@@ -19,6 +19,7 @@ const Food = () => {
     "JpFood",
   ];
   const price = [5, 6, 10, 15, 20, 25, 40];
+  const [selected, setSelected] = React.useState(0);
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
@@ -32,8 +33,10 @@ const Food = () => {
   };
 
   //   Filter by price
-  const filterPrice = (price) => {
+  const filterPrice = (price, i) => {
+    setSelected(i);
     setFoods(data.filter((item) => item.price === price));
+    setOpenPrice(false);
   };
 
   return (
@@ -58,17 +61,27 @@ const Food = () => {
         {/* Filter Price */}
         <div>
           <p className="font-bold text-gray-700">Filter Price:</p>
-          {openPrice && (
-            <div className="flex justify-between max-w-[690px] w-full">
-              {price.map((p) => (
-                <PriceFood
-                  pr={p}
-                  key={p}
-                  filterPriceHandler={() => filterPrice(p)}
-                />
-              ))}
-            </div>
-          )}
+          <div className="flex justify-between max-w-[690px] w-full">
+            <button
+              className="flex justify-between max-w-[680px] w-full"
+              onClick={() => setOpenPrice(!openPrice)}
+            >
+              {price[selected]}$
+            </button>
+            {openPrice && (
+              <>
+                {price.map((p, i) => (
+                  <PriceFood
+                    index={i}
+                    selected={selected}
+                    pr={p}
+                    key={p}
+                    filterPriceHandler={() => filterPrice(p, i)}
+                  />
+                ))}
+              </>
+            )}
+          </div>
         </div>
       </div>
 
