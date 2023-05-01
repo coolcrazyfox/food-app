@@ -242,7 +242,8 @@ export const data = [
     id: 23,
     name: "Macaroni Salad",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://www.bhg.com/thmb/KSwPiEHPkVBafthl_sDhm40J7PE=/1244x0/filters:no_upscale():strip_icc()/grilled-veggie-pasta-salad-RU224784-b1b4829a90874916960968ad77a1dbb2.jpg",
     price: 6,
     rating: 2,
   },
