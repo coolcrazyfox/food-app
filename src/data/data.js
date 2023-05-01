@@ -258,7 +258,8 @@ export const data = [
     id: 25,
     name: "Fattoush",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/5e1dbea1bb47ad304183d9af/1600761808922-I7NPOUJPM2ISZZ47EEFZ/P9204349.jpg",
     price: 10,
     rating: 2,
   },
