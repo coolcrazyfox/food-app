@@ -108,7 +108,7 @@ export const data = [
     sizes: [26, 30, 40],
     price: 25,
     category: 1,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ export const data = [
     imageUrl:
       "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
     price: 40,
-    rating: 2,
+    rating: 7,
   },
   {
     id: 11,
@@ -130,7 +130,7 @@ export const data = [
     imageUrl:
       "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     price: 6,
-    rating: 2,
+    rating: 6,
   },
   {
     id: 12,
@@ -141,7 +141,7 @@ export const data = [
     imageUrl:
       "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     price: 10,
-    rating: 2,
+    rating: 4,
   },
   {
     id: 13,
@@ -152,7 +152,7 @@ export const data = [
     imageUrl:
       "https://food.pibig.info/uploads/posts/2023-04/thumbs/1680674903_food-pibig-info-p-pitstsa-kantri-krasivo-44.jpg",
     price: 20,
-    rating: 2,
+    rating: 6,
   },
   {
     id: 14,
@@ -163,7 +163,7 @@ export const data = [
     imageUrl:
       "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
     price: 10,
-    rating: 2,
+    rating: 4,
   },
   {
     id: 15,
@@ -174,7 +174,7 @@ export const data = [
     imageUrl:
       "https://d3a76jc0ho84i8.cloudfront.net/static/desktop/products/pizza-texas-bbq.jpg",
     price: 20,
-    rating: 2,
+    rating: 9,
   },
 
   {
@@ -184,7 +184,7 @@ export const data = [
     imageUrl:
       "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
     price: 10,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 17,
@@ -193,7 +193,7 @@ export const data = [
     imageUrl:
       "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
     price: 10,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 18,
@@ -202,7 +202,7 @@ export const data = [
     imageUrl:
       "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
     price: 5,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 19,
@@ -211,7 +211,7 @@ export const data = [
     imageUrl:
       "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
     price: 15,
-    rating: 2,
+    rating: 4,
   },
   {
     id: 20,
@@ -220,7 +220,7 @@ export const data = [
     imageUrl:
       "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     price: 10,
-    rating: 2,
+    rating: 3,
   },
   {
     id: 21,
@@ -229,7 +229,7 @@ export const data = [
     imageUrl:
       "https://www.thespruceeats.com/thmb/2pjgFA7_nbZtlXr68BECvf6fO48=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caprese-salad-tomato-salad-2217097-hero-03-75a0b89b30aa4a52b10fe4fdd9abfeb5.jpg",
     price: 10,
-    rating: 2,
+    rating: 7,
   },
   {
     id: 22,
@@ -238,7 +238,7 @@ export const data = [
     imageUrl:
       "https://ianbenites.com/wp-content/uploads/2021/05/20210511_183402-1.jpg",
     price: 10,
-    rating: 2,
+    rating: 8,
   },
   {
     id: 23,
@@ -247,7 +247,7 @@ export const data = [
     imageUrl:
       "https://www.bhg.com/thmb/KSwPiEHPkVBafthl_sDhm40J7PE=/1244x0/filters:no_upscale():strip_icc()/grilled-veggie-pasta-salad-RU224784-b1b4829a90874916960968ad77a1dbb2.jpg",
     price: 6,
-    rating: 2,
+    rating: 8,
   },
   {
     id: 24,
@@ -265,7 +265,7 @@ export const data = [
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/5e1dbea1bb47ad304183d9af/1600761808922-I7NPOUJPM2ISZZ47EEFZ/P9204349.jpg",
     price: 10,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 26,
@@ -274,7 +274,7 @@ export const data = [
     imageUrl:
       "https://wallpapershome.ru/images/wallpapers/salat-3840x2160-salat-17422.jpg",
     price: 10,
-    rating: 2,
+    rating: 7,
   },
   {
     id: 27,
@@ -292,7 +292,7 @@ export const data = [
     imageUrl:
       "https://dacha.wiki/sites/default/files/image/2023-04/jpg/salat_4.jpg",
     price: 10,
-    rating: 2,
+    rating: 4,
   },
   {
     id: 29,
@@ -318,7 +318,7 @@ export const data = [
     imageUrl:
       "https://images.unsplash.com/photo-1564093497595-593b96d80180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
     price: 10,
-    rating: 2,
+    rating: 3,
   },
   {
     id: 32,
@@ -327,7 +327,7 @@ export const data = [
     imageUrl:
       "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
     price: 10,
-    rating: 2,
+    rating: 5,
   },
   {
     id: 33,
@@ -345,7 +345,7 @@ export const data = [
     imageUrl:
       "https://t3.ftcdn.net/jpg/05/84/75/50/360_F_584755024_aGlWeFB5qlCVb6DL2lqDv8UvkK4KvFJO.jpg",
     price: 10,
-    rating: 2,
+    rating: 4,
   },
   {
     id: 35,
@@ -448,7 +448,7 @@ export const data = [
   },
   {
     id: 46,
-    name: "Ice Cream cake",
+    name: "Ice Cream Cake",
     category: "dessert",
     imageUrl:
       "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
@@ -457,7 +457,7 @@ export const data = [
   },
   {
     id: 47,
-    name: "Cheese cake",
+    name: "Cheese Cake",
     category: "dessert",
     imageUrl:
       "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
@@ -466,7 +466,7 @@ export const data = [
   },
   {
     id: 48,
-    name: "Chocolate cake",
+    name: "Chocolate Cake",
     category: "dessert",
     imageUrl:
       "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
@@ -502,7 +502,7 @@ export const data = [
   },
   {
     id: 52,
-    name: "Napoleon cake",
+    name: "Napoleon Cake",
     category: "dessert",
     imageUrl:
       "https://static.1000.menu/img/content/26821/bystryi-tort-napoleon_1525111014_21_max.jpg",
@@ -511,10 +511,19 @@ export const data = [
   },
   {
     id: 53,
-    name: "Raspberry cake",
+    name: "Raspberry Cake",
     category: "dessert",
     imageUrl:
       "https://i.pinimg.com/originals/82/df/73/82df7352b730967429d9c8f8bb935439.jpg",
+    price: 25,
+    rating: 9,
+  },
+  {
+    id: 54,
+    name: "Peach Cake",
+    category: "dessert",
+    imageUrl:
+      "https://balthazar.club/uploads/posts/2023-01/1674878568_balthazar-club-p-konfi-iz-konservirovannikh-persikov-dlya-t-32.jpg",
     price: 25,
     rating: 9,
   },
