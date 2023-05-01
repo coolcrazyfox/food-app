@@ -27,9 +27,15 @@ const Food = () => {
   const filterType = (category, i) => {
     setSelectedType(i);
     if (category) {
-      setFoods(data.filter((item) => item.category === category.toLowerCase()));
+      // setFoods(data.filter((item) => item.category === category.toLowerCase()));
+      setFoods(
+        data.filter(
+          (item) =>
+            item.category === i || item.category === category.toLowerCase()
+        )
+      );
     }
-    if (category === "All") {
+    if (i === 0) {
       setFoods(data);
     }
     setOpenType(false);
