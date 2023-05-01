@@ -475,19 +475,20 @@ export const data = [
   },
   {
     id: 49,
-    name: "Chocolate cake",
+    name: "Baked Apple",
     category: "dessert",
-    imageUrl: "",
+    imageUrl:
+      "https://static.1000.menu/img/content-v2/e5/4d/40109/zapechennye-yabloki-s-koricei-v-duxovke_1614686843_10_max.jpg",
     price: 25,
     rating: 9,
   },
   {
     id: 50,
-    name: "strawberry in chocolate",
+    name: "Strawberry in Chocolate",
     category: "dessert",
     imageUrl:
       "https://menunedeli.ru/wp-content/uploads/2022/05/Klubnika-v-shokolade-500350--1200x801.jpg",
-    price: 25,
+    price: 20,
     rating: 9,
   },
   {
