@@ -282,7 +282,7 @@ export const data = [
     category: "salad",
     imageUrl:
       "https://images.ctfassets.net/lufu0clouua1/3WsOH8J0MIV9HOfio6qfPg/c69d024b7b0a8377fba0fb7ebcd2db99/Large-Caesar-Salad34774.jpg",
-    price: 10,
+    price: 15,
     rating: 2,
   },
   {
@@ -291,17 +291,17 @@ export const data = [
     category: "salad",
     imageUrl:
       "https://dacha.wiki/sites/default/files/image/2023-04/jpg/salat_4.jpg",
-    price: 10,
+    price: 20,
     rating: 4,
   },
   {
     id: 29,
-    name: " Salad",
+    name: "Shrimp Salad",
     category: "salad",
     imageUrl:
-      "https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2FsYWQlMjBjZWFzYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    price: 20,
-    rating: 2,
+      "https://s1.eda.ru/StaticContent/Photos/160312155529/201215225518/p_O.jpg",
+    price: 40,
+    rating: 7,
   },
   {
     id: 30,
