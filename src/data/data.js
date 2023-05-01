@@ -408,7 +408,34 @@ export const data = [
     imageUrl:
       "https://www.tastingtable.com/img/gallery/sushi-lovers-tell-tasting-table-their-go-to-sushi-roll-exclusive-survey/l-intro-1670519473.jpg",
     price: 25,
-    rating: 2,
+    rating: 9,
+  },
+  {
+    id: 42,
+    name: "Wagyu Beef",
+    category: "jpfood",
+    imageUrl:
+      "https://sakura.co/wp-content/uploads/2022/12/sakuraco_wagyu-beef-thumbnail.png",
+    price: 40,
+    rating: 10,
+  },
+  {
+    id: 43,
+    name: "Yakisoba",
+    category: "jpfood",
+    imageUrl:
+      "https://www.tudoonlineemcampobom.com.br/wp-content/uploads/2022/01/receitas-de-yakisoba.jpg",
+    price: 25,
+    rating: 6,
+  },
+  {
+    id: 44,
+    name: "Oyakodon",
+    category: "jpfood",
+    imageUrl:
+      "https://www.justonecookbook.com/wp-content/uploads/2022/10/Oyakodon-0640-III.jpg",
+    price: 25,
+    rating: 6,
   },
   {
     id: 32,
