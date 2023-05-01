@@ -500,6 +500,24 @@ export const data = [
     price: 25,
     rating: 9,
   },
+  {
+    id: 52,
+    name: "Napoleon cake",
+    category: "dessert",
+    imageUrl:
+      "https://static.1000.menu/img/content/26821/bystryi-tort-napoleon_1525111014_21_max.jpg",
+    price: 25,
+    rating: 9,
+  },
+  {
+    id: 53,
+    name: "Raspberry cake",
+    category: "dessert",
+    imageUrl:
+      "https://i.pinimg.com/originals/82/df/73/82df7352b730967429d9c8f8bb935439.jpg",
+    price: 25,
+    rating: 9,
+  },
 ];
 
 export const categories = [
