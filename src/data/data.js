@@ -438,6 +438,15 @@ export const data = [
     rating: 6,
   },
   {
+    id: 45,
+    name: "Ginger Beef Stock",
+    category: "jpfood",
+    imageUrl:
+      "https://вкусняшка-тут.рф/800/600/https/www.japanesecooking101.com/wp-content/uploads/2013/09/DSC01965copy.jpg",
+    price: 25,
+    rating: 6,
+  },
+  {
     id: 32,
     name: "Ice Cream cake",
     category: "dessert",
