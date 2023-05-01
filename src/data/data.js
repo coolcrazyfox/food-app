@@ -247,7 +247,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 22,
+    id: 24,
     name: "Olivier Salad",
     category: "salad",
     imageUrl: "",
@@ -255,15 +255,41 @@ export const data = [
     rating: 2,
   },
   {
-    id: 22,
-    name: "Som tam",
+    id: 25,
+    name: "Fattoush",
     category: "salad",
     imageUrl: "",
     price: 10,
     rating: 2,
   },
   {
-    id: 21,
+    id: 26,
+    name: "Greek Salad",
+    category: "salad",
+    imageUrl: "",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 27,
+    name: "Caesar Salad",
+    category: "salad",
+    imageUrl:
+      "https://images.ctfassets.net/lufu0clouua1/3WsOH8J0MIV9HOfio6qfPg/c69d024b7b0a8377fba0fb7ebcd2db99/Large-Caesar-Salad34774.jpg",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 28,
+    name: "Potato Salad",
+    category: "salad",
+    imageUrl:
+      "https://dacha.wiki/sites/default/files/image/2023-04/jpg/salat_4.jpg",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 29,
     name: " Salad",
     category: "salad",
     imageUrl:
@@ -272,7 +298,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 22,
+    id: 30,
     name: "Loaded Salad",
     category: "salad",
     imageUrl:
@@ -280,7 +306,7 @@ export const data = [
     price: 6,
   },
   {
-    id: 23,
+    id: 31,
     name: "Fruit Salad",
     category: "salad",
     imageUrl:
@@ -289,7 +315,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 23,
+    id: 32,
     name: "Wings",
     category: "chicken",
     imageUrl:
