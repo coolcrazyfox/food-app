@@ -316,9 +316,9 @@ export const data = [
     name: "Fruit Salad",
     category: "salad",
     imageUrl:
-      "https://images.unsplash.com/photo-1564093497595-593b96d80180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
     price: 10,
-    rating: 3,
+    rating: 5,
   },
   {
     id: 32,
