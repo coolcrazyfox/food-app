@@ -27,7 +27,6 @@ const Food = () => {
   const filterType = (category, i) => {
     setSelectedType(i);
     if (category) {
-      // setFoods(data.filter((item) => item.category === category.toLowerCase()));
       setFoods(
         data.filter(
           (item) =>
