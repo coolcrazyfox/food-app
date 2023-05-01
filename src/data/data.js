@@ -447,31 +447,57 @@ export const data = [
     rating: 6,
   },
   {
-    id: 32,
+    id: 46,
     name: "Ice Cream cake",
     category: "dessert",
     imageUrl:
       "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
     price: 40,
-    rating: 2,
+    rating: 10,
   },
   {
-    id: 33,
+    id: 47,
     name: "Cheese cake",
     category: "dessert",
     imageUrl:
       "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
     price: 20,
-    rating: 2,
+    rating: 9,
   },
   {
-    id: 34,
+    id: 48,
     name: "Chocolate cake",
     category: "dessert",
     imageUrl:
       "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     price: 25,
-    rating: 2,
+    rating: 9,
+  },
+  {
+    id: 49,
+    name: "Chocolate cake",
+    category: "dessert",
+    imageUrl: "",
+    price: 25,
+    rating: 9,
+  },
+  {
+    id: 50,
+    name: "strawberry in chocolate",
+    category: "dessert",
+    imageUrl:
+      "https://menunedeli.ru/wp-content/uploads/2022/05/Klubnika-v-shokolade-500350--1200x801.jpg",
+    price: 25,
+    rating: 9,
+  },
+  {
+    id: 51,
+    name: "Tiramisu",
+    category: "dessert",
+    imageUrl:
+      "https://img5.goodfon.ru/wallpaper/nbig/9/4a/desert-tiramisu-tarelka.jpg",
+    price: 25,
+    rating: 9,
   },
 ];
 
