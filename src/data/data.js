@@ -250,7 +250,8 @@ export const data = [
     id: 24,
     name: "Olivier Salad",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://www.yummytemple.com/wp-content/uploads/2022/04/Russian-salad-Olivje-with-potatoes-apples-and-sausage-1.jpg",
     price: 10,
     rating: 2,
   },
