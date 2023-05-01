@@ -266,7 +266,8 @@ export const data = [
     id: 26,
     name: "Greek Salad",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://www.wellplated.com/wp-content/uploads/2022/05/Greek-Salad-Recipe-Easy.jpg",
     price: 10,
     rating: 2,
   },
