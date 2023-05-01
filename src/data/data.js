@@ -226,7 +226,8 @@ export const data = [
     id: 21,
     name: "Caprese Salad",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://www.thespruceeats.com/thmb/2pjgFA7_nbZtlXr68BECvf6fO48=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caprese-salad-tomato-salad-2217097-hero-03-75a0b89b30aa4a52b10fe4fdd9abfeb5.jpg",
     price: 10,
     rating: 2,
   },
@@ -234,7 +235,8 @@ export const data = [
     id: 22,
     name: "Som tam",
     category: "salad",
-    imageUrl: "",
+    imageUrl:
+      "https://ianbenites.com/wp-content/uploads/2021/05/20210511_183402-1.jpg",
     price: 10,
     rating: 2,
   },
