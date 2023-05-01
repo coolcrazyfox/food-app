@@ -520,6 +520,14 @@ export const data = [
   },
   {
     id: 54,
+    name: "Viennese Pie",
+    category: "dessert",
+    imageUrl: "https://regionpro.by/wp-content/uploads/2020/07/IMG_8341-3.jpg",
+    price: 15,
+    rating: 8,
+  },
+  {
+    id: 55,
     name: "Peach Cake",
     category: "dessert",
     imageUrl:
