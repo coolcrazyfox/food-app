@@ -330,7 +330,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 24,
+    id: 33,
     name: "Baked Chicken",
     category: "chicken",
     imageUrl:
@@ -339,7 +339,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 25,
+    id: 34,
     name: "Chicken Tenders",
     category: "chicken",
     imageUrl:
@@ -348,7 +348,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 26,
+    id: 35,
     name: "Chicken Kebab",
     category: "chicken",
     imageUrl:
