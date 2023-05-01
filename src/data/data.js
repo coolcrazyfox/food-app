@@ -354,46 +354,55 @@ export const data = [
     imageUrl:
       "https://afrifoodnetwork.com/wp-content/uploads/2021/10/7335C5F4-D918-48CA-B517-1383EF88321A-500x500.jpeg",
     price: 15,
-    rating: 2,
+    rating: 5,
   },
   {
-    id: 27,
+    id: 36,
     name: "Ribs BBQ",
     category: "bbq",
     imageUrl:
       "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
     price: 25,
-    rating: 2,
+    rating: 5,
   },
   {
-    id: 28,
+    id: 37,
     name: "Stake BBQ",
     category: "bbq",
     imageUrl:
       "https://www.1news.ig.com.br/wp-content/uploads/2019/10/170622201910225daf613ede9fc.jpg",
     price: 40,
-    rating: 2,
+    rating: 9,
   },
   {
-    id: 29,
+    id: 38,
+    name: "Sausages BBQ",
+    category: "bbq",
+    imageUrl:
+      "https://www.zastavki.com/pictures/1366x768/2018Food___Meat_and_barbecue_BBQ_sausages_with_red_pepper_and_tomatoes_on_a_cutting_board_128937_24.jpg",
+    price: 20,
+    rating: 8,
+  },
+  {
+    id: 39,
     name: "Sashimi",
     category: "jpfood",
     imageUrl:
       "https://www.mashed.com/img/gallery/the-untold-truth-of-sashimi/l-intro-1642188243.jpg",
     price: 40,
-    rating: 2,
+    rating: 5,
   },
   {
-    id: 30,
+    id: 40,
     name: "Sushi set",
     category: "jpfood",
     imageUrl:
       "https://img4.goodfon.ru/wallpaper/nbig/6/2f/moreprodukty-rolly-sushi-ryba.jpg",
     price: 40,
-    rating: 2,
+    rating: 7,
   },
   {
-    id: 31,
+    id: 41,
     name: "Sushi",
     category: "jpfood",
     imageUrl:
