@@ -215,6 +215,55 @@ export const data = [
   },
   {
     id: 20,
+    name: "Double Cheeseburger",
+    category: "burger",
+    imageUrl:
+      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 21,
+    name: "Caprese Salad",
+    category: "salad",
+    imageUrl: "",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 22,
+    name: "Som tam",
+    category: "salad",
+    imageUrl: "",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 23,
+    name: "Macaroni Salad",
+    category: "salad",
+    imageUrl: "",
+    price: 6,
+    rating: 2,
+  },
+  {
+    id: 22,
+    name: "Olivier Salad",
+    category: "salad",
+    imageUrl: "",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 22,
+    name: "Som tam",
+    category: "salad",
+    imageUrl: "",
+    price: 10,
+    rating: 2,
+  },
+  {
+    id: 21,
     name: " Salad",
     category: "salad",
     imageUrl:
@@ -223,7 +272,7 @@ export const data = [
     rating: 2,
   },
   {
-    id: 21,
+    id: 22,
     name: "Loaded Salad",
     category: "salad",
     imageUrl:
@@ -231,7 +280,7 @@ export const data = [
     price: 6,
   },
   {
-    id: 22,
+    id: 23,
     name: "Fruit Salad",
     category: "salad",
     imageUrl:
@@ -345,15 +394,6 @@ export const data = [
     imageUrl:
       "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     price: 25,
-    rating: 2,
-  },
-  {
-    id: 35,
-    name: "Double Cheeseburger",
-    category: "burger",
-    imageUrl:
-      "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
-    price: 10,
     rating: 2,
   },
 ];
