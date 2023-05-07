@@ -11,15 +11,15 @@
       "rating": 4
   },
   {
-    id: 1,
-    imageUrl:
+    "id": 1,
+    "imageUrl":
       "https://thumbs.dreamstime.com/b/slice-hot-italian-pizza-stretching-cheese-four-cheeses-basil-wooden-background-267372081.jpg",
-    name: "Four Cheese pizza",
-    types: [0],
-    sizes: [26, 40],
-    price: 25,
-    category: 1,
-    rating: 6,
+      "name": "Four Cheese pizza",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 25,
+      "category": 1,
+      "rating": 6
   },
   {
     id: 2,
