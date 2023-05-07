@@ -339,13 +339,13 @@
       "rating": 2
   },
   {
-    id: 34,
-    name: "Chicken Tenders",
-    category: "chicken",
-    imageUrl:
+    "id": 34,
+    "name": "Chicken Tenders",
+    "category": "chicken",
+    "imageUrl":
       "https://t3.ftcdn.net/jpg/05/84/75/50/360_F_584755024_aGlWeFB5qlCVb6DL2lqDv8UvkK4KvFJO.jpg",
-    price: 10,
-    rating: 4,
+      "price": 10,
+      "rating": 4
   },
   {
     id: 35,
