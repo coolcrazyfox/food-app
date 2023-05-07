@@ -166,15 +166,15 @@
       "rating": 4
   },
   {
-    id: 15,
-    name: "Texas Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    category: "pizza",
-    imageUrl:
+    "id": 15,
+    "name": "Texas Pizza",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "category": "pizza",
+    "imageUrl":
       "https://d3a76jc0ho84i8.cloudfront.net/static/desktop/products/pizza-texas-bbq.jpg",
-    price: 20,
-    rating: 9,
+      "price": 20,
+      "rating": 9
   },
 
   {
