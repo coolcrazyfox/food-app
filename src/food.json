@@ -1,14 +1,14 @@
  [
   {
-    id: 0,
-    imageUrl:
+    "id": 0,
+    "imageUrl":
       "https://img.freepik.com/premium-photo/appetizing-italian-pizza-with-ham-cheese-jalapenos-tomatoes-and-bell-pepper-in-a-composition-with-ingredients-on-a-black-table_207126-5105.jpg",
-    name: "Pepperoni & pepper",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    price: 15,
-    category: 1,
-    rating: 4,
+      "name": "Pepperoni & pepper",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 15,
+      "category": 1,
+      "rating": 4
   },
   {
     id: 1,
