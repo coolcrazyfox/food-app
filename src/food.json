@@ -89,15 +89,15 @@
   },
 
   {
-    id: 8,
-    imageUrl:
+    "id": 8,
+    "imageUrl":
       "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-    name: "Four season Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    price: 15,
-    category: 1,
-    rating: 10,
+      "name": "Four season Pizza",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 15,
+      "category": 1,
+      "rating": 10
   },
   {
     id: 9,
