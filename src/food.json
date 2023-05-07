@@ -295,13 +295,13 @@
       "rating": 4
   },
   {
-    id: 29,
-    name: "Shrimp Salad",
-    category: "salad",
-    imageUrl:
+    "id": 29,
+    "name": "Shrimp Salad",
+    "category": "salad",
+    "imageUrl":
       "https://s1.eda.ru/StaticContent/Photos/160312155529/201215225518/p_O.jpg",
-    price: 40,
-    rating: 7,
+      "price": 40,
+      "rating": 7
   },
   {
     id: 30,
