@@ -205,13 +205,13 @@
       "rating": 5
   },
   {
-    id: 19,
-    name: "Pulled pork Burger",
-    category: "burger",
-    imageUrl:
+    "id": 19,
+    "name": "Pulled pork Burger",
+    "category": "burger",
+    "imageUrl":
       "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
-    price: 15,
-    rating: 4,
+      "price": 15,
+      "rating": 4
   },
   {
     id: 20,
