@@ -196,13 +196,13 @@
       "rating": 5
   },
   {
-    id: 18,
-    name: "Mushroom Burger",
-    category: "burger",
-    imageUrl:
+    "id": 18,
+    "name": "Mushroom Burger",
+    "category": "burger",
+    "imageUrl":
       "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
-    price: 5,
-    rating: 5,
+      "price": 5,
+      "rating": 5
   },
   {
     id: 19,
