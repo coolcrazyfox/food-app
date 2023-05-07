@@ -155,15 +155,15 @@
       "rating": 6
   },
   {
-    id: 14,
-    name: "Italian Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    category: "pizza",
-    imageUrl:
+    "id": 14,
+    "name": "Italian Pizza",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "category": "pizza",
+    "imageUrl":
       "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
-    price: 10,
-    rating: 4,
+      "price": 10,
+      "rating": 4
   },
   {
     id: 15,
