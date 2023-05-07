@@ -111,15 +111,15 @@
       "rating": 5
   },
   {
-    id: 10,
-    name: "Seafood Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    category: "pizza",
-    imageUrl:
+    "id": 10,
+    "name": "Seafood Pizza",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "category": "pizza",
+    "imageUrl":
       "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
-    price: 40,
-    rating: 7,
+      "price": 40,
+      "rating": 7
   },
   {
     id: 11,
