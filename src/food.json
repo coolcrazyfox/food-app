@@ -43,15 +43,15 @@
     "rating": 2
   },
   {
-    id: 4,
-    imageUrl:
+    "id": 4,
+    "imageUrl":
       "https://restaurant-gloria.ro/wp-content/uploads/2020/03/margherita.png",
-    name: "Margarita Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    price: 10,
-    category: 1,
-    rating: 10,
+      "name": "Margarita Pizza",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 10,
+      "category": 1,
+      "rating": 10
   },
   {
     id: 5,
