@@ -348,13 +348,13 @@
       "rating": 4
   },
   {
-    id: 35,
-    name: "Chicken Kebab",
-    category: "chicken",
-    imageUrl:
+    "id": 35,
+    "name": "Chicken Kebab",
+    "category": "chicken",
+    "imageUrl":
       "https://afrifoodnetwork.com/wp-content/uploads/2021/10/7335C5F4-D918-48CA-B517-1383EF88321A-500x500.jpeg",
-    price: 15,
-    rating: 5,
+      "price": 15,
+      "rating": 5
   },
   {
     id: 36,
