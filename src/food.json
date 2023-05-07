@@ -474,13 +474,13 @@
       "rating": 9
   },
   {
-    id: 49,
-    name: "Baked Apple",
-    category: "dessert",
-    imageUrl:
+    "id": 49,
+    "name": "Baked Apple",
+    "category": "dessert",
+    "imageUrl":
       "https://static.1000.menu/img/content-v2/e5/4d/40109/zapechennye-yabloki-s-koricei-v-duxovke_1614686843_10_max.jpg",
-    price: 25,
-    rating: 9,
+      "price": 25,
+      "rating": 9
   },
   {
     id: 50,
