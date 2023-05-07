@@ -357,13 +357,13 @@
       "rating": 5
   },
   {
-    id: 36,
-    name: "Ribs BBQ",
-    category: "bbq",
-    imageUrl:
+    "id": 36,
+    "name": "Ribs BBQ",
+    "category": "bbq",
+    "imageUrl":
       "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
-    price: 25,
-    rating: 5,
+      "price": 25,
+      "rating": 5
   },
   {
     id: 37,
