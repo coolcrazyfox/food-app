@@ -312,13 +312,13 @@
       "rating":4
   },
   {
-    id: 31,
-    name: "Fruit Salad",
-    category: "salad",
-    imageUrl:
+    "id": 31,
+    "name": "Fruit Salad",
+    "category": "salad",
+    "imageUrl":
       "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
-    price: 10,
-    rating: 5,
+      "price": 10,
+      "rating": 5
   },
   {
     id: 32,
