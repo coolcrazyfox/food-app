@@ -465,13 +465,13 @@
       "rating": 9
   },
   {
-    id: 48,
-    name: "Chocolate Cake",
-    category: "dessert",
-    imageUrl:
+    "id": 48,
+    "name": "Chocolate Cake",
+    "category": "dessert",
+    "imageUrl":
       "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
-    price: 25,
-    rating: 9,
+      "price": 25,
+      "rating": 9
   },
   {
     id: 49,
