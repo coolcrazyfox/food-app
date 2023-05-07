@@ -330,13 +330,13 @@
       "rating": 5
   },
   {
-    id: 33,
-    name: "Baked Chicken",
-    category: "chicken",
-    imageUrl:
+    "id": 33,
+    "name": "Baked Chicken",
+    "category": "chicken",
+    "imageUrl":
       "https://s1.1zoom.me/big0/82/Roast_Chicken_Cutting_board_545758_1280x958.jpg",
-    price: 10,
-    rating: 2,
+      "price": 10,
+      "rating": 2
   },
   {
     id: 34,
