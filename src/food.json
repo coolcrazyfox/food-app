@@ -393,13 +393,13 @@
       "rating": 5
   },
   {
-    id: 40,
-    name: "Sushi set",
-    category: "jpfood",
-    imageUrl:
+    "id": 40,
+    "name": "Sushi set",
+    "category": "jpfood",
+    "imageUrl":
       "https://img4.goodfon.ru/wallpaper/nbig/6/2f/moreprodukty-rolly-sushi-ryba.jpg",
-    price: 40,
-    rating: 7,
+      "price": 40,
+      "rating": 7
   },
   {
     id: 41,
