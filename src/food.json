@@ -375,13 +375,13 @@
       "rating": 9
   },
   {
-    id: 38,
-    name: "Sausages BBQ",
-    category: "bbq",
-    imageUrl:
+    "id": 38,
+    "name": "Sausages BBQ",
+    "category": "bbq",
+    "imageUrl":
       "https://www.zastavki.com/pictures/1366x768/2018Food___Meat_and_barbecue_BBQ_sausages_with_red_pepper_and_tomatoes_on_a_cutting_board_128937_24.jpg",
-    price: 20,
-    rating: 8,
+      "price": 20,
+      "rating": 8
   },
   {
     id: 39,
