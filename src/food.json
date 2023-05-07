@@ -65,15 +65,15 @@
       "rating": 4
   },
   {
-    id: 6,
-    imageUrl:
+    "id": 6,
+    "imageUrl":
       "https://recette.supertoinette.com/155529/b/pizza-facon-carbonara.jpg",
-    name: "Carbonara Pizza",
-    types: [1],
-    sizes: [26, 30, 40],
-    price: 25,
-    category: 1,
-    rating: 2,
+      "name": "Carbonara Pizza",
+      "types": [1],
+      "sizes": [26, 30, 40],
+      "price": 25,
+      "category": 1,
+      "rating": 2
   },
 
   {
