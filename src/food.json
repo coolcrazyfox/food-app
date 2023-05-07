@@ -366,13 +366,13 @@
       "rating": 5
   },
   {
-    id: 37,
-    name: "Stake BBQ",
-    category: "bbq",
-    imageUrl:
+    "id": 37,
+    "name": "Stake BBQ",
+    "category": "bbq",
+    "imageUrl":
       "https://www.1news.ig.com.br/wp-content/uploads/2019/10/170622201910225daf613ede9fc.jpg",
-    price: 40,
-    rating: 9,
+      "price": 40,
+      "rating": 9
   },
   {
     id: 38,
