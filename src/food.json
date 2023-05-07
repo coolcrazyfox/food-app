@@ -122,15 +122,15 @@
       "rating": 7
   },
   {
-    id: 11,
-    name: "Supreme Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    category: "pizza",
-    imageUrl:
+    "id": 11,
+    "name": "Supreme Pizza",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "category": "pizza",
+    "imageUrl":
       "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    price: 6,
-    rating: 6,
+      "price": 6,
+      "rating": 6
   },
   {
     id: 12,
