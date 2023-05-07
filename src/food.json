@@ -321,13 +321,13 @@
       "rating": 5
   },
   {
-    id: 32,
-    name: "Wings",
-    category: "chicken",
-    imageUrl:
+    "id": 32,
+    "name": "Wings",
+    "category": "chicken",
+    "imageUrl":
       "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
-    price: 10,
-    rating: 5,
+      "price": 10,
+      "rating": 5
   },
   {
     id: 33,
