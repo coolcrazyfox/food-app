@@ -54,15 +54,15 @@
       "rating": 10
   },
   {
-    id: 5,
-    imageUrl:
+    "id": 5,
+    "imageUrl":
       "https://a.storyblok.com/f/49069/1800x1800/c95594eb81/premium-bbq-chicken-pizza.jpg",
-    name: "BBQ chicken Pizza ",
-    types: [0],
-    sizes: [26, 40],
-    price: 15,
-    category: 1,
-    rating: 4,
+      "name": "BBQ chicken Pizza ",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 15,
+      "category": 1,
+      "rating": 4
   },
   {
     id: 6,
