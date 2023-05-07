@@ -384,13 +384,13 @@
       "rating": 8
   },
   {
-    id: 39,
-    name: "Sashimi",
-    category: "jpfood",
-    imageUrl:
+    "id": 39,
+    "name": "Sashimi",
+    "category": "jpfood",
+    "imageUrl":
       "https://www.mashed.com/img/gallery/the-untold-truth-of-sashimi/l-intro-1642188243.jpg",
-    price: 40,
-    rating: 5,
+      "price": 40,
+      "rating": 5
   },
   {
     id: 40,
