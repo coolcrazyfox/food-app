@@ -277,13 +277,13 @@
       "rating": 7
   },
   {
-    id: 27,
-    name: "Caesar Salad",
-    category: "salad",
-    imageUrl:
+    "id": 27,
+    "name": "Caesar Salad",
+    "category": "salad",
+    "imageUrl":
       "https://images.ctfassets.net/lufu0clouua1/3WsOH8J0MIV9HOfio6qfPg/c69d024b7b0a8377fba0fb7ebcd2db99/Large-Caesar-Salad34774.jpg",
-    price: 15,
-    rating: 2,
+      "price": 15,
+      "rating": 2
   },
   {
     id: 28,
