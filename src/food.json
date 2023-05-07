@@ -447,13 +447,13 @@
       "rating": 6
   },
   {
-    id: 46,
-    name: "Ice Cream Cake",
-    category: "dessert",
-    imageUrl:
+    "id": 46,
+    "name": "Ice Cream Cake",
+    "category": "dessert",
+    "imageUrl":
       "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
-    price: 40,
-    rating: 10,
+      "price": 40,
+      "rating": 10
   },
   {
     id: 47,
