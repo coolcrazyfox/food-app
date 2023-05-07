@@ -178,13 +178,13 @@
   },
 
   {
-    id: 16,
-    name: "Bacon Cheeseburger",
-    category: "burger",
-    imageUrl:
+    "id": 16,
+    "name": "Bacon Cheeseburger",
+    "category": "burger",
+    "imageUrl":
       "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
-    price: 10,
-    rating: 5,
+      "price": 10,
+      "rating": 5
   },
   {
     id: 17,
