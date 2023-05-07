@@ -286,13 +286,13 @@
       "rating": 2
   },
   {
-    id: 28,
-    name: "Potato Salad",
-    category: "salad",
-    imageUrl:
+    "id": 28,
+    "name": "Potato Salad",
+    "category": "salad",
+    "imageUrl":
       "https://dacha.wiki/sites/default/files/image/2023-04/jpg/salat_4.jpg",
-    price: 20,
-    rating: 4,
+      "price": 20,
+      "rating": 4
   },
   {
     id: 29,
