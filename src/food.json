@@ -214,13 +214,13 @@
       "rating": 4
   },
   {
-    id: 20,
-    name: "Double Cheeseburger",
-    category: "burger",
-    imageUrl:
+    "id": 20,
+    "name": "Double Cheeseburger",
+    "category": "burger",
+    "imageUrl":
       "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
-    price: 10,
-    rating: 3,
+      "price": 10,
+      "rating": 3
   },
   {
     id: 21,
