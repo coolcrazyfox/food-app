@@ -33,14 +33,14 @@
       "rating": 8
   },
   {
-    id: 3,
-    imageUrl: "https://wallpapercave.com/wp/wp9953993.jpg",
-    name: "Crazy pepperoni Pizza",
-    types: [0],
-    sizes: [30, 40],
-    price: 20,
-    category: 1,
-    rating: 2,
+    "id": 3,
+    "imageUrl": "https://wallpapercave.com/wp/wp9953993.jpg",
+    "name": "Crazy pepperoni Pizza",
+    "types": [0],
+    "sizes": [30, 40],
+    "price": 20,
+    "category": 1,
+    "rating": 2
   },
   {
     id: 4,
