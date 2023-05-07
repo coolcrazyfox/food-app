@@ -144,15 +144,15 @@
       "rating": 4
   },
   {
-    id: 13,
-    name: "Country Pizza",
-    types: [0, 1],
-    sizes: [26, 30, 40],
-    category: "pizza",
-    imageUrl:
+    "id": 13,
+    "name": "Country Pizza",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "category": "pizza",
+    "imageUrl":
       "https://food.pibig.info/uploads/posts/2023-04/thumbs/1680674903_food-pibig-info-p-pitstsa-kantri-krasivo-44.jpg",
-    price: 20,
-    rating: 6,
+      "price": 20,
+      "rating": 6
   },
   {
     id: 14,
