@@ -187,13 +187,13 @@
       "rating": 5
   },
   {
-    id: 17,
-    name: "Chicken Burger",
-    category: "burger",
-    imageUrl:
+    "id": 17,
+    "name": "Chicken Burger",
+    "category": "burger",
+    "imageUrl":
       "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
-    price: 10,
-    rating: 5,
+      "price": 10,
+      "rating": 5
   },
   {
     id: 18,
