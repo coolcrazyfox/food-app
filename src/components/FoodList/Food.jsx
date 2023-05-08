@@ -24,9 +24,13 @@ const Food = () => {
   const [selectedType, setSelectedType] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/category
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
-  fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/card").then((res) => {
-    return res.json();
-  });
+  fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/card")
+    .then((res) => {
+      return res.json();
+    })
+    .then((j) => {
+      console.log("json", j);
+    });
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setSelectedType(i);

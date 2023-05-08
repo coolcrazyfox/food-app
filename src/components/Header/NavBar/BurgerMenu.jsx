@@ -71,7 +71,7 @@ const BurgerMenu = () => {
     <>
       <ul className="flex flex-col p-4 text-gray-800">
         {initialState.map((c) => (
-          <Link to={c.link}>
+          <Link to={c.link} key={c}>
             <li className="text-xl py-4 flex" key={c.id}>
               <div className="mr-4 flex flex-row">
                 {c.icon} <span className="ml-5 pb-3">{c.title}</span>
