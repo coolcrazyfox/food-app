@@ -424,7 +424,7 @@ export const data = [
     name: "Yakisoba",
     category: "jpfood",
     imageUrl:
-      "https://www.tudoonlineemcampobom.com.br/wp-content/uploads/2022/01/receitas-de-yakisoba.jpg",
+      "https://www.somgoodhawaii.com/wp-content/uploads/2020/06/stir-fry-noodles-with-vegetables-and-beef-in-black-YVUA3AN-scaled.jpg",
     price: 25,
     rating: 6,
   },

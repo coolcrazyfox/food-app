@@ -4,9 +4,9 @@ const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
   return (
     <>
       <div className="flex justify-between px-2 py-4">
-        <p className="font-bold">{food.name}</p>
+        <div className="font-bold">{food.name}</div>
 
-        <p className=" flex flex-row select-none">
+        <div className=" flex flex-row select-none">
           price: &nbsp;{food.price}$&nbsp;
           <div
             onClick={onClickAddItemHandler}
@@ -19,7 +19,7 @@ const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
               </span>
             )}
           </div>
-        </p>
+        </div>
       </div>
     </>
   );
