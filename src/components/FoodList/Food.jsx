@@ -3,10 +3,11 @@ import { data } from "../../data/data.js";
 import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
+import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [isLoading, setIsLoading] = React.useState(true);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
   const [openType, setOpenType] = React.useState(false);
@@ -121,9 +122,9 @@ const Food = () => {
 
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-        {foodItems.map((food) => (
-          <FoodCard {...food} key={food.id} />
-        ))}
+        {isLoading
+          ? [new Array(3)].map((_, i) => <SkeletonLoading key={i} />)
+          : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
     </div>
   );
