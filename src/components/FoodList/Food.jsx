@@ -31,6 +31,7 @@ const Food = () => {
     .then((j) => {
       console.log("json", j);
     });
+
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setSelectedType(i);
