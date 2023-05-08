@@ -27,9 +27,7 @@ const Food = () => {
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
     fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/card")
-      .then((res) => {
-        return res.json();
-      })
+      .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
         console.log("json", arr);
