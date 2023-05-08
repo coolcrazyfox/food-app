@@ -1,18 +1,10 @@
 import React from "react";
-import { RiStarSmileFill } from "react-icons/ri";
 
 const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
   return (
     <>
       <div className="flex justify-between px-2 py-4">
-        <div
-          className="flex flex-row bg-red-200
-         max-w-20 "
-        >
-          <RiStarSmileFill />
-          <span>{food.rating}</span>
-        </div>
-        <div className="font-bold ml-0 ">{food.name}</div>
+        <div className="flex flex-row font-bold  ">{food.name}</div>
 
         <div className=" flex flex-row select-none">
           price: &nbsp;{food.price}$&nbsp;
