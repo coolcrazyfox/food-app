@@ -31,7 +31,7 @@ const Food = () => {
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
-        console.log("json", arr);
+        setIsLoading(false);
       });
   }, []);
 
@@ -123,7 +123,7 @@ const Food = () => {
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
         {isLoading
-          ? [new Array(3)].map((_, i) => <SkeletonLoading key={i} />)
+          ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
     </div>
