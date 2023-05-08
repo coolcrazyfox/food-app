@@ -1,5 +1,5 @@
 import React from "react";
-import imageSkeleton from "../../assets/4492606.jpg";
+import imageSkeleton from "../../assets/44119.jpg";
 
 const SkeletonLoading = () => {
   return (
