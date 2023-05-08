@@ -370,7 +370,7 @@ export const data = [
     name: "Stake BBQ",
     category: "bbq",
     imageUrl:
-      "https://www.1news.ig.com.br/wp-content/uploads/2019/10/170622201910225daf613ede9fc.jpg",
+      "https://insanelygoodrecipes.com/wp-content/uploads/2021/11/Homemade-Grilled-Marble-Chuck-Steak.jpg",
     price: 40,
     rating: 9,
   },
