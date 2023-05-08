@@ -12,7 +12,7 @@ const SkeletonLoading = () => {
       <div className="flex justify-between px-2 py-4">
         <div className="flex flex-row font-bold  ">
           <div className="px-2 flex flex-row ">
-            <div className="text-orange-500 h-10" />
+            <div className=" h-10" />
             <span className="text-base px-1 h-10"></span>
           </div>
         </div>
