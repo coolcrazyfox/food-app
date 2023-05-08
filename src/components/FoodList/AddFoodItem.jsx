@@ -14,7 +14,7 @@ const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
         </div>
 
         <div className=" flex flex-row select-none">
-          price: &nbsp;{food.price}$&nbsp;
+          <span className="mx-2">{food.price}$</span>
           <div
             onClick={onClickAddItemHandler}
             className="select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full w-15 cursor-pointer hover:bg-orange-500 hover:text-white flex flex-row"
