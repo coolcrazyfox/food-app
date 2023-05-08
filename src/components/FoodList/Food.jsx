@@ -82,7 +82,7 @@ const Food = () => {
               </>
             ) : (
               <button
-                className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+                className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenType(!openType)}
               >
                 {titleBtn[selectedType]}
@@ -110,7 +110,7 @@ const Food = () => {
               </>
             ) : (
               <button
-                className="my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+                className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenPrice(!openPrice)}
               >
                 {price[selected]}$

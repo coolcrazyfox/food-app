@@ -17,9 +17,9 @@ const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
           <span className="mx-2">{food.price}$</span>
           <div
             onClick={onClickAddItemHandler}
-            className="select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full w-15 cursor-pointer hover:bg-orange-500 hover:text-white flex flex-row"
+            className="flex flex-row object-cover select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full  h-7 cursor-pointer hover:bg-orange-500 hover:text-white "
           >
-            Add
+            <span className="flex max-w-max min-w-min">Add</span>
             {addItem > 0 && (
               <span className="ms-3 w-6  text-center rounded-full bg-white text-orange-500">
                 {addItem}
