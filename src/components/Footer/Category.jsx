@@ -1,11 +1,19 @@
 import React from "react";
-import { categories } from "../../data/data.js";
 
 const Category = () => {
+  const [categories, setCategories] = React.useState([]);
   const [active, setActive] = React.useState(0);
   const onClickCategoryHandler = (i) => {
     setActive(i);
   };
+  // https://64581bc81a4c152cf991b4a5.mockapi.io/category
+  React.useEffect(() => {
+    fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/category").then((res) =>
+      res.json().then((arr) => {
+        setCategories(arr);
+      })
+    );
+  });
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
       <h1 className="text-orange-600 font-bold text-4xl text-center">
