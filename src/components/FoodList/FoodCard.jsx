@@ -1,7 +1,6 @@
 import React from "react";
 import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
-import { RiStarSmileFill } from "react-icons/ri";
 
 const FoodCard = ({ ...food }) => {
   const [addItem, setAddItem] = React.useState(0);
