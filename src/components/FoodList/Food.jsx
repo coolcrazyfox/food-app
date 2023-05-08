@@ -22,7 +22,8 @@ const Food = () => {
   const price = [5, 6, 10, 15, 20, 25, 40];
   const [selected, setSelected] = React.useState(0);
   const [selectedType, setSelectedType] = React.useState(0);
-
+  // https://64581bc81a4c152cf991b4a5.mockapi.io/category
+  // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setSelectedType(i);
