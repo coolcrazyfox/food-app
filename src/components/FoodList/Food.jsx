@@ -5,6 +5,7 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 
 const Food = () => {
+  const [foodItems, setFoodItems] = React.useState([]);
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
@@ -119,7 +120,7 @@ const Food = () => {
 
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-        {foods.map((food) => (
+        {foodItems.map((food) => (
           <FoodCard {...food} key={food.id} />
         ))}
       </div>
