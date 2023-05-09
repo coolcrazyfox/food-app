@@ -1,6 +1,7 @@
 import React from "react";
 import EmptyCart from "../../components/Header/Cart/EmptyCart";
 import { HiShoppingCart } from "react-icons/hi";
+import { RiCloseCircleLine } from "react-icons/ri";
 
 const CartPage = () => {
   const state = [
@@ -32,23 +33,39 @@ const CartPage = () => {
       {state.map((s) => (
         <div
           key={s.id}
-          className="border shadow-lg rounded-lg hover:scale-105 duration-400 my-4 flex max-w-[800px]"
+          className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[800px]"
         >
           <img
             src={s.imageUrl}
             alt={"cart item"}
             className="w-[100px] h-[90px] object-cover rounded-lg "
           />
-          <div className="text-lg px-5">
+          <div className="flex flex-col text-lg px-7 my-3 h-auto min-w-[300px] ">
             <h3 className="text-orange-500 font-bold">{s.name}</h3>
-            <p>told</p>
-
+            <h2>
+              told <span>26cm.</span>
+            </h2>
+          </div>
+          <div className=" flex flex-row justify-between items-center px-5 mx-9 h-auto">
+            <span className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center">
+              -
+            </span>
+            <div className="font-bold mx-2">1</div>
+            <span className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center">
+              +
+            </span>
+          </div>
+          <div className="flex items-center justify-center mx-2 font-bold   rounded-lg min-w-[30px] text-center">
             <p>{s.price}$</p>
           </div>
+          <RiCloseCircleLine />
         </div>
       ))}
 
-      <EmptyCart />
+      <EmptyCart
+        size={24}
+        className="flex items-center justify-center mx-2 font-bold   rounded-lg min-w-[30px] text-center"
+      />
     </div>
   );
 };
