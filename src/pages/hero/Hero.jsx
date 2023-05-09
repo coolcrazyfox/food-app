@@ -29,9 +29,6 @@ const Hero = () => {
         </div>
       </div>
       <HeadlineCards />
-      <Food />
-      <Category />
-      <Contact />
     </>
   );
 };

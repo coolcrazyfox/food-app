@@ -4,8 +4,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { GoHome } from "react-icons/go";
-import { MdOutlineConnectWithoutContact } from "react-icons/md";
-import { IoFastFoodSharp } from "react-icons/io";
+import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const initialState = [
@@ -25,7 +24,7 @@ export const initialState = [
     id: 3,
     link: "/food",
     title: "Menubar",
-    icon: <IoFastFoodSharp size={27} />,
+    icon: <MdFastfood size={27} />,
   },
   {
     id: 4,
