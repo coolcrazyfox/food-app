@@ -27,7 +27,7 @@ const CartPage = () => {
   const [isEmpty, setIsEmpty] = React.useState(true);
 
   const [inc, setInc] = React.useState(1);
-  const [dec, setDec] = React.useState(1);
+  // const [dec, setDec] = React.useState(1);
   const onClickInc = () => {
     setInc((e) => e + 1);
   };
