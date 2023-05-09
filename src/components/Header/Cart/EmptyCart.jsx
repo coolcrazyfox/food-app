@@ -1,4 +1,6 @@
 import React from "react";
+import smiley from "../../../assets/sadSmiley.png";
+import empty from "../../../assets/emptyCart.png";
 
 const EmptyCart = () => {
   return (
