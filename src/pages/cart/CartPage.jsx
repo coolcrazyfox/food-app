@@ -106,7 +106,7 @@ const CartPage = () => {
         </div>
         <div>
           <h1>
-            Summa order:<span> 400$</span>
+            Summa order:<span className="text-orange-500"> 400$</span>
           </h1>
         </div>
       </div>
