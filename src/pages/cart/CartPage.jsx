@@ -25,6 +25,18 @@ const CartPage = () => {
     },
   ];
   const [isEmpty, setIsEmpty] = React.useState(true);
+
+  const [inc, setInc] = React.useState(1);
+  const [dec, setDec] = React.useState(1);
+  const onClickInc = () => {
+    setInc((e) => e + 1);
+  };
+  const onClickDec = (e) => {
+    setDec((e) => e + 1);
+  };
+  const res = () => {
+    let sumRes = state.price * inc;
+  };
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <h1
@@ -56,11 +68,17 @@ const CartPage = () => {
                 </h2>
               </div>
               <div className=" flex flex-row justify-between items-center px-5 mx-9 h-auto">
-                <span className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center">
+                <span
+                  onClick={onClickDec}
+                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
+                >
                   -
                 </span>
                 <div className="font-bold mx-2">1</div>
-                <span className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center">
+                <span
+                  onClick={onClickInc}
+                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
+                >
                   +
                 </span>
               </div>
