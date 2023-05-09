@@ -55,17 +55,17 @@ const CartPage = () => {
               +
             </span>
           </div>
-          <div className="flex items-center justify-center mx-2 font-bold   rounded-lg min-w-[30px] text-center">
+          <div className="flex items-center justify-center mx-2 font-bold   min-w-[30px] text-center">
             <p>{s.price}$</p>
           </div>
-          <RiCloseCircleLine />
+          <RiCloseCircleLine
+            size={24}
+            className="flex items-center justify-center ml-20 mt-3 text-gray-400 hover:text-orange-500 font-bold  text-center"
+          />
         </div>
       ))}
 
-      <EmptyCart
-        size={24}
-        className="flex items-center justify-center mx-2 font-bold   rounded-lg min-w-[30px] text-center"
-      />
+      <EmptyCart />
     </div>
   );
 };
