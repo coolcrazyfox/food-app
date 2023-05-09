@@ -27,7 +27,7 @@ const CartPage = () => {
   const [isEmpty, setIsEmpty] = React.useState(true);
 
   const [inc, setInc] = React.useState(1);
-  // const [dec, setDec] = React.useState(1);
+  const [dec, setDec] = React.useState(1);
   const onClickInc = () => {
     setInc((e) => e + 1);
   };
@@ -50,7 +50,12 @@ const CartPage = () => {
       ) : (
         <>
           {" "}
-          <HiShoppingCart size={30} />
+          <div className="flex flex-row justify-between">
+            <HiShoppingCart size={30} />
+            <h2 className="border border-orange-500 p-2 rounded-full">
+              Clear the cart{" "}
+            </h2>
+          </div>
           {state.map((s) => (
             <div
               key={s.id}
@@ -93,6 +98,18 @@ const CartPage = () => {
           ))}{" "}
         </>
       )}
+      <div className="flex flex-row justify-between">
+        <div>
+          <h1>
+            All:<span>3 st.</span>
+          </h1>
+        </div>
+        <div>
+          <h1>
+            Summa order:<span> 400$</span>
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };
