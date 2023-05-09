@@ -112,7 +112,9 @@ const CartPage = () => {
       </div>
       <div className="flex flex-row justify-between">
         <div>Back</div>
-        <div>Pay now</div>
+        <div className="border border-orange-500 rounded-full px-10">
+          Pay now
+        </div>
       </div>
     </div>
   );
