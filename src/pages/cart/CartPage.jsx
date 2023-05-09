@@ -74,7 +74,7 @@ const CartPage = () => {
                 >
                   -
                 </span>
-                <div className="font-bold mx-2">1</div>
+                <div className="font-bold mx-2">{inc}</div>
                 <span
                   onClick={onClickInc}
                   className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
@@ -83,7 +83,7 @@ const CartPage = () => {
                 </span>
               </div>
               <div className="flex items-center justify-center mx-2 font-bold   min-w-[30px] text-center">
-                <p>{s.price}$</p>
+                <p>{s.price * inc}$</p>
               </div>
               <RiCloseCircleLine
                 size={24}
