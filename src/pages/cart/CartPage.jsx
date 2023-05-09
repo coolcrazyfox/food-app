@@ -106,12 +106,14 @@ const CartPage = () => {
         </div>
         <div>
           <h1>
-            Summa order:<span className="text-orange-500"> 400$</span>
+            Summa order:<span className="font-bold text-orange-500"> 400$</span>
           </h1>
         </div>
       </div>
       <div className="flex flex-row justify-between">
-        <div>Back</div>
+        <div className="border border-gray-400 hover:border-orange-500 rounded-full px-10">
+          Back
+        </div>
         <div className="border border-orange-500 rounded-full px-10">
           Pay now
         </div>
