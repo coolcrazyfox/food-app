@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CartButton = () => {
   const [sumPrice, setSumPrice] = useState(100);
   return (
-    <Link to="/">
+    <Link to="/orders">
       <button
         onClick={() => alert("cart onClick ")}
         className="bg-black text-white hidden md:flex items-center py-2 rounded-full "
