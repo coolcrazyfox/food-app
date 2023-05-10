@@ -93,7 +93,7 @@ const CartPage = () => {
       <div className="flex flex-row justify-between">
         <div>
           <h1>
-            All:<span>3 st.</span>
+            All:<span>3 pcs.</span>
           </h1>
         </div>
         <div>
