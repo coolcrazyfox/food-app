@@ -5,6 +5,7 @@ import { RiCloseCircleLine, RiDeleteBinFill } from "react-icons/ri";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { PATH } from "../../routes/RouterRoot";
+import ClearCartBtn from "../../components/Header/Cart/ClearCartBtn";
 
 const CartPage = () => {
   const state = [
@@ -40,16 +41,7 @@ const CartPage = () => {
         <EmptyCart />
       ) : (
         <>
-          {" "}
-          <div className="flex flex-row justify-between">
-            <HiShoppingCart size={30} />
-            <div className="flex flex-row border border-orange-500 p-2 rounded-full cursor-pointer hover:shadow-lg hover:bg-gray-500 hover:text-white">
-              <span className="text-orange-500 mx-1">
-                <RiDeleteBinFill size={24} />
-              </span>
-              Clear the cart
-            </div>
-          </div>
+          <ClearCartBtn />
           {state.map((s) => (
             <div
               key={s.id}
