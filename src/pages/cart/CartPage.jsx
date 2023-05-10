@@ -25,18 +25,6 @@ const CartPage = () => {
     },
   ];
   const [isEmpty, setIsEmpty] = React.useState(true);
-
-  const [inc, setInc] = React.useState(1);
-  const [dec, setDec] = React.useState(1);
-  const onClickInc = () => {
-    setInc((e) => e + 1);
-  };
-  const onClickDec = (e) => {
-    setDec((e) => e + 1);
-  };
-  const res = () => {
-    let sumRes = state.price * inc;
-  };
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <h1
@@ -53,7 +41,7 @@ const CartPage = () => {
           <div className="flex flex-row justify-between">
             <HiShoppingCart size={30} />
             <h2 className="border border-orange-500 p-2 rounded-full">
-              Clear the cart{" "}
+              <span></span>Clear the cart
             </h2>
           </div>
           {state.map((s) => (
@@ -74,21 +62,21 @@ const CartPage = () => {
               </div>
               <div className=" flex flex-row justify-between items-center px-5 mx-9 h-auto">
                 <span
-                  onClick={onClickDec}
+                  onClick={() => {}}
                   className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
                 >
                   -
                 </span>
-                <div className="font-bold mx-2">{inc}</div>
+                <div className="font-bold mx-2">1</div>
                 <span
-                  onClick={onClickInc}
+                  onClick={() => {}}
                   className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
                 >
                   +
                 </span>
               </div>
               <div className="flex items-center justify-center mx-2 font-bold   min-w-[30px] text-center">
-                <p>{s.price * inc}$</p>
+                <p>{s.price}$</p>
               </div>
               <RiCloseCircleLine
                 size={24}
