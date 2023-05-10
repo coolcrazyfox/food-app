@@ -1,7 +1,7 @@
 import React from "react";
 import EmptyCart from "../../components/Header/Cart/EmptyCart";
-import { HiShoppingCart } from "react-icons/hi";
-import { RiCloseCircleLine, RiDeleteBinFill } from "react-icons/ri";
+
+import { RiCloseCircleLine } from "react-icons/ri";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { PATH } from "../../routes/RouterRoot";
