@@ -103,11 +103,11 @@ const CartPage = () => {
         </div>
       </div>
       <div className="flex flex-row justify-between">
-        <div className="flex flex-row cursor-pointer border  border-gray-400 hover:border-orange-500 rounded-full px-10">
+        <div className="flex flex-row cursor-pointer border  border-gray-400 hover:bg-black hover:text-white hover:border-orange-500 rounded-full px-10">
           <BiArrowBack size={18} className="m-1 " />
           Back
         </div>
-        <div className="cursor-pointer border border-orange-500 rounded-full px-10">
+        <div className="cursor-pointer border border-orange-500 rounded-full px-10 hover:border-gray-500 hover:bg-orange-500 hover:text-white">
           Pay now
         </div>
       </div>
