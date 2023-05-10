@@ -2,6 +2,7 @@ import React from "react";
 import EmptyCart from "../../components/Header/Cart/EmptyCart";
 import { HiShoppingCart } from "react-icons/hi";
 import { RiCloseCircleLine, RiDeleteBinFill } from "react-icons/ri";
+import { BiArrowBack } from "react-icons/bi";
 
 const CartPage = () => {
   const state = [
@@ -39,7 +40,7 @@ const CartPage = () => {
         <>
           {" "}
           <div className="flex flex-row justify-between">
-            <HiShoppingCart size={30}> Cart</HiShoppingCart>
+            <HiShoppingCart size={30} />
             <div className="flex flex-row border border-orange-500 p-2 rounded-full">
               <span className="text-orange-500 mx-1">
                 <RiDeleteBinFill size={24} />
@@ -102,10 +103,11 @@ const CartPage = () => {
         </div>
       </div>
       <div className="flex flex-row justify-between">
-        <div className="border border-gray-400 hover:border-orange-500 rounded-full px-10">
+        <div className="flex flex-row cursor-pointer border  border-gray-400 hover:border-orange-500 rounded-full px-10">
+          <BiArrowBack size={18} className="m-1 " />
           Back
         </div>
-        <div className="border border-orange-500 rounded-full px-10">
+        <div className="cursor-pointer border border-orange-500 rounded-full px-10">
           Pay now
         </div>
       </div>
