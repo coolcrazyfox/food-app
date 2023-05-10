@@ -39,7 +39,7 @@ const CartPage = () => {
         <>
           {" "}
           <div className="flex flex-row justify-between">
-            <HiShoppingCart size={30} />
+            <HiShoppingCart size={30}> Cart</HiShoppingCart>
             <div className="flex flex-row border border-orange-500 p-2 rounded-full">
               <span className="text-orange-500 mx-1">
                 <RiDeleteBinFill size={24} />
