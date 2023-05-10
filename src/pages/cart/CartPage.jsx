@@ -67,14 +67,14 @@ const CartPage = () => {
               <div className=" flex flex-row justify-between items-center px-5 mx-9 h-auto">
                 <span
                   onClick={() => {}}
-                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
+                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg "
                 >
                   -
                 </span>
                 <div className="font-bold mx-2">1</div>
                 <span
                   onClick={() => {}}
-                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center"
+                  className="flex items-center justify-center mx-2 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500 hover:shadow-lg "
                 >
                   +
                 </span>
@@ -104,11 +104,11 @@ const CartPage = () => {
         </div>
       </div>
       <div className="flex flex-row justify-between">
-        <div className="flex flex-row cursor-pointer border  border-gray-400 hover:bg-black hover:text-white hover:border-orange-500 rounded-full px-10">
+        <div className="flex flex-row cursor-pointer border  border-gray-400 hover:bg-black hover:text-white hover:border-orange-500 hover:shadow-lg rounded-full px-10">
           <BiArrowBack size={18} className="m-1 hover:text-orange-500" />
           Back
         </div>
-        <div className="cursor-pointer border border-orange-500 rounded-full px-10 hover:border-gray-500 hover:bg-orange-500 hover:text-white">
+        <div className="cursor-pointer border border-orange-500 rounded-full px-10 hover:shadow-lg hover:bg-orange-500 hover:text-white">
           Pay now
         </div>
       </div>
