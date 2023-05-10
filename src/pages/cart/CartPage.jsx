@@ -98,13 +98,14 @@ const CartPage = () => {
         </div>
         <div>
           <h1>
-            Summa order:<span className="font-bold text-orange-500"> 400$</span>
+            Order amount:
+            <span className="font-bold text-orange-500"> 400$</span>
           </h1>
         </div>
       </div>
       <div className="flex flex-row justify-between">
         <div className="flex flex-row cursor-pointer border  border-gray-400 hover:bg-black hover:text-white hover:border-orange-500 rounded-full px-10">
-          <BiArrowBack size={18} className="m-1 " />
+          <BiArrowBack size={18} className="m-1 hover:text-orange-500" />
           Back
         </div>
         <div className="cursor-pointer border border-orange-500 rounded-full px-10 hover:border-gray-500 hover:bg-orange-500 hover:text-white">
