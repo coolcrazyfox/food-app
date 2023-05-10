@@ -92,12 +92,12 @@ const CartPage = () => {
       )}
       <div className="flex flex-row justify-between">
         <div>
-          <h1>
-            All:<span>3 pcs.</span>
+          <h1 className="my-2">
+            All:<span className="font-bold text-orange-500">3 pcs.</span>
           </h1>
         </div>
         <div>
-          <h1>
+          <h1 className="my-2">
             Order amount:
             <span className="font-bold text-orange-500"> 400$</span>
           </h1>
