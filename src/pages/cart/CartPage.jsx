@@ -1,7 +1,7 @@
 import React from "react";
 import EmptyCart from "../../components/Header/Cart/EmptyCart";
 import { HiShoppingCart } from "react-icons/hi";
-import { RiCloseCircleLine } from "react-icons/ri";
+import { RiCloseCircleLine, RiDeleteBinFill } from "react-icons/ri";
 
 const CartPage = () => {
   const state = [
@@ -40,9 +40,12 @@ const CartPage = () => {
           {" "}
           <div className="flex flex-row justify-between">
             <HiShoppingCart size={30} />
-            <h2 className="border border-orange-500 p-2 rounded-full">
-              <span></span>Clear the cart
-            </h2>
+            <div className="flex flex-row border border-orange-500 p-2 rounded-full">
+              <span className="text-orange-500 mx-1">
+                <RiDeleteBinFill size={24} />
+              </span>
+              Clear the cart
+            </div>
           </div>
           {state.map((s) => (
             <div
