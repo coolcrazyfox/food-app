@@ -7,9 +7,8 @@ import OrderCount from "./OrderCount";
 const CartInfoBlock = () => {
   return (
     <>
-      <div className="flex flex-row justify-between">
-        <OrderCount />
-      </div>
+      <OrderCount />
+
       <div className="flex flex-row justify-between">
         <Link
           to={PATH.HERO}
