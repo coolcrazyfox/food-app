@@ -1,6 +1,6 @@
 import React from "react";
 import CartItem from "./CartItem";
-import CartInfoBlock from "./CartInfoBlock/CartInfoBlock";
+import CartInfoBlock from "./CartListBlock/CartInfoBlock/CartInfoBlock";
 
 const CartList = () => {
   const state = [
