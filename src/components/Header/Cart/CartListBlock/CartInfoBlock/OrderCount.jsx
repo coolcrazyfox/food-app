@@ -2,7 +2,7 @@ import React from "react";
 
 const OrderCount = () => {
   return (
-    <>
+    <div className="flex flex-row justify-between">
       <div>
         <h1 className="my-2">
           All:
@@ -15,7 +15,7 @@ const OrderCount = () => {
           <span className="font-bold text-orange-500 ml-1"> 400$</span>
         </h1>
       </div>
-    </>
+    </div>
   );
 };
 
