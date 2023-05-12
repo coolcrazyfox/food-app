@@ -1,8 +1,8 @@
 import React from "react";
 import EmptyCart from "../../components/Header/Cart/EmptyCart";
 
-import ClearCartBtn from "../../components/Header/Cart/ClearCartBtn";
-import CartList from "../../components/Header/Cart/CartList";
+import CartList from "./../../components/Header/Cart/CartListBlock/CartList";
+import ClearCartBtn from "./../../components/Header/Cart/CartListBlock/ClearCartBtn";
 
 const CartPage = () => {
   const [isEmpty, setIsEmpty] = React.useState(true);
