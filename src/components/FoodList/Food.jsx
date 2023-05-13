@@ -24,7 +24,6 @@ const Food = () => {
   const priceTitle = [5, 6, 10, 15, 20, 25, 40];
   const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
-
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
     fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/card")
@@ -34,7 +33,6 @@ const Food = () => {
         setIsLoading(false);
       });
   }, []);
-
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setCategoriesId(i);
@@ -51,14 +49,12 @@ const Food = () => {
     }
     setOpenType(false);
   };
-
   //   Filter by price
   const filterPrice = (price, i) => {
     setPriceId(i);
     setFoods(data.filter((item) => item.price === price));
     setOpenPrice(false);
   };
-
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
       <h1 className="text-orange-600 font-bold text-4xl text-center">Menu</h1>
@@ -107,7 +103,6 @@ const Food = () => {
           </div>
         </div>
       </div>
-
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
         {isLoading
