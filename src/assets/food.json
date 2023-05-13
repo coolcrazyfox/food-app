@@ -7,7 +7,7 @@
     "sizes": [26, 30, 40],
     "price": 15,
     "category": [0, 1],
-    "rating": 4
+    "rating": 7
   },
   {
     "id": 1,
@@ -17,7 +17,7 @@
     "sizes": [26, 40],
     "price": 25,
     "category": [0, 1],
-    "rating": 6
+    "rating": 5
   },
   {
     "id": 2,
@@ -47,7 +47,7 @@
     "sizes": [26, 30, 40],
     "price": 10,
     "category": [0, 1],
-    "rating": 10
+    "rating": 7
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "sizes": [26, 40],
     "price": 15,
     "category": [0, 1],
-    "rating": 4
+    "rating": 6
   },
   {
     "id": 6,
@@ -67,7 +67,7 @@
     "sizes": [26, 30, 40],
     "price": 25,
     "category": [0, 1],
-    "rating": 3
+    "rating": 4
   },
 
   {
@@ -78,7 +78,7 @@
     "sizes": [26, 30, 40],
     "price": 15,
     "category": [0, 1],
-    "rating": 5
+    "rating": 2
   },
 
   {
@@ -89,7 +89,7 @@
     "sizes": [26, 30, 40],
     "price": 15,
     "category": [0, 1],
-    "rating": 10
+    "rating": 6
   },
   {
     "id": 9,
@@ -149,7 +149,7 @@
     "category": [0, 1],
     "imageUrl": "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
     "price": 10,
-    "rating": 4
+    "rating": 8
   },
   {
     "id": 15,
