@@ -3,9 +3,9 @@ import React from "react";
 
 const PriceFood = ({ filterPriceHandler, priceValue }) => {
   const sortTitle = [
-    { name: "Rating", sort: "rating" },
-    { name: "Price", sort: "price" },
-    { name: "Alphabetically", sort: "name" },
+    { name: "Rating", sortProperty: "rating" },
+    { name: "Price", sortProperty: "price" },
+    { name: "A-Z", sortProperty: "name" },
   ];
   const [openSort, setOpenSort] = React.useState(false);
   const sortPriceTitle = sortTitle[priceValue].name;
