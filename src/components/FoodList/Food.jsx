@@ -23,7 +23,6 @@ const Food = () => {
   ];
   const price = [5, 6, 10, 15, 20, 25, 40];
   const [selected, setSelected] = React.useState(0);
-  const [selectedType, setSelectedType] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
 
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
@@ -81,7 +80,7 @@ const Food = () => {
                 className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenType(!openType)}
               >
-                {titleBtn[selectedType]}
+                {titleBtn[categoriesId]}
               </button>
             )}
           </div>
