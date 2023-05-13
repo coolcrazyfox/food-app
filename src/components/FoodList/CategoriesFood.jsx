@@ -15,6 +15,7 @@ const CategoriesFood = ({ filterTypeHandler, selectedType }) => {
     <>
       {titleBtn.map((b, i) => (
         <button
+          key={i}
           onClick={() => filterTypeHandler(i)}
           className={
             selectedType === i
