@@ -1,19 +1,20 @@
 import React from "react";
 
+export const categoriesName = [
+  "All",
+  "Pizza",
+  "Burger",
+  "Salad",
+  "Chicken",
+  "BBQ",
+  "JP Food",
+  "Dessert",
+];
+
 const CategoriesFood = ({ onClickCategoryHandler, value }) => {
-  const titleBtn = [
-    "All",
-    "Pizza",
-    "Burger",
-    "Salad",
-    "Chicken",
-    "Dessert",
-    "BBQ",
-    "JpFood",
-  ];
   return (
     <>
-      {titleBtn.map((btn, i) => (
+      {categoriesName.map((btn, i) => (
         <button
           key={i}
           onClick={() => onClickCategoryHandler(btn, i)}

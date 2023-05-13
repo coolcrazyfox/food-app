@@ -4,6 +4,7 @@ import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
+import { categoriesName } from "../FoodList/CategoriesFood.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -11,16 +12,6 @@ const Food = () => {
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
   const [openType, setOpenType] = React.useState(false);
-  const titleBtn = [
-    "All",
-    "Pizza",
-    "Burger",
-    "Salad",
-    "Chicken",
-    "Dessert",
-    "BBQ",
-    "JpFood",
-  ];
   const priceTitle = [5, 6, 10, 15, 20, 25, 40];
   const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
@@ -80,7 +71,7 @@ const Food = () => {
                 className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenType(!openType)}
               >
-                {titleBtn[categoriesId]}
+                {categoriesName[categoriesId]}
               </button>
             )}
           </div>
