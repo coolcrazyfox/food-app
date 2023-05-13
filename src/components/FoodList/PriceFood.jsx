@@ -1,7 +1,7 @@
 import React from "react";
+export const priceName = [5, 6, 10, 15, 20, 25, 40];
 
 const PriceFood = ({ filterPriceHandler, priceValue }) => {
-  const priceName = [5, 6, 10, 15, 20, 25, 40];
   return (
     <>
       {priceName.map((pr, index) => (

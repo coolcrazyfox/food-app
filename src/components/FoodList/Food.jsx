@@ -5,6 +5,7 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { categoriesName } from "../FoodList/CategoriesFood.jsx";
+import { priceName } from "./PriceFood.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -12,7 +13,6 @@ const Food = () => {
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
   const [openType, setOpenType] = React.useState(false);
-  const priceTitle = [5, 6, 10, 15, 20, 25, 40];
   const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
@@ -57,7 +57,7 @@ const Food = () => {
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Filter Type */}
         <div>
-          <p className="font-bold text-gray-700">Filter Type:</p>
+          <p className="font-bold text-gray-700">Filter Category:</p>
           <div className="flex justify-between flex-wrap">
             {openType ? (
               <CategoriesFood
@@ -92,7 +92,7 @@ const Food = () => {
                 className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenPrice(!openPrice)}
               >
-                {priceTitle[priceId]}$
+                {priceName[priceId]}$
               </button>
             )}
           </div>
