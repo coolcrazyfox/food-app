@@ -4,14 +4,12 @@ import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
-import { categoriesName } from "../FoodList/CategoriesFood.jsx";
-import { priceName } from "./PriceFood.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [foods, setFoods] = useState(data);
-  const [openPrice, setOpenPrice] = React.useState(false);
+
   const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
@@ -47,7 +45,7 @@ const Food = () => {
   const filterPrice = (price, i) => {
     setPriceId(i);
     setFoods(data.filter((item) => item.price === price));
-    setOpenPrice(false);
+    // setOpenPrice(false);
   };
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
@@ -61,26 +59,11 @@ const Food = () => {
         />
 
         {/* Filter Price */}
-        <div>
-          <p className="font-bold text-gray-700 text-end w-full mr-1">
-            Filter Price:
-          </p>
-          <div className="flex justify-between max-w-[690px] w-full">
-            {openPrice ? (
-              <PriceFood
-                priceValue={priceId}
-                filterPriceHandler={(price, id) => filterPrice(price, id)}
-              />
-            ) : (
-              <button
-                className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-                onClick={() => setOpenPrice(!openPrice)}
-              >
-                {priceName[priceId]}$
-              </button>
-            )}
-          </div>
-        </div>
+
+        <PriceFood
+          priceValue={priceId}
+          filterPriceHandler={(price, id) => filterPrice(price, id)}
+        />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
