@@ -7,6 +7,7 @@ import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
+  const [categoriesId, setCategoriesId] = React.useState(0);
   const [isLoading, setIsLoading] = React.useState(true);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
@@ -70,11 +71,9 @@ const Food = () => {
           <div className="flex justify-between flex-wrap">
             {openType ? (
               <CategoriesFood
-                i={i}
                 selectedType={selectedType}
-                title={b}
-                key={b}
-                filterTypeHandler={() => filterType(b, i)}
+                title={categoriesId}
+                filterTypeHandler={(id) => filterType(id)}
               />
             ) : (
               <button
