@@ -26,13 +26,17 @@ const Food = () => {
   const [categoriesId, setCategoriesId] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
-    fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/card")
+    setIsLoading(true);
+    fetch(
+      "https://64581bc81a4c152cf991b4a5.mockapi.io/card?category=" +
+        categoriesId
+    )
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, []);
+  }, [categoriesId]);
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setCategoriesId(i);
