@@ -21,8 +21,8 @@ const Food = () => {
     "BBQ",
     "JpFood",
   ];
-  const price = [5, 6, 10, 15, 20, 25, 40];
-  const [selected, setSelected] = React.useState(0);
+  const priceTitle = [5, 6, 10, 15, 20, 25, 40];
+  const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
 
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
@@ -54,7 +54,7 @@ const Food = () => {
 
   //   Filter by price
   const filterPrice = (price, i) => {
-    setSelected(i);
+    setPriceId(i);
     setFoods(data.filter((item) => item.price === price));
     setOpenPrice(false);
   };
@@ -92,23 +92,16 @@ const Food = () => {
           </p>
           <div className="flex justify-between max-w-[690px] w-full">
             {openPrice ? (
-              <>
-                {price.map((p, i) => (
-                  <PriceFood
-                    index={i}
-                    selected={selected}
-                    pr={p}
-                    key={p}
-                    filterPriceHandler={() => filterPrice(p, i)}
-                  />
-                ))}
-              </>
+              <PriceFood
+                priceValue={priceId}
+                filterPriceHandler={(price, id) => filterPrice(price, id)}
+              />
             ) : (
               <button
                 className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 onClick={() => setOpenPrice(!openPrice)}
               >
-                {price[selected]}$
+                {priceTitle[priceId]}$
               </button>
             )}
           </div>
