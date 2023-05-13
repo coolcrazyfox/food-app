@@ -12,7 +12,6 @@ const Food = () => {
   const [isLoading, setIsLoading] = React.useState(true);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
-  const [openType, setOpenType] = React.useState(false);
   const [priceId, setPriceId] = React.useState(0);
   const [categoriesId, setCategoriesId] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
@@ -42,7 +41,7 @@ const Food = () => {
     // if (i === 0) {
     //   setFoods(data);
     // }
-    setOpenType(false);
+    // setOpenType(false);
   };
   //   Filter by price
   const filterPrice = (price, i) => {
@@ -56,28 +55,11 @@ const Food = () => {
       {/* Filter Row */}
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Filter Type */}
-        <div>
-          <p className="font-bold text-gray-700">Filter Category:</p>
-          <div className="flex justify-between flex-wrap">
-            {/* {openType ? (
-              <CategoriesFood
-                value={categoriesId}
-                onClickCategoryHandler={(id) => filterType(id)}
-              />
-            ) : (
-              <button
-                className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-                onClick={() => setOpenType(!openType)}
-              >
-                {categoriesName[categoriesId]}
-              </button>
-            )} */}
-            <CategoriesFood
-              value={categoriesId}
-              onClickCategoryHandler={(id) => filterType(id)}
-            />
-          </div>
-        </div>
+        <CategoriesFood
+          value={categoriesId}
+          onClickCategoryHandler={(id) => filterType(id)}
+        />
+
         {/* Filter Price */}
         <div>
           <p className="font-bold text-gray-700 text-end w-full mr-1">
