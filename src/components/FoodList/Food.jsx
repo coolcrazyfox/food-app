@@ -42,9 +42,9 @@ const Food = () => {
     // setOpenType(false);
   };
   //   Filter by price
-  const filterPrice = (price, i) => {
+  const filterPrice = (i) => {
     setPriceId(i);
-    setFoods(data.filter((item) => item.price === price));
+    // setFoods(data.filter((item) => item.price === i));
     // setOpenPrice(false);
   };
   return (
@@ -62,7 +62,7 @@ const Food = () => {
 
         <PriceFood
           priceValue={priceId}
-          filterPriceHandler={(price, id) => filterPrice(price, id)}
+          filterPriceHandler={(id) => filterPrice(id)}
         />
       </div>
       {/* Display foods */}

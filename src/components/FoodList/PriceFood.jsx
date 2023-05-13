@@ -1,12 +1,13 @@
 import React from "react";
-export const priceName = [5, 6, 10, 15, 20, 25, 40];
+// export const priceName = [5, 6, 10, 15, 20, 25, 40];
 
 const PriceFood = ({ filterPriceHandler, priceValue }) => {
-  const [openPrice, setOpenPrice] = React.useState(false);
-  const sortPriceTitle = priceName[priceValue];
-  const onChangePriceHandler = (i, p) => {
-    filterPriceHandler(i, p);
-    setOpenPrice(false);
+  const sortTitle = ["Rating", "Price", "Name"];
+  const [openSort, setOpenSort] = React.useState(false);
+  const sortPriceTitle = sortTitle[priceValue];
+  const onChangePriceHandler = (i) => {
+    filterPriceHandler(i);
+    setOpenSort(false);
   };
   return (
     <div>
@@ -14,28 +15,28 @@ const PriceFood = ({ filterPriceHandler, priceValue }) => {
         Filter Price:
       </p>
       <div className="flex justify-between max-w-[690px] w-full">
-        {openPrice ? (
+        {openSort ? (
           <>
-            {priceName.map((pr, index) => (
+            {sortTitle.map((title, index) => (
               <button
-                key={index}
-                onClick={() => onChangePriceHandler(index, pr)}
+                key={title}
+                onClick={() => onChangePriceHandler(index)}
                 className={
                   priceValue === index
                     ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
                     : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
               >
-                {pr}$
+                {title}
               </button>
             ))}
           </>
         ) : (
           <button
             className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            onClick={() => setOpenPrice(!openPrice)}
+            onClick={() => setOpenSort(!openSort)}
           >
-            {sortPriceTitle}$
+            {sortPriceTitle}
           </button>
         )}
       </div>
