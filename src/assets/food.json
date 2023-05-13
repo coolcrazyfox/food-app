@@ -571,7 +571,7 @@
   },
   {
     "id": 67,
-    "name": "Mulfey Dessert",
+    "name": "Char-grilled Chicken",
     "category": [0, 4],
     "imageUrl": "https://www.gastronom.ru/binfiles/images/20160316/b938f496.jpg",
     "price": 20,
@@ -579,26 +579,26 @@
   },
   {
     "id": 68,
-    "name": "Eclair",
-    "category": [0, 7],
-    "imageUrl": "https://food.pibig.info/uploads/posts/2023-03/1678252075_food-pibig-info-p-ekler-frantsuzskie-deserti-oboi-11.jpg",
+    "name": "Chicken fillet in puff pastry",
+    "category": [0, 4],
+    "imageUrl": "https://bluejeanchef.com/uploads/2019/03/Chicken-Wellington-640x800.jpg",
     "price": 15,
     "rating": 9
   },
   {
     "id": 69,
-    "name": "Mayo Burger",
-    "category": [0, 5],
-    "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
-    "price": 25,
-    "rating": 8
+    "name": "Chicken roll with cranberry",
+    "category": [0, 4],
+    "imageUrl": "https://i.lefood.menu/wp-content/uploads/w_images/2022/02/recept-31475-1240x827.jpg",
+    "price": 15,
+    "rating": 7
   },
   {
     "id": 70,
-    "name": "Camembert Burger",
-    "category": [0, 5],
-    "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
-    "price": 25,
-    "rating": 7
+    "name": "Chicken BBQ",
+    "category": [0, 4, 5],
+    "imageUrl": "https://www.bonappeteach.com/wp-content/uploads/2021/09/Oven-Baked-BBQ-Chicken-21.jpg",
+    "price": 15,
+    "rating": 9
   }
 ]
