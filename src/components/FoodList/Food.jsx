@@ -69,17 +69,13 @@ const Food = () => {
           <p className="font-bold text-gray-700">Filter Type:</p>
           <div className="flex justify-between flex-wrap">
             {openType ? (
-              <>
-                {titleBtn.map((b, i) => (
-                  <CategoriesFood
-                    i={i}
-                    selectedType={selectedType}
-                    title={b}
-                    key={b}
-                    filterTypeHandler={() => filterType(b, i)}
-                  />
-                ))}
-              </>
+              <CategoriesFood
+                i={i}
+                selectedType={selectedType}
+                title={b}
+                key={b}
+                filterTypeHandler={() => filterType(b, i)}
+              />
             ) : (
               <button
                 className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
