@@ -2,9 +2,13 @@ import React from "react";
 // export const priceName = [5, 6, 10, 15, 20, 25, 40];
 
 const PriceFood = ({ filterPriceHandler, priceValue }) => {
-  const sortTitle = ["Rating", "Price", "Name"];
+  const sortTitle = [
+    { name: "Rating", sort: "rating" },
+    { name: "Price", sort: "price" },
+    { name: "Alphabetically", sort: "name" },
+  ];
   const [openSort, setOpenSort] = React.useState(false);
-  const sortPriceTitle = sortTitle[priceValue];
+  const sortPriceTitle = sortTitle[priceValue].name;
   const onChangePriceHandler = (i) => {
     filterPriceHandler(i);
     setOpenSort(false);
@@ -17,9 +21,9 @@ const PriceFood = ({ filterPriceHandler, priceValue }) => {
       <div className="flex justify-between max-w-[690px] w-full">
         {openSort ? (
           <>
-            {sortTitle.map((title, index) => (
+            {sortTitle.map((obj, index) => (
               <button
-                key={title}
+                key={obj}
                 onClick={() => onChangePriceHandler(index)}
                 className={
                   priceValue === index
@@ -27,7 +31,7 @@ const PriceFood = ({ filterPriceHandler, priceValue }) => {
                     : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
               >
-                {title}
+                {obj.name}
               </button>
             ))}
           </>
