@@ -284,7 +284,7 @@
   {
     "id": 31,
     "name": "Fruit Salad",
-    "category": [0, 3],
+    "category": [0, 3, 7],
     "imageUrl": "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
     "price": 10,
     "rating": 5
@@ -516,9 +516,57 @@
   {
     "id": 60,
     "name": "Salmon Salad",
-    "category": [0, 5],
+    "category": [0, 3],
     "imageUrl": "https://ic.pics.livejournal.com/birosss/84040964/566103/566103_original.jpg",
-    "price": 40,
+    "price": 25,
+    "rating": 5
+  },
+  {
+    "id": 61,
+    "name": "Mousy Dessert",
+    "category": [0, 7],
+    "imageUrl": "https://static.1000.menu/img/content/27103/mussovyi-desert_1526753378_1_max.jpg",
+    "price": 20,
+    "rating": 8
+  },
+  {
+    "id": 62,
+    "name": "Mulfey Dessert",
+    "category": [0, 7],
+    "imageUrl": "https://вкуснофф.рф/img/recepty/4018/big.jpg",
+    "price": 20,
     "rating": 7
+  },
+  {
+    "id": 63,
+    "name": "Eclair",
+    "category": [0, 7],
+    "imageUrl": "https://food.pibig.info/uploads/posts/2023-03/1678252075_food-pibig-info-p-ekler-frantsuzskie-deserti-oboi-11.jpg",
+    "price": 15,
+    "rating": 9
+  },
+  {
+    "id": 64,
+    "name": "Mayo Burger",
+    "category": [0, 5],
+    "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
+    "price": 25,
+    "rating": 8
+  },
+  {
+    "id": 65,
+    "name": "Camembert Burger",
+    "category": [0, 5],
+    "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
+    "price": 25,
+    "rating": 8
+  },
+  {
+    "id": 66,
+    "name": "Mousy Dessert",
+    "category": [0, 5],
+    "imageUrl": "https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/89c1ea4b18-1676654624/homestyle-angus-burger-rezept-72dpi-e3-800x.jpg",
+    "price": 20,
+    "rating": 8
   }
 ]
