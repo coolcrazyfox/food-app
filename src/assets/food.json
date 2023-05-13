@@ -512,5 +512,13 @@
     "imageUrl": "https://www.bbbqqq.ru/upload/medialibrary/ec8/ec8629d4ae035d06408ff58d9517528b.png",
     "price": 40,
     "rating": 7
+  },
+  {
+    "id": 60,
+    "name": "Salmon Salad",
+    "category": [0, 5],
+    "imageUrl": "https://ic.pics.livejournal.com/birosss/84040964/566103/566103_original.jpg",
+    "price": 40,
+    "rating": 7
   }
 ]
