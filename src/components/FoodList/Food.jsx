@@ -7,7 +7,6 @@ import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
-  const [categoriesId, setCategoriesId] = React.useState(0);
   const [isLoading, setIsLoading] = React.useState(true);
   const [foods, setFoods] = useState(data);
   const [openPrice, setOpenPrice] = React.useState(false);
@@ -25,6 +24,7 @@ const Food = () => {
   const price = [5, 6, 10, 15, 20, 25, 40];
   const [selected, setSelected] = React.useState(0);
   const [selectedType, setSelectedType] = React.useState(0);
+  const [categoriesId, setCategoriesId] = React.useState(0);
 
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
@@ -38,7 +38,7 @@ const Food = () => {
 
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
-    setSelectedType(i);
+    setCategoriesId(i);
     if (category) {
       setFoods(
         data.filter(
@@ -71,9 +71,10 @@ const Food = () => {
           <div className="flex justify-between flex-wrap">
             {openType ? (
               <CategoriesFood
-                selectedType={selectedType}
-                title={categoriesId}
-                onClickCategoryHandler={(id) => filterType(id)}
+                value={categoriesId}
+                onClickCategoryHandler={(id, category) =>
+                  filterType(id, category)
+                }
               />
             ) : (
               <button

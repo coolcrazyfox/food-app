@@ -1,6 +1,6 @@
 import React from "react";
 
-const CategoriesFood = ({ onClickCategoryHandler, selectedType }) => {
+const CategoriesFood = ({ onClickCategoryHandler, value }) => {
   const titleBtn = [
     "All",
     "Pizza",
@@ -16,9 +16,9 @@ const CategoriesFood = ({ onClickCategoryHandler, selectedType }) => {
       {titleBtn.map((btn, i) => (
         <button
           key={i}
-          onClick={() => onClickCategoryHandler(i)}
+          onClick={() => onClickCategoryHandler(btn, i)}
           className={
-            selectedType === i
+            value === i
               ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
               : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white active:bg-gray-400"
           }
