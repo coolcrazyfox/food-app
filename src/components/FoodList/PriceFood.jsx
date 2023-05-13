@@ -1,16 +1,14 @@
 import React from "react";
-// export const priceName = [5, 6, 10, 15, 20, 25, 40];
 
-const PriceFood = ({ filterPriceHandler, priceValue }) => {
+const PriceFood = ({ filterPriceHandler, sortValue }) => {
   const sortTitle = [
     { name: "Rating", sortProperty: "rating" },
     { name: "Price", sortProperty: "price" },
     { name: "A-Z", sortProperty: "name" },
   ];
   const [openSort, setOpenSort] = React.useState(false);
-  const sortPriceTitle = sortTitle[priceValue].name;
-  const onChangePriceHandler = (i) => {
-    filterPriceHandler(i);
+  const onChangePriceHandler = (obj) => {
+    filterPriceHandler(obj);
     setOpenSort(false);
   };
   return (
@@ -24,9 +22,9 @@ const PriceFood = ({ filterPriceHandler, priceValue }) => {
             {sortTitle.map((obj, index) => (
               <button
                 key={obj}
-                onClick={() => onChangePriceHandler(index)}
+                onClick={() => onChangePriceHandler(obj)}
                 className={
-                  priceValue === index
+                  sortValue.sortProperty === obj.sortProperty
                     ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
                     : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
@@ -40,7 +38,7 @@ const PriceFood = ({ filterPriceHandler, priceValue }) => {
             className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             onClick={() => setOpenSort(!openSort)}
           >
-            {sortPriceTitle}
+            {sortValue.name}
           </button>
         )}
       </div>

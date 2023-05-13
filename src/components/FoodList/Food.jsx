@@ -8,30 +8,32 @@ import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [foods, setFoods] = useState(data);
-
-  const [priceId, setPriceId] = React.useState(0);
-  const [categoriesId, setCategoriesId] = React.useState(0);
+  const [sortType, setSortType] = React.useState({
+    name: "Rating",
+    sortProperty: "rating",
+  });
+  const [categoryId, setCategoryId] = React.useState(0);
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
     setIsLoading(true);
     fetch(
-      "https://64581bc81a4c152cf991b4a5.mockapi.io/card?category=" +
-        categoriesId
+      `https://64581bc81a4c152cf991b4a5.mockapi.io/card?${
+        categoryId > 0 ? `category=${categoryId}` : ""
+      }&sortBy=${sortType.sortProperty}&order=desc`
     )
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, [categoriesId]);
+  }, [categoryId, sortType]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
-    setCategoriesId(i);
+    setCategoryId(i);
   };
   //   Filter by price
-  const filterPrice = (i) => {
-    setPriceId(i);
+  const filterPrice = (obj) => {
+    setSortType(obj);
   };
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
@@ -40,14 +42,11 @@ const Food = () => {
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Filter Type */}
         <CategoriesFood
-          value={categoriesId}
-          onClickCategoryHandler={(id) => filterType(id)}
+          value={categoryId}
+          onClickCategoryHandler={filterType}
         />
         {/* Filter Price */}
-        <PriceFood
-          priceValue={priceId}
-          filterPriceHandler={(id) => filterPrice(id)}
-        />
+        <PriceFood sortValue={sortType} filterPriceHandler={filterPrice} />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
