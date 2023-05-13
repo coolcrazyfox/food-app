@@ -548,7 +548,7 @@
   {
     "id": 64,
     "name": "Mayo Burger",
-    "category": [0, 5],
+    "category": [0, 2],
     "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
     "price": 25,
     "rating": 8
@@ -556,17 +556,49 @@
   {
     "id": 65,
     "name": "Camembert Burger",
-    "category": [0, 5],
+    "category": [0, 2],
     "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
     "price": 25,
     "rating": 7
   },
   {
     "id": 66,
-    "name": "Mousy Dessert",
-    "category": [0, 5],
+    "name": "Angus Burger",
+    "category": [0, 2],
     "imageUrl": "https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/89c1ea4b18-1676654624/homestyle-angus-burger-rezept-72dpi-e3-800x.jpg",
     "price": 20,
+    "rating": 6
+  },
+  {
+    "id": 67,
+    "name": "Mulfey Dessert",
+    "category": [0, 4],
+    "imageUrl": "https://www.gastronom.ru/binfiles/images/20160316/b938f496.jpg",
+    "price": 20,
+    "rating": 7
+  },
+  {
+    "id": 68,
+    "name": "Eclair",
+    "category": [0, 7],
+    "imageUrl": "https://food.pibig.info/uploads/posts/2023-03/1678252075_food-pibig-info-p-ekler-frantsuzskie-deserti-oboi-11.jpg",
+    "price": 15,
+    "rating": 9
+  },
+  {
+    "id": 69,
+    "name": "Mayo Burger",
+    "category": [0, 5],
+    "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
+    "price": 25,
     "rating": 8
+  },
+  {
+    "id": 70,
+    "name": "Camembert Burger",
+    "category": [0, 5],
+    "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
+    "price": 25,
+    "rating": 7
   }
 ]
