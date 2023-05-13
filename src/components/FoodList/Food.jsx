@@ -28,24 +28,10 @@ const Food = () => {
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     setCategoriesId(i);
-    // if (category) {
-    //   setFoods(
-    //     data.filter(
-    //       (item) =>
-    //         item.category === i || item.category === category.toLowerCase()
-    //     )
-    //   );
-    // }
-    // if (i === 0) {
-    //   setFoods(data);
-    // }
-    // setOpenType(false);
   };
   //   Filter by price
   const filterPrice = (i) => {
     setPriceId(i);
-    // setFoods(data.filter((item) => item.price === i));
-    // setOpenPrice(false);
   };
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
@@ -57,9 +43,7 @@ const Food = () => {
           value={categoriesId}
           onClickCategoryHandler={(id) => filterType(id)}
         />
-
         {/* Filter Price */}
-
         <PriceFood
           priceValue={priceId}
           filterPriceHandler={(id) => filterPrice(id)}
