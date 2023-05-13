@@ -31,17 +31,17 @@ const Food = () => {
   //   Filter Type burgers/pizza/etc
   const filterType = (category, i) => {
     setCategoriesId(i);
-    if (category) {
-      setFoods(
-        data.filter(
-          (item) =>
-            item.category === i || item.category === category.toLowerCase()
-        )
-      );
-    }
-    if (i === 0) {
-      setFoods(data);
-    }
+    // if (category) {
+    //   setFoods(
+    //     data.filter(
+    //       (item) =>
+    //         item.category === i || item.category === category.toLowerCase()
+    //     )
+    //   );
+    // }
+    // if (i === 0) {
+    //   setFoods(data);
+    // }
     setOpenType(false);
   };
   //   Filter by price
@@ -62,9 +62,7 @@ const Food = () => {
             {openType ? (
               <CategoriesFood
                 value={categoriesId}
-                onClickCategoryHandler={(id, category) =>
-                  filterType(id, category)
-                }
+                onClickCategoryHandler={(id) => filterType(id)}
               />
             ) : (
               <button

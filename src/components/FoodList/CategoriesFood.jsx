@@ -16,8 +16,8 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
     <>
       {categoriesName.map((btn, i) => (
         <button
-          key={i}
-          onClick={() => onClickCategoryHandler(btn, i)}
+          key={btn}
+          onClick={() => onClickCategoryHandler(i)}
           className={
             value === i
               ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
