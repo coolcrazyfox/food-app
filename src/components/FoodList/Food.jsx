@@ -29,7 +29,7 @@ const Food = () => {
       });
   }, [categoriesId]);
   //   Filter Type burgers/pizza/etc
-  const filterType = (category, i) => {
+  const filterType = (i) => {
     setCategoriesId(i);
     // if (category) {
     //   setFoods(
@@ -59,7 +59,7 @@ const Food = () => {
         <div>
           <p className="font-bold text-gray-700">Filter Category:</p>
           <div className="flex justify-between flex-wrap">
-            {openType ? (
+            {/* {openType ? (
               <CategoriesFood
                 value={categoriesId}
                 onClickCategoryHandler={(id) => filterType(id)}
@@ -71,7 +71,11 @@ const Food = () => {
               >
                 {categoriesName[categoriesId]}
               </button>
-            )}
+            )} */}
+            <CategoriesFood
+              value={categoriesId}
+              onClickCategoryHandler={(id) => filterType(id)}
+            />
           </div>
         </div>
         {/* Filter Price */}
