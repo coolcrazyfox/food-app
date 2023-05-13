@@ -73,7 +73,7 @@ const Food = () => {
               <CategoriesFood
                 selectedType={selectedType}
                 title={categoriesId}
-                filterTypeHandler={(id) => filterType(id)}
+                onClickCategoryHandler={(id) => filterType(id)}
               />
             ) : (
               <button

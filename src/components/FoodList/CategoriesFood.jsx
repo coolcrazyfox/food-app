@@ -1,6 +1,6 @@
 import React from "react";
 
-const CategoriesFood = ({ filterTypeHandler, selectedType }) => {
+const CategoriesFood = ({ onClickCategoryHandler, selectedType }) => {
   const titleBtn = [
     "All",
     "Pizza",
@@ -16,7 +16,7 @@ const CategoriesFood = ({ filterTypeHandler, selectedType }) => {
       {titleBtn.map((btn, i) => (
         <button
           key={i}
-          onClick={() => filterTypeHandler(i)}
+          onClick={() => onClickCategoryHandler(i)}
           className={
             selectedType === i
               ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
