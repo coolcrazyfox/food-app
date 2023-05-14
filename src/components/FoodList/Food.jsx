@@ -16,10 +16,11 @@ const Food = () => {
   // https://64581bc81a4c152cf991b4a5.mockapi.io/card
   React.useEffect(() => {
     setIsLoading(true);
+    const orderBy = sortType.sortProperty.includes("-" ? "asc" : "desc");
     fetch(
       `https://64581bc81a4c152cf991b4a5.mockapi.io/card?${
         categoryId > 0 ? `category=${categoryId}` : ""
-      }&sortBy=${sortType.sortProperty}&order=desc`
+      }&sortBy=${sortType.sortProperty.replace("-", "")}&order=${orderBy}`
     )
       .then((res) => res.json())
       .then((arr) => {

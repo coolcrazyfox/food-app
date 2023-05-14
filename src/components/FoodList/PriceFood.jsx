@@ -3,10 +3,10 @@ import React from "react";
 const PriceFood = ({ filterPriceHandler, sortValue }) => {
   const sortTitle = [
     { name: "Rating (DESC)", sortProperty: "rating" },
-    { name: "Rating (ASC)", sortProperty: "rating" },
-    { name: "Price (min)", sortProperty: "price" },
+    { name: "Rating (ASC)", sortProperty: "-rating" },
+    { name: "Price (min)", sortProperty: "-price" },
     { name: "Price (max)", sortProperty: "price" },
-    { name: "A-Z", sortProperty: "name" },
+    { name: "A-Z", sortProperty: "-name" },
     { name: "Z-A", sortProperty: "name" },
   ];
   const [openSort, setOpenSort] = React.useState(false);
@@ -16,9 +16,7 @@ const PriceFood = ({ filterPriceHandler, sortValue }) => {
   };
   return (
     <div>
-      <p className="font-bold text-gray-700 text-end w-full mr-1">
-        Filter Price:
-      </p>
+      <p className="font-bold text-gray-700 text-end w-full mr-1">Sort by:</p>
       <div className="flex justify-between max-w-[690px] w-full">
         {openSort ? (
           <>
