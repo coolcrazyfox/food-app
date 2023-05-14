@@ -7,6 +7,7 @@ import NavBar from "./NavBar/NavBar";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [isClick, setIsClick] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
 
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
@@ -18,7 +19,7 @@ const Header = () => {
         setIsClick={setIsClick}
       />
       {/* Search Input */}
-      <Search />
+      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
       {/* Cart button */}
       <CartButton />
     </div>
