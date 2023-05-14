@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "imageUrl": "https://wallpapercave.com/wp/wp9953993.jpg",
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/0c/94/58/pepperoni-pizza.jpg",
     "name": "Crazy pepperoni Pizza",
     "types": [0],
     "sizes": [30, 40],
@@ -72,13 +72,13 @@
 
   {
     "id": 7,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
+    "imageUrl": "https://wallpapercave.com/wp/wp9953993.jpg",
     "name": "Pepperoni Pizza",
     "types": [0, 1],
     "sizes": [26, 30, 40],
-    "price": 15,
+    "price": 10,
     "category": [0, 1],
-    "rating": 2
+    "rating": 5
   },
 
   {
@@ -517,7 +517,7 @@
     "id": 60,
     "name": "Salmon Salad",
     "category": [0, 3],
-    "imageUrl": "https://ic.pics.livejournal.com/birosss/84040964/566103/566103_original.jpg",
+    "imageUrl": "https://d33wubrfki0l68.cloudfront.net/28d79d36e42052507130ec463a04726f7c8d30d9/fbe46/images/uploads/2022_07_17_salmon_salad_2.jpg",
     "price": 25,
     "rating": 5
   },
