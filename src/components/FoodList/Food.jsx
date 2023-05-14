@@ -57,7 +57,7 @@ const Food = ({ searchValue }) => {
           ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
-      <div>
+      <div className="flex flex-row">
         <PaginationFood />
       </div>
     </div>
