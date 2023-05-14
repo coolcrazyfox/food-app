@@ -17,7 +17,7 @@ const Search = ({ searchValue, setSearchValue }) => {
         <MdClear
           onClick={() => setSearchValue("")}
           size={20}
-          className="hover:text-red-500 text-gray-700"
+          className="hover:text-red-500 text-gray-700 "
         />
       )}
     </div>
