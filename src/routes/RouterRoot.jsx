@@ -18,12 +18,12 @@ export const PATH = {
   CONTACT: "/contact",
   FOOD: "/food",
 };
-const RouterRoot = () => {
+const RouterRoot = ({ searchValue }) => {
   return (
     <div>
       <Routes>
         <Route path={PATH.HERO} element={<Hero />} />
-        <Route path={PATH.FOOD} element={<Food />} />
+        <Route path={PATH.FOOD} element={<Food searchValue={searchValue} />} />
         <Route path={PATH.ORDERS} element={<CartPage />} />
         <Route path={PATH.FAVORITES} element={<Category />} />
         {/*<Route path={PATH.PROMOTIONS} element={<PostsPage />} />

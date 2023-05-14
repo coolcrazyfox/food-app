@@ -4,7 +4,7 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 
-const Food = () => {
+const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [sortType, setSortType] = React.useState({
@@ -28,7 +28,7 @@ const Food = () => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, [categoryId, sortType]);
+  }, [categoryId, sortType, searchValue]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     setCategoryId(i);

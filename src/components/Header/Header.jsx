@@ -4,10 +4,9 @@ import CartButton from "./Cart/CartButton";
 import Search from "./SearchForm/Search";
 import NavBar from "./NavBar/NavBar";
 
-const Header = () => {
+const Header = ({ searchValue, setSearchValue }) => {
   const [nav, setNav] = useState(false);
   const [isClick, setIsClick] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
 
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
