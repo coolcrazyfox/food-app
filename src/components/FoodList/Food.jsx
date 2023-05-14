@@ -22,7 +22,7 @@ const Food = ({ searchValue }) => {
     const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     fetch(
-      `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+      `${baseUrl}?limit=8&page=1&${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
     )
       .then((res) => res.json())
       .then((arr) => {
@@ -57,7 +57,7 @@ const Food = ({ searchValue }) => {
           ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
-      <div className="flex flex-row">
+      <div className="my-2">
         <PaginationFood />
       </div>
     </div>
