@@ -8,8 +8,8 @@ const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [sortType, setSortType] = React.useState({
-    name: "Rating (DESC)",
-    sortProperty: "rating",
+    name: "Rating (min)",
+    sortProperty: "-rating",
   });
   const [categoryId, setCategoryId] = React.useState(0);
 

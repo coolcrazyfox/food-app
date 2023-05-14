@@ -2,8 +2,8 @@ import React from "react";
 
 const PriceFood = ({ filterPriceHandler, sortValue }) => {
   const sortTitle = [
-    { name: "Rating (DESC)", sortProperty: "rating" },
-    { name: "Rating (ASC)", sortProperty: "-rating" },
+    { name: "Rating (min)", sortProperty: "-rating" },
+    { name: "Rating (max)", sortProperty: "rating" },
     { name: "Price (min)", sortProperty: "-price" },
     { name: "Price (max)", sortProperty: "price" },
     { name: "A-Z", sortProperty: "-name" },
