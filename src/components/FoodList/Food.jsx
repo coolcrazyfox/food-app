@@ -18,11 +18,8 @@ const Food = () => {
     setIsLoading(true);
     const orderBy = sortType.sortProperty.includes("-" ? "asc" : "desc");
     const sortTypeBy = sortType.sortProperty.replace("-", "");
-    fetch(
-      `baseUrl?${
-        categoryId > 0 ? `category=${categoryId}` : ""
-      }&sortBy=${sortTypeBy}&order=${orderBy}`
-    )
+    const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
+    fetch(`baseUrl?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}`)
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
