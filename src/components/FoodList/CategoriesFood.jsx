@@ -20,7 +20,7 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
   };
   return (
     <div>
-      <p className="font-bold text-gray-700">Filter Category:</p>
+      <p className="font-bold text-gray-700">Category Filter:</p>
       <div className="flex justify-between flex-wrap">
         {openType ? (
           <>
