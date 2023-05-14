@@ -3,6 +3,7 @@ import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
+import PaginationFood from "../Pagination/PaginationFood.jsx";
 
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -55,6 +56,9 @@ const Food = ({ searchValue }) => {
         {isLoading
           ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
+      </div>
+      <div>
+        <PaginationFood />
       </div>
     </div>
   );
