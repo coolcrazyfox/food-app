@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { data } from "../../data/data.js";
+import React from "react";
 import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
+export const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -13,14 +13,15 @@ const Food = () => {
     sortProperty: "rating",
   });
   const [categoryId, setCategoryId] = React.useState(0);
-  // https://64581bc81a4c152cf991b4a5.mockapi.io/card
+
   React.useEffect(() => {
     setIsLoading(true);
     const orderBy = sortType.sortProperty.includes("-" ? "asc" : "desc");
+    const sortTypeBy = sortType.sortProperty.replace("-", "");
     fetch(
-      `https://64581bc81a4c152cf991b4a5.mockapi.io/card?${
+      `baseUrl?${
         categoryId > 0 ? `category=${categoryId}` : ""
-      }&sortBy=${sortType.sortProperty.replace("-", "")}&order=${orderBy}`
+      }&sortBy=${sortTypeBy}&order=${orderBy}`
     )
       .then((res) => res.json())
       .then((arr) => {
