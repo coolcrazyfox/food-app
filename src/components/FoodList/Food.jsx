@@ -19,8 +19,10 @@ const Food = () => {
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
     const sortTypeBy = sortType.sortProperty.replace("-", "");
     const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
-
-    fetch(`${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}`)
+    const search = searchValue ? `&search=${searchValue}` : "";
+    fetch(
+      `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+    )
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
