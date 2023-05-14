@@ -13,6 +13,7 @@ const Food = ({ searchValue }) => {
     sortProperty: "-rating",
   });
   const [categoryId, setCategoryId] = React.useState(0);
+  const [currentPage, setCurrentPage] = React.useState(1);
 
   React.useEffect(() => {
     setIsLoading(true);
@@ -22,14 +23,14 @@ const Food = ({ searchValue }) => {
     const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     fetch(
-      `${baseUrl}?limit=8&page=1&${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+      `${baseUrl}?limit=8&page=${currentPage}&${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
     )
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, [categoryId, sortType, searchValue]);
+  }, [categoryId, sortType, searchValue, currentPage]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     setCategoryId(i);
@@ -58,7 +59,7 @@ const Food = ({ searchValue }) => {
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
       <div className="my-2">
-        <PaginationFood />
+        <PaginationFood onChangePage={(n) => setCurrentPage(n)} />
       </div>
     </div>
   );
