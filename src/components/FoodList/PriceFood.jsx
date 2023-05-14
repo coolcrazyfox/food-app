@@ -2,9 +2,12 @@ import React from "react";
 
 const PriceFood = ({ filterPriceHandler, sortValue }) => {
   const sortTitle = [
-    { name: "Rating", sortProperty: "rating" },
-    { name: "Price", sortProperty: "price" },
+    { name: "Rating (DESC)", sortProperty: "rating" },
+    { name: "Rating (ASC)", sortProperty: "rating" },
+    { name: "Price (min)", sortProperty: "price" },
+    { name: "Price (max)", sortProperty: "price" },
     { name: "A-Z", sortProperty: "name" },
+    { name: "Z-A", sortProperty: "name" },
   ];
   const [openSort, setOpenSort] = React.useState(false);
   const onChangePriceHandler = (obj) => {
