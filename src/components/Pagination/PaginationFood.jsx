@@ -2,16 +2,13 @@ import React from "react";
 import ReactPaginate from "react-paginate";
 import s from "./Pagination.module.css";
 
-const PaginationFood = () => {
-  const handlePageClick = (e) => {
-    console.log("click", e);
-  };
+const PaginationFood = ({ onChangePage }) => {
   return (
     <>
       <ReactPaginate
         breakLabel="..."
         nextLabel=">"
-        onPageChange={handlePageClick}
+        onPageChange={(e) => onChangePage(e.selected + 1)}
         pageRangeDisplayed={8}
         pageCount={9}
         previousLabel="<"
