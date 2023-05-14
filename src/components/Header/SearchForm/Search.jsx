@@ -13,11 +13,11 @@ const Search = ({ searchValue, setSearchValue }) => {
         type="text"
         placeholder="Search foods"
       />
-      {searchValue.length > 0 && (
+      {searchValue && (
         <MdClear
           onClick={() => setSearchValue("")}
           size={20}
-          className="text-red-500"
+          className="hover:text-red-500 text-gray-700"
         />
       )}
     </div>
