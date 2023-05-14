@@ -3,7 +3,6 @@ import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
-export const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
 
 const Food = () => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -16,10 +15,11 @@ const Food = () => {
 
   React.useEffect(() => {
     setIsLoading(true);
+    const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
     const orderBy = sortType.sortProperty.includes("-" ? "asc" : "desc");
     const sortTypeBy = sortType.sortProperty.replace("-", "");
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
-    fetch(`baseUrl?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}`)
+    fetch(`${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}`)
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
