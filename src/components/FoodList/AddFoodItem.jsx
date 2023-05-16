@@ -1,7 +1,8 @@
 import React from "react";
 import { RiStarSmileFill } from "react-icons/ri";
+import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 
-const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
+const AddFoodItem = ({ food, addItem, onClickAddItemHandler, sizeAndType }) => {
   return (
     <>
       <div className="flex justify-between px-2 py-4">
@@ -12,6 +13,7 @@ const AddFoodItem = ({ food, addItem, onClickAddItemHandler }) => {
             <span className="text-base px-1">{food.rating}</span>
           </div>
         </div>
+        {sizeAndType && <HiOutlineBarsArrowDown size={24} />}
 
         <div className=" flex flex-row select-none">
           <span className="mx-2">{food.price}$</span>
