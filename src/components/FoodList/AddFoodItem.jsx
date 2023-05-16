@@ -2,18 +2,25 @@ import React from "react";
 import { RiStarSmileFill } from "react-icons/ri";
 import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 
-const AddFoodItem = ({ food, addItem, onClickAddItemHandler, sizeAndType }) => {
+const AddFoodItem = ({
+  food,
+  addItem,
+  onClickAddItemHandler,
+  sizeAndType,
+  setSizeAndType,
+}) => {
   return (
     <>
       <div className="flex justify-between px-2 py-4">
         <div className="flex flex-row font-bold  ">
           {food.name}
+
           <div className="px-2 flex flex-row ">
             <RiStarSmileFill size={24} className="text-orange-500" />
             <span className="text-base px-1">{food.rating}</span>
           </div>
         </div>
-        {sizeAndType && <HiOutlineBarsArrowDown size={24} />}
+        {food.types && <HiOutlineBarsArrowDown size={24} />}
 
         <div className=" flex flex-row select-none">
           <span className="mx-2">{food.price}$</span>
