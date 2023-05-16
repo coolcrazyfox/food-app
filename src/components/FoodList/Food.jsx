@@ -30,7 +30,7 @@ const Food = ({ searchValue }) => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, [categoryId, sortType, searchValue, currentPage]);
+  }, [categoryId, sortType, searchValue]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     setCategoryId(i);
