@@ -22,7 +22,7 @@ const Food = ({ searchValue }) => {
     const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     fetch(
-      `${baseUrl}?limit=8&page=${currentPage}&${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+      `${baseUrl}?&${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
     )
       .then((res) => res.json())
       .then((arr) => {
