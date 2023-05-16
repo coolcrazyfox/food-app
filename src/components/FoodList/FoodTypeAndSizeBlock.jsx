@@ -11,7 +11,7 @@ const FoodTypeAndSizeBlock = ({ food }) => {
     <>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {typePizza.map((type, i) => (
+          {food.types.map((type, i) => (
             <li
               onClick={() => setActiveType(i)}
               className={
@@ -21,7 +21,7 @@ const FoodTypeAndSizeBlock = ({ food }) => {
               }
               key={type}
             >
-              {type}
+              {typePizza[type]}
             </li>
           ))}
         </ul>
