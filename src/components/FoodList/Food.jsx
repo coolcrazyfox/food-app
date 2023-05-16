@@ -58,9 +58,6 @@ const Food = ({ searchValue }) => {
           ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
           : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
       </div>
-      <div className="my-2">
-        <PaginationFood onChangePage={(n) => setCurrentPage(n)} />
-      </div>
     </div>
   );
 };
