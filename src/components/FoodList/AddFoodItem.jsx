@@ -20,14 +20,16 @@ const AddFoodItem = ({
             <span className="text-base px-1">{food.rating}</span>
           </div>
         </div>
-        {food.types && (
-          <HiOutlineBarsArrowDown
-            onClick={() => setSizeAndType(!sizeAndType)}
-            size={24}
-          />
-        )}
 
         <div className=" flex flex-row select-none">
+          <span className=" text-center pt-1">
+            {food.types && (
+              <HiOutlineBarsArrowDown
+                onClick={() => setSizeAndType(!sizeAndType)}
+                size={20}
+              />
+            )}
+          </span>
           <span className="mx-2">{food.price}$</span>
           <div
             onClick={onClickAddItemHandler}

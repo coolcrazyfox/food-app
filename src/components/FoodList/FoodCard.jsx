@@ -4,11 +4,8 @@ import AddFoodItem from "./AddFoodItem";
 
 const FoodCard = ({ ...food }) => {
   const [addItem, setAddItem] = React.useState(0);
-  const [sizeAndType, setSizeAndType] = React.useState(true);
-  const [activeType, setActiveType] = React.useState(0);
-  const [activeSize, setActiveSize] = React.useState(0);
-  const typePizza = ["Thin-crust", "Thick-crust"];
-  const sizePizza = [26, 30, 40];
+  const [sizeAndType, setSizeAndType] = React.useState(false);
+
   const onClickAddItemHandler = () => {
     setAddItem((addItem) => addItem + 1);
   };
@@ -28,15 +25,7 @@ const FoodCard = ({ ...food }) => {
         onClickAddItemHandler={onClickAddItemHandler}
       />
 
-      <FoodTypeAndSizeBlock
-        food={food}
-        activeSize={activeSize}
-        setActiveSize={setActiveSize}
-        activeType={activeType}
-        setActiveType={setActiveType}
-        sizePizza={sizePizza}
-        typePizza={typePizza}
-      />
+      {sizeAndType && <FoodTypeAndSizeBlock food={food} />}
     </div>
   );
 };
