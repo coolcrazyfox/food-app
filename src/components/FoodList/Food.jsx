@@ -13,7 +13,6 @@ const Food = ({ searchValue }) => {
     sortProperty: "-rating",
   });
   const [categoryId, setCategoryId] = React.useState(0);
-  const [currentPage, setCurrentPage] = React.useState(1);
 
   React.useEffect(() => {
     setIsLoading(true);
