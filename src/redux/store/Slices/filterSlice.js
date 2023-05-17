@@ -12,8 +12,10 @@ export const filterSlice = createSlice({
   name: "filters",
   initialState,
   reducers: {
-    inc,
+    setCategoryId(state, action) {
+      state.categoryId = action.payload;
+    },
   },
 });
-export const { inc } = filterSlice.actions;
+export const { setCategoryId } = filterSlice.actions;
 export default filterSlice.reducer;
