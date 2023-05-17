@@ -9,7 +9,7 @@ const initialState = {
   },
 };
 export const filterSlice = createSlice({
-  name: "filter",
+  name: "filters",
   initialState,
   reducers: {
     inc,
