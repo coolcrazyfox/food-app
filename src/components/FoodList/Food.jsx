@@ -14,8 +14,8 @@ const Food = ({ searchValue }) => {
   //   sortProperty: "-rating",
   // });
   // const [categoryId, setCategoryId] = React.useState(0);
-  const categoryId = useSelector((state) => state.filter.categoryId);
-  const sortType = useSelector((state) => state.filter.sort.sortProperty);
+  const { categoryId, sort } = useSelector((state) => state.filter);
+  const sortType = sort.sortProperty;
   const dispatch = useDispatch();
   React.useEffect(() => {
     setIsLoading(true);
