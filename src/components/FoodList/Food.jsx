@@ -21,8 +21,8 @@ const Food = ({ searchValue }) => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
-    const sortTypeBy = sortType.sortProperty.replace("-", "");
-    const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
+    const sortTypeBy = sortType.replace("-", "");
+    const orderBy = sortType.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     fetch(
       `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
