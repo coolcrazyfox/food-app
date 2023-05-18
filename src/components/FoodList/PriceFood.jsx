@@ -2,17 +2,19 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSort } from "../../redux/store/Slices/filterSlice";
 
+const sortTitle = [
+  { name: "Rating (min)", sortProperty: "-rating" },
+  { name: "Rating (max)", sortProperty: "rating" },
+  { name: "Price (min)", sortProperty: "-price" },
+  { name: "Price (max)", sortProperty: "price" },
+  { name: "A-Z", sortProperty: "-name" },
+  { name: "Z-A", sortProperty: "name" },
+];
+
 const PriceFood = () => {
   const dispatch = useDispatch();
   const sort = useSelector((state) => state.filter.sortType);
-  const sortTitle = [
-    { name: "Rating (min)", sortProperty: "-rating" },
-    { name: "Rating (max)", sortProperty: "rating" },
-    { name: "Price (min)", sortProperty: "-price" },
-    { name: "Price (max)", sortProperty: "price" },
-    { name: "A-Z", sortProperty: "-name" },
-    { name: "Z-A", sortProperty: "name" },
-  ];
+
   const [openSort, setOpenSort] = React.useState(false);
   const onChangePriceHandler = (obj) => {
     // filterPriceHandler(obj);
