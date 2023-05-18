@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { setSort } from "../../redux/store/Slices/filterSlice";
 
 const PriceFood = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const PriceFood = () => {
   const [openSort, setOpenSort] = React.useState(false);
   const onChangePriceHandler = (obj) => {
     // filterPriceHandler(obj);
-    dispatch();
+    dispatch(setSort(obj));
     setOpenSort(false);
   };
   return (
