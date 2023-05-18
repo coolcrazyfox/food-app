@@ -4,6 +4,7 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { useDispatch, useSelector } from "react-redux";
+import { setCategoryId } from "../../redux/store/Slices/filterSlice.js";
 
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -15,6 +16,9 @@ const Food = ({ searchValue }) => {
   // const [categoryId, setCategoryId] = React.useState(0);
   const categoryId = useSelector((state) => state.filter.categoryId);
   const dispatch = useDispatch();
+  const onChangeCategory = (i) => {
+    dispatch(setCategoryId(i));
+  };
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
