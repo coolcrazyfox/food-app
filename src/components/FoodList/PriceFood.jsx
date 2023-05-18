@@ -14,7 +14,8 @@ const PriceFood = () => {
   ];
   const [openSort, setOpenSort] = React.useState(false);
   const onChangePriceHandler = (obj) => {
-    filterPriceHandler(obj);
+    // filterPriceHandler(obj);
+    dispatch();
     setOpenSort(false);
   };
   return (
