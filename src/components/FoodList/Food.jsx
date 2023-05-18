@@ -9,12 +9,13 @@ import { setCategoryId } from "../../redux/store/Slices/filterSlice.js";
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [sortType, setSortType] = React.useState({
-    name: "Rating (min)",
-    sortProperty: "-rating",
-  });
+  // const [sortType, setSortType] = React.useState({
+  //   name: "Rating (min)",
+  //   sortProperty: "-rating",
+  // });
   // const [categoryId, setCategoryId] = React.useState(0);
   const categoryId = useSelector((state) => state.filter.categoryId);
+  const sortType = useSelector((state) => state.filter.sort.sortProperty);
   const dispatch = useDispatch();
   React.useEffect(() => {
     setIsLoading(true);
@@ -52,7 +53,7 @@ const Food = ({ searchValue }) => {
           onClickCategoryHandler={filterType}
         />
         {/* Filter Price */}
-        <PriceFood sortValue={sortType} filterPriceHandler={filterPrice} />
+        <PriceFood />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
