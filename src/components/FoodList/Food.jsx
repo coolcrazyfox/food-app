@@ -3,6 +3,7 @@ import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
+import { useDispatch, useSelector } from "react-redux";
 
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -11,8 +12,9 @@ const Food = ({ searchValue }) => {
     name: "Rating (min)",
     sortProperty: "-rating",
   });
-  const [categoryId, setCategoryId] = React.useState(0);
-
+  // const [categoryId, setCategoryId] = React.useState(0);
+  const categoryId = useSelector((state) => state.filter.categoryId);
+  const dispatch = useDispatch;
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
