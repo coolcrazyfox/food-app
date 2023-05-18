@@ -16,9 +16,6 @@ const Food = ({ searchValue }) => {
   // const [categoryId, setCategoryId] = React.useState(0);
   const categoryId = useSelector((state) => state.filter.categoryId);
   const dispatch = useDispatch();
-  const onChangeCategory = (i) => {
-    dispatch(setCategoryId(i));
-  };
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
@@ -37,7 +34,8 @@ const Food = ({ searchValue }) => {
   }, [categoryId, sortType, searchValue]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
-    setCategoryId(i);
+    dispatch(setCategoryId(i));
+    // setCategoryId(i);
   };
   //   Filter by price
   const filterPrice = (obj) => {
