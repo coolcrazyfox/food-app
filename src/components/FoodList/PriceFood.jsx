@@ -1,6 +1,9 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-const PriceFood = ({ filterPriceHandler, sortValue }) => {
+const PriceFood = () => {
+  const dispatch = useDispatch();
+  const sort = useSelector((state) => state.filter.sortType);
   const sortTitle = [
     { name: "Rating (min)", sortProperty: "-rating" },
     { name: "Rating (max)", sortProperty: "rating" },
