@@ -23,12 +23,12 @@ const PriceFood = () => {
       <div className="flex justify-between max-w-[690px] w-full">
         {openSort ? (
           <>
-            {sortTitle.map((obj, index) => (
+            {sortTitle.map((obj) => (
               <button
                 key={obj}
                 onClick={() => onChangePriceHandler(obj)}
                 className={
-                  sortValue.sortProperty === obj.sortProperty
+                  sort.sortProperty === obj.sortProperty
                     ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
                     : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
@@ -42,7 +42,7 @@ const PriceFood = () => {
             className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             onClick={() => setOpenSort(!openSort)}
           >
-            {sortValue.name}
+            {sort.name}
           </button>
         )}
       </div>
