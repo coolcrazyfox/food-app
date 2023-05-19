@@ -4,7 +4,10 @@ import CategoriesFood from "./CategoriesFood.jsx";
 import PriceFood from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { setCategoryId } from "../../redux/store/Slices/filterSlice.js";
+import {
+  setCategoryId,
+  setSort,
+} from "../../redux/store/Slices/filterSlice.js";
 
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
@@ -14,15 +17,15 @@ const Food = ({ searchValue }) => {
   //   sortProperty: "-rating",
   // });
   // const [categoryId, setCategoryId] = React.useState(0);
-  const { categoryId, sort } = useSelector((state) => state.filter);
-  const sortType = sort.sortProperty;
+  const { categoryId, sortType } = useSelector((state) => state.filter);
+  const sortTypes = sortType.sortProperty;
   const dispatch = useDispatch();
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
-    const sortTypeBy = sortType.replace("-", "");
-    const orderBy = sortType.includes("-") ? "asc" : "desc";
+    const sortTypeBy = sortTypes.replace("-", "");
+    const orderBy = sortTypes.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     fetch(
       `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
@@ -32,7 +35,7 @@ const Food = ({ searchValue }) => {
         setFoodItems(arr);
         setIsLoading(false);
       });
-  }, [categoryId, sortType, searchValue]);
+  }, [categoryId, sortTypes, searchValue]);
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     dispatch(setCategoryId(i));
