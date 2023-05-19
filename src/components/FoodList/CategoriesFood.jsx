@@ -14,7 +14,7 @@ export const categoriesName = [
 ];
 
 const CategoriesFood = ({ onClickCategoryHandler, value }) => {
-  const openType = useSelector((state) => state.filter.open);
+  const openType = useSelector((state) => state.filter.openCategory);
   const dispatch = useDispatch();
   // const [openType, setOpenType] = React.useState(false);
   const sortCategoryName = categoriesName[value];
