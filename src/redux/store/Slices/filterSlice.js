@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   categoryId: 0,
-  openType: false,
+  open: false,
   sortType: {
     name: "Rating (min)",
     sortProperty: "-rating",
@@ -18,7 +18,10 @@ export const filterSlice = createSlice({
     setSort(state, action) {
       state.sortType = action.payload;
     },
+    setOpen(state, action) {
+      state.open = action.payload;
+    },
   },
 });
-export const { setCategoryId, setSort } = filterSlice.actions;
+export const { setCategoryId, setSort, setOpen } = filterSlice.actions;
 export default filterSlice.reducer;
