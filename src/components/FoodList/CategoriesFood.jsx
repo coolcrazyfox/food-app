@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setOpen } from "../../redux/store/Slices/filterSlice";
 
 export const categoriesName = [
   "All",
@@ -12,11 +14,14 @@ export const categoriesName = [
 ];
 
 const CategoriesFood = ({ onClickCategoryHandler, value }) => {
-  const [openType, setOpenType] = React.useState(false);
+  const openType = useSelector((state) => state.filter.open);
+  const dispatch = useDispatch();
+  // const [openType, setOpenType] = React.useState(false);
   const sortCategoryName = categoriesName[value];
   const onChangeCategoryHandler = (i) => {
     onClickCategoryHandler(i);
-    setOpenType(false);
+    // setOpenType(false);
+    dispatch(setOpen(false));
   };
   return (
     <div>
@@ -41,7 +46,7 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
         ) : (
           <button
             className="flex m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            onClick={() => setOpenType(!openType)}
+            onClick={() => dispatch(setOpen(!openType))}
           >
             {sortCategoryName}
           </button>
