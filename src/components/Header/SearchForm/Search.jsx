@@ -14,7 +14,7 @@ const Search = ({ searchValue, setSearchValue }) => {
   const updateSearchValue = React.useCallback(
     debounce((string) => {
       setSearchValue(string);
-    }, 400),
+    }, 500),
     []
   );
   const onChangeInput = (e) => {
@@ -27,15 +27,15 @@ const Search = ({ searchValue, setSearchValue }) => {
       <AiOutlineSearch size={25} />
       <input
         ref={inputRef}
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
+        value={value}
+        onChange={onChangeInput}
         className="bg-transparent p-2 w-[180px] sm:w-[370px] lg:w-[450px] focus:outline-none focus:border-1 focus:border-b-[2px] focus:border-orange-500"
         type="text"
         placeholder="Search foods"
       />
       {searchValue && (
         <MdClear
-          onClick={() => setSearchValue("")}
+          onClick={onClickClearHandler}
           size={20}
           className="hover:text-red-500 text-gray-700 "
         />
