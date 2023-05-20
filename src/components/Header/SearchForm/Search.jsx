@@ -5,6 +5,11 @@ import { MdClear } from "react-icons/md";
 const Search = ({ searchValue, setSearchValue }) => {
   const [value, setValue] = React.useState("");
   const inputRef = React.useRef();
+  const onClickClearHandler = () => {
+    setValue("");
+    setFilter({ ...filter, query: "" });
+    inputRef.current.focus();
+  };
   const updateSearchValue = React.useCallback(
     debounce((string) => {
       setFilter({ ...filter, query: string });
