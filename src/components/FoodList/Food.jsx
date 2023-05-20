@@ -12,11 +12,6 @@ import {
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  // const [sortType, setSortType] = React.useState({
-  //   name: "Rating (min)",
-  //   sortProperty: "-rating",
-  // });
-  // const [categoryId, setCategoryId] = React.useState(0);
   const { categoryId, sortType } = useSelector((state) => state.filter);
   const sortTypes = sortType.sortProperty;
   const dispatch = useDispatch();
