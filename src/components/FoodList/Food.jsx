@@ -8,6 +8,7 @@ import {
   setCategoryId,
   setSort,
 } from "../../redux/store/Slices/filterSlice.js";
+import axios from "axios";
 
 const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
