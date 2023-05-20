@@ -22,9 +22,10 @@ const Food = ({ searchValue }) => {
     const sortTypeBy = sortTypes.replace("-", "");
     const orderBy = sortTypes.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
-    fetch(
-      `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
-    )
+    axios
+      .get(
+        `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+      )
       .then((res) => res.json())
       .then((arr) => {
         setFoodItems(arr);
