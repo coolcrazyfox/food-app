@@ -17,6 +17,10 @@ const Search = ({ searchValue, setSearchValue }) => {
     }, 500),
     []
   );
+  const onChangeInput = (e) => {
+    setValue(e.target.value);
+    updateSearchValue(e.target.value);
+  };
 
   return (
     <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
