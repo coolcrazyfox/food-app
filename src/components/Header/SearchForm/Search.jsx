@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
 
 const Search = ({ searchValue, setSearchValue }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = React.useState("");
   const inputRef = React.useRef();
   const updateSearchValue = React.useCallback(
     debounce((string) => {
