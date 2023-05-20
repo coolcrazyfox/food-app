@@ -26,9 +26,8 @@ const Food = ({ searchValue }) => {
       .get(
         `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
       )
-      .then((res) => res.json())
-      .then((arr) => {
-        setFoodItems(arr);
+      .then((res) => {
+        setFoodItems(res.data);
         setIsLoading(false);
       });
   }, [categoryId, sortTypes, searchValue]);
