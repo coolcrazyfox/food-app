@@ -7,16 +7,17 @@ const Search = ({ searchValue, setSearchValue }) => {
   const [value, setValue] = React.useState("");
   const inputRef = React.useRef();
   const onClickClearHandler = () => {
+    setSearchValue("");
     setValue("");
-    setFilter({ ...filter, query: "" });
     inputRef.current.focus();
   };
   const updateSearchValue = React.useCallback(
     debounce((string) => {
-      setFilter({ ...filter, query: string });
+      setSearchValue(string);
     }, 500),
     []
   );
+
   return (
     <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
       <AiOutlineSearch size={25} />
