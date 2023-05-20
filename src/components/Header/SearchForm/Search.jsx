@@ -3,6 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
 
 const Search = ({ searchValue, setSearchValue }) => {
+  const [value, setValue] = useState("");
   const inputRef = React.useRef();
   return (
     <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
