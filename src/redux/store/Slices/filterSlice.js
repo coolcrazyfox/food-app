@@ -22,10 +22,15 @@ export const filterSlice = createSlice({
     setOpenCategory(state, action) {
       state.open = action.payload;
     },
+    setFilters(state, action) {
+      state.sortType = action.payload.sortType;
+      state.categoryId = Number(action.payload.categoryId);
+    },
     // setOpenSort(state, action) {
     //   state.open = action.payload;
     // },
   },
 });
-export const { setCategoryId, setSort, setOpenCategory } = filterSlice.actions;
+export const { setCategoryId, setSort, setOpenCategory, setFilters } =
+  filterSlice.actions;
 export default filterSlice.reducer;
