@@ -1,7 +1,7 @@
 import React from "react";
 import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
-import PriceFood from "./PriceFood.jsx";
+import PriceFood, { sortTitle } from "./PriceFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -22,7 +22,10 @@ const Food = ({ searchValue }) => {
   React.useEffect(() => {
     if (window.location.search) {
       const params = qs.parse(window.location.search.substring(1));
-      dispatch(setFilters({ ...params }));
+      const sortUrl = sortTitle.find(
+        (obj) => obj.sortProperty === params.sortProperty
+      );
+      dispatch(setFilters({ ...params, sortUrl }));
     }
   }, []);
 
