@@ -20,14 +20,13 @@ const Food = ({ searchValue }) => {
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const { categoryId, sortType } = useSelector((state) => state.filter);
-  const sortTypes = sortType.sortProperty;
 
   const fetchFood = () => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
-    const sortTypeBy = sortTypes.replace("-", "");
-    const orderBy = sortTypes.includes("-") ? "asc" : "desc";
+    const sortTypeBy = sortType.sortProperty.replace("-", "");
+    const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
     axios
       .get(
@@ -54,15 +53,18 @@ const Food = ({ searchValue }) => {
       fetchFood();
     }
     isSearch.current = false;
-  }, [categoryId, sortTypes, searchValue]);
+  }, [categoryId, sortType.sortProperty, searchValue]);
 
   React.useEffect(() => {
     if (isMounted.current) {
-      const queryString = qs.stringify({ sortProperty: sortTypes, categoryId }); //?
+      const queryString = qs.stringify({
+        sortProperty: sortType.sortProperty,
+        categoryId,
+      }); //?
       navigate(`?${queryString}`);
     }
     isMounted.current = true;
-  }, [categoryId, sortTypes, searchValue]);
+  }, [categoryId, sortType.sortProperty, searchValue]);
 
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
