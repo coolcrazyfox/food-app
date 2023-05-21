@@ -12,13 +12,15 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Food = ({ searchValue }) => {
-  const isSearch = React.useRef();
+  const isSearch = React.useRef(false);
+  const isMounted = React.useRef(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const { categoryId, sortType } = useSelector((state) => state.filter);
   const sortTypes = sortType.sortProperty;
-  const dispatch = useDispatch();
+
   const fetchFood = () => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
