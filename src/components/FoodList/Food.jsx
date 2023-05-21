@@ -86,7 +86,7 @@ const Food = ({ searchValue }) => {
           onClickCategoryHandler={filterType}
         />
         {/* Filter Price */}
-        <PriceFood />
+        <PriceFood value={value} />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
