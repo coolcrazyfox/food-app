@@ -57,9 +57,10 @@ const Food = ({ searchValue }) => {
 
   React.useEffect(() => {
     if (isMounted.current) {
-      const queryString = qs.stringify({ sortProperty: sortTypes, categoryId });
+      const queryString = qs.stringify({ sortProperty: sortTypes, categoryId }); //?
       navigate(`?${queryString}`);
     }
+    isMounted.current = true;
   }, [categoryId, sortTypes, searchValue]);
 
   //   Filter Type burgers/pizza/etc
