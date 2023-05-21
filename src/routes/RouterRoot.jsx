@@ -8,15 +8,14 @@ import Contact from "../components/Footer/Contact";
 import Category from "../components/Footer/Category";
 
 export const PATH = {
-  HERO: "/food-app",
+  HERO: "/",
   ORDERS: "/orders",
-  FOOD: "/food",
+  FOOD: "/card",
   FAVORITES: "/favorites",
   PROMOTIONS: "/promotions",
   ADD_FRIENDS: "/invite_friends",
   HELP: "/help",
   CONTACT: "/contact",
-  FOOD: "/food",
 };
 const RouterRoot = ({ searchValue }) => {
   return (

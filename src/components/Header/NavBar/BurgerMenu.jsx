@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const initialState = [
   {
     id: 1,
-    link: "/food-app",
+    link: "/",
     title: "Home",
     icon: <GoHome size={27} />,
   },
@@ -22,7 +22,7 @@ export const initialState = [
   },
   {
     id: 3,
-    link: "/food",
+    link: "/card",
     title: "Menubar",
     icon: <MdFastfood size={27} />,
   },
