@@ -18,6 +18,13 @@ const Food = ({ searchValue }) => {
   const { categoryId, sortType } = useSelector((state) => state.filter);
   const sortTypes = sortType.sortProperty;
   const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    if (window.location.search) {
+      const params = qs.parse(window.location.search.substring(1));
+    }
+  }, []);
+
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
