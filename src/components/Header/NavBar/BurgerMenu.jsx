@@ -6,53 +6,54 @@ import { MdFavorite, MdHelp } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { PATH } from "../../../routes/RouterRoot";
 
 export const initialState = [
   {
     id: 1,
-    link: "/",
+    link: PATH.HERO,
     title: "Home",
     icon: <GoHome size={27} />,
   },
   {
     id: 2,
-    link: "/orders",
+    link: PATH.ORDERS,
     title: "Orders",
     icon: <TbTruckDelivery size={27} />,
   },
   {
     id: 3,
-    link: "/card",
+    link: PATH.FOOD,
     title: "Menubar",
     icon: <MdFastfood size={27} />,
   },
   {
     id: 4,
-    link: "/favorites",
+    link: PATH.FAVORITES,
     title: "Favorites",
     icon: <MdFavorite size={27} />,
   },
   {
     id: 5,
-    link: "/promotions",
+    link: PATH.PROMOTIONS,
     title: "Promotions",
     icon: <AiFillTag size={27} />,
   },
   {
     id: 6,
-    link: "/invite_friends",
+    link: PATH.ADD_FRIENDS,
     title: "Invite Friends",
     icon: <FaUserFriends size={27} />,
   },
   {
     id: 7,
-    link: "/help",
+    link: PATH.HELP,
     title: "Help",
     icon: <MdHelp size={27} />,
   },
   {
     id: 8,
-    link: "/contact",
+    link: PATH.CONTACT,
     title: "Contact",
     icon: <MdOutlineConnectWithoutContact size={27} />,
   },

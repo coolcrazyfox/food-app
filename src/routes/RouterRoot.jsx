@@ -8,9 +8,9 @@ import Contact from "../components/Footer/Contact";
 import Category from "../components/Footer/Category";
 
 export const PATH = {
-  HERO: "/",
+  HERO: "/food-app",
   ORDERS: "/orders",
-  FOOD: "/card",
+  FOOD: "/food",
   FAVORITES: "/favorites",
   PROMOTIONS: "/promotions",
   ADD_FRIENDS: "/invite_friends",
