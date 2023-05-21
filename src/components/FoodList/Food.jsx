@@ -42,6 +42,7 @@ const Food = ({ searchValue }) => {
         (obj) => obj.sortProperty === params.sortProperty
       );
       dispatch(setFilters({ ...params, sortUrl }));
+      isSearch.current = true;
     }
   }, []);
 
