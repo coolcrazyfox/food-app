@@ -9,8 +9,10 @@ import {
   setSort,
 } from "../../redux/store/Slices/filterSlice.js";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Food = ({ searchValue }) => {
+  const navigate = useNavigate();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const { categoryId, sortType } = useSelector((state) => state.filter);
@@ -35,6 +37,7 @@ const Food = ({ searchValue }) => {
 
   React.useEffect(() => {
     const queryString = qs.stringify({ sortTypes, categoryId });
+    navigate(`?${queryString}`);
   }, [categoryId, sortTypes, searchValue]);
 
   //   Filter Type burgers/pizza/etc
