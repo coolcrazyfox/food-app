@@ -40,10 +40,10 @@ const Food = ({ searchValue }) => {
   React.useEffect(() => {
     if (window.location.search) {
       const params = qs.parse(window.location.search.substring(1));
-      const sortUrl = sortTitle.find(
+      const sort = sortTitle.find(
         (obj) => obj.sortProperty === params.sortProperty
       );
-      dispatch(setFilters({ ...params, sortUrl }));
+      dispatch(setFilters({ ...params, sort }));
       isSearch.current = true;
     }
   }, []);
@@ -58,7 +58,7 @@ const Food = ({ searchValue }) => {
   React.useEffect(() => {
     if (isMounted.current) {
       const queryString = qs.stringify({
-        sortBy: sortType.sortProperty,
+        sortProperty: sortType.sortProperty,
         categoryId,
       }); //?
       navigate(`?${queryString}`);
@@ -86,7 +86,7 @@ const Food = ({ searchValue }) => {
           onClickCategoryHandler={filterType}
         />
         {/* Filter Price */}
-        <PriceFood value={value} />
+        <PriceFood value={1} />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
