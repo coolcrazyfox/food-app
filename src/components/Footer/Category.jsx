@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 
 const Category = () => {
@@ -8,11 +9,11 @@ const Category = () => {
   };
   // https://64581bc81a4c152cf991b4a5.mockapi.io/category
   React.useEffect(() => {
-    fetch("https://64581bc81a4c152cf991b4a5.mockapi.io/category").then((res) =>
-      res.json().then((arr) => {
-        setCategories(arr);
-      })
-    );
+    axios
+      .get("https://64581bc81a4c152cf991b4a5.mockapi.io/category")
+      .then((res) => {
+        setCategories(res.data);
+      });
   }, []);
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
