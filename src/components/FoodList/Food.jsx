@@ -78,7 +78,7 @@ const Food = ({ searchValue }) => {
   const foodList = foodItems.map((food) => (
     <FoodCard {...food} key={food.id} />
   ));
-  const skeletons = [...new Array(4)].map((_, i) => (
+  const skeletons = [...new Array(8)].map((_, i) => (
     <SkeletonLoading key={i} />
   ));
   return (
