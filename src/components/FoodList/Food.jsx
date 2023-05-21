@@ -11,8 +11,10 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import qs from "qs";
+import { PATH } from "../../routes/RouterRoot.jsx";
 
 const Food = ({ searchValue }) => {
+  const path = PATH.FOOD;
   const isSearch = React.useRef(false);
   const isMounted = React.useRef(false);
   const navigate = useNavigate();
@@ -61,7 +63,7 @@ const Food = ({ searchValue }) => {
         sortProperty: sortType.sortProperty,
         categoryId,
       }); //?
-      navigate(`?${queryString}`);
+      navigate(`${path}?${queryString}`);
     }
     isMounted.current = true;
   }, [categoryId, sortType.sortProperty]);
