@@ -30,7 +30,7 @@ const Food = ({ searchValue }) => {
     const search = searchValue ? `&search=${searchValue}` : "";
     axios
       .get(
-        `${baseUrl}?${categoryBy}&sortBy=${sortTypeBy}&order=${orderBy}${search}`
+        `${baseUrl}?$sortBy=${sortTypeBy}&{categoryBy}&order=${orderBy}${search}`
       )
       .then((res) => {
         setFoodItems(res.data);
