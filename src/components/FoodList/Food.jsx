@@ -10,6 +10,7 @@ import {
 } from "../../redux/store/Slices/filterSlice.js";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import qs from "qs";
 
 const Food = ({ searchValue }) => {
   const isSearch = React.useRef(false);

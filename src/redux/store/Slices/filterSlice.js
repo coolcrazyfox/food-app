@@ -23,8 +23,8 @@ export const filterSlice = createSlice({
       state.open = action.payload;
     },
     setFilters(state, action) {
-      state.sortType = action.payload.sortType;
       state.categoryId = Number(action.payload.categoryId);
+      state.sortType = action.payload.sortType;
     },
     // setOpenSort(state, action) {
     //   state.open = action.payload;
