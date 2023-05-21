@@ -56,8 +56,10 @@ const Food = ({ searchValue }) => {
   }, [categoryId, sortTypes, searchValue]);
 
   React.useEffect(() => {
-    const queryString = qs.stringify({ sortTypes, categoryId });
-    navigate(`?${queryString}`);
+    if (isMounted.current) {
+      const queryString = qs.stringify({ sortProperty: sortTypes, categoryId });
+      navigate(`?${queryString}`);
+    }
   }, [categoryId, sortTypes, searchValue]);
 
   //   Filter Type burgers/pizza/etc
