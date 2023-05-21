@@ -13,6 +13,7 @@ export const sortTitle = [
 
 const PriceFood = React.memo(({ value }) => {
   const dispatch = useDispatch();
+  const sortRef = React.useRef(null);
   const sort = useSelector((state) => state.filter.sortType);
 
   const [openSort, setOpenSort] = React.useState(false);
