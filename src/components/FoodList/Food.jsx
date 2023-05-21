@@ -67,10 +67,10 @@ const Food = ({ searchValue }) => {
   }, [categoryId, sortType.sortProperty, searchValue]);
 
   //   Filter Type burgers/pizza/etc
-  const filterType = (i) => {
+  const filterType = React.useCallback((i) => {
     dispatch(setCategoryId(i));
     // setCategoryId(i);
-  };
+  }, []);
   //   Filter by price
   // const filterPrice = (obj) => {
   //   setSortType(obj);
