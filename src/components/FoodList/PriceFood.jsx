@@ -11,7 +11,7 @@ export const sortTitle = [
   { name: "Z-A", sortProperty: "name" },
 ];
 
-const PriceFood = () => {
+const PriceFood = React.memo(({ value }) => {
   const dispatch = useDispatch();
   const sort = useSelector((state) => state.filter.sortType);
 
@@ -52,6 +52,6 @@ const PriceFood = () => {
       </div>
     </div>
   );
-};
+});
 
 export default PriceFood;
