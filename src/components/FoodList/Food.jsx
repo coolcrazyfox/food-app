@@ -48,7 +48,9 @@ const Food = ({ searchValue }) => {
 
   React.useEffect(() => {
     if (!isSearch.current) {
+      fetchFood();
     }
+    isSearch.current = false;
   }, [categoryId, sortTypes, searchValue]);
 
   React.useEffect(() => {
