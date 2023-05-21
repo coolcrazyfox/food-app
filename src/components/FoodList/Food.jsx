@@ -6,7 +6,7 @@ import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setCategoryId,
-  setSort,
+  setFilters,
 } from "../../redux/store/Slices/filterSlice.js";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
