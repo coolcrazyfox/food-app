@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { setSort } from "../../redux/store/Slices/filterSlice";
 
 export const sortTitle = [
-  { name: "Rating (min)", sortProperty: "-rating" },
-  { name: "Rating (max)", sortProperty: "rating" },
-  { name: "Price (min)", sortProperty: "-price" },
-  { name: "Price (max)", sortProperty: "price" },
-  { name: "A-Z", sortProperty: "-name" },
-  { name: "Z-A", sortProperty: "name" },
+  { id: 1, name: "Rating (min)", sortProperty: "-rating" },
+  { id: 2, name: "Rating (max)", sortProperty: "rating" },
+  { id: 3, name: "Price (min)", sortProperty: "-price" },
+  { id: 4, name: "Price (max)", sortProperty: "price" },
+  { id: 5, name: "A-Z", sortProperty: "-name" },
+  { id: 6, name: "Z-A", sortProperty: "name" },
 ];
 
 const PriceFood = React.memo(({ value }) => {
@@ -30,7 +30,7 @@ const PriceFood = React.memo(({ value }) => {
           <>
             {sortTitle.map((obj) => (
               <button
-                key={obj}
+                key={obj.id}
                 onClick={() => onChangePriceHandler(obj)}
                 className={
                   sort.sortProperty === obj.sortProperty
