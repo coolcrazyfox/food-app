@@ -33,7 +33,9 @@ const Food = ({ searchValue }) => {
       });
   }, [categoryId, sortTypes, searchValue]);
 
-  React.useEffect(() => {}, [categoryId, sortTypes, searchValue]);
+  React.useEffect(() => {
+    const queryString = qs.stringify({ sortTypes, categoryId });
+  }, [categoryId, sortTypes, searchValue]);
 
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
