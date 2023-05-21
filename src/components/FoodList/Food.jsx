@@ -16,7 +16,6 @@ const Food = ({ searchValue }) => {
   const { categoryId, sortType } = useSelector((state) => state.filter);
   const sortTypes = sortType.sortProperty;
   const dispatch = useDispatch();
-  React.useEffect(() => {}, []);
   React.useEffect(() => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
@@ -33,6 +32,9 @@ const Food = ({ searchValue }) => {
         setIsLoading(false);
       });
   }, [categoryId, sortTypes, searchValue]);
+
+  React.useEffect(() => {}, [categoryId, sortTypes, searchValue]);
+
   //   Filter Type burgers/pizza/etc
   const filterType = (i) => {
     dispatch(setCategoryId(i));
