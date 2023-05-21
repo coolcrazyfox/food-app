@@ -64,7 +64,7 @@ const Food = ({ searchValue }) => {
       navigate(`?${queryString}`);
     }
     isMounted.current = true;
-  }, [categoryId, sortType.sortProperty, searchValue]);
+  }, [categoryId, sortType.sortProperty]);
 
   //   Filter Type burgers/pizza/etc
   const filterType = React.useCallback((i) => {
@@ -75,6 +75,12 @@ const Food = ({ searchValue }) => {
   // const filterPrice = (obj) => {
   //   setSortType(obj);
   // };
+  const foodList = foodItems.map((food) => (
+    <FoodCard {...food} key={food.id} />
+  ));
+  const skeletons = [...new Array(4)].map((_, i) => (
+    <SkeletonLoading key={i} />
+  ));
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
       <h1 className="text-orange-600 font-bold text-4xl text-center">Menu</h1>
@@ -90,9 +96,7 @@ const Food = ({ searchValue }) => {
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-        {isLoading
-          ? [...new Array(4)].map((_, i) => <SkeletonLoading key={i} />)
-          : foodItems.map((food) => <FoodCard {...food} key={food.id} />)}
+        {isLoading ? skeletons : foodList}
       </div>
     </div>
   );
