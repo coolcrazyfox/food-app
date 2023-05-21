@@ -46,7 +46,10 @@ const Food = ({ searchValue }) => {
     }
   }, []);
 
-  React.useEffect(() => {}, [categoryId, sortTypes, searchValue]);
+  React.useEffect(() => {
+    if (!isSearch.current) {
+    }
+  }, [categoryId, sortTypes, searchValue]);
 
   React.useEffect(() => {
     const queryString = qs.stringify({ sortTypes, categoryId });
