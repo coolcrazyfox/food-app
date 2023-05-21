@@ -12,14 +12,14 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Food = ({ searchValue }) => {
+  const isSearch = React.useRef();
   const navigate = useNavigate();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const { categoryId, sortType } = useSelector((state) => state.filter);
   const sortTypes = sortType.sortProperty;
   const dispatch = useDispatch();
-
-  React.useEffect(() => {
+  const getFood = React.useEffect(() => {
     if (window.location.search) {
       const params = qs.parse(window.location.search.substring(1));
       const sortUrl = sortTitle.find(
