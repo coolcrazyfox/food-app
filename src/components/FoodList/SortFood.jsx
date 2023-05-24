@@ -11,7 +11,7 @@ export const sortTitle = [
   { id: 6, name: "Z-A", sortProperty: "name" },
 ];
 
-const SortFood = React.memo(({ value }) => {
+const SortFood = React.memo(() => {
   const dispatch = useDispatch();
   const sortRef = React.useRef(null);
   const sort = useSelector((state) => state.filter.sortType);
