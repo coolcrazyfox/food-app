@@ -1,7 +1,7 @@
 import React from "react";
 import FoodCard from "./FoodCard.jsx";
 import CategoriesFood from "./CategoriesFood.jsx";
-import PriceFood, { sortTitle } from "./PriceFood.jsx";
+import SortFood, { sortTitle } from "./SortFood.jsx";
 import SkeletonLoading from "../Skeleton/SkeletonLoading.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -94,7 +94,7 @@ const Food = ({ searchValue }) => {
           onClickCategoryHandler={filterType}
         />
         {/* Filter Price */}
-        <PriceFood value={1} />
+        <SortFood value={1} />
       </div>
       {/* Display foods */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
