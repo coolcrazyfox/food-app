@@ -8,13 +8,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
 const NavBar = ({ isClick, setIsClick }) => {
-  const nav = useSelector((state) => state.navbar.openMenu);
+  const nav = useSelector((state) => state.navbar);
   const dispatch = useDispatch();
   return (
     <>
       <div className="flex items-center">
         <div
-          onClick={() => dispatch(setOpenMenu(!nav))}
+          onClick={() => dispatch(setOpenMenu(true))}
           className="cursor-pointer"
         >
           <GiFullPizza size={31} className="text-orange-500 mt-1" />
