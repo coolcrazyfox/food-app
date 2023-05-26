@@ -8,11 +8,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
 const NavBar = ({ isClick, setIsClick }) => {
-  const nav = useSelector((state) => state.navbar);
-  console.log("nav", nav);
+  const nav = useSelector((state) => state.navbar.openMenu);
   const dispatch = useDispatch();
-  const onChangeHandler = (nav) => {
-    dispatch(setOpenMenu(!nav));
+  const onChangeHandler = () => {
+    dispatch(setOpenMenu(true));
   };
   return (
     <>
