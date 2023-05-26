@@ -4,12 +4,19 @@ import { GiFullPizza } from "react-icons/gi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import BurgerMenu from "./BurgerMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
-const NavBar = ({ nav, setNav, isClick, setIsClick }) => {
+const NavBar = ({ isClick, setIsClick }) => {
+  const nav = useSelector((state) => state.navbar.openMenu);
+  const dispatch = useDispatch();
   return (
     <>
       <div className="flex items-center">
-        <div onClick={() => setNav(!nav)} className="cursor-pointer">
+        <div
+          onClick={() => dispatch(setOpenMenu(!nav))}
+          className="cursor-pointer"
+        >
           <GiFullPizza size={31} className="text-orange-500 mt-1" />
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
@@ -35,7 +42,7 @@ const NavBar = ({ nav, setNav, isClick, setIsClick }) => {
         }
       >
         <AiOutlineClose
-          onClick={() => setNav(!nav)}
+          onClick={() => dispatch(setOpenMenu(!nav))}
           size={30}
           className="absolute right-4 top-4 cursor-pointer"
         />
