@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  categoryId: 0,
+  changeTheme: false,
   openMenu: false,
   // // openSort: false,
   // sortType: {
@@ -15,6 +15,9 @@ export const navBarSlice = createSlice({
   reducers: {
     setOpenMenu(state, action) {
       state.openMenu = action.payload;
+    },
+    setChangeTheme(state, action) {
+      state.changeTheme = action.payload;
     },
   },
 });
