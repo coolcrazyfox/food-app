@@ -1,22 +1,22 @@
 import React from "react";
 import ThemeButton from "./ThemeButton";
 import { GiFullPizza } from "react-icons/gi";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 import BurgerMenu from "./BurgerMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
 const NavBar = ({ isClick, setIsClick }) => {
-  const nav = useSelector((state) => state.navbar);
+  const nav = useSelector((state) => state.navbar.openMenu);
   const dispatch = useDispatch();
+  const onChangeHandler = (nav) => {
+    dispatch(setOpenMenu(!nav));
+  };
   return (
     <>
       <div className="flex items-center">
-        <div
-          onClick={() => dispatch(setOpenMenu(true))}
-          className="cursor-pointer"
-        >
+        <div onClick={onChangeHandler} className="cursor-pointer">
           <GiFullPizza size={31} className="text-orange-500 mt-1" />
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
