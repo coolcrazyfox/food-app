@@ -10,7 +10,7 @@ const initialState = {
   // },
 };
 export const navBarSlice = createSlice({
-  name: "navBar",
+  name: "navbar",
   initialState,
   reducers: {
     setOpenMenu(state, action) {

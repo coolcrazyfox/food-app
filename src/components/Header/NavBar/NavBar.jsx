@@ -7,7 +7,7 @@ import BurgerMenu from "./BurgerMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
-const NavBar = ({ isClick, setIsClick }) => {
+const NavBar = () => {
   const nav = useSelector((state) => state.navbar.openMenu);
   const dispatch = useDispatch();
   const onChangeHandler = () => {
@@ -24,7 +24,7 @@ const NavBar = ({ isClick, setIsClick }) => {
           <span className=" font-bold">Delivery</span>
         </h1>
         {/* Themes */}
-        <ThemeButton isClick={isClick} setIsClick={setIsClick} />
+        <ThemeButton />
       </div>
       {/* Mobile Menu */}
       {/* Overlay */}
