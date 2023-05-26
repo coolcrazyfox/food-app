@@ -21,5 +21,5 @@ export const navBarSlice = createSlice({
     },
   },
 });
-export const { setOpenMenu } = navBarSlice.actions;
+export const { setOpenMenu, setChangeTheme } = navBarSlice.actions;
 export default navBarSlice.reducer;
