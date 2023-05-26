@@ -5,18 +5,10 @@ import Search from "./SearchForm/Search";
 import NavBar from "./NavBar/NavBar";
 
 const Header = ({ searchValue, setSearchValue }) => {
-  // const [nav, setNav] = useState(false);
-  const [isClick, setIsClick] = useState(false);
-
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       {/* Left side */}
-      <NavBar
-        // nav={nav}
-        // setNav={setNav}
-        isClick={isClick}
-        setIsClick={setIsClick}
-      />
+      <NavBar />
       {/* Search Input */}
       <Search searchValue={searchValue} setSearchValue={setSearchValue} />
       {/* Cart button */}
