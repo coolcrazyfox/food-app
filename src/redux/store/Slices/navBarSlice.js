@@ -9,3 +9,14 @@ const initialState = {
   //   sortProperty: "-rating",
   // },
 };
+export const navBarSlice = createSlice({
+  name: "navbar",
+  initialState,
+  reducers: {
+    setOpenMenu(state, action) {
+      state.openMenu = action.payload;
+    },
+  },
+});
+export const { setOpenMenu } = navBarSlice.actions;
+export default navBarSlice.reducer;
