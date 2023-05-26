@@ -47,9 +47,9 @@ const NavBar = ({ isClick, setIsClick }) => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4 font-bold text-orange-500">Menu</h2>
-        <nav>
+        <div>
           <BurgerMenu />
-        </nav>
+        </div>
       </div>
     </>
   );
