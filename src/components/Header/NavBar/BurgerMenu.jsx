@@ -7,6 +7,7 @@ import { GoHome } from "react-icons/go";
 import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { PATH } from "../../../routes/RouterRoot";
+import {useSelector} from "react-redux";
 
 export const initialState = [
   {
@@ -60,16 +61,16 @@ export const initialState = [
 ];
 
 const BurgerMenu = () => {
+  const theme=useSelector(state=>state.navbar.changeTheme)
   return (
     <>
-      <ul className="flex flex-col p-4 text-gray-800">
+      <ul className={theme?"flex flex-col p-4 text-gray-800":'flex flex-col p-4 bg-gray-800 text-white'}>
         {initialState.map((c) => (
           <Link to={c.link} key={c.id}>
             <li className="text-xl py-4 flex">
               <div className="mr-4 flex flex-row">
                 {c.icon} <span className="ml-5 pb-3">{c.title}</span>
               </div>
-              {/* <TbTruckDelivery size={25} className="mr-4" /> Orders */}
             </li>
           </Link>
         ))}
