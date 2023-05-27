@@ -22,7 +22,7 @@ const RouterRoot = ({ searchValue }) => {
     <div>
       <Routes>
         <Route path={PATH.HERO} element={<Hero />} />
-        <Route path={PATH.FOOD} element={<Food searchValue={searchValue} />} />
+        <Route path={PATH.FOOD} element={<Food />} />
         <Route path={PATH.ORDERS} element={<CartPage />} />
         <Route path={PATH.FAVORITES} element={<Category />} />
         {/*<Route path={PATH.PROMOTIONS} element={<PostsPage />} />

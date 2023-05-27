@@ -2,23 +2,28 @@ import React from "react";
 import debounce from "lodash.debounce";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
+import {useDispatch, useSelector} from "react-redux";
+import {setSearchValue} from "../../../redux/store/Slices/filterSlice";
 
-const Search = ({ searchValue, setSearchValue }) => {
-  const [value, setValue] = React.useState("");
+const Search = () => {
+  // const [value, setValue] = React.useState("");
+  const value=useSelector(state=>state.filter.searchValue)
+  const dispatch=useDispatch()
   const inputRef = React.useRef();
   const onClickClearHandler = () => {
-    setSearchValue("");
-    setValue("");
+    // setSearchValue("");
+    // setValue("");
+    dispatch(setSearchValue(''))
     inputRef.current.focus();
   };
   const updateSearchValue = React.useCallback(
     debounce((string) => {
-      setSearchValue(string);
+      dispatch(setSearchValue(string));
     }, 1000),
     []
   );
   const onChangeInput = (e) => {
-    setValue(e.target.value);
+    dispatch(setSearchValue(e.target.value));
     updateSearchValue(e.target.value);
   };
 
@@ -33,7 +38,7 @@ const Search = ({ searchValue, setSearchValue }) => {
         type="text"
         placeholder="Search foods"
       />
-      {searchValue && (
+      {value && (
         <MdClear
           onClick={onClickClearHandler}
           size={20}

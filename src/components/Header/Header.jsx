@@ -9,7 +9,9 @@ const Header = ({ searchValue, setSearchValue }) => {
       {/* Left side */}
       <NavBar />
       {/* Search Input */}
-      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Search
+          // searchValue={searchValue} setSearchValue={setSearchValue}
+      />
       {/* Cart button */}
       <CartButton />
     </div>

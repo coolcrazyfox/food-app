@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import qs from "qs";
 import { PATH } from "../../routes/RouterRoot.jsx";
 
-const Food = ({ searchValue }) => {
+const Food = () => {
   const path = PATH.FOOD;
   const isSearch = React.useRef(false);
   const isMounted = React.useRef(false);
@@ -21,7 +21,7 @@ const Food = ({ searchValue }) => {
   const dispatch = useDispatch();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const { categoryId, sortType } = useSelector((state) => state.filter);
+  const { categoryId, sortType, searchValue } = useSelector((state) => state.filter);
 
   const fetchFood = () => {
     setIsLoading(true);
