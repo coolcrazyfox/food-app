@@ -107,7 +107,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
-    "imageUrl": "https://myfoodbook.com.au/sites/default/files/styles/recipe_pop_up/public/recipe_photo/Brev20145420_0.jpg",
+    "imageUrl": "https://media.healthyfood.com/wp-content/uploads/2016/09/Prawn-asparagus-and-cherry-tomato-pizza-with-cauliflower-crust.jpg",
     "price": 40,
     "rating": 7
   },
@@ -229,7 +229,7 @@
     "id": 24,
     "name": "Olivier Salad",
     "category": [0, 3],
-    "imageUrl": "https://www.yummytemple.com/wp-content/uploads/2022/04/Russian-salad-Olivje-with-potatoes-apples-and-sausage-1.jpg",
+    "imageUrl": "https://healthywithnedi.com/wp-content/uploads/2020/04/russiansalad.jpg",
     "price": 10,
     "rating": 4
   },
