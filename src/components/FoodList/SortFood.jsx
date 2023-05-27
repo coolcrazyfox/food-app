@@ -13,7 +13,6 @@ export const sortTitle = [
 
 const SortFood = React.memo(() => {
   const theme = useSelector((state) => state.navbar.changeTheme);
-  console.log('theme',theme)
   const dispatch = useDispatch();
   const sortRef = React.useRef(null);
   const sort = useSelector((state) => state.filter.sortType);
