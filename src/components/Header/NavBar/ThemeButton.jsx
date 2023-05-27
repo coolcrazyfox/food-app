@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setChangeTheme } from "../../../redux/store/Slices/navBarSlice";
+import {BsFillEmojiSunglassesFill} from "react-icons/bs";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
@@ -14,11 +15,11 @@ const ThemeButton = () => {
       <p
         className={
           isClick
-            ? "text-black p-2 min-w-4"
+            ? "text-orange-500 p-2 min-w-4"
             : "bg-black text-white rounded-full p-2 min-w-4 hover:bg-orange-600"
         }
       >
-        Dark
+        <BsFillEmojiSunglassesFill size={19}/>
       </p>{" "}
       <p
         className={
