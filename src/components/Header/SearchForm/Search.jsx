@@ -6,14 +6,13 @@ import {useDispatch, useSelector} from "react-redux";
 import {setSearchValue} from "../../../redux/store/Slices/filterSlice";
 
 const Search = () => {
-  // const [value, setValue] = React.useState("");
-  const value=useSelector(state=>state.filter.searchValue)
+  const [value, setValue] = React.useState("");
   const dispatch=useDispatch()
+  const searchValue=useSelector(state=>state.filter.searchValue)
   const inputRef = React.useRef();
   const onClickClearHandler = () => {
-    // setSearchValue("");
-    // setValue("");
-    dispatch(setSearchValue(''))
+    dispatch(setSearchValue(""));
+    setValue("");
     inputRef.current.focus();
   };
   const updateSearchValue = React.useCallback(
@@ -22,9 +21,8 @@ const Search = () => {
     }, 1000),
     []
   );
-  console.log('update',updateSearchValue)
   const onChangeInput = (e) => {
-    dispatch(setSearchValue(e.target.value));
+    setValue(e.target.value);
     updateSearchValue(e.target.value);
   };
 
@@ -39,7 +37,7 @@ const Search = () => {
         type="text"
         placeholder="Search foods"
       />
-      {value && (
+      {searchValue && (
         <MdClear
           onClick={onClickClearHandler}
           size={20}
