@@ -10,7 +10,7 @@ const ThemeButton = () => {
   return (
     <div
       onClick={() => dispatch(setChangeTheme(!isClick))}
-      className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-pointer "
+      className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[10px] cursor-pointer "
     >
       <div
         className={
@@ -19,7 +19,7 @@ const ThemeButton = () => {
             : "bg-orange-600  text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
-        <BsMoonStarsFill size={19}l/>
+        <BsMoonStarsFill size={15}l/>
 
       </div>{" "}
       <div
@@ -29,7 +29,7 @@ const ThemeButton = () => {
             : "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
-        <BsFillEmojiSunglassesFill size={19}/>
+        <BsFillEmojiSunglassesFill size={15}/>
       </div>
     </div>
   );
