@@ -21,7 +21,7 @@ const NavBar = () => {
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best
-          <span className=" font-bold">Delivery</span>
+          <span className={changeTheme?" font-bold":'font-bold text-white'}>Delivery</span>
         </h1>
         {/* Themes */}
         <ThemeButton />
