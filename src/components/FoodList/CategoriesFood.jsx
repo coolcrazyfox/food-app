@@ -1,4 +1,5 @@
 import React from "react";
+import {useSelector} from "react-redux";
 
 export const categoriesName = [
   "All",
@@ -12,6 +13,7 @@ export const categoriesName = [
 ];
 
 const CategoriesFood = ({ onClickCategoryHandler, value }) => {
+  const theme=useSelector(state=>state.navbar.changeTheme)
   const [openType, setOpenType] = React.useState(false);
   const sortCategoryName = categoriesName[value];
   const onChangeCategoryHandler = (i) => {
@@ -20,7 +22,7 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
   };
   return (
     <div>
-      <p className="font-bold text-gray-700">Category Filter:</p>
+      <p className={theme?"font-bold text-gray-700":"font-bold text-white"}>Category Filter:</p>
       <div className="flex justify-between flex-wrap">
         {openType ? (
           <>
