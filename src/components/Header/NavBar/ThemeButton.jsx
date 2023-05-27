@@ -15,8 +15,8 @@ const ThemeButton = () => {
       <div
         className={
           isClick
-            ? "text-orange-500 p-2 min-w-4"
-            : "bg-black text-white rounded-full p-2 min-w-4 hover:bg-orange-600"
+            ? "text-black p-2 min-w-4"
+            : "bg-orange-600  text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
         <BsMoonStarsFill size={19}l/>
@@ -25,8 +25,8 @@ const ThemeButton = () => {
       <div
         className={
           !isClick
-            ? "p-2"
-            : "bg-black text-white rounded-full p-2 min-w-4 hover:bg-orange-600"
+            ? "text-black p-2 min-w-4"
+            : "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
         <BsFillEmojiSunglassesFill size={19}/>
