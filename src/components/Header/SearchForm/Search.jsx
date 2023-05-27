@@ -22,6 +22,7 @@ const Search = () => {
     }, 1000),
     []
   );
+  console.log('update',updateSearchValue)
   const onChangeInput = (e) => {
     dispatch(setSearchValue(e.target.value));
     updateSearchValue(e.target.value);

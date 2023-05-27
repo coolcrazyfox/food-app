@@ -6,7 +6,6 @@ import {BsFillEmojiSunglassesFill, BsMoonStarsFill} from "react-icons/bs";
 const ThemeButton = () => {
   const dispatch = useDispatch();
   const isClick = useSelector((state) => state.navbar.changeTheme);
-  console.log("theme", isClick);
   return (
     <div
       onClick={() => dispatch(setChangeTheme(!isClick))}
