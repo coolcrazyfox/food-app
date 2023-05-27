@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
 const NavBar = () => {
-  const nav = useSelector((state) => state.navbar.openMenu);
+  const {openMenu, changeTheme} = useSelector((state) => state.navbar);
   const dispatch = useDispatch();
   const onChangeHandler = () => {
     dispatch(setOpenMenu(true));
@@ -17,7 +17,7 @@ const NavBar = () => {
     <>
       <div className="flex items-center">
         <div onClick={onChangeHandler} className="cursor-pointer">
-          <GiFullPizza size={31} className="text-orange-500 mt-1" />
+          <GiFullPizza size={31} className={changeTheme?"text-orange-500 mt-1":'text-white mt-1'} />
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best
@@ -28,7 +28,7 @@ const NavBar = () => {
       </div>
       {/* Mobile Menu */}
       {/* Overlay */}
-      {nav ? (
+      {openMenu ? (
         <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0 "></div>
       ) : (
         ""
@@ -36,13 +36,13 @@ const NavBar = () => {
       {/* Side drawer menu */}
       <div
         className={
-          nav
+            openMenu
             ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
             : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-1000"
         }
       >
         <AiOutlineClose
-          onClick={() => dispatch(setOpenMenu(!nav))}
+          onClick={() => dispatch(setOpenMenu(!openMenu))}
           size={30}
           className="absolute right-4 top-4 cursor-pointer"
         />
