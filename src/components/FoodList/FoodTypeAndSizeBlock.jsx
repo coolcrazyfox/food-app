@@ -4,8 +4,8 @@ const FoodTypeAndSizeBlock = ({ food }) => {
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
   const typePizza = ["Thin-crust", "Thick-crust"];
-  const foodType = { ...food };
-  console.log("food", foodType);
+  // const foodType = { ...food };
+  // console.log("food", foodType);
 
   return (
     <>
