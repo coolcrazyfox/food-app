@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setChangeTheme } from "../../../redux/store/Slices/navBarSlice";
-import {BsFillEmojiSunglassesFill, BsMoonStarsFill} from "react-icons/bs";
+import { BsFillEmojiSunglassesFill, BsMoonStarsFill } from "react-icons/bs";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const ThemeButton = () => {
             : "bg-orange-600  text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
-        <BsMoonStarsFill size={15}l/>
+        <BsMoonStarsFill size={15} l />
       </div>{" "}
       <div
         className={
@@ -27,7 +27,7 @@ const ThemeButton = () => {
             : "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
-        <BsFillEmojiSunglassesFill size={15}/>
+        <BsFillEmojiSunglassesFill size={15} />
       </div>
     </div>
   );
