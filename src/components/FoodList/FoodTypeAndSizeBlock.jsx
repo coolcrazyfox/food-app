@@ -6,7 +6,6 @@ const FoodTypeAndSizeBlock = ({ food }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
   // const foodType = { ...food };
   // console.log("food", foodType);
-
   return (
     <>
       <div className="flex justify-between px-2 py-1">
