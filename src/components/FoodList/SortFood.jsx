@@ -25,7 +25,15 @@ const SortFood = React.memo(() => {
   };
   return (
     <div>
-      <p className={theme?"font-bold text-gray-700 text-end w-full mr-1":'font-bold text-white text-end w-full mr-1'}>Sort by:</p>
+      <p
+        className={
+          theme
+            ? "font-bold text-gray-700 text-end w-full mr-1"
+            : "font-bold text-white text-end w-full mr-1"
+        }
+      >
+        Sort by:
+      </p>
       <div className="flex justify-between max-w-[690px] w-full">
         {openSort ? (
           <>
