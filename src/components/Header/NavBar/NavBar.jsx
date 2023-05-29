@@ -5,6 +5,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import BurgerMenu from "./BurgerMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
+import { Link } from "react-router-dom";
+import { PATH } from "./../../../routes/RouterRoot";
 
 const NavBar = () => {
   const { openMenu, changeTheme } = useSelector((state) => state.navbar);
@@ -23,9 +25,17 @@ const NavBar = () => {
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best
-          <span className={changeTheme ? " font-bold" : "font-bold text-white"}>
-            Delivery
-          </span>
+          <Link to={PATH.HERO}>
+            <span
+              className={
+                changeTheme
+                  ? " font-bold cursor-pointer"
+                  : "font-bold text-white"
+              }
+            >
+              Delivery
+            </span>
+          </Link>
         </h1>
         {/* Themes */}
         <ThemeButton />
