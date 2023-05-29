@@ -3,11 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   changeTheme: false,
   openMenu: false,
-  // // openSort: false,
-  // sortType: {
-  //   name: "Rating (min)",
-  //   sortProperty: "-rating",
-  // },
 };
 export const navBarSlice = createSlice({
   name: "navbar",
