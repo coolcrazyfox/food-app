@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
 
 const NavBar = () => {
-  const {openMenu, changeTheme} = useSelector((state) => state.navbar);
+  const { openMenu, changeTheme } = useSelector((state) => state.navbar);
   const dispatch = useDispatch();
   const onChangeHandler = () => {
     dispatch(setOpenMenu(true));
@@ -17,11 +17,16 @@ const NavBar = () => {
     <>
       <div className="flex items-center">
         <div onClick={onChangeHandler} className="cursor-pointer">
-          <GiFullPizza size={31} className={changeTheme?"text-orange-500 mt-1":'text-white mt-1'} />
+          <GiFullPizza
+            size={31}
+            className={changeTheme ? "text-orange-500 mt-1" : "text-white mt-1"}
+          />
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
           Best
-          <span className={changeTheme?" font-bold":'font-bold text-white'}>Delivery</span>
+          <span className={changeTheme ? " font-bold" : "font-bold text-white"}>
+            Delivery
+          </span>
         </h1>
         {/* Themes */}
         <ThemeButton />
@@ -36,7 +41,7 @@ const NavBar = () => {
       {/* Side drawer menu */}
       <div
         className={
-            openMenu
+          openMenu
             ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
             : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-1000"
         }
