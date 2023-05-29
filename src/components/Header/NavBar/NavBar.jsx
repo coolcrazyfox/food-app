@@ -2,7 +2,6 @@ import React from "react";
 import ThemeButton from "./ThemeButton";
 import { GiFullPizza } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-
 import BurgerMenu from "./BurgerMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
