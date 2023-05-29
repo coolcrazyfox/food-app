@@ -36,14 +36,14 @@ const Contact = () => {
         Contact Information
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6">
-        {contacts.map((c, index) => (
+        {contacts.map((contact) => (
           <Link
-            to={c.link}
-            key={c.id}
+            to={contact.link}
+            key={contact.id}
             className="bg-gray-100 rounded-lg p-4 flex text-center justify-center items-center cursor-pointer"
           >
-            <h2 className="font-bold sm:text-xl">{c.title}</h2>
-            <span className="ml-5 w-20">{c.icon}</span>
+            <h2 className="font-bold sm:text-xl">{contact.title}</h2>
+            <span className="ml-5 w-20">{contact.icon}</span>
           </Link>
         ))}
       </div>
