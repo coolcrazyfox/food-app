@@ -30,7 +30,7 @@ const NavBar = () => {
               className={
                 changeTheme
                   ? " font-bold cursor-pointer"
-                  : "font-bold text-white"
+                  : "font-bold text-white cursor-pointer"
               }
             >
               Delivery
