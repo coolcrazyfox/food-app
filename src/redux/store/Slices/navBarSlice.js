@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  changeTheme: false,
+  changeTheme: true,
   openMenu: false,
 };
 export const navBarSlice = createSlice({
