@@ -1,9 +1,5 @@
 import React from "react";
-
 import HeadlineCards from "../../components/Header/Main/HeadlineCards";
-import Food from "../../components/FoodList/Food";
-import Category from "../../components/Footer/Category";
-import Contact from "../../components/Footer/Contact";
 
 const Hero = () => {
   const imageUrl = "https://restorany.org/uploads/624ad34ef11d7_1649070926.jpg";
