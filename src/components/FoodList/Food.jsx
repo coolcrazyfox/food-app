@@ -41,16 +41,16 @@ const Food = () => {
         setIsLoading(false);
       });
   };
-  React.useEffect(() => {
-    if (window.location.search) {
-      const params = qs.parse(window.location.search.substring(1));
-      const sort = sortTitle.find(
-        (obj) => obj.sortProperty === params.sortProperty
-      );
-      dispatch(setFilters({ ...params, sort }));
-      isSearch.current = true;
-    }
-  }, []);
+  // React.useEffect(() => {
+  //   if (window.location.search) {
+  //     const params = qs.parse(window.location.search.substring(1));
+  //     const sort = sortTitle.find(
+  //       (obj) => obj.sortProperty === params.sortProperty
+  //     );
+  //     dispatch(setFilters({ ...params, sort }));
+  //     isSearch.current = true;
+  //   }
+  // }, []);
 
   React.useEffect(() => {
     // if (!isSearch.current) {
@@ -59,16 +59,16 @@ const Food = () => {
     // isSearch.current = false;
   }, [categoryId, sortType.sortProperty, searchValue]);
 
-  React.useEffect(() => {
-    if (isMounted.current) {
-      const queryString = qs.stringify({
-        sortProperty: sortType.sortProperty,
-        categoryId,
-      }); //?
-      navigate(`${path}?${queryString}`);
-    }
-    isMounted.current = true;
-  }, [categoryId, sortType.sortProperty]);
+  // React.useEffect(() => {
+  //   if (isMounted.current) {
+  //     const queryString = qs.stringify({
+  //       sortProperty: sortType.sortProperty,
+  //       categoryId,
+  //     }); //?
+  //     navigate(`${path}?${queryString}`);
+  //   }
+  //   isMounted.current = true;
+  // }, [categoryId, sortType.sortProperty]);
 
   //   Filter Type burgers/pizza/etc
   const filterType = React.useCallback((i) => {
