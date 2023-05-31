@@ -21,7 +21,9 @@ const Food = () => {
   const dispatch = useDispatch();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const { categoryId, sortType, searchValue } = useSelector((state) => state.filter);
+  const { categoryId, sortType, searchValue } = useSelector(
+    (state) => state.filter
+  );
 
   const fetchFood = () => {
     setIsLoading(true);
@@ -71,7 +73,6 @@ const Food = () => {
   //   Filter Type burgers/pizza/etc
   const filterType = React.useCallback((i) => {
     dispatch(setCategoryId(i));
-    // setCategoryId(i);
   }, []);
   //   Filter by price
   // const filterPrice = (obj) => {
