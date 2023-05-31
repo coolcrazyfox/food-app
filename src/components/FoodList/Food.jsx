@@ -14,10 +14,10 @@ import qs from "qs";
 import { PATH } from "../../routes/RouterRoot.jsx";
 
 const Food = () => {
-  const path = PATH.FOOD;
-  const isSearch = React.useRef(false);
-  const isMounted = React.useRef(false);
-  const navigate = useNavigate();
+  // const path = PATH.FOOD;
+  // const isSearch = React.useRef(false);
+  // const isMounted = React.useRef(false);
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
   const [foodItems, setFoodItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
