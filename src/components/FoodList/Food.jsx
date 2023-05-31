@@ -53,10 +53,10 @@ const Food = () => {
   }, []);
 
   React.useEffect(() => {
-    if (!isSearch.current) {
-      fetchFood();
-    }
-    isSearch.current = false;
+    // if (!isSearch.current) {
+    fetchFood();
+    // }
+    // isSearch.current = false;
   }, [categoryId, sortType.sortProperty, searchValue]);
 
   React.useEffect(() => {
