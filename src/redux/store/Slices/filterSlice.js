@@ -6,8 +6,8 @@ const initialState = {
   openCategory: false,
   // openSort: false,
   sortType: {
-    name: "Rating (min)",
-    sortProperty: "-rating",
+    name: "Rating (max)",
+    sortProperty: "rating",
   },
 };
 export const filterSlice = createSlice({
