@@ -26,10 +26,10 @@ export const filterSlice = createSlice({
     setSearchValue(state, action) {
       state.searchValue = action.payload;
     },
-    setFilters(state, action) {
-      state.categoryId = Number(action.payload.categoryId);
-      state.sortType = action.payload.sortType;
-    },
+    // setFilters(state, action) {
+    //   state.categoryId = Number(action.payload.categoryId);
+    //   state.sortType = action.payload.sortType;
+    // },
     // setOpenSort(state, action) {
     //   state.open = action.payload;
     // },
