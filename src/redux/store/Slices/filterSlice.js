@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   searchValue: "",
   categoryId: 0,
-  openCategory: 1,
+  openCategory: false,
   // openSort: false,
   sortType: {
     name: "Rating (max)",
