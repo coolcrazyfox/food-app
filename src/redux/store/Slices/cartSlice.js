@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   openSizeAndType: false,
-  addItem: 0,
+  cartItem: 0,
   openCategory: false,
   openSort: false,
   sortType: {
@@ -18,10 +18,10 @@ export const cartSlice = createSlice({
       state.openSizeAndType = action.payload;
     },
     setAddItem(state) {
-      state.addItem = state.addItem + 1;
+      state.cartItem = state.cartItem + 1;
     },
     setRemoveItem(state) {
-      state.addItem = state.addItem - 1;
+      state.cartItem = state.cartItem - 1;
     },
   },
 });
