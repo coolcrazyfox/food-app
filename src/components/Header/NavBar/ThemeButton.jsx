@@ -14,9 +14,10 @@ const ThemeButton = () => {
       dispatch(setChangeTheme("dark"));
     }
   };
+  console.log("theme", isClick);
   return (
     <div
-      onClick={toggleTheme}
+      onClick={() => toggleTheme()}
       className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[10px] cursor-pointer "
     >
       <div

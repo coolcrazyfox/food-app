@@ -23,7 +23,6 @@ const SortFood = React.memo(() => {
     dispatch(setSort(obj));
     setOpenSort(false);
   };
-  console.log("sort", sort.sortProperty);
   return (
     <div>
       <p
