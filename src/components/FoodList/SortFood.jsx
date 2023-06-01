@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setSort } from "../../redux/store/Slices/filterSlice";
+import { setSort, setOpenSort } from "../../redux/store/Slices/filterSlice";
 
 export const sortTitle = [
   { id: 1, name: "Rating (min)", sortProperty: "-rating" },
@@ -15,13 +15,11 @@ const SortFood = React.memo(() => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const sortRef = React.useRef(null);
-  const sort = useSelector((state) => state.filter.sortType);
-
-  const [openSort, setOpenSort] = React.useState(false);
+  const { sortType, openSort } = useSelector((state) => state.filter);
   const onChangePriceHandler = (obj) => {
     // filterPriceHandler(obj);
     dispatch(setSort(obj));
-    setOpenSort(false);
+    dispatch(setOpenSort(false));
   };
   return (
     <div>
@@ -42,7 +40,7 @@ const SortFood = React.memo(() => {
                 key={obj.id}
                 onClick={() => onChangePriceHandler(obj)}
                 className={
-                  sort.sortProperty === obj.sortProperty
+                  sortType.sortProperty === obj.sortProperty
                     ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
                     : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
@@ -58,9 +56,9 @@ const SortFood = React.memo(() => {
                 ? "flex my-1 ml-4 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
                 : "flex my-1 ml-4 border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white"
             }
-            onClick={() => setOpenSort(!openSort)}
+            onClick={() => dispatch(setOpenSort(!openSort))}
           >
-            {sort.name}
+            {sortType.name}
           </button>
         )}
       </div>
