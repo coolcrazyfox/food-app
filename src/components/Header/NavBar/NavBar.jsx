@@ -20,7 +20,11 @@ const NavBar = () => {
         <div onClick={onChangeHandler} className="cursor-pointer">
           <GiFullPizza
             size={31}
-            className={changeTheme ? "text-orange-500 mt-1" : "text-white mt-1"}
+            className={
+              changeTheme === "dark"
+                ? "text-orange-500 mt-1"
+                : "text-white mt-1"
+            }
           />
         </div>
         <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
@@ -28,7 +32,7 @@ const NavBar = () => {
           <Link to={PATH.HERO}>
             <span
               className={
-                changeTheme
+                changeTheme === "dark"
                   ? " font-bold cursor-pointer"
                   : "font-bold text-white cursor-pointer"
               }
