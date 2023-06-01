@@ -23,6 +23,7 @@ const SortFood = React.memo(() => {
     dispatch(setSort(obj));
     setOpenSort(false);
   };
+  console.log("sort", sort.sortProperty);
   return (
     <div>
       <p
@@ -53,7 +54,11 @@ const SortFood = React.memo(() => {
           </>
         ) : (
           <button
-            className="flex my-1 ml-4 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
+            className={
+              theme === "light"
+                ? "flex my-1 ml-4 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
+                : "flex my-1 ml-4 border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white"
+            }
             onClick={() => setOpenSort(!openSort)}
           >
             {sort.name}

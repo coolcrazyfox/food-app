@@ -48,7 +48,11 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
           </>
         ) : (
           <button
-            className="flex m-1 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
+            className={
+              theme === "dark"
+                ? "flex m-1 border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white"
+                : "flex m-1 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
+            }
             onClick={() => setOpenType(!openType)}
           >
             {sortCategoryName}
