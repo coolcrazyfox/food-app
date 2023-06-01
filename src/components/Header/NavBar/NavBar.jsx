@@ -42,7 +42,7 @@ const NavBar = () => {
           </Link>
         </h1>
         {/* Themes */}
-        <ThemeButton />
+        {/* <ThemeButton /> */}
       </div>
       {/* Mobile Menu */}
       {/* Overlay */}

@@ -17,7 +17,7 @@ export const PATH = {
   HELP: "/help",
   CONTACT: "/contact",
 };
-const RouterRoot = ({ searchValue }) => {
+const RouterRoot = () => {
   return (
     <div>
       <Routes>
