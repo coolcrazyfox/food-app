@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   changeTheme: true,
   openMenu: false,
+  testOn: "",
 };
 export const navBarSlice = createSlice({
   name: "navbar",
@@ -14,7 +15,10 @@ export const navBarSlice = createSlice({
     setChangeTheme(state, action) {
       state.changeTheme = action.payload;
     },
+    setTestOn(state, action) {
+      state.testOn = action.payload;
+    },
   },
 });
-export const { setOpenMenu, setChangeTheme } = navBarSlice.actions;
+export const { setOpenMenu, setChangeTheme, setTestOn } = navBarSlice.actions;
 export default navBarSlice.reducer;
