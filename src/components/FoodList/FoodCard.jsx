@@ -1,16 +1,15 @@
 import React from "react";
 import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const FoodCard = ({ ...food }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   // const [addItem, setAddItem] = React.useState(0);
+  const dispatch = useDispatch();
   // const [sizeAndType, setSizeAndType] = React.useState(false);
-  const { openSizeAndType, addItem } = useSelector((state) => state.cart);
-  const onClickAddItemHandler = () => {
-    setAddItem((addItem) => addItem + 1);
-  };
+  const openSizeType = useSelector((state) => state.cart.openSizeAndType);
+
   return (
     <div
       className={
@@ -33,7 +32,7 @@ const FoodCard = ({ ...food }) => {
         onClickAddItemHandler={onClickAddItemHandler}
       />
 
-      {sizeAndType && <FoodTypeAndSizeBlock food={food} />}
+      {openSizeType && <FoodTypeAndSizeBlock food={food} />}
     </div>
   );
 };

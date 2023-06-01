@@ -1,16 +1,15 @@
 import React from "react";
 import { RiStarSmileFill } from "react-icons/ri";
 import { HiOutlineBarsArrowDown } from "react-icons/hi2";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-const AddFoodItem = ({
-  food,
-  addItem,
-  onClickAddItemHandler,
-  sizeAndType,
-  setSizeAndType,
-}) => {
+const AddFoodItem = ({ food }) => {
+  const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
+  const onClickAddItemHandler = () => {
+    // setAddItem((addItem) => addItem + 1);
+    dispatch(setAddItem(cartItem));
+  };
   return (
     <>
       <div
