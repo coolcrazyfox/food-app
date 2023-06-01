@@ -59,7 +59,7 @@ const NavBar = () => {
         className={
           openMenu
             ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
-            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-1000"
+            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-gray-600 z-10 duration-1000"
         }
       >
         <AiOutlineClose
@@ -68,7 +68,7 @@ const NavBar = () => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4 font-bold text-orange-500">Menu</h2>
-        <div>
+        <div className={changeTheme === "dark" ? "" : "bg-gray-800 h-full"}>
           <BurgerMenu />
         </div>
       </div>
