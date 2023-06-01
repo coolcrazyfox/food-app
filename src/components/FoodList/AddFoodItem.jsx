@@ -15,7 +15,7 @@ const AddFoodItem = ({
     <>
       <div
         className={
-          theme
+          theme === "dark"
             ? "flex justify-between px-2 py-4"
             : "flex justify-between px-2 py-4 text-white"
         }
