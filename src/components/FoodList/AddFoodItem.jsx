@@ -1,7 +1,7 @@
 import React from "react";
 import { RiStarSmileFill } from "react-icons/ri";
 import { HiOutlineBarsArrowDown } from "react-icons/hi2";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 const AddFoodItem = ({
   food,
@@ -10,10 +10,16 @@ const AddFoodItem = ({
   sizeAndType,
   setSizeAndType,
 }) => {
-  const theme=useSelector(state=>state.navbar.changeTheme)
+  const theme = useSelector((state) => state.navbar.changeTheme);
   return (
     <>
-      <div className={theme?"flex justify-between px-2 py-4":'flex justify-between px-2 py-4 text-white'}>
+      <div
+        className={
+          theme === "dark"
+            ? "flex justify-between px-2 py-4"
+            : "flex justify-between px-2 py-4 text-white"
+        }
+      >
         <div className="flex flex-row font-bold  ">
           {food.name}
 
