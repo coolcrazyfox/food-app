@@ -14,10 +14,9 @@ const ThemeButton = () => {
       dispatch(setChangeTheme("dark"));
     }
   };
-  console.log("theme", isClick);
   return (
     <div
-      onClick={() => toggleTheme()}
+      onClick={() => toggleTheme(isClick)}
       className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[10px] cursor-pointer "
     >
       <div
@@ -27,13 +26,13 @@ const ThemeButton = () => {
             : "bg-orange-600  text-white rounded-full p-2 min-w-4 hover:text-gray-100"
         }
       >
-        <BsMoonStarsFill size={15} l />
-      </div>{" "}
+        <BsMoonStarsFill size={15} />
+      </div>
       <div
         className={
-          isClick === "light"
-            ? "text-black p-2 min-w-4"
-            : "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
+          isClick === "dark"
+            ? "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
+            : "text-black p-2 min-w-4"
         }
       >
         <BsFillEmojiSunglassesFill size={15} />
