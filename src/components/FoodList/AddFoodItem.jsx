@@ -13,7 +13,7 @@ const AddFoodItem = ({ food }) => {
   const { cartItem, openSizeAndType } = useSelector((state) => state.cart);
   const onClickAddItemHandler = () => {
     // setAddItem((addItem) => addItem + 1);
-    dispatch(setAddItem(cartItem));
+    // dispatch(setAddItem(cartItem));
   };
   return (
     <>
@@ -44,7 +44,7 @@ const AddFoodItem = ({ food }) => {
           </span>
           <span className="mx-2">{food.price}$</span>
           <div
-            onClick={() => onClickAddItemHandler(cartItem)}
+            onClick={onClickAddItemHandler}
             className="flex flex-row object-cover select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full  h-7 cursor-pointer hover:bg-orange-500 hover:text-white "
           >
             <span className="flex max-w-max min-w-min">Add</span>
