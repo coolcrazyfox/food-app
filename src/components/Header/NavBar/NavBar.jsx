@@ -17,6 +17,14 @@ const NavBar = () => {
   const onChangeHandler = () => {
     dispatch(setOpenMenu(true));
   };
+  const onChangeTheme = () => {
+    if (changeTheme === "dark") {
+      dispatch(setChangeTheme("light"));
+    }
+    if (changeTheme === "light") {
+      dispatch(setChangeTheme("dark"));
+    }
+  };
 
   return (
     <>
@@ -32,8 +40,8 @@ const NavBar = () => {
           />
         </div>
         <h1
-          onClick={() => dispatch(setChangeTheme("light" || "dark"))}
-          className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 "
+          onClick={() => onChangeTheme(changeTheme)}
+          className="flex flex-row text-2xl sm:text-3xl lg:text-4xl px-2 "
         >
           Best
           <Link to={PATH.HERO}>
