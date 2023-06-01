@@ -53,7 +53,7 @@ const SortFood = React.memo(() => {
           </>
         ) : (
           <button
-            className="flex my-1 ml-4 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            className="flex my-1 ml-4 border-orange-600 bg-gray-100 text-orange-600 hover:bg-orange-600 hover:text-white"
             onClick={() => setOpenSort(!openSort)}
           >
             {sort.name}
