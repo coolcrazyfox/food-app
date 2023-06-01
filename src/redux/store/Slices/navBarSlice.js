@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  changeTheme: true,
+  changeTheme: "dark",
   openMenu: false,
   testOn: "",
 };

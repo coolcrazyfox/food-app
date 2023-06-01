@@ -62,11 +62,12 @@ export const initialState = [
 
 const BurgerMenu = () => {
   const theme = useSelector((state) => state.navbar.changeTheme);
+  console.log("testTheme", typeof theme);
   return (
     <>
       <ul
         className={
-          theme
+          theme === "dark"
             ? "flex flex-col p-4 text-gray-800"
             : "flex flex-col p-4 bg-gray-800 text-white"
         }
