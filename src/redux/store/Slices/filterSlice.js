@@ -30,9 +30,9 @@ export const filterSlice = createSlice({
     //   state.categoryId = Number(action.payload.categoryId);
     //   state.sortType = action.payload.sortType;
     // },
-    // setOpenSort(state, action) {
-    //   state.open = action.payload;
-    // },
+    setOpenSort(state, action) {
+      state.openSort = action.payload;
+    },
   },
 });
 export const {
@@ -40,6 +40,7 @@ export const {
   setCategoryId,
   setSort,
   setOpenCategory,
+  setOpenSort,
   setFilters,
 } = filterSlice.actions;
 export default filterSlice.reducer;
