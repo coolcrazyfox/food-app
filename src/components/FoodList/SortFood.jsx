@@ -27,7 +27,7 @@ const SortFood = React.memo(() => {
     <div>
       <p
         className={
-          theme
+          theme === "dark"
             ? "font-bold text-gray-700 text-end w-full mr-1"
             : "font-bold text-white text-end w-full mr-1"
         }
