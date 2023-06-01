@@ -4,10 +4,10 @@ import RouterRoot from "./routes/RouterRoot";
 import { useSelector } from "react-redux";
 
 function App() {
-  const theme = useSelector((state) => state.navbar.changeTheme);
-
+  const themeApp = useSelector((state) => state.navbar.changeTheme);
+  console.log("them", themeApp);
   return (
-    <div className={theme === "dark" ? "" : "bg-gray-800 min-h-screen"}>
+    <div className={themeApp === "dark" ? "" : "bg-gray-800 min-h-screen"}>
       <Header />
       <RouterRoot />
     </div>

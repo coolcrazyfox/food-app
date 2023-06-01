@@ -4,7 +4,10 @@ import { GiFullPizza } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import BurgerMenu from "./BurgerMenu";
 import { useDispatch, useSelector } from "react-redux";
-import { setOpenMenu } from "./../../../redux/store/Slices/navBarSlice";
+import {
+  setChangeTheme,
+  setOpenMenu,
+} from "./../../../redux/store/Slices/navBarSlice";
 import { Link } from "react-router-dom";
 import { PATH } from "./../../../routes/RouterRoot";
 
@@ -14,6 +17,7 @@ const NavBar = () => {
   const onChangeHandler = () => {
     dispatch(setOpenMenu(true));
   };
+
   return (
     <>
       <div className="flex items-center">
@@ -27,7 +31,10 @@ const NavBar = () => {
             }
           />
         </div>
-        <h1 className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 ">
+        <h1
+          onClick={() => dispatch(setChangeTheme("light" || "dark"))}
+          className="flex flex-row  text-2xl sm:text-3xl lg:text-4xl px-2 "
+        >
           Best
           <Link to={PATH.HERO}>
             <span
