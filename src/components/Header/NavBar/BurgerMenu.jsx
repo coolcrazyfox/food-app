@@ -8,7 +8,6 @@ import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { PATH } from "../../../routes/RouterRoot";
 import { useSelector } from "react-redux";
-import Theme from "../../Theme/Theme";
 
 export const initialState = [
   {
@@ -81,7 +80,6 @@ const BurgerMenu = () => {
             </li>
           </Link>
         ))}
-        <Theme />
       </ul>
     </>
   );

@@ -5,6 +5,7 @@ import { setTestOn } from "../../redux/store/Slices/navBarSlice";
 const Theme = () => {
   const test = useSelector((state) => state.navbar.testOn);
   const dispatch = useDispatch();
+  console.log("test", typeof test);
   // const [theme, setTheme] = React.useState("");
   const toggleTheme = () => {
     // setTheme(theme === "dark" ? "" : "dark");
