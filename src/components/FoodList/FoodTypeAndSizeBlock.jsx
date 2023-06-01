@@ -5,7 +5,7 @@ const FoodTypeAndSizeBlock = ({ food }) => {
   const [activeSize, setActiveSize] = React.useState(0);
   const typePizza = ["Thin-crust", "Thick-crust"];
   // const foodType = { ...food };
-  console.log("food", food);
+  // console.log("food", foodType);
   return (
     <>
       <div className="flex justify-between px-2 py-1">
