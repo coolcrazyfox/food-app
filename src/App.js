@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 function App() {
   const themeApp = useSelector((state) => state.navbar.changeTheme);
-  console.log("them", themeApp);
   return (
     <div className={themeApp === "dark" ? "" : "bg-gray-800 min-h-screen"}>
       <Header />
