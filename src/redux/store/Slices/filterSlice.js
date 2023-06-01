@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   searchValue: "",
   categoryId: 0,
-  openCategory: "isOpen",
-  openSort: "isOpen",
+  openCategory: false,
+  openSort: false,
   sortType: {
     name: "Rating (max)",
     sortProperty: "rating",
@@ -21,7 +21,10 @@ export const filterSlice = createSlice({
       state.sortType = action.payload;
     },
     setOpenCategory(state, action) {
-      state.open = action.payload;
+      state.openCategory = action.payload;
+    },
+    setOpenSort(state, action) {
+      state.openSort = action.payload;
     },
     setSearchValue(state, action) {
       state.searchValue = action.payload;
@@ -30,9 +33,6 @@ export const filterSlice = createSlice({
     //   state.categoryId = Number(action.payload.categoryId);
     //   state.sortType = action.payload.sortType;
     // },
-    setOpenSort(state, action) {
-      state.openSort = action.payload;
-    },
   },
 });
 export const {
