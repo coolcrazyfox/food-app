@@ -14,8 +14,17 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    setCategoryId(state, action) {
-      state.categoryId = action.payload;
+    setOpenSizeAndType(state, action) {
+      state.openSizeAndType = action.payload;
+    },
+    setAddItem(state) {
+      state.addItem = state.addItem + 1;
+    },
+    setRemoveItem(state) {
+      state.addItem = state.addItem - 1;
     },
   },
 });
+export const { setOpenSizeAndType, setAddItem, setRemoveItem } =
+  cartSlice.actions;
+export default cartSlice.reducer;

@@ -5,9 +5,9 @@ import { useSelector } from "react-redux";
 
 const FoodCard = ({ ...food }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
-  const [addItem, setAddItem] = React.useState(0);
-  const [sizeAndType, setSizeAndType] = React.useState(false);
-
+  // const [addItem, setAddItem] = React.useState(0);
+  // const [sizeAndType, setSizeAndType] = React.useState(false);
+  const { openSizeAndType, addItem } = useSelector((state) => state.cart);
   const onClickAddItemHandler = () => {
     setAddItem((addItem) => addItem + 1);
   };
