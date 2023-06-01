@@ -62,7 +62,6 @@ export const initialState = [
 
 const BurgerMenu = () => {
   const theme = useSelector((state) => state.navbar.changeTheme);
-  console.log("testTheme", typeof theme);
   return (
     <>
       <ul
