@@ -4,16 +4,17 @@ import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 import { useSelector } from "react-redux";
 
 const AddFoodItem = ({
+  count,
   name,
   price,
   types,
   rating,
-  addItem,
   onClickAddItemHandler,
   sizeAndType,
   setSizeAndType,
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
+
   return (
     <>
       <div
@@ -47,9 +48,9 @@ const AddFoodItem = ({
             className="flex flex-row object-cover select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full  h-7 cursor-pointer hover:bg-orange-500 hover:text-white "
           >
             <span className="flex max-w-max min-w-min">Add</span>
-            {addItem > 0 && (
+            {count > 0 && (
               <span className="ms-3 w-6  text-center rounded-full bg-white text-orange-500">
-                {addItem}
+                {count}
               </span>
             )}
           </div>

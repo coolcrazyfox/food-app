@@ -8,6 +8,9 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
+  const { count } = useSelector((state) =>
+    state.cart.items.find((obj) => obj.id === id)
+  );
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
   const [addItemT, setAddItemT] = React.useState(0);
@@ -24,10 +27,6 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
       // category,
     };
     dispatch(addItem(item));
-  };
-
-  const onClickAddItemHandler = () => {
-    setAddItemT((addItemT) => addItemT + 1);
   };
   return (
     <div
@@ -50,8 +49,8 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
         price={price}
         types={types}
         rating={rating}
-        addItem={addItemT}
         onClickAddItemHandler={onClickAdd}
+        count={count}
       />
 
       {sizeAndType && (
