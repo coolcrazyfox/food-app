@@ -4,7 +4,7 @@ import CartList from "./../../components/Header/Cart/CartListBlock/CartList";
 import ClearCartBtn from "./../../components/Header/Cart/CartListBlock/ClearCartBtn";
 
 const CartPage = () => {
-  const [isEmpty, setIsEmpty] = React.useState(true);
+  const [isEmpty, setIsEmpty] = React.useState(false);
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <h1
