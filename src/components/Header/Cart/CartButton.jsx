@@ -15,9 +15,13 @@ const CartButton = () => {
           className="mr-2 text-orange-500 hover:text-white "
         />{" "}
         {/* Cart */}
-        <span className="ml-2 bg-white text-black rounded-full max-h-full w-6">
-          {items}
-        </span>
+        {items.length > 0 ? (
+          <span className="ml-2 bg-white text-black rounded-full max-h-full w-6">
+            {items}
+          </span>
+        ) : (
+          ""
+        )}
       </button>
     </Link>
   );
