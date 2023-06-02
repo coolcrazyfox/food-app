@@ -13,10 +13,13 @@ export const cartSlice = createSlice({
     setOpenSizeAndType(state, action) {
       state.openSizeAndType = action.payload;
     },
-    addProduct(state, action) {
+    addItem(state, action) {
       state.items.push(action.payload);
+    },
+    removeItem(state, action) {
+      state.items.filter((obj) => obj.id !== action.payload);
     },
   },
 });
-export const { setOpenSizeAndType, addProduct } = cartSlice.actions;
+export const { setOpenSizeAndType, addItem, removeItem } = cartSlice.actions;
 export default cartSlice.reducer;
