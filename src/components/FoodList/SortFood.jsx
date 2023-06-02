@@ -21,6 +21,17 @@ const SortFood = React.memo(() => {
     dispatch(setSort(obj));
     dispatch(setOpenSort(false));
   };
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.composedPath.includes(sortRef.current)) {
+        dispatch(setOpenSort(false));
+      }
+      document.body.addEventListener("click", handleClickOutside);
+      return () => {
+        document.body.removeEventListener("click", handleClickOutside);
+      };
+    };
+  }, []);
   return (
     <div>
       <p
