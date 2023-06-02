@@ -8,9 +8,10 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
-  const { count } = useSelector((state) =>
+  const cartItem = useSelector((state) =>
     state.cart.items.find((obj) => obj.id === id)
   );
+  const addedCount = cartItem ? cartItem.count : 0;
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
   const [addItemT, setAddItemT] = React.useState(0);
@@ -50,7 +51,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
         types={types}
         rating={rating}
         onClickAddItemHandler={onClickAdd}
-        count={count}
+        count={addedCount}
       />
 
       {sizeAndType && (
