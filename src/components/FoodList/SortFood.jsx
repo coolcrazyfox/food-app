@@ -32,7 +32,7 @@ const SortFood = React.memo(() => {
       >
         Sort by:
       </p>
-      <div className="flex justify-between max-w-[690px] w-full">
+      <div ref={sortRef} className="flex justify-between max-w-[690px] w-full">
         {openSort ? (
           <>
             {sortTitle.map((obj) => (
