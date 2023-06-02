@@ -12,7 +12,7 @@ const FoodCard = ({
   types,
   sizes,
   rating,
-  category,
+  // category,
 }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
@@ -33,7 +33,7 @@ const FoodCard = ({
       rating,
       types: typePizza[activeType],
       sizes: activeSize,
-      category,
+      // category,
     };
     dispatch(addItem(item));
   };
