@@ -3,7 +3,7 @@ import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
 import { useDispatch, useSelector } from "react-redux";
 
-const FoodCard = ({ id, imageUrl, name, price, types, rating }) => {
+const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const {} = useSelector((state) => state.cart);
