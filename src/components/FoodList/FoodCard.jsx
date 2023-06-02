@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/store/Slices/cartSlice";
 
 const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
+  const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const [activeType, setActiveType] = React.useState(0);
@@ -18,7 +19,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
       name,
       price,
       rating,
-      types: activeType,
+      types: typePizza[activeType],
       sizes: activeSize,
       // category,
     };
