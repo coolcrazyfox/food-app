@@ -28,7 +28,7 @@ const CartList = ({ id, name, category, imageUrl, price, rating, type }) => {
   ];
   return (
     <>
-      {state.map((cart) => (
+      {items.map((cart) => (
         <CartItem {...cart} key={cart.id} />
       ))}
       <CartInfoBlock />
