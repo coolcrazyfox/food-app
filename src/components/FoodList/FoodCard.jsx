@@ -3,7 +3,7 @@ import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
 import { useSelector } from "react-redux";
 
-const FoodCard = ({ ...food }) => {
+const FoodCard = ({ imageUrl, name }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const [addItem, setAddItem] = React.useState(0);
   const [sizeAndType, setSizeAndType] = React.useState(false);
@@ -20,20 +20,23 @@ const FoodCard = ({ ...food }) => {
       }
     >
       <img
-        src={food.imageUrl}
-        alt={food.name}
+        src={imageUrl}
+        alt={name}
         className="w-full h-[300px] object-cover rounded-t-lg"
       />
 
       <AddFoodItem
         sizeAndType={sizeAndType}
         setSizeAndType={setSizeAndType}
-        food={food}
+        name={name}
+        price={price}
+        types={types}
+        rating={rating}
         addItem={addItem}
         onClickAddItemHandler={onClickAddItemHandler}
       />
 
-      {sizeAndType && <FoodTypeAndSizeBlock food={food} />}
+      {sizeAndType && <FoodTypeAndSizeBlock {...food} />}
     </div>
   );
 };

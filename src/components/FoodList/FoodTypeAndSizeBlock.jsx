@@ -1,9 +1,24 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-const FoodTypeAndSizeBlock = ({ food }) => {
+const FoodTypeAndSizeBlock = ({ ...food }) => {
+  const dispatch = useDispatch();
+  const {} = useSelector((state) => state.cart);
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
   const typePizza = ["Thin-crust", "Thick-crust"];
+  const onClickAdd = () => {
+    const item = {
+      id,
+      imageUrl,
+      name,
+      types,
+      sizes,
+      price,
+      rating,
+      category,
+    };
+  };
   // const foodType = { ...food };
   // console.log("food", foodType);
   return (

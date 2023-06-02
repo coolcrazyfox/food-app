@@ -4,7 +4,10 @@ import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 import { useSelector } from "react-redux";
 
 const AddFoodItem = ({
-  food,
+  name,
+  price,
+  types,
+  rating,
   addItem,
   onClickAddItemHandler,
   sizeAndType,
@@ -21,24 +24,24 @@ const AddFoodItem = ({
         }
       >
         <div className="flex flex-row font-bold  ">
-          {food.name}
+          {name}
 
           <div className="px-2 flex flex-row ">
             <RiStarSmileFill size={24} className="text-orange-500" />
-            <span className="text-base px-1">{food.rating}</span>
+            <span className="text-base px-1">{rating}</span>
           </div>
         </div>
 
         <div className=" flex flex-row select-none">
           <span className=" text-center pt-1">
-            {food.types && (
+            {types && (
               <HiOutlineBarsArrowDown
                 onClick={() => setSizeAndType(!sizeAndType)}
                 size={20}
               />
             )}
           </span>
-          <span className="mx-2">{food.price}$</span>
+          <span className="mx-2">{price}$</span>
           <div
             onClick={onClickAddItemHandler}
             className="flex flex-row object-cover select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full  h-7 cursor-pointer hover:bg-orange-500 hover:text-white "
