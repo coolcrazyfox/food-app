@@ -4,7 +4,16 @@ import AddFoodItem from "./AddFoodItem";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/store/Slices/cartSlice";
 
-const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
+const FoodCard = ({
+  id,
+  imageUrl,
+  name,
+  price,
+  types,
+  sizes,
+  rating,
+  category,
+}) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
@@ -14,7 +23,6 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const addedCount = cartItem ? cartItem.count : 0;
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
-  const [addItemT, setAddItemT] = React.useState(0);
   const [sizeAndType, setSizeAndType] = React.useState(false);
   const onClickAdd = () => {
     const item = {
@@ -25,7 +33,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
       rating,
       types: typePizza[activeType],
       sizes: activeSize,
-      // category,
+      category,
     };
     dispatch(addItem(item));
   };
