@@ -50,7 +50,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
         types={types}
         rating={rating}
         addItem={addItemT}
-        onClickAddItemHandler={onClickAddItemHandler}
+        onClickAddItemHandler={onClickAdd}
       />
 
       {sizeAndType && (
