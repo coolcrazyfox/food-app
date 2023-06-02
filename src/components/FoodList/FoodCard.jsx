@@ -7,7 +7,6 @@ import { addItem } from "../../redux/store/Slices/cartSlice";
 const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
-  const {} = useSelector((state) => state.cart);
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
   const [addItemT, setAddItemT] = React.useState(0);
