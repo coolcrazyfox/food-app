@@ -1,8 +1,11 @@
 import React from "react";
 import CartItem from "./CartItem";
 import CartInfoBlock from "./CartInfoBlock/CartInfoBlock";
+import { useDispatch, useSelector } from "react-redux";
 
 const CartList = () => {
+  const dispatch = useDispatch();
+  const items = useSelector((state) => state.cart.items);
   const state = [
     {
       id: 1,
