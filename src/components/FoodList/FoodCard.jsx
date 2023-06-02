@@ -2,6 +2,7 @@ import React from "react";
 import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
 import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../../redux/store/Slices/cartSlice";
 
 const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
@@ -9,7 +10,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
   const {} = useSelector((state) => state.cart);
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
-  const [addItem, setAddItem] = React.useState(0);
+  const [addItemT, setAddItemT] = React.useState(0);
   const [sizeAndType, setSizeAndType] = React.useState(false);
   const onClickAdd = () => {
     const item = {
@@ -22,10 +23,11 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
       sizes: activeSize,
       // category,
     };
+    dispatch(addItem(item));
   };
 
   const onClickAddItemHandler = () => {
-    setAddItem((addItem) => addItem + 1);
+    setAddItemT((addItemT) => addItemT + 1);
   };
   return (
     <div
@@ -48,7 +50,7 @@ const FoodCard = ({ id, imageUrl, name, price, types, sizes, rating }) => {
         price={price}
         types={types}
         rating={rating}
-        addItem={addItem}
+        addItem={addItemT}
         onClickAddItemHandler={onClickAddItemHandler}
       />
 
