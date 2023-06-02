@@ -6,13 +6,9 @@ import { useSelector } from "react-redux";
 
 const CartPage = () => {
   const items = useSelector((state) => state.cart.items);
-  const [isEmpty, setIsEmpty] = React.useState(false);
   return (
     <div className="max-w-[1640px] mx-auto p-4">
-      <h1
-        onClick={() => setIsEmpty(!isEmpty)}
-        className="text-orange-600 font-bold text-4xl text-center my-9"
-      >
+      <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
         Cart
       </h1>
       {items.length > 0 ? (

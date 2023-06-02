@@ -22,7 +22,7 @@ const EmptyCart = () => {
         </div>
         <div className="flex  justify-center cursor-pointer w-full">
           <Link
-            to={PATH.HERO}
+            to={PATH.FOOD}
             className="flex flex-row justify-center cursor-pointer border  border-gray-400 hover:bg-black hover:text-white hover:border-orange-500 hover:shadow-lg rounded-full px-10 max-w-[170px]"
           >
             <BiArrowBack size={18} className="m-1 hover:text-orange-500" />
