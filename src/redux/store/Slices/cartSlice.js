@@ -13,14 +13,10 @@ export const cartSlice = createSlice({
     setOpenSizeAndType(state, action) {
       state.openSizeAndType = action.payload;
     },
-    setAddItem(state) {
-      state.cartItem = state.cartItem + 1;
-    },
-    setRemoveItem(state) {
-      state.cartItem = state.cartItem - 1;
+    addProduct(state, action) {
+      state.items.push(action.payload);
     },
   },
 });
-export const { setOpenSizeAndType, setAddItem, setRemoveItem } =
-  cartSlice.actions;
+export const { setOpenSizeAndType, addProduct } = cartSlice.actions;
 export default cartSlice.reducer;
