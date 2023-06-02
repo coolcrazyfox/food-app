@@ -1,12 +1,28 @@
 import React from "react";
 import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-const FoodCard = ({ imageUrl, name }) => {
+const FoodCard = ({ id, imageUrl, name, price, types, rating }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
+  const dispatch = useDispatch();
+  const {} = useSelector((state) => state.cart);
+  const [activeType, setActiveType] = React.useState(0);
+  const [activeSize, setActiveSize] = React.useState(0);
   const [addItem, setAddItem] = React.useState(0);
   const [sizeAndType, setSizeAndType] = React.useState(false);
+  const onClickAdd = () => {
+    const item = {
+      id,
+      imageUrl,
+      name,
+      price,
+      rating,
+      types: activeType,
+      sizes: activeSize,
+      // category,
+    };
+  };
 
   const onClickAddItemHandler = () => {
     setAddItem((addItem) => addItem + 1);
@@ -36,7 +52,16 @@ const FoodCard = ({ imageUrl, name }) => {
         onClickAddItemHandler={onClickAddItemHandler}
       />
 
-      {sizeAndType && <FoodTypeAndSizeBlock {...food} />}
+      {sizeAndType && (
+        <FoodTypeAndSizeBlock
+          types={types}
+          sizes={sizes}
+          activeType={activeType}
+          activeSize={activeSize}
+          setActiveSize={setActiveSize}
+          setActiveType={setActiveType}
+        />
+      )}
     </div>
   );
 };

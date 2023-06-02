@@ -1,31 +1,19 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
 
-const FoodTypeAndSizeBlock = ({ ...food }) => {
-  const dispatch = useDispatch();
-  const {} = useSelector((state) => state.cart);
-  const [activeType, setActiveType] = React.useState(0);
-  const [activeSize, setActiveSize] = React.useState(0);
+const FoodTypeAndSizeBlock = ({
+  types,
+  sizes,
+  activeType,
+  activeSize,
+  setActiveSize,
+  setActiveType,
+}) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
-  const onClickAdd = () => {
-    const item = {
-      id,
-      imageUrl,
-      name,
-      types,
-      sizes,
-      price,
-      rating,
-      category,
-    };
-  };
-  // const foodType = { ...food };
-  // console.log("food", foodType);
   return (
     <>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {food.types.map((type, i) => (
+          {types.map((type, i) => (
             <li
               onClick={() => setActiveType(i)}
               className={
@@ -42,7 +30,7 @@ const FoodTypeAndSizeBlock = ({ ...food }) => {
       </div>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {food.sizes.map((s, i) => (
+          {sizes.map((s, i) => (
             <li
               onClick={() => setActiveSize(i)}
               className={
