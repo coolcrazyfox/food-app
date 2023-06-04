@@ -69,7 +69,7 @@ export const initialState = [
 const loginState = [
   {
     id: 1,
-    link: PATH.CONTACT,
+    link: PATH.HERO,
     title: "LogIn",
     icon: <HiOutlineLogin size={27} />,
   },
