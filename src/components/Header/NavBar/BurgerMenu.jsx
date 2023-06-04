@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillTag } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
-import { FaUserFriends } from "react-icons/fa";
+import { FaUserFriends, FaSignInAlt } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
@@ -57,6 +57,12 @@ export const initialState = [
     link: PATH.CONTACT,
     title: "Contact",
     icon: <MdOutlineConnectWithoutContact size={27} />,
+  },
+  {
+    id: 9,
+    link: PATH.CONTACT,
+    title: "Sign In",
+    icon: <FaSignInAlt size={27} />,
   },
 ];
 
