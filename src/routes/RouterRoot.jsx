@@ -31,7 +31,7 @@ const RouterRoot = () => {
         <Route path={PATH.ORDERS} element={<CartPage />} />
         <Route path={PATH.FAVORITES} element={<FavoritesPage />} />
         <Route path={PATH.PROMOTIONS} element={<PromotionsPage />} />
-        <Route path={PATH.ADD_FRIENDS} element={<DetailsBlog />} />
+        <Route path={PATH.ADD_FRIENDS} element={<AddFriendsPage />} />
         <Route path={PATH.HELP} element={<HelpPage />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
         <Route path={PATH.LOGIN} element={<LoginPage />} />
