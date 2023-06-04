@@ -16,6 +16,7 @@ export const PATH = {
   ADD_FRIENDS: "/invite_friends",
   HELP: "/help",
   CONTACT: "/contact",
+  LOGIN: "/login",
 };
 const RouterRoot = () => {
   return (
@@ -25,10 +26,11 @@ const RouterRoot = () => {
         <Route path={PATH.FOOD} element={<Food />} />
         <Route path={PATH.ORDERS} element={<CartPage />} />
         <Route path={PATH.FAVORITES} element={<Category />} />
-        {/*<Route path={PATH.PROMOTIONS} element={<PostsPage />} />
+        <Route path={PATH.PROMOTIONS} element={<PostsPage />} />
         <Route path={PATH.ADD_FRIENDS} element={<DetailsBlog />} />
-        <Route path={PATH.HELP} element={<DetailsPost />} />*/}
+        <Route path={PATH.HELP} element={<DetailsPost />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
+        <Route path={PATH.LOGIN} element={<Contact />} />
         <Route path={"*"} element={<Error404 />} />
       </Routes>
     </div>
