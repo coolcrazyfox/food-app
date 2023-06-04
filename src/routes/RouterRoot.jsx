@@ -5,11 +5,11 @@ import CartPage from "../pages/cart/CartPage";
 import Hero from "../pages/hero/Hero";
 import Food from "../components/FoodList/Food";
 import Contact from "../components/Footer/Contact";
-import Category from "../components/Footer/Category";
 import LoginPage from "../pages/login/LoginPage";
 import HelpPage from "./../pages/help/HelpPage";
 import FavoritesPage from "./../pages/favorites/FavoritesPage";
 import PromotionsPage from "./../pages/promotions/PromotionsPage";
+import AddFriendsPage from "./../pages/add_friends/AddFriendsPage";
 
 export const PATH = {
   HERO: "/food-app",
