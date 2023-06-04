@@ -65,8 +65,10 @@ export const initialState = [
     title: "SignIn",
     icon: <FaSignInAlt size={27} />,
   },
+];
+const loginState = [
   {
-    id: 10,
+    id: 1,
     link: PATH.CONTACT,
     title: "LogIn",
     icon: <HiOutlineLogin size={27} />,
@@ -74,26 +76,50 @@ export const initialState = [
 ];
 
 const BurgerMenu = () => {
+  const [isLogin, setIsLogin] = React.useState(false);
   const theme = useSelector((state) => state.navbar.changeTheme);
   return (
     <>
-      <ul
-        className={
-          theme === "dark"
-            ? "flex flex-col p-4 text-gray-800"
-            : "flex flex-col p-4 bg-gray-800 text-white"
-        }
-      >
-        {initialState.map((c) => (
-          <Link to={c.link} key={c.id}>
-            <li className="text-xl py-4 flex">
-              <div className="mr-4 flex flex-row">
-                {c.icon} <span className="ml-5 pb-3">{c.title}</span>
-              </div>
-            </li>
-          </Link>
-        ))}
-      </ul>
+      {isLogin ? (
+        <ul
+          className={
+            theme === "dark"
+              ? "flex flex-col p-4 text-gray-800"
+              : "flex flex-col p-4 bg-gray-800 text-white"
+          }
+        >
+          {initialState.map((c) => (
+            <Link to={c.link} key={c.id}>
+              <li className="text-xl py-4 flex">
+                <div className="mr-4 flex flex-row">
+                  {c.icon} <span className="ml-5 pb-3">{c.title}</span>
+                </div>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      ) : (
+        <ul
+          className={
+            theme === "dark"
+              ? "flex flex-col p-4 text-gray-800"
+              : "flex flex-col p-4 bg-gray-800 text-white"
+          }
+        >
+          {loginState.map((l) => (
+            <Link to={l.link} key={l.id}>
+              <li className="text-xl py-4 flex">
+                <div
+                  className="mr-4 flex flex-row"
+                  onClick={() => setIsLogin(true)}
+                >
+                  {l.icon} <span className="ml-5 pb-3">{l.title}</span>
+                </div>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      )}
     </>
   );
 };
