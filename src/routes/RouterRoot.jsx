@@ -9,6 +9,7 @@ import Category from "../components/Footer/Category";
 import LoginPage from "../pages/login/LoginPage";
 import HelpPage from "./../pages/help/HelpPage";
 import FavoritesPage from "./../pages/favorites/FavoritesPage";
+import PromotionsPage from "./../pages/promotions/PromotionsPage";
 
 export const PATH = {
   HERO: "/food-app",
@@ -29,7 +30,7 @@ const RouterRoot = () => {
         <Route path={PATH.FOOD} element={<Food />} />
         <Route path={PATH.ORDERS} element={<CartPage />} />
         <Route path={PATH.FAVORITES} element={<FavoritesPage />} />
-        <Route path={PATH.PROMOTIONS} element={<PostsPage />} />
+        <Route path={PATH.PROMOTIONS} element={<PromotionsPage />} />
         <Route path={PATH.ADD_FRIENDS} element={<DetailsBlog />} />
         <Route path={PATH.HELP} element={<HelpPage />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
