@@ -6,6 +6,7 @@ import Hero from "../pages/hero/Hero";
 import Food from "../components/FoodList/Food";
 import Contact from "../components/Footer/Contact";
 import Category from "../components/Footer/Category";
+import LoginPage from "../pages/login/LoginPage";
 
 export const PATH = {
   HERO: "/food-app",
@@ -30,7 +31,7 @@ const RouterRoot = () => {
         <Route path={PATH.ADD_FRIENDS} element={<DetailsBlog />} />
         <Route path={PATH.HELP} element={<DetailsPost />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
-        <Route path={PATH.LOGIN} element={<Contact />} />
+        <Route path={PATH.LOGIN} element={<LoginPage />} />
         <Route path={"*"} element={<Error404 />} />
       </Routes>
     </div>
