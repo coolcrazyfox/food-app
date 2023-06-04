@@ -18,15 +18,15 @@ export const initialState = [
   },
   {
     id: 2,
-    link: PATH.ORDERS,
-    title: "Orders",
-    icon: <TbTruckDelivery size={27} />,
-  },
-  {
-    id: 3,
     link: PATH.FOOD,
     title: "Menubar",
     icon: <MdFastfood size={27} />,
+  },
+  {
+    id: 3,
+    link: PATH.ORDERS,
+    title: "Orders",
+    icon: <TbTruckDelivery size={27} />,
   },
   {
     id: 4,
