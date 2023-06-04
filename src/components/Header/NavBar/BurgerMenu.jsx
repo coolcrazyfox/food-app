@@ -61,8 +61,14 @@ export const initialState = [
   {
     id: 9,
     link: PATH.CONTACT,
-    title: "Sign In",
+    title: "SignIn",
     icon: <FaSignInAlt size={27} />,
+  },
+  {
+    id: 10,
+    link: PATH.CONTACT,
+    title: "LogIn",
+    icon: <HiOutlineLogin size={27} />,
   },
 ];
 
