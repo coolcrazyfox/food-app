@@ -61,17 +61,18 @@ export const initialState = [
   },
   {
     id: 9,
-    link: PATH.CONTACT,
-    title: "SignIn",
-    icon: <FaSignInAlt size={27} />,
+    link: PATH.HERO,
+    title: "Log Out",
+    icon: <HiOutlineLogin size={27} />,
   },
 ];
 const loginState = [
   {
     id: 1,
-    link: PATH.HERO,
+    // link: PATH.HERO,
+    link: PATH.LOGIN,
     title: "LogIn",
-    icon: <HiOutlineLogin size={27} />,
+    icon: <FaSignInAlt size={27} />,
   },
 ];
 
