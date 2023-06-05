@@ -17,25 +17,25 @@ const ThemeButton = () => {
   return (
     <div
       onClick={() => toggleTheme(isClick)}
-      className=" flex  items-center bg-gray-200 rounded-full p-1  cursor-pointer "
+      className=" flex items-center bg-gray-200 rounded-full p-1  mx-1 cursor-pointer "
     >
       <div
         className={
           isClick === "dark"
-            ? "text-black p-2 lg:min-w-4 sm:min-w-1"
-            : "bg-orange-600  text-white rounded-full p-2 lg:min-w-4 sm:min-w-1 hover:text-gray-100"
+            ? "text-black p-2 lg:min-w-4 md:max-w-1 h-auto"
+            : "bg-orange-600  text-white rounded-full p-2 lg:min-w-4 md:max-w-1 h-auto hover:text-gray-100"
         }
       >
-        <BsMoonStarsFill size={15} />
+        <BsMoonStarsFill className="lg:min-w-[18px] md:max-w-[12px] sm:max-w-[10px] " />
       </div>
       <div
         className={
           isClick === "dark"
-            ? "bg-orange-600 text-white rounded-full p-2 lg:min-w-4 sm:min-w-1 hover:text-gray-100"
-            : "text-black p-2 lg:min-w-4 sm:min-w-1"
+            ? "bg-orange-600 text-white rounded-full p-2 lg:min-w-4 md:max-w-1 h-auto hover:text-gray-100"
+            : "text-black p-2 lg:min-w-4 md:max-w-1 h-auto"
         }
       >
-        <BsFillEmojiSunglassesFill size={15} />
+        <BsFillEmojiSunglassesFill className="lg:min-w-[18px] md:max-w-[12px] sm:max-w-[10px] " />
       </div>
     </div>
   );
