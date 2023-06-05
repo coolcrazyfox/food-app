@@ -26,12 +26,10 @@ const AddFoodItem = ({
       >
         <div className="flex flex-col">
           {/* Title food */}
-          <div className="flex  lg:flex-row font-bold sm:flex-col">{name}</div>
+          <div className="flex  lg:flex-row font-bold sm:flex-col ml-2 mb-1">
+            {name}
+          </div>
           <div className="flex flex-row w-full ">
-            <span className="mr-2 font-normal ">{price}$</span>
-            <RiStarSmileFill size={24} className="text-orange-500 ml-1" />
-            <span className="text-base px-1 mr-[2px]">{rating}</span>
-            {/* Size and Type */}
             <div className=" flex flex-row select-none  justify-between ">
               <div
                 onClick={onClickAddItemHandler}
@@ -44,6 +42,11 @@ const AddFoodItem = ({
                   </span>
                 )}
               </div>
+              <span className="mr-2 font-normal ">{price}$</span>
+              <RiStarSmileFill size={24} className="text-orange-500 ml-1" />
+
+              <span className="text-base px-1 mr-[2px]">{rating}</span>
+
               <span className=" text-center pt-1">
                 {types && (
                   <HiOutlineBarsArrowDown
@@ -53,6 +56,8 @@ const AddFoodItem = ({
                 )}
               </span>
             </div>
+
+            {/* Size and Type */}
           </div>
         </div>
       </div>
