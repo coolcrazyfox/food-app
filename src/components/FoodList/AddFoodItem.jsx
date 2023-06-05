@@ -14,7 +14,6 @@ const AddFoodItem = ({
   setSizeAndType,
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
-
   return (
     <>
       <div
@@ -44,9 +43,8 @@ const AddFoodItem = ({
               </div>
               <span className="mr-2 font-normal ">{price}$</span>
               <RiStarSmileFill size={24} className="text-orange-500 ml-1" />
-
               <span className="text-base px-1 mr-[2px]">{rating}</span>
-
+              {/* Size and Type */}
               <span className=" text-center pt-1">
                 {types && (
                   <HiOutlineBarsArrowDown
@@ -56,8 +54,6 @@ const AddFoodItem = ({
                 )}
               </span>
             </div>
-
-            {/* Size and Type */}
           </div>
         </div>
       </div>
