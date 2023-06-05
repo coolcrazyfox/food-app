@@ -17,13 +17,13 @@ const ThemeButton = () => {
   return (
     <div
       onClick={() => toggleTheme(isClick)}
-      className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[10px] cursor-pointer "
+      className=" flex  items-center bg-gray-200 rounded-full p-1  cursor-pointer "
     >
       <div
         className={
           isClick === "dark"
-            ? "text-black p-2 min-w-4"
-            : "bg-orange-600  text-white rounded-full p-2 min-w-4 hover:text-gray-100"
+            ? "text-black p-2 lg:min-w-4 sm:min-w-1"
+            : "bg-orange-600  text-white rounded-full p-2 lg:min-w-4 sm:min-w-1 hover:text-gray-100"
         }
       >
         <BsMoonStarsFill size={15} />
@@ -31,8 +31,8 @@ const ThemeButton = () => {
       <div
         className={
           isClick === "dark"
-            ? "bg-orange-600 text-white rounded-full p-2 min-w-4 hover:text-gray-100"
-            : "text-black p-2 min-w-4"
+            ? "bg-orange-600 text-white rounded-full p-2 lg:min-w-4 sm:min-w-1 hover:text-gray-100"
+            : "text-black p-2 lg:min-w-4 sm:min-w-1"
         }
       >
         <BsFillEmojiSunglassesFill size={15} />
