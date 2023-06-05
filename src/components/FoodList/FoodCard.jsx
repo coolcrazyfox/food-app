@@ -41,7 +41,7 @@ const FoodCard = ({
     <div
       className={
         theme
-          ? "border shadow-lg rounded-lg hover:scale-105 duration-400"
+          ? "border border-gray-400 shadow-gray-300  shadow-md rounded-lg hover:scale-105 duration-400"
           : "border border-gray-600 shadow-gray-600 shadow-lg rounded-lg hover:scale-105 duration-400"
       }
     >
