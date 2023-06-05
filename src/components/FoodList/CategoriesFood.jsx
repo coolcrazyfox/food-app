@@ -31,7 +31,7 @@ const CategoriesFood = ({ onClickCategoryHandler, value }) => {
       >
         Category Filter:
       </p>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-start flex-wrap">
         {openType ? (
           <>
             {categoriesName.map((btn, i) => (

@@ -33,17 +33,20 @@ const SortFood = React.memo(() => {
     };
   }, []);
   return (
-    <div>
+    <div className="flex flex-col ">
       <p
         className={
           theme === "dark"
-            ? "font-bold text-gray-700 text-end w-full mr-1"
-            : "font-bold text-white text-end w-full mr-1"
+            ? "font-bold text-gray-700 lg:text-end md:text-start w-full mr-1"
+            : "font-bold text-white lg:text-end md:text-start w-full mr-1 "
         }
       >
         Sort by:
       </p>
-      <div ref={sortRef} className="flex justify-between max-w-[690px] w-full">
+      <div
+        ref={sortRef}
+        className="flex flex-wrap justify-start max-w-[690px] w-full"
+      >
         {openSort ? (
           <>
             {sortTitle.map((obj) => (
@@ -53,7 +56,7 @@ const SortFood = React.memo(() => {
                 className={
                   sortType.sortProperty === obj.sortProperty
                     ? "m-1 border-orange-600 text-white bg-gray-500 hover:bg-orange-600 hover:text-white"
-                    : "m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+                    : "lg:text-base md:text-[8px] m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
                 }
               >
                 {obj.name}
