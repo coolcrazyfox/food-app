@@ -8,16 +8,18 @@ const CartButton = () => {
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   return (
     <Link to="/orders">
-      <button className="lg:flex-row md:flex-row flex bg-black text-white   items-center py-2 rounded-full ">
-        <span className="lg:mr-2 sm:m-0 bg-slate-600"> {totalPrice}$ </span>
-        <BsFillCartFill className="lg:mr-2 sm:mx-[2px] text-orange-500 hover:text-white " />{" "}
-        {/* Cart */}
+      <button className="flex flex-row  bg-black text-white   items-center py-2 rounded-full max-w-[140px] ">
         {items.length > 0 ? (
-          <span className=" bg-white text-black rounded-full max-h-full lg:w-6 md:min-w-[20px] sm:min-w-[15px] ml-1 px-[4px]">
-            {totalCount}
-          </span>
+          <>
+            {" "}
+            <span className="lg:mr-2  sm:m-0 "> {totalPrice}$ </span>
+            <BsFillCartFill className="lg:mr-2 sm:mx-[2px] text-orange-500 hover:text-white " />
+            <span className=" bg-white text-black rounded-full max-h-full lg:w-6 md:min-w-[20px] sm:min-w-[15px] px-[4px]">
+              {totalCount}
+            </span>
+          </>
         ) : (
-          ""
+          <BsFillCartFill size={18} className="text-orange-500" />
         )}
       </button>
     </Link>
