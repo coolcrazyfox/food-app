@@ -48,7 +48,7 @@ const FoodCard = ({
       <img
         src={imageUrl}
         alt={name}
-        className="w-full h-[300px]  md:max-h-screen object-cover rounded-t-lg"
+        className="lg:w-full h-[300px] md:w-screen object-cover rounded-t-lg"
       />
 
       <AddFoodItem
