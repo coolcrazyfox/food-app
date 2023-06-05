@@ -17,7 +17,7 @@ const ThemeButton = () => {
   return (
     <div
       onClick={() => toggleTheme(isClick)}
-      className=" flex items-center bg-gray-200 rounded-full p-1  mx-1 cursor-pointer "
+      className=" hidden md:flex items-center bg-gray-200 rounded-full p-1  mx-1 cursor-pointer "
     >
       <div
         className={
