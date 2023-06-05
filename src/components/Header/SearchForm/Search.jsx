@@ -27,13 +27,13 @@ const Search = () => {
   };
 
   return (
-    <div className="flex  bg-gray-200 rounded-full  items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
+    <div className="flex  bg-gray-200 rounded-full  items-center px-2 min-w-[157px] sm:w-[300px] lg:w-[500px] mx-[2px]">
       <AiOutlineSearch size={25} />
       <input
         ref={inputRef}
         value={value}
         onChange={onChangeInput}
-        className="bg-transparent p-2 min-w-[110px] h-auto sm:w-[370px] lg:w-[450px] md:w-[400px] focus:outline-none focus:border-1 focus:border-b-[2px] focus:border-orange-500"
+        className="bg-transparent p-2 min-w-[110px] h-auto sm:max-w-[300px] lg:w-[450px] md:w-[400px] focus:outline-none focus:border-1 focus:border-b-[2px] focus:border-orange-500"
         type="text"
         placeholder="Search foods"
       />
