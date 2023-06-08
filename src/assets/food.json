@@ -597,6 +597,7 @@
     "category": [0, 7],
     "imageUrl": "https://вкуснофф.рф/img/recepty/4018/big.jpg",
     "price": 20,
+    "weight": 250,
     "rating": 7
   },
   {
@@ -605,6 +606,7 @@
     "category": [0, 7],
     "imageUrl": "https://food.pibig.info/uploads/posts/2023-03/1678252075_food-pibig-info-p-ekler-frantsuzskie-deserti-oboi-11.jpg",
     "price": 15,
+    "weight": 250,
     "rating": 9
   },
   {
