@@ -525,6 +525,7 @@
     "category": [0, 7],
     "imageUrl": "https://regionpro.by/wp-content/uploads/2020/07/IMG_8341-3.jpg",
     "price": 15,
+    "weight": 350,
     "rating": 8
   },
   {
@@ -533,6 +534,7 @@
     "category": [0, 7],
     "imageUrl": "https://balthazar.club/uploads/posts/2023-01/1674878568_balthazar-club-p-konfi-iz-konservirovannikh-persikov-dlya-t-32.jpg",
     "price": 25,
+    "weight": 350,
     "rating": 7
   },
   {
@@ -541,6 +543,7 @@
     "category": [0, 7],
     "imageUrl": "https://media.bakingo.com/sq-ferrero-rocher-chocolate-truffle-past0160choc-A_0.jpg",
     "price": 20,
+    "weight": 350,
     "rating": 8
   },
   {
@@ -549,6 +552,7 @@
     "category": [0, 7],
     "imageUrl": "https://foodtasia.com/wp-content/uploads/2020/04/carrot-cake-4.jpg",
     "price": 25,
+    "weight": 350,
     "rating": 7
   },
   {
@@ -557,6 +561,7 @@
     "category": [0, 6],
     "imageUrl": "https://eda.yandex.ru/images/3534679/9cf933f524545d83429eead4fb5b9746-800x800.jpeg",
     "price": 20,
+    "weight": 350,
     "rating": 8
   },
   {
@@ -565,6 +570,7 @@
     "category": [0, 5],
     "imageUrl": "https://www.bbbqqq.ru/upload/medialibrary/ec8/ec8629d4ae035d06408ff58d9517528b.png",
     "price": 40,
+    "weight": 350,
     "rating": 7
   },
   {
@@ -573,6 +579,7 @@
     "category": [0, 3],
     "imageUrl": "https://d33wubrfki0l68.cloudfront.net/28d79d36e42052507130ec463a04726f7c8d30d9/fbe46/images/uploads/2022_07_17_salmon_salad_2.jpg",
     "price": 25,
+    "weight": 350,
     "rating": 5
   },
   {
@@ -581,6 +588,7 @@
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content/27103/mussovyi-desert_1526753378_1_max.jpg",
     "price": 20,
+    "weight": 300,
     "rating": 8
   },
   {
