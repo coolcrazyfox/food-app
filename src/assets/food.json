@@ -183,6 +183,7 @@
     "category": [0, 2],
     "imageUrl": "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
     "price": 10,
+    "weight": 250,
     "rating": 5
   },
   {
@@ -191,6 +192,7 @@
     "category": [0, 2],
     "imageUrl": "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
     "price": 10,
+    "weight": 250,
     "rating": 5
   },
   {
@@ -199,6 +201,7 @@
     "category": [0, 2],
     "imageUrl": "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
     "price": 5,
+    "weight": 260,
     "rating": 5
   },
   {
