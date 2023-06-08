@@ -29,7 +29,9 @@ const AddFoodItem = ({
           <div className="flex  lg:flex-row font-bold sm:flex-col ml-2 mb-1">
             {name}
           </div>
-          <div>{weight}</div>
+          <div className="flex mx-2 mb-1 text-orange-500 font-bold">
+            {weight}g
+          </div>
           <div className="flex flex-row w-full ">
             <div className=" flex flex-row select-none  justify-between ">
               <div
