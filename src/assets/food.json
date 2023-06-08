@@ -237,6 +237,7 @@
     "category": [0, 3],
     "imageUrl": "https://ianbenites.com/wp-content/uploads/2021/05/20210511_183402-1.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 8
   },
   {
@@ -245,6 +246,7 @@
     "category": [0, 3],
     "imageUrl": "https://www.bhg.com/thmb/KSwPiEHPkVBafthl_sDhm40J7PE=/1244x0/filters:no_upscale():strip_icc()/grilled-veggie-pasta-salad-RU224784-b1b4829a90874916960968ad77a1dbb2.jpg",
     "price": 6,
+    "weight": 450,
     "rating": 3
   },
   {
@@ -253,6 +255,7 @@
     "category": [0, 3],
     "imageUrl": "https://healthywithnedi.com/wp-content/uploads/2020/04/russiansalad.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 4
   },
   {
@@ -261,6 +264,7 @@
     "category": [0, 3],
     "imageUrl": "https://images.squarespace-cdn.com/content/v1/5e1dbea1bb47ad304183d9af/1600761808922-I7NPOUJPM2ISZZ47EEFZ/P9204349.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 5
   },
   {
