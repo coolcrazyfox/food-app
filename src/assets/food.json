@@ -163,6 +163,7 @@
     "category": [0, 1],
     "imageUrl": "https://www.cremeguides.com/wp-content/uploads/2022/09/cheers-kiez-pizza-i-quattro-pomodori.1662563121.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 8
   },
   {
@@ -173,6 +174,7 @@
     "category": [0, 1],
     "imageUrl": "https://d3a76jc0ho84i8.cloudfront.net/static/desktop/products/pizza-texas-bbq.jpg",
     "price": 20,
+    "weight": 550,
     "rating": 9
   },
   {
