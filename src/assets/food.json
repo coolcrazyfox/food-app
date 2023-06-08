@@ -318,6 +318,7 @@
     "category": [0, 3, 7],
     "imageUrl": "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
     "price": 10,
+    "weight": 450,
     "rating": 5
   },
   {
@@ -326,6 +327,7 @@
     "category": [0, 4],
     "imageUrl": "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
     "price": 10,
+    "weight": 450,
     "rating": 5
   },
   {
@@ -334,6 +336,7 @@
     "category": [0, 4],
     "imageUrl": "https://s1.1zoom.me/big0/82/Roast_Chicken_Cutting_board_545758_1280x958.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 2
   },
   {
@@ -342,6 +345,7 @@
     "category": [0, 4],
     "imageUrl": "https://t3.ftcdn.net/jpg/05/84/75/50/360_F_584755024_aGlWeFB5qlCVb6DL2lqDv8UvkK4KvFJO.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 4
   },
   {
@@ -350,6 +354,7 @@
     "category": [0, 4],
     "imageUrl": "https://afrifoodnetwork.com/wp-content/uploads/2021/10/7335C5F4-D918-48CA-B517-1383EF88321A-500x500.jpeg",
     "price": 15,
+    "weight": 250,
     "rating": 5
   },
   {
