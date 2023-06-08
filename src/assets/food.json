@@ -363,6 +363,7 @@
     "category": [0, 5],
     "imageUrl": "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
     "price": 25,
+    "weight": 350,
     "rating": 5
   },
   {
@@ -371,6 +372,7 @@
     "category": [0, 5],
     "imageUrl": "https://insanelygoodrecipes.com/wp-content/uploads/2021/11/Homemade-Grilled-Marble-Chuck-Steak.jpg",
     "price": 40,
+    "weight": 350,
     "rating": 9
   },
   {
@@ -379,6 +381,7 @@
     "category": [0, 5],
     "imageUrl": "https://www.zastavki.com/pictures/1366x768/2018Food___Meat_and_barbecue_BBQ_sausages_with_red_pepper_and_tomatoes_on_a_cutting_board_128937_24.jpg",
     "price": 20,
+    "weight": 300,
     "rating": 8
   },
   {
