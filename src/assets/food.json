@@ -453,6 +453,7 @@
     "category": [0, 7],
     "imageUrl": "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
     "price": 40,
+    "weight": 350,
     "rating": 10
   },
   {
@@ -461,6 +462,7 @@
     "category": [0, 7],
     "imageUrl": "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
     "price": 20,
+    "weight": 250,
     "rating": 9
   },
   {
@@ -469,6 +471,7 @@
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     "price": 25,
+    "weight": 250,
     "rating": 9
   },
   {
@@ -477,6 +480,7 @@
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content-v2/e5/4d/40109/zapechennye-yabloki-s-koricei-v-duxovke_1614686843_10_max.jpg",
     "price": 25,
+    "weight": 250,
     "rating": 9
   },
   {
