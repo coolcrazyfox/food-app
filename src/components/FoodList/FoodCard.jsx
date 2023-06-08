@@ -12,6 +12,7 @@ const FoodCard = ({
   types,
   sizes,
   rating,
+  weight,
   // category,
 }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
@@ -31,6 +32,7 @@ const FoodCard = ({
       name,
       price,
       rating,
+      weight,
       types: typePizza[activeType],
       sizes: activeSize,
       // category,
@@ -58,6 +60,7 @@ const FoodCard = ({
         price={price}
         types={types}
         rating={rating}
+        weight={weight}
         onClickAddItemHandler={onClickAdd}
         count={addedCount}
       />
