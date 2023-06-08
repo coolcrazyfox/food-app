@@ -210,6 +210,7 @@
     "category": [0, 2],
     "imageUrl": "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
     "price": 15,
+    "weight": 350,
     "rating": 4
   },
   {
@@ -218,6 +219,7 @@
     "category": [0, 2],
     "imageUrl": "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     "price": 10,
+    "weight": 300,
     "rating": 3
   },
   {
@@ -226,6 +228,7 @@
     "category": [0, 3],
     "imageUrl": "https://www.thespruceeats.com/thmb/2pjgFA7_nbZtlXr68BECvf6fO48=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caprese-salad-tomato-salad-2217097-hero-03-75a0b89b30aa4a52b10fe4fdd9abfeb5.jpg",
     "price": 10,
+    "weight": 350,
     "rating": 2
   },
   {
