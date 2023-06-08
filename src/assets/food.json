@@ -17,7 +17,7 @@
     "types": [0],
     "sizes": [26, 40],
     "price": 25,
-    "weight": 350,
+    "weight": 370,
     "category": [0, 1],
     "rating": 5
   },
@@ -28,7 +28,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 15,
-    "weight": 350,
+    "weight": 550,
     "category": [0, 1],
     "rating": 8
   },
@@ -39,7 +39,7 @@
     "types": [0],
     "sizes": [30, 40],
     "price": 20,
-    "weight": 350,
+    "weight": 450,
     "category": [0, 1],
     "rating": 10
   },
@@ -50,6 +50,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 10,
+    "weight": 350,
     "category": [0, 1],
     "rating": 7
   },
@@ -60,6 +61,7 @@
     "types": [0],
     "sizes": [26, 40],
     "price": 15,
+    "weight": 350,
     "category": [0, 1],
     "rating": 6
   },
@@ -70,6 +72,7 @@
     "types": [1],
     "sizes": [26, 30, 40],
     "price": 25,
+    "weight": 350,
     "category": [0, 1],
     "rating": 4
   },
