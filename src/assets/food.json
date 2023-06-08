@@ -489,6 +489,7 @@
     "category": [0, 7],
     "imageUrl": "https://menunedeli.ru/wp-content/uploads/2022/05/Klubnika-v-shokolade-500350--1200x801.jpg",
     "price": 20,
+    "weight": 350,
     "rating": 9
   },
   {
@@ -497,6 +498,7 @@
     "category": [0, 7],
     "imageUrl": "https://img5.goodfon.ru/wallpaper/nbig/9/4a/desert-tiramisu-tarelka.jpg",
     "price": 25,
+    "weight": 300,
     "rating": 9
   },
   {
