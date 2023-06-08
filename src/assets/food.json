@@ -651,6 +651,7 @@
     "category": [0, 4],
     "imageUrl": "https://bluejeanchef.com/uploads/2019/03/Chicken-Wellington-640x800.jpg",
     "price": 15,
+    "weight": 350,
     "rating": 9
   },
   {
@@ -659,6 +660,7 @@
     "category": [0, 4],
     "imageUrl": "https://i.lefood.menu/wp-content/uploads/w_images/2022/02/recept-31475-1240x827.jpg",
     "price": 15,
+    "weight": 250,
     "rating": 7
   },
   {
@@ -667,6 +669,7 @@
     "category": [0, 4, 5],
     "imageUrl": "https://www.bonappeteach.com/wp-content/uploads/2021/09/Oven-Baked-BBQ-Chicken-21.jpg",
     "price": 15,
+    "weight": 350,
     "rating": 9
   }
 ]
