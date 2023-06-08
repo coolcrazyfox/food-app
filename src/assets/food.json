@@ -61,7 +61,7 @@
     "types": [0],
     "sizes": [26, 40],
     "price": 15,
-    "weight": 350,
+    "weight": 450,
     "category": [0, 1],
     "rating": 6
   },
@@ -72,7 +72,7 @@
     "types": [1],
     "sizes": [26, 30, 40],
     "price": 25,
-    "weight": 350,
+    "weight": 550,
     "category": [0, 1],
     "rating": 4
   },
@@ -84,6 +84,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 10,
+    "weight": 350,
     "category": [0, 1],
     "rating": 5
   },
@@ -95,6 +96,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 15,
+    "weight": 450,
     "category": [0, 1],
     "rating": 6
   },
@@ -105,6 +107,7 @@
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 25,
+    "weight": 550,
     "category": [0, 1],
     "rating": 5
   },
@@ -116,6 +119,7 @@
     "category": [0, 1],
     "imageUrl": "https://media.healthyfood.com/wp-content/uploads/2016/09/Prawn-asparagus-and-cherry-tomato-pizza-with-cauliflower-crust.jpg",
     "price": 40,
+    "weight": 550,
     "rating": 7
   },
   {
