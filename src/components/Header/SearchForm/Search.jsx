@@ -33,7 +33,7 @@ const Search = () => {
         ref={inputRef}
         value={value}
         onChange={onChangeInput}
-        className="bg-transparent p-2 min-w-[110px] h-auto sm:max-w-[300px] lg:w-[450px] md:w-[400px] focus:outline-none focus:border-1 focus:border-b-[2px] focus:border-orange-500"
+        className="bg-transparent p-2 min-w-[110px] h-auto sm:max-w-[300px] lg:min-w-[450px] md:w-[400px] focus:outline-none focus:border-1 focus:border-b-[2px] focus:border-orange-500"
         type="text"
         placeholder="Search foods"
       />
@@ -41,7 +41,7 @@ const Search = () => {
         <MdClear
           onClick={onClickClearHandler}
           size={20}
-          className="hover:text-red-500 text-gray-700 "
+          className="hover:text-red-500 text-orange-600 "
         />
       )}
     </div>
