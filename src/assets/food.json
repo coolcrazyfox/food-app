@@ -507,6 +507,7 @@
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content/26821/bystryi-tort-napoleon_1525111014_21_max.jpg",
     "price": 25,
+    "weight": 350,
     "rating": 9
   },
   {
@@ -515,6 +516,7 @@
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/originals/82/df/73/82df7352b730967429d9c8f8bb935439.jpg",
     "price": 25,
+    "weight": 250,
     "rating": 8
   },
   {
