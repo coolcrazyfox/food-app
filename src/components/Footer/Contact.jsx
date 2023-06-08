@@ -30,11 +30,20 @@ const contacts = [
   },
 ];
 const Contact = () => {
+  const contactImage =
+    "https://thumbs.dreamstime.com/b/buffet-eating-choice-dining-food-party-people-concept-85879860.jpg";
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
       <h1 className="text-orange-600 font-bold text-4xl text-center">
         Contact Information
       </h1>
+      <div className="flex justify-center h-auto w-2xl flex-wrap items-center my-4 ">
+        <img
+          src={contactImage}
+          className="flex justify-center rounded-md flex-wrap items-center "
+        />
+      </div>
+
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6">
         {contacts.map((contact) => (
           <Link
