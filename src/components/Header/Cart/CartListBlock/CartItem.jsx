@@ -15,7 +15,7 @@ const CartItem = ({ id, weight, imageUrl, name, price, type, count }) => {
         <div className="text-sm">{weight}g</div>
         <div>26cm.</div>
       </div>
-      <div className="flex flex-row bg-gray-700 flex-wrap">
+      <div className="flex flex-row  flex-wrap">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-auto">
           <span
             onClick={() => {}}
