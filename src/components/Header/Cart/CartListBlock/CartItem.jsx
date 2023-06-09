@@ -35,8 +35,8 @@ const CartItem = ({ id, weight, imageUrl, name, price, type, count }) => {
           {price * count}$
         </div>
         <RiCloseCircleLine
-          size={20}
-          className="flex items-center justify-center lg:ml-20 lg:mt-3 md:ml-1 text-gray-400 hover:text-orange-500 font-bold  text-center"
+          size={24}
+          className="flex items-center justify-center lg:ml-20 mt-2  text-gray-400 hover:text-orange-500 font-bold  text-center"
         />
       </div>
     </div>
