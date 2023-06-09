@@ -17,7 +17,10 @@ const OrderCount = () => {
       <div>
         <h1 className="my-2">
           Order amount:
-          <span className="font-bold text-orange-500 ml-1">{totalPrice} $</span>
+          <span className="font-bold text-orange-500 ml-1">
+            {totalPrice}
+            <span className="text-[17px]">$</span>
+          </span>
         </h1>
       </div>
     </div>
