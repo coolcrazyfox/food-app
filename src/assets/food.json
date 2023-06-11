@@ -676,6 +676,7 @@
   {
     "id": 64,
     "name": "Mayo Burger",
+    "ingredients": "",
     "category": [0, 2],
     "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
     "price": 25,
@@ -685,6 +686,7 @@
   {
     "id": 65,
     "name": "Camembert Burger",
+    "ingredients": "",
     "category": [0, 2],
     "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
     "price": 25,
@@ -694,6 +696,7 @@
   {
     "id": 66,
     "name": "Angus Burger",
+    "ingredients": "",
     "category": [0, 2],
     "imageUrl": "https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/89c1ea4b18-1676654624/homestyle-angus-burger-rezept-72dpi-e3-800x.jpg",
     "price": 20,
@@ -703,6 +706,7 @@
   {
     "id": 67,
     "name": "Char-grilled Chicken",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://www.gastronom.ru/binfiles/images/20160316/b938f496.jpg",
     "price": 20,
@@ -712,6 +716,7 @@
   {
     "id": 68,
     "name": "Chicken fillet in puff pastry",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://bluejeanchef.com/uploads/2019/03/Chicken-Wellington-640x800.jpg",
     "price": 15,
@@ -721,6 +726,7 @@
   {
     "id": 69,
     "name": "Chicken roll with cranberry",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://i.lefood.menu/wp-content/uploads/w_images/2022/02/recept-31475-1240x827.jpg",
     "price": 15,
@@ -730,6 +736,7 @@
   {
     "id": 70,
     "name": "Chicken BBQ",
+    "ingredients": "",
     "category": [0, 4, 5],
     "imageUrl": "https://www.bonappeteach.com/wp-content/uploads/2021/09/Oven-Baked-BBQ-Chicken-21.jpg",
     "price": 15,
