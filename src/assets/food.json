@@ -346,6 +346,7 @@
   {
     "id": 31,
     "name": "Fruit Salad",
+    "ingredients": "",
     "category": [0, 3, 7],
     "imageUrl": "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
     "price": 10,
@@ -355,6 +356,7 @@
   {
     "id": 32,
     "name": "Wings",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
     "price": 10,
@@ -364,6 +366,7 @@
   {
     "id": 33,
     "name": "Baked Chicken",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://s1.1zoom.me/big0/82/Roast_Chicken_Cutting_board_545758_1280x958.jpg",
     "price": 10,
@@ -373,6 +376,7 @@
   {
     "id": 34,
     "name": "Chicken Tenders",
+    "ingredients": "",
     "category": [0, 4],
     "imageUrl": "https://t3.ftcdn.net/jpg/05/84/75/50/360_F_584755024_aGlWeFB5qlCVb6DL2lqDv8UvkK4KvFJO.jpg",
     "price": 10,
