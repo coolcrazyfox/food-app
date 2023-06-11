@@ -31,7 +31,7 @@ const CartItem = ({ id, weight, imageUrl, name, price, type, count }) => {
             +
           </span>
         </div>
-        <div className="flex items-center justify-center lg:mx-2 md:mx-1 font-bold   min-w-[30px] text-center">
+        <div className="flex items-center justify-center lg:mx-2 md:mx-1 font-bold   min-w-[30px] text-center text-lg">
           {price * count}$
         </div>
         <RiCloseCircleLine
