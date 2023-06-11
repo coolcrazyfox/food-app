@@ -266,6 +266,7 @@
   {
     "id": 23,
     "name": "Macaroni Salad",
+    "ingredients": "",
     "category": [0, 3],
     "imageUrl": "https://www.bhg.com/thmb/KSwPiEHPkVBafthl_sDhm40J7PE=/1244x0/filters:no_upscale():strip_icc()/grilled-veggie-pasta-salad-RU224784-b1b4829a90874916960968ad77a1dbb2.jpg",
     "price": 6,
@@ -275,6 +276,7 @@
   {
     "id": 24,
     "name": "Olivier Salad",
+    "ingredients": "",
     "category": [0, 3],
     "imageUrl": "https://healthywithnedi.com/wp-content/uploads/2020/04/russiansalad.jpg",
     "price": 10,
@@ -284,6 +286,7 @@
   {
     "id": 25,
     "name": "Fattoush",
+    "ingredients": "",
     "category": [0, 3],
     "imageUrl": "https://images.squarespace-cdn.com/content/v1/5e1dbea1bb47ad304183d9af/1600761808922-I7NPOUJPM2ISZZ47EEFZ/P9204349.jpg",
     "price": 10,
@@ -293,6 +296,7 @@
   {
     "id": 26,
     "name": "Greek Salad",
+    "ingredients": "",
     "category": [0, 3],
     "imageUrl": "https://wallpapershome.ru/images/wallpapers/salat-3840x2160-salat-17422.jpg",
     "price": 10,
