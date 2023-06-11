@@ -256,6 +256,7 @@
   {
     "id": 22,
     "name": "Som tam",
+    "ingredients": "",
     "category": [0, 3],
     "imageUrl": "https://ianbenites.com/wp-content/uploads/2021/05/20210511_183402-1.jpg",
     "price": 10,
