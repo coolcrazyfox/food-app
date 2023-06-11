@@ -716,7 +716,7 @@
   {
     "id": 68,
     "name": "Chicken fillet in puff pastry",
-    "ingredients": "",
+    "ingredients": "chicken, puff pastry, onion cream cheese, spinach, egg",
     "category": [0, 4],
     "imageUrl": "https://bluejeanchef.com/uploads/2019/03/Chicken-Wellington-640x800.jpg",
     "price": 15,
@@ -726,7 +726,7 @@
   {
     "id": 69,
     "name": "Chicken roll with cranberry",
-    "ingredients": "chicken, olive oil, onion,pistachio nuts, orange juice, cranberries ",
+    "ingredients": "chicken, olive oil, onion, pistachio nuts, orange juice, cranberries ",
     "category": [0, 4],
     "imageUrl": "https://i.lefood.menu/wp-content/uploads/w_images/2022/02/recept-31475-1240x827.jpg",
     "price": 15,
