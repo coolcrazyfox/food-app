@@ -676,7 +676,7 @@
   {
     "id": 64,
     "name": "Mayo Burger",
-    "ingredients": "hamburger buns",
+    "ingredients": "hamburger buns, beef, Sriracha mayo, cabbage salad mix, cheese",
     "category": [0, 2],
     "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
     "price": 25,
@@ -686,7 +686,7 @@
   {
     "id": 65,
     "name": "Camembert Burger",
-    "ingredients": "hamburger buns, beef, salt, mayonnaise, Camembert cheese ",
+    "ingredients": "hamburger buns, beef, tomato, onions and pickles with mustard, mayonnaise, Camembert cheese ",
     "category": [0, 2],
     "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
     "price": 25,
