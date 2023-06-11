@@ -646,6 +646,7 @@
   {
     "id": 61,
     "name": "Mousy Dessert",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content/27103/mussovyi-desert_1526753378_1_max.jpg",
     "price": 20,
@@ -655,6 +656,7 @@
   {
     "id": 62,
     "name": "Mulfey Dessert",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://вкуснофф.рф/img/recepty/4018/big.jpg",
     "price": 20,
@@ -664,6 +666,7 @@
   {
     "id": 63,
     "name": "Eclair",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://food.pibig.info/uploads/posts/2023-03/1678252075_food-pibig-info-p-ekler-frantsuzskie-deserti-oboi-11.jpg",
     "price": 15,
