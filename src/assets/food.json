@@ -496,6 +496,7 @@
   {
     "id": 46,
     "name": "Ice Cream Cake",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
     "price": 40,
@@ -505,6 +506,7 @@
   {
     "id": 47,
     "name": "Cheese Cake",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
     "price": 20,
@@ -514,6 +516,7 @@
   {
     "id": 48,
     "name": "Chocolate Cake",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     "price": 25,
@@ -523,6 +526,7 @@
   {
     "id": 49,
     "name": "Baked Apple",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content-v2/e5/4d/40109/zapechennye-yabloki-s-koricei-v-duxovke_1614686843_10_max.jpg",
     "price": 25,
@@ -532,6 +536,7 @@
   {
     "id": 50,
     "name": "Strawberry in Chocolate",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://menunedeli.ru/wp-content/uploads/2022/05/Klubnika-v-shokolade-500350--1200x801.jpg",
     "price": 20,
@@ -541,6 +546,7 @@
   {
     "id": 51,
     "name": "Tiramisu",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://img5.goodfon.ru/wallpaper/nbig/9/4a/desert-tiramisu-tarelka.jpg",
     "price": 25,
@@ -550,6 +556,7 @@
   {
     "id": 52,
     "name": "Napoleon Cake",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://static.1000.menu/img/content/26821/bystryi-tort-napoleon_1525111014_21_max.jpg",
     "price": 25,
@@ -559,6 +566,7 @@
   {
     "id": 53,
     "name": "Raspberry Cake",
+    "ingredients": "",
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/originals/82/df/73/82df7352b730967429d9c8f8bb935439.jpg",
     "price": 25,
