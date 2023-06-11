@@ -196,7 +196,7 @@
   {
     "id": 16,
     "name": "Bacon Cheeseburger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://del.h-cdn.co/assets/16/17/2048x1152/hd-aspect-1461870586-bacon-cheeseburger-with-baked-sweet-potato-chipsl1.jpg",
     "price": 10,
@@ -206,7 +206,7 @@
   {
     "id": 17,
     "name": "Chicken Burger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
     "price": 10,
@@ -216,7 +216,7 @@
   {
     "id": 18,
     "name": "Mushroom Burger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
     "price": 5,
@@ -226,7 +226,7 @@
   {
     "id": 19,
     "name": "Pulled pork Burger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://i.pinimg.com/originals/18/cd/3a/18cd3af543c653c3a0a3d998dfeb92d1.jpg",
     "price": 15,
@@ -236,7 +236,7 @@
   {
     "id": 20,
     "name": "Double Cheeseburger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     "price": 10,
@@ -676,7 +676,7 @@
   {
     "id": 64,
     "name": "Mayo Burger",
-    "ingredients": "",
+    "ingredients": "hamburger buns",
     "category": [0, 2],
     "imageUrl": "https://firechefs.de/wp-content/uploads/2020/01/Bildschirmfoto-2020-01-02-um-19.51.27.png",
     "price": 25,
@@ -686,7 +686,7 @@
   {
     "id": 65,
     "name": "Camembert Burger",
-    "ingredients": "",
+    "ingredients": "hamburger buns, beef, salt, mayonnaise, Camembert cheese ",
     "category": [0, 2],
     "imageUrl": "https://www.malteskitchen.de/wp-content/uploads/2014/02/rindfleisch-burger-camembert-zwiebelconfit-7193.jpg",
     "price": 25,
@@ -696,7 +696,7 @@
   {
     "id": 66,
     "name": "Angus Burger",
-    "ingredients": "100% Aussie Angus beef, classic cheese, tomato, onions and pickles with mustard and mayo",
+    "ingredients": "hamburger buns, 100% Aussie Angus beef, classic cheese, tomato, onions and pickles with mustard and mayo",
     "category": [0, 2],
     "imageUrl": "https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/89c1ea4b18-1676654624/homestyle-angus-burger-rezept-72dpi-e3-800x.jpg",
     "price": 20,
