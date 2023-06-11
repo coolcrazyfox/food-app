@@ -456,6 +456,7 @@
   {
     "id": 42,
     "name": "Wagyu Beef",
+    "ingredients": "",
     "category": [0, 6],
     "imageUrl": "https://sakura.co/wp-content/uploads/2022/12/sakuraco_wagyu-beef-thumbnail.png",
     "price": 40,
@@ -465,6 +466,7 @@
   {
     "id": 43,
     "name": "Yakisoba",
+    "ingredients": "",
     "category": [0, 6],
     "imageUrl": "https://www.somgoodhawaii.com/wp-content/uploads/2020/06/stir-fry-noodles-with-vegetables-and-beef-in-black-YVUA3AN-scaled.jpg",
     "price": 25,
@@ -474,6 +476,7 @@
   {
     "id": 44,
     "name": "Oyakodon",
+    "ingredients": "",
     "category": [0, 6],
     "imageUrl": "https://www.justonecookbook.com/wp-content/uploads/2022/10/Oyakodon-0640-III.jpg",
     "price": 25,
@@ -483,6 +486,7 @@
   {
     "id": 45,
     "name": "Ginger Beef Stock",
+    "ingredients": "",
     "category": [0, 6],
     "imageUrl": "https://вкусняшка-тут.рф/800/600/https/www.japanesecooking101.com/wp-content/uploads/2013/09/DSC01965copy.jpg",
     "price": 25,
