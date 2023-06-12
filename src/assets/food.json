@@ -426,7 +426,7 @@
   {
     "id": 39,
     "name": "Sashimi",
-    "ingredients": "",
+    "ingredients": "salmon, tuna, parrot fish, eel, caviar red, squid, bluefish",
     "category": [0, 6],
     "imageUrl": "https://www.mashed.com/img/gallery/the-untold-truth-of-sashimi/l-intro-1642188243.jpg",
     "price": 40,
@@ -436,7 +436,7 @@
   {
     "id": 40,
     "name": "Sushi set",
-    "ingredients": "sushi, prawn battered, crab battered, bacon, tuna, young peas, radish daikon ",
+    "ingredients": "sushi, sashimi, prawn battered, crab battered, bacon, tuna, young peas, radish daikon ",
     "category": [0, 6],
     "imageUrl": "https://img4.goodfon.ru/wallpaper/nbig/6/2f/moreprodukty-rolly-sushi-ryba.jpg",
     "price": 40,
