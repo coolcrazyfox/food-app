@@ -316,7 +316,7 @@
   {
     "id": 28,
     "name": "Potato Salad",
-    "ingredients": "",
+    "ingredients": "potatoes, pickles, red onions, mayonnaise, bacon, garlic, capers, greens",
     "category": [0, 3],
     "imageUrl": "https://dacha.wiki/sites/default/files/image/2023-04/jpg/salat_4.jpg",
     "price": 20,
