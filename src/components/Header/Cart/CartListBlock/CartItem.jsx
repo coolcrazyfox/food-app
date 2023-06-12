@@ -1,7 +1,16 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 
-const CartItem = ({ id, weight, imageUrl, name, price, type, count }) => {
+const CartItem = ({
+  id,
+  ingredients,
+  weight,
+  imageUrl,
+  name,
+  price,
+  type,
+  count,
+}) => {
   return (
     <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[800px]">
       <img
@@ -12,7 +21,9 @@ const CartItem = ({ id, weight, imageUrl, name, price, type, count }) => {
       <div className="flex flex-col text-lg px-7 my-3 h-auto lg:min-w-[300px] md:min-w-fit ">
         <h3 className="text-orange-500 font-bold">{name}</h3>
         <h2>{type}</h2>
+        <div>{ingredients}</div>
         <div className="text-sm">{weight}g</div>
+
         <div>26cm.</div>
       </div>
       <div className="flex flex-row  flex-wrap">

@@ -13,6 +13,7 @@ const FoodCard = ({
   sizes,
   rating,
   weight,
+  ingredients,
   // category,
 }) => {
   const typePizza = ["Thin-crust", "Thick-crust"];
@@ -30,6 +31,7 @@ const FoodCard = ({
       id,
       imageUrl,
       name,
+      ingredients,
       price,
       rating,
       weight,
