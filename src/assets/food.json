@@ -74,7 +74,7 @@
   {
     "id": 6,
     "name": "Carbonara Pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, cheese, bacon, garlic, eggs",
     "types": [1],
     "sizes": [26, 30, 40],
     "price": 25,
