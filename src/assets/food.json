@@ -124,7 +124,7 @@
   {
     "id": 10,
     "name": "Seafood Pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, cherry tomatoes, shrimp, asparagus, parmesan cheese,  basil, garlic oil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
