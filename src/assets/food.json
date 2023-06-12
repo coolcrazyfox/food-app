@@ -566,7 +566,7 @@
   {
     "id": 53,
     "name": "Raspberry Cake",
-    "ingredients": "",
+    "ingredients": "raspberry, whipped cream, sugar, raspberry jelly",
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/originals/82/df/73/82df7352b730967429d9c8f8bb935439.jpg",
     "price": 25,
@@ -576,7 +576,7 @@
   {
     "id": 54,
     "name": "Viennese Pie",
-    "ingredients": "",
+    "ingredients": "shortbread, cherry, whipped cream, cherry jelly",
     "category": [0, 7],
     "imageUrl": "https://regionpro.by/wp-content/uploads/2020/07/IMG_8341-3.jpg",
     "price": 15,
@@ -586,7 +586,7 @@
   {
     "id": 55,
     "name": "Peach Cake",
-    "ingredients": "",
+    "ingredients": "shortbread, peaches, sugar, honey, curd cream",
     "category": [0, 7],
     "imageUrl": "https://balthazar.club/uploads/posts/2023-01/1674878568_balthazar-club-p-konfi-iz-konservirovannikh-persikov-dlya-t-32.jpg",
     "price": 25,
