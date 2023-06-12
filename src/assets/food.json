@@ -184,7 +184,7 @@
   {
     "id": 15,
     "name": "Texas Pizza",
-    "ingredients": "",
+    "ingredients": "BBQ sauce, bacon, chicken, mixed peppers, cheese and tomato.",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
