@@ -396,7 +396,7 @@
   {
     "id": 36,
     "name": "Ribs BBQ",
-    "ingredients": "",
+    "ingredients": "ribs barbecue",
     "category": [0, 5],
     "imageUrl": "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
     "price": 25,
@@ -406,7 +406,7 @@
   {
     "id": 37,
     "name": "Stake BBQ",
-    "ingredients": "",
+    "ingredients": "beef stake, sea salt, thyme, rosemary, black pepper, sweet red pepper, cabbage , eggplant",
     "category": [0, 5],
     "imageUrl": "https://insanelygoodrecipes.com/wp-content/uploads/2021/11/Homemade-Grilled-Marble-Chuck-Steak.jpg",
     "price": 40,
