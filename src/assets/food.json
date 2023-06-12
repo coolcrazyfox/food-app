@@ -136,7 +136,7 @@
   {
     "id": 11,
     "name": "Supreme Pizza",
-    "ingredients": "",
+    "ingredients": "Pepperoni, Italian sausages, beef, ham, Canadian bacon, mushrooms, onions, green pepper, black and green olives",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
