@@ -306,7 +306,7 @@
   {
     "id": 27,
     "name": "Caesar Salad",
-    "ingredients": "",
+    "ingredients": "chicken, garlic, iceberg salad, mayonnaise, anchovies, mustard, worcestershire sauce, Parmigiano-Reggiano cheese, cherry tomatoes, biscuits",
     "category": [0, 3],
     "imageUrl": "https://images.ctfassets.net/lufu0clouua1/3WsOH8J0MIV9HOfio6qfPg/c69d024b7b0a8377fba0fb7ebcd2db99/Large-Caesar-Salad34774.jpg",
     "price": 15,
