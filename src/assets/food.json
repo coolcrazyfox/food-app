@@ -111,9 +111,9 @@
   },
   {
     "id": 9,
+    "name": "Vegetarian Deluxe pizza",
+    "ingredients": "Italian sausages, red onion, mushroom, jalapeno, sweetcorn, mixed peppers cheese & tomato",
     "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-    "name": "Wallpaper pizza",
-    "ingredients": "Italian sausages",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 25,
