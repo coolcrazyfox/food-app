@@ -456,7 +456,7 @@
   {
     "id": 42,
     "name": "Wagyu Beef",
-    "ingredients": "",
+    "ingredients": "wagyu beef, sea salt, thyme, rosemary, black pepper, red pepper",
     "category": [0, 6],
     "imageUrl": "https://sakura.co/wp-content/uploads/2022/12/sakuraco_wagyu-beef-thumbnail.png",
     "price": 40,
