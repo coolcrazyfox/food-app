@@ -50,7 +50,7 @@
   {
     "id": 4,
     "name": "Margarita Pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, cheese, tomatoes, garlic oil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 10,
