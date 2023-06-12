@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Pepperoni & pepper",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, pepperoni, red pepper, garlic oil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "price": 15,
