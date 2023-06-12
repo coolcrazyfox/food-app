@@ -148,7 +148,7 @@
   {
     "id": 12,
     "name": "Meat Lovers",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, Mozzarella, ham, pepperoni, garlic oil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
