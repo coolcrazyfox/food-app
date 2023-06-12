@@ -446,7 +446,7 @@
   {
     "id": 41,
     "name": "Sushi",
-    "ingredients": "",
+    "ingredients": "rice, salmon, avocado, crab, nori leaf, wasabi, black sesame",
     "category": [0, 6],
     "imageUrl": "https://www.tastingtable.com/img/gallery/sushi-lovers-tell-tasting-table-their-go-to-sushi-roll-exclusive-survey/l-intro-1670519473.jpg",
     "price": 25,
