@@ -38,7 +38,7 @@
   {
     "id": 3,
     "name": "Crazy pepperoni Pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, Double pepperoni, cheese, garlic oil",
     "types": [0],
     "sizes": [30, 40],
     "price": 20,
