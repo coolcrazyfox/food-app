@@ -346,7 +346,7 @@
   {
     "id": 31,
     "name": "Fruit Salad",
-    "ingredients": "",
+    "ingredients": "apple, cherry, blueberry, peach, blackberry, cherry, blueberry, plum, honey",
     "category": [0, 3, 7],
     "imageUrl": "https://www.crowdedkitchen.com/wp-content/uploads/2021/08/Stone-Fruit-Salad-12.jpg",
     "price": 10,
