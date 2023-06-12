@@ -160,7 +160,7 @@
   {
     "id": 13,
     "name": "Country Pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausage, Mozzarella, ham, pepperoni, black olives, tomatoes, garlic oil, basil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
@@ -172,7 +172,7 @@
   {
     "id": 14,
     "name": "Italian Pizza",
-    "ingredients": "Italian sausages, maczarella, smoked tomatoes, cherry tomatoes. fresh basil, garlic oil",
+    "ingredients": "Italian sausages, Mozzarella, smoked tomatoes, cherry tomatoes. fresh basil, garlic oil",
     "types": [0, 1],
     "sizes": [26, 30, 40],
     "category": [0, 1],
