@@ -216,7 +216,7 @@
   {
     "id": 18,
     "name": "Mushroom Burger",
-    "ingredients": "hamburger buns, 100% Beef Patty, Sauteed onions, mushrooms, Swiss cheese, lettuce, tomato, mayo",
+    "ingredients": "hamburger buns, 100% Beef Patty, Sauteed onions, mushrooms, Swiss cheese, lettuce, tomato, mayo, salad",
     "category": [0, 2],
     "imageUrl": "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
     "price": 5,
