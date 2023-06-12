@@ -496,7 +496,7 @@
   {
     "id": 46,
     "name": "Ice Cream Cake",
-    "ingredients": "",
+    "ingredients": "ice cream, chocolate ice cream, ",
     "category": [0, 7],
     "imageUrl": "https://i0.wp.com/whattheheckdoieatnow.com/wp-content/uploads/2016/03/Ice-Cream-Cake18.jpg?w=1100",
     "price": 40,
@@ -506,7 +506,7 @@
   {
     "id": 47,
     "name": "Cheese Cake",
-    "ingredients": "",
+    "ingredients": "cookies, Mascarpone Galbani, honey, blueberry ",
     "category": [0, 7],
     "imageUrl": "https://img.freepik.com/premium-photo/slice-cheesecake-with-berries-plate_862480-4.jpg",
     "price": 20,
@@ -516,7 +516,7 @@
   {
     "id": 48,
     "name": "Chocolate Cake",
-    "ingredients": "",
+    "ingredients": "Chocolate biscuit, coffee cream, chocolate, cherry, honey",
     "category": [0, 7],
     "imageUrl": "https://i.pinimg.com/736x/29/74/e9/2974e93651e6af66ded5a6117c02abc2.jpg",
     "price": 25,
@@ -536,7 +536,7 @@
   {
     "id": 50,
     "name": "Strawberry in Chocolate",
-    "ingredients": "Strawberry, chocolate, butter, confectionery decoration",
+    "ingredients": "strawberry, chocolate, butter, confectionery decoration",
     "category": [0, 7],
     "imageUrl": "https://menunedeli.ru/wp-content/uploads/2022/05/Klubnika-v-shokolade-500350--1200x801.jpg",
     "price": 20,
