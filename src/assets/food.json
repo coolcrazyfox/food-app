@@ -356,8 +356,8 @@
   {
     "id": 32,
     "name": "Wings",
-    "ingredients": "",
-    "category": [0, 4],
+    "ingredients": "chicken wings, BBQ sauce",
+    "category": [0, 4, 5],
     "imageUrl": "https://thegardeningcook.com/wp-content/uploads/2013/06/sticky0-chicken-wings-fb.jpg",
     "price": 10,
     "weight": 450,
