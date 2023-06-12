@@ -396,7 +396,7 @@
   {
     "id": 36,
     "name": "Ribs BBQ",
-    "ingredients": "ribs barbecue",
+    "ingredients": "ribs barbecue, sea salt, thyme, rosemary, black pepper, tomatoes",
     "category": [0, 5],
     "imageUrl": "https://blog.metro.ua/wp-content/uploads/2020/04/shutterstock_611174102_2.jpg",
     "price": 25,
@@ -416,7 +416,7 @@
   {
     "id": 38,
     "name": "Sausages BBQ",
-    "ingredients": "sausages barbecue, salad, cherry tomato, mustard, onions, red peppers ",
+    "ingredients": "sausages barbecue, salad, cherry tomatoes, mustard, onions, red peppers ",
     "category": [0, 5],
     "imageUrl": "https://www.zastavki.com/pictures/1366x768/2018Food___Meat_and_barbecue_BBQ_sausages_with_red_pepper_and_tomatoes_on_a_cutting_board_128937_24.jpg",
     "price": 20,
