@@ -236,11 +236,11 @@
   {
     "id": 20,
     "name": "Double Cheeseburger",
-    "ingredients": "hamburger buns",
+    "ingredients": "hamburger buns, 100% Beef Patty, Pasteurized Process American Cheese, Pickle Slices, Ketchup, Onions, Mustard, salad",
     "category": [0, 2],
     "imageUrl": "https://www.daysoftheyear.com/wp-content/uploads/double-cheeseburger-day.jpg",
     "price": 10,
-    "weight": 300,
+    "weight": 450,
     "rating": 3
   },
   {
