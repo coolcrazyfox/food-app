@@ -14,7 +14,7 @@
   {
     "id": 1,
     "name": "Four Cheese pizza",
-    "ingredients": "Italian sausages",
+    "ingredients": "Italian sausages, gorgonzola, Parmigiano-Reggiano and goat cheese ",
     "types": [0],
     "sizes": [26, 40],
     "price": 25,
