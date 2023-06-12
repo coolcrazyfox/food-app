@@ -21,9 +21,9 @@ const CartItem = ({
       <div className="flex flex-col text-lg px-7 my-3 h-auto lg:max-w-[500px] md:min-w-fit ">
         <h3 className="text-orange-500 font-bold">{name}</h3>
         <h2>{type}</h2>
-        {/* <div className="flex flex-wrap h-auto text-sm lg:max-w-[300px]">
+        <div className="flex flex-wrap h-auto text-sm lg:max-w-[300px]">
           {ingredients}
-        </div> */}
+        </div>
         <div className="text-sm">{weight}g</div>
         <div>26cm.</div>
       </div>
