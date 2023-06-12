@@ -206,7 +206,7 @@
   {
     "id": 17,
     "name": "Chicken Burger",
-    "ingredients": "hamburger buns",
+    "ingredients": "hamburger buns, chicken, Sauteed onions, mushrooms, Swiss cheese, lettuce, tomato, mayo, salad",
     "category": [0, 2],
     "imageUrl": "https://thescranline.com/wp-content/uploads/2022/02/crispy-chicken-burger-WEB-01.jpg",
     "price": 10,
