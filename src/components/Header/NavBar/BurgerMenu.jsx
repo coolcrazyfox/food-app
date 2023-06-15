@@ -71,7 +71,7 @@ const loginState = [
     id: 1,
     // link: PATH.HERO,
     link: PATH.LOGIN,
-    title: "LogIn",
+    title: "Login",
     icon: <FaSignInAlt size={27} />,
   },
 ];
