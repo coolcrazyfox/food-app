@@ -6,6 +6,9 @@ const LoginPage = () => {
       <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
         LoginPage
       </h1>
+      <form>
+        <div>New Account</div>
+      </form>
     </div>
   );
 };
