@@ -15,24 +15,26 @@ const LoginPage = () => {
       <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
         LoginPage
       </h1>
-      <form>
-        <h2 className="text-orange-600 font-bold">New Account</h2>
-        {state.map((l) => (
-          <div>
-            <input type={l.type} required />
-            <label>{l.label}</label>
-          </div>
-        ))}
-        <p className="text-orange-600">
-          Already have an account?
-          <Link
-            className="font-bold cursor-pointer text-gray-700 mx-1"
-            to={PATH.HERO}
-          >
-            Login
-          </Link>
-        </p>
-      </form>
+      <div className="flex justify-center items-center min-h-full bg-gray-700">
+        <form>
+          <h2 className="text-orange-600 font-bold">New Account</h2>
+          {state.map((l) => (
+            <div>
+              <input type={l.type} required />
+              <label>{l.label}</label>
+            </div>
+          ))}
+          <p className="text-orange-600">
+            Already have an account?
+            <Link
+              className="font-bold cursor-pointer text-gray-700 mx-1"
+              to={PATH.HERO}
+            >
+              Login
+            </Link>
+          </p>
+        </form>
+      </div>
     </div>
   );
 };
