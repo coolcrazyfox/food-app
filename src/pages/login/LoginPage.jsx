@@ -19,12 +19,18 @@ const LoginPage = () => {
         <h2>New Account</h2>
         {state.map((l) => (
           <div>
-            <input type={l.type} />
+            <input type={l.type} required />
             <label>{l.label}</label>
           </div>
         ))}
-        <p>
-          Already have an account?<Link to={PATH.HERO}>Login</Link>
+        <p className="text-orange-600">
+          Already have an account?
+          <Link
+            className="font-bold cursor-pointer text-gray-700 mx-1"
+            to={PATH.HERO}
+          >
+            Login
+          </Link>
         </p>
       </form>
     </div>
