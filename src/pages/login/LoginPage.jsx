@@ -8,7 +8,7 @@ const LoginPage = () => {
     { id: 2, type: "text", label: "Email" },
     { id: 3, type: "password", label: "Create Password" },
     { id: 4, type: "password", label: "Confirm Password" },
-    { id: 5, type: "submit", label: "Password" },
+    { id: 5, type: "submit", label: "Create" },
   ];
   return (
     <div className="max-w-[1640px] mx-auto p-4">
@@ -16,7 +16,7 @@ const LoginPage = () => {
         LoginPage
       </h1>
       <form>
-        <h2>New Account</h2>
+        <h2 className="text-orange-600 font-bold">New Account</h2>
         {state.map((l) => (
           <div>
             <input type={l.type} required />
