@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { PATH } from "../../routes/RouterRoot";
 
 const LoginPage = () => {
   const state = [
     { id: 1, type: "text", label: "UserName" },
     { id: 2, type: "text", label: "Email" },
     { id: 3, type: "password", label: "Create Password" },
-    { id: 4, type: "password", label: "Password" },
+    { id: 4, type: "password", label: "Confirm Password" },
     { id: 5, type: "submit", label: "Password" },
   ];
   return (
@@ -21,6 +23,9 @@ const LoginPage = () => {
             <label>{l.label}</label>
           </div>
         ))}
+        <p>
+          Already have an account?<Link to={PATH.HERO}>Login</Link>
+        </p>
       </form>
     </div>
   );
