@@ -36,7 +36,7 @@ const LoginPage = () => {
           <p className="text-orange-600">
             Already have an account?
             <Link
-              className="font-bold cursor-pointer text-gray-700 mx-1"
+              className="font-bold cursor-pointer text-gray-100 mx-1"
               to={PATH.HERO}
             >
               Login
