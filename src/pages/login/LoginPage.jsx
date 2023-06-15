@@ -15,7 +15,7 @@ const LoginPage = () => {
       <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
         LoginPage
       </h1>
-      <div className="flex justify-center items-center min-h-full bg-gray-700">
+      <div className="flex justify-center items-center min-h-full bg-gray-300">
         <form>
           <h2 className="text-orange-600 font-bold">New Account</h2>
           {state.map((l) => (
