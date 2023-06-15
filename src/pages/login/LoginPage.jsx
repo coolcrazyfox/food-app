@@ -21,7 +21,12 @@ const LoginPage = () => {
           </h2>
           {state.map((l) => (
             <div className="relative w-[300px] mb-[40px]">
-              <input type={l.type} required value={l.value} />
+              <input
+                className="relative w-full"
+                type={l.type}
+                required
+                value={l.value}
+              />
               <label>{l.label}</label>
             </div>
           ))}
