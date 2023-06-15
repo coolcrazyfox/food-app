@@ -16,7 +16,7 @@ const LoginPage = () => {
         LoginPage
       </h1>
       <div className="flex justify-center items-center min-h-full bg-gray-300">
-        <form>
+        <form className="flex flex-col text-center bg-slate-500 py-[60px] px-[80px]">
           <h2 className="text-orange-600 font-bold">New Account</h2>
           {state.map((l) => (
             <div>
