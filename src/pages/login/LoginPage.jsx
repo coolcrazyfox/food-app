@@ -13,7 +13,7 @@ const LoginPage = () => {
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
-        LoginPage
+        Login
       </h1>
       <div className="flex justify-center items-center min-h-full bg-gray-300">
         <form className="flex flex-col text-center bg-slate-500 py-[60px] px-[80px]">
