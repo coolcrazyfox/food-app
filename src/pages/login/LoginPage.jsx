@@ -8,7 +8,6 @@ const LoginPage = () => {
     { id: 2, type: "text", label: "Email" },
     { id: 3, type: "password", label: "Create Password" },
     { id: 4, type: "password", label: "Confirm Password" },
-    { id: 5, type: "submit", label: "Create" },
   ];
   return (
     <div className="max-w-[1640px] mx-auto p-4">
@@ -21,11 +20,14 @@ const LoginPage = () => {
             New Account
           </h2>
           {state.map((l) => (
-            <div>
-              <input type={l.type} required />
+            <div className="relative w-[300px] mb-[40px]">
+              <input type={l.type} required value={l.value} />
               <label>{l.label}</label>
             </div>
           ))}
+          <div>
+            <button>Create</button>
+          </div>
           <p className="text-orange-600">
             Already have an account?
             <Link
