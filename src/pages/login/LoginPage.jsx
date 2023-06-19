@@ -27,7 +27,7 @@ const LoginPage = () => {
                 required
                 value={l.value}
               />
-              <label className="absolute left-0  py-[10px] pointer-events-none">
+              <label className="absolute left-0  py-[10px] pointer-events-none text-white">
                 {l.label}
               </label>
             </div>
