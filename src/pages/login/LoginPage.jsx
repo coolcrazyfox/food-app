@@ -15,7 +15,7 @@ const LoginPage = () => {
         Login
       </h1>
       <div className="flex justify-center items-center min-h-full bg-gray-300">
-        <form className="flex flex-col text-center bg-slate-500 py-[60px] px-[80px]">
+        <form className="flex flex-col text-center bg-slate-500 py-[60px] px-[80px] border rounded-[10px]">
           <h2 className="text-white tracking-widest font-bold uppercase mb-[50px]">
             New Account
           </h2>
