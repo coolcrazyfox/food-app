@@ -22,7 +22,7 @@ const LoginPage = () => {
           {state.map((l) => (
             <div className="relative w-[300px] mb-[40px]">
               <input
-                className="relative w-full py-[10px] border-none border-b-gray-700 bg-gray-300 bg-gradient-to-t from-slate-400"
+                className="relative w-full py-[10px] border-none border-b-gray-700 bg-gray-300 bg-gradient-to-t from-slate-400 outline-none text-white"
                 type={l.type}
                 required
                 value={l.value}
