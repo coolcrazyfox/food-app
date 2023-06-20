@@ -61,7 +61,7 @@ export const initialState = [
   },
   {
     id: 9,
-    link: PATH.LOGIN,
+    link: PATH.HERO,
     title: "Log Out",
     icon: <HiOutlineLogin size={27} />,
   },
