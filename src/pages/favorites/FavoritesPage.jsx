@@ -1,4 +1,5 @@
 import React from "react";
+import Category from "./../../components/Footer/Category";
 
 const FavoritesPage = () => {
   return (
@@ -6,6 +7,7 @@ const FavoritesPage = () => {
       <h1 className="text-orange-600 font-bold text-4xl text-center my-9">
         Favorites
       </h1>
+      <Category />
     </div>
   );
 };
