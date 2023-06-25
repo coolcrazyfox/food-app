@@ -6,7 +6,6 @@ import Hero from "../pages/hero/Hero";
 import Food from "../components/FoodList/Food";
 import Contact from "../pages/contact/Contact";
 import LoginPage from "../pages/login/LoginPage";
-import HelpPage from "./../pages/help/HelpPage";
 import FavoritesPage from "./../pages/favorites/FavoritesPage";
 import PromotionsPage from "./../pages/promotions/PromotionsPage";
 import AddFriendsPage from "./../pages/add_friends/AddFriendsPage";
@@ -18,7 +17,6 @@ export const PATH = {
   FAVORITES: "/favorites",
   PROMOTIONS: "/promotions",
   ADD_FRIENDS: "/invite_friends",
-  HELP: "/help",
   CONTACT: "/contact",
   LOGIN: "/login",
 };
@@ -32,7 +30,6 @@ const RouterRoot = () => {
         <Route path={PATH.FAVORITES} element={<FavoritesPage />} />
         <Route path={PATH.PROMOTIONS} element={<PromotionsPage />} />
         <Route path={PATH.ADD_FRIENDS} element={<AddFriendsPage />} />
-        <Route path={PATH.HELP} element={<HelpPage />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
         <Route path={PATH.LOGIN} element={<LoginPage />} />
         <Route path={"*"} element={<Error404 />} />
