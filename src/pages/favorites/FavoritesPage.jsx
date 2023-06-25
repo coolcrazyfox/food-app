@@ -1,5 +1,5 @@
 import React from "react";
-import Category from "./../../components/Footer/Category";
+import Category from "./Category";
 
 const FavoritesPage = () => {
   return (
