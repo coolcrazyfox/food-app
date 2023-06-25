@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillTag } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaSignInAlt } from "react-icons/fa";
-import { MdFavorite, MdHelp } from "react-icons/md";
+import { MdFavorite } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import { HiOutlineLogin } from "react-icons/hi";
 import { MdOutlineConnectWithoutContact, MdFastfood } from "react-icons/md";
@@ -49,18 +49,12 @@ export const initialState = [
   },
   {
     id: 7,
-    link: PATH.HELP,
-    title: "Help",
-    icon: <MdHelp size={27} />,
-  },
-  {
-    id: 8,
     link: PATH.CONTACT,
     title: "Contact",
     icon: <MdOutlineConnectWithoutContact size={27} />,
   },
   {
-    id: 9,
+    id: 8,
     link: PATH.HERO,
     title: "Log Out",
     icon: <HiOutlineLogin size={27} />,
