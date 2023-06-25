@@ -4,7 +4,7 @@ import Error404 from "../pages/notFound/Error404";
 import CartPage from "../pages/cart/CartPage";
 import Hero from "../pages/hero/Hero";
 import Food from "../components/FoodList/Food";
-import Contact from "../components/Footer/Contact";
+import Contact from "../pages/contact/Contact";
 import LoginPage from "../pages/login/LoginPage";
 import HelpPage from "./../pages/help/HelpPage";
 import FavoritesPage from "./../pages/favorites/FavoritesPage";
