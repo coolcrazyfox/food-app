@@ -7,12 +7,14 @@ import { clearItems } from "../../../../redux/store/Slices/cartSlice";
 const ClearCartBtn = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
+  const onClickClear = () => {
+    if (window.confirm("Empty a cart?")) {
+      dispatch(clearItems());
+    }
+  };
   return (
     <>
-      <div
-        onClick={() => dispatch(clearItems())}
-        className="flex flex-row justify-between"
-      >
+      <div onClick={onClickClear} className="flex flex-row justify-between">
         <HiShoppingCart
           size={30}
           className={theme === "dark" ? "" : "text-white"}
