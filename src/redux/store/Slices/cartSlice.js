@@ -30,6 +30,10 @@ export const cartSlice = createSlice({
         return obj.price * obj.count + sum;
       }, 0);
     },
+    plusItem(state, action) {
+      const findItem = state.items.find((obj) => obj.id === action.payload.id);
+    },
+    minusItem(state, action) {},
     removeItem(state, action) {
       state.items = state.items.filter((obj) => obj.id !== action.payload);
     },
