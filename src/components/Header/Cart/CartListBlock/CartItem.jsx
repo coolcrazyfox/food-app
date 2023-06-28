@@ -47,9 +47,13 @@ const CartItem = ({
           <div className="flex items-center  justify-center lg:mx-2 md:mx-1 font-bold   min-w-[60px] min-h-[40px] text-center text-lg ">
             {price * count}$
           </div>
-          <RiCloseCircleLine className="flex h-full  justify-start items-start pb-[90px] text-gray-400 hover:text-orange-500 font-bold  text-center" />
+          {/* <RiCloseCircleLine className="flex h-full  justify-start items-start pb-[90px] text-gray-400 hover:text-orange-500 font-bold  text-center" /> */}
         </div>
       </div>
+      <RiCloseCircleLine
+        size={18}
+        className="flex h-full m-1 justify-start items-start  text-gray-400 hover:text-orange-500 font-bold  text-center"
+      />
     </div>
   );
 };
