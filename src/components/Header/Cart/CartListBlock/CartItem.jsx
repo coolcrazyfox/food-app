@@ -25,7 +25,9 @@ const CartItem = ({
     dispatch(minusItem(id));
   };
   const onClickRemoveItem = () => {
-    dispatch(removeItem(id));
+    if (window.confirm("Are you sure you want to remove?")) {
+      dispatch(removeItem(id));
+    }
   };
   return (
     <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]">
