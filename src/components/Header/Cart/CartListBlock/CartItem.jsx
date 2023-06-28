@@ -40,14 +40,14 @@ const CartItem = ({
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
           <span
             onClick={onClickMinus}
-            className="flex items-center justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg "
+            className="flex items-center justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg cursor-pointer"
           >
             -
           </span>
           <div className="font-bold mx-2 ">{count}</div>
           <span
             onClick={onClickPlus}
-            className="flex items-center justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500 hover:shadow-lg "
+            className="flex items-center justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500 hover:shadow-lg cursor-pointer"
           >
             +
           </span>
