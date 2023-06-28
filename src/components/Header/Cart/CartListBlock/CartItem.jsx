@@ -1,5 +1,7 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../../../redux/store/Slices/cartSlice";
 
 const CartItem = ({
   id,
@@ -11,6 +13,10 @@ const CartItem = ({
   type,
   count,
 }) => {
+  const dispatch = useDispatch();
+  const onClickPlus = () => {
+    dispatch(addItem({ id }));
+  };
   return (
     <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]">
       <img
@@ -25,7 +31,7 @@ const CartItem = ({
           {ingredients}
         </div>
         <div className="text-sm text-orange-500 font-bold">{weight}g</div>
-        <div>26cm.</div>
+        <div>{type}26cm.</div>
       </div>
       <div className="flex flex-row ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
