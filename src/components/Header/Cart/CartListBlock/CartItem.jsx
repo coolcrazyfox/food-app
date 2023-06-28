@@ -45,7 +45,7 @@ const CartItem = ({
         <div className="text-sm text-orange-500 font-bold">{weight}g</div>
         <div>{type}26cm.</div>
       </div>
-      <div className="flex flex-row ">
+      <div className="flex flex-row w-full items-center justify-center ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
           <span
             onClick={onClickMinus}
@@ -68,7 +68,7 @@ const CartItem = ({
           {/* <RiCloseCircleLine className="flex h-full  justify-start items-start pb-[90px] text-gray-400 hover:text-orange-500 font-bold  text-center" /> */}
         </div>
       </div>
-      <div className="flex w-full  m-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
+      <div className="flex  w-full  p-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
         <RiCloseCircleLine onClick={onClickRemoveItem} size={18} />
       </div>
     </div>
