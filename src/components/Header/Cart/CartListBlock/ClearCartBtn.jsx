@@ -8,7 +8,7 @@ const ClearCartBtn = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
   const onClickClear = () => {
-    if (window.confirm("Empty a cart?")) {
+    if (window.confirm("Empty the cart?")) {
       dispatch(clearItems());
     }
   };
