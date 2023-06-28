@@ -68,11 +68,9 @@ const CartItem = ({
           {/* <RiCloseCircleLine className="flex h-full  justify-start items-start pb-[90px] text-gray-400 hover:text-orange-500 font-bold  text-center" /> */}
         </div>
       </div>
-      <RiCloseCircleLine
-        onClick={onClickRemoveItem}
-        size={18}
-        className="flex h-full m-1 justify-end items-start  text-gray-400 hover:text-orange-500 font-bold  text-center"
-      />
+      <div className="flex w-full  m-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
+        <RiCloseCircleLine onClick={onClickRemoveItem} size={18} />
+      </div>
     </div>
   );
 };
