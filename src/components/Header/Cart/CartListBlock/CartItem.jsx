@@ -1,7 +1,11 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { useDispatch } from "react-redux";
-import { minusItem, addItem } from "../../../../redux/store/Slices/cartSlice";
+import {
+  minusItem,
+  addItem,
+  removeItem,
+} from "../../../../redux/store/Slices/cartSlice";
 
 const CartItem = ({
   id,
@@ -19,6 +23,9 @@ const CartItem = ({
   };
   const onClickMinus = () => {
     dispatch(minusItem(id));
+  };
+  const onClickRemoveItem = () => {
+    dispatch(removeItem(id));
   };
   return (
     <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]">
@@ -60,6 +67,7 @@ const CartItem = ({
         </div>
       </div>
       <RiCloseCircleLine
+        onClick={onClickRemoveItem}
         size={18}
         className="flex h-full m-1 justify-start items-start  text-gray-400 hover:text-orange-500 font-bold  text-center"
       />
