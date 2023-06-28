@@ -31,7 +31,7 @@ export const cartSlice = createSlice({
       }, 0);
     },
     plusItem(state, action) {
-      const findItem = state.items.find((obj) => obj.id === action.payload.id);
+      const findItem = state.items.find((obj) => obj.id === action.payload);
     },
     minusItem(state, action) {},
     removeItem(state, action) {
@@ -43,6 +43,12 @@ export const cartSlice = createSlice({
     },
   },
 });
-export const { setOpenSizeAndType, addItem, removeItem, clearItems } =
-  cartSlice.actions;
+export const {
+  setOpenSizeAndType,
+  addItem,
+  plusItem,
+  minusItem,
+  removeItem,
+  clearItems,
+} = cartSlice.actions;
 export default cartSlice.reducer;
