@@ -17,6 +17,9 @@ const CartItem = ({
   const onClickPlus = () => {
     dispatch(addItem({ id }));
   };
+  const onClickMinus = () => {
+    dispatch(addItem({ id }));
+  };
   return (
     <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]">
       <img
