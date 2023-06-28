@@ -1,7 +1,7 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { useDispatch } from "react-redux";
-import { minusItem, plusItem } from "../../../../redux/store/Slices/cartSlice";
+import { minusItem, addItem } from "../../../../redux/store/Slices/cartSlice";
 
 const CartItem = ({
   id,
@@ -15,7 +15,7 @@ const CartItem = ({
 }) => {
   const dispatch = useDispatch();
   const onClickPlus = () => {
-    dispatch(plusItem({ id }));
+    dispatch(addItem({ id }));
   };
   const onClickMinus = () => {
     dispatch(minusItem(id));
