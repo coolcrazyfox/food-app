@@ -1,6 +1,6 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   minusItem,
   addItem,
@@ -17,6 +17,7 @@ const CartItem = ({
   type,
   count,
 }) => {
+  const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const onClickPlus = () => {
     dispatch(addItem({ id }));
@@ -30,7 +31,13 @@ const CartItem = ({
     }
   };
   return (
-    <div className="flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]">
+    <div
+      className={
+        theme === "dark"
+          ? "flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
+          : "flex flex-row text-gray-200 border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
+      }
+    >
       <img
         src={imageUrl}
         alt={"cart item"}
