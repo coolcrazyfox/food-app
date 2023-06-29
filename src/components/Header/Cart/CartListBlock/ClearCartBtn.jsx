@@ -14,11 +14,14 @@ const ClearCartBtn = () => {
   };
   return (
     <>
-      <div onClick={onClickClear} className="flex flex-row justify-between">
+      <div onClick={onClickClear} className="flex flex-row justify-between ">
         <HiShoppingCart
           size={30}
-          className={theme === "dark" ? "" : "text-white"}
+          className={
+            theme === "dark" ? "text-orange-500 bg-gray-400" : "text-white"
+          }
         />
+        <div className="text-start bg-gray-400 uppercase">Basket</div>
         <div
           className={
             theme === "dark"
