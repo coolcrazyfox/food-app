@@ -6,8 +6,14 @@ const OrderCount = () => {
   const { items, totalPrice } = useSelector((state) => state.cart);
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   return (
-    <div className="flex flex-row justify-between">
-      <div className={theme === "dark" ? "" : "text-white"}>
+    <div
+      className={
+        theme === "dark"
+          ? "flex flex-row justify-between"
+          : "flex flex-row justify-between text-white"
+      }
+    >
+      <div>
         <h1 className="my-2">
           All:
           <span className="font-bold text-orange-500 ml-2">
@@ -15,7 +21,7 @@ const OrderCount = () => {
           </span>
         </h1>
       </div>
-      <div className={theme === "dark" ? "" : "text-white"}>
+      <div>
         <h1 className="my-2">
           Order amount:
           <span className="font-bold text-orange-500 ml-1">
