@@ -20,7 +20,13 @@ const ClearCartBtn = () => {
             size={30}
             className={theme === "dark" ? "text-orange-500 " : "text-white"}
           />
-          <div className="text-start text-lg  mx-3 uppercase font-bold">
+          <div
+            className={
+              theme === "dark"
+                ? "text-start text-lg  mx-3 uppercase font-bold"
+                : "text-start text-lg text-orange-500 mx-3 uppercase font-bold"
+            }
+          >
             Basket
           </div>
         </div>
