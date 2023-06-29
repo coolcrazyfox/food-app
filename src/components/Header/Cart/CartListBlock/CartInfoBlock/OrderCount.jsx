@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const OrderCount = () => {
   const theme = useSelector((state) => state.navbar.changeTheme);
-
   const { items, totalPrice } = useSelector((state) => state.cart);
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   return (
@@ -11,7 +10,7 @@ const OrderCount = () => {
       <div className={theme === "dark" ? "" : "text-white"}>
         <h1 className="my-2">
           All:
-          <span className="font-bold text-orange-500 ml-1">
+          <span className="font-bold text-orange-500 ml-2">
             {totalCount} pcs.
           </span>
         </h1>
@@ -21,7 +20,7 @@ const OrderCount = () => {
           Order amount:
           <span className="font-bold text-orange-500 ml-1">
             {totalPrice}
-            <span className="text-[17px]">$</span>
+            <span className="text-[17px] ml-1">$</span>
           </span>
         </h1>
       </div>
