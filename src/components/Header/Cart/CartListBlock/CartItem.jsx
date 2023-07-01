@@ -34,8 +34,8 @@ const CartItem = ({
     <div
       className={
         theme === "dark"
-          ? "flex flex-row border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
-          : "flex flex-row text-gray-200 border shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
+          ? "flex flex-row border shadow-gray-300  shadow-lg rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
+          : "flex flex-row text-gray-200 border shadow-gray-400  shadow-md rounded-lg hover:scale-105 duration-400 my-4  max-w-[840px]"
       }
     >
       <img
