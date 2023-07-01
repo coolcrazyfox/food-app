@@ -35,7 +35,7 @@ const ClearCartBtn = () => {
           className={
             theme === "dark"
               ? "flex flex-row border border-orange-500 p-2 rounded-full cursor-pointer hover:shadow-lg hover:bg-gray-500 hover:text-white"
-              : "flex flex-row border border-gray-200 text-gray-400 p-2 rounded-full cursor-pointer hover:shadow-lg hover:bg-gray-500 hover:text-white"
+              : "flex flex-row border border-gray-200 hover:border-orange-500 text-gray-400 p-2 rounded-full cursor-pointer hover:shadow-lg hover:bg-gray-500 hover:text-white"
           }
         >
           <span
