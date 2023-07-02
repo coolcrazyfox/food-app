@@ -1,7 +1,7 @@
 import React from "react";
 
 const ModalForm = () => {
-  return <div>modal</div>;
+  return <div>modal form</div>;
 };
 
 export default ModalForm;
