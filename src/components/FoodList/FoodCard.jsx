@@ -69,8 +69,8 @@ const FoodCard = ({
 
       {sizeAndType && (
         <FoodTypeAndSizeBlock
-          types={types}
-          sizes={sizes}
+          type={types}
+          size={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}
