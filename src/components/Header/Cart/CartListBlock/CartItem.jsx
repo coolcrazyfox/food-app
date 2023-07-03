@@ -15,7 +15,7 @@ const CartItem = ({
   name,
   price,
   types,
-  size,
+  sizes,
   count,
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
@@ -51,7 +51,7 @@ const CartItem = ({
           {ingredients}
         </div>
         <div className="text-sm text-orange-500 font-bold">{weight}g</div>
-        <div>{size}cm.</div>
+        <div>{sizes}cm.</div>
       </div>
       <div className="flex flex-row w-full items-center justify-center ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
