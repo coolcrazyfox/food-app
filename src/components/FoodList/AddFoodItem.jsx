@@ -7,7 +7,7 @@ const AddFoodItem = ({
   count,
   name,
   price,
-  type,
+  types,
   rating,
   weight,
   onClickAddItemHandler,
@@ -50,7 +50,7 @@ const AddFoodItem = ({
               <span className="text-base px-1 mr-[2px]">{rating}</span>
               {/* Size and Type */}
               <span className=" text-center pt-1">
-                {type && (
+                {types && (
                   <HiOutlineBarsArrowDown
                     onClick={() => setSizeAndType(!sizeAndType)}
                     size={20}

@@ -16,7 +16,7 @@ const FoodCard = ({
   ingredients,
   // category,
 }) => {
-  const typePizza = ["", "Thin-crust", "Thick-crust"];
+  const typePizza = ["Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const cartItem = useSelector((state) =>
@@ -60,7 +60,7 @@ const FoodCard = ({
         setSizeAndType={setSizeAndType}
         name={name}
         price={price}
-        type={types}
+        types={types}
         rating={rating}
         weight={weight}
         onClickAddItemHandler={onClickAdd}
@@ -69,8 +69,8 @@ const FoodCard = ({
 
       {sizeAndType && (
         <FoodTypeAndSizeBlock
-          type={types}
-          size={sizes}
+          types={types}
+          sizes={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}

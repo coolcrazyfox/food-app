@@ -51,7 +51,7 @@ const CartItem = ({
           {ingredients}
         </div>
         <div className="text-sm text-orange-500 font-bold">{weight}g</div>
-        {sizes > 0 && <div>{sizes}cm.</div>}
+        {sizes && <div>{sizes}cm.</div>}
       </div>
       <div className="flex flex-row w-full items-center justify-center ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
