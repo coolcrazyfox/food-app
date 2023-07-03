@@ -14,7 +14,8 @@ const CartItem = ({
   imageUrl,
   name,
   price,
-  type,
+  types,
+  size,
   count,
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
