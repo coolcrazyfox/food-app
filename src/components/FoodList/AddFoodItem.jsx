@@ -8,7 +8,6 @@ const AddFoodItem = ({
   name,
   price,
   type,
-  size,
   rating,
   weight,
   onClickAddItemHandler,
