@@ -60,7 +60,7 @@ const FoodCard = ({
         setSizeAndType={setSizeAndType}
         name={name}
         price={price}
-        types={types}
+        type={types}
         rating={rating}
         weight={weight}
         onClickAddItemHandler={onClickAdd}
@@ -69,8 +69,8 @@ const FoodCard = ({
 
       {sizeAndType && (
         <FoodTypeAndSizeBlock
-          types={types}
-          sizes={sizes}
+          type={types}
+          size={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}

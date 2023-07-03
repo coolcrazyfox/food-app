@@ -1,8 +1,8 @@
 import React from "react";
 
 const FoodTypeAndSizeBlock = ({
-  types,
-  sizes,
+  type,
+  size,
   activeType,
   activeSize,
   setActiveSize,
@@ -13,7 +13,7 @@ const FoodTypeAndSizeBlock = ({
     <>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {types.map((type, i) => (
+          {type.map((t, i) => (
             <li
               onClick={() => setActiveType(i)}
               className={
@@ -21,16 +21,16 @@ const FoodTypeAndSizeBlock = ({
                   ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
                   : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
               }
-              key={type}
+              key={t}
             >
-              {typePizza[type]}
+              {typePizza[t]}
             </li>
           ))}
         </ul>
       </div>
       <div className="flex justify-between px-2 py-1">
         <ul className="flex flex-row px-1  w-full justify-between ">
-          {sizes.map((s, i) => (
+          {size.map((s, i) => (
             <li
               onClick={() => setActiveSize(i)}
               className={
