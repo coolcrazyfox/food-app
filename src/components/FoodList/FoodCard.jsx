@@ -17,6 +17,7 @@ const FoodCard = ({
   // category,
 }) => {
   const typePizza = ["", "Thin-crust", "Thick-crust"];
+  const sizePizza = [];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const cartItem = useSelector((state) =>

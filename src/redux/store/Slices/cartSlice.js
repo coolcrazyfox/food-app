@@ -13,12 +13,6 @@ export const cartSlice = createSlice({
     setOpenSizeAndType(state, action) {
       state.openSizeAndType = action.payload;
     },
-    // addItem(state, action) {
-    //   state.items.push(action.payload);
-    //   state.totalPrice = state.items.reduce((sum, obj) => {
-    //     return obj.price + sum;
-    //   }, 0);
-    // },
     addItem(state, action) {
       const findItem = state.items.find((obj) => obj.id === action.payload.id);
       if (findItem) {
