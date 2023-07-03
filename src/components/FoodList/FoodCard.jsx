@@ -35,8 +35,8 @@ const FoodCard = ({
       price,
       rating,
       weight,
-      types: typePizza[activeType],
-      sizes: activeSize,
+      type: typePizza[activeType],
+      size: activeSize,
       // category,
     };
     dispatch(addItem(item));
