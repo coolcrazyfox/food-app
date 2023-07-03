@@ -35,8 +35,8 @@ const FoodCard = ({
       price,
       rating,
       weight,
-      type: typePizza[activeType],
-      size: activeSize,
+      types: typePizza[activeType],
+      sizes: activeSize,
       // category,
     };
     dispatch(addItem(item));
@@ -69,8 +69,8 @@ const FoodCard = ({
 
       {sizeAndType && (
         <FoodTypeAndSizeBlock
-          type={types}
-          size={sizes}
+          types={types}
+          sizes={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}
