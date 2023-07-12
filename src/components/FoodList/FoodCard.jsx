@@ -3,6 +3,8 @@ import FoodTypeAndSizeBlock from "./FoodTypeAndSizeBlock";
 import AddFoodItem from "./AddFoodItem";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/store/Slices/cartSlice";
+import { RiStarSmileFill } from "react-icons/ri";
+import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 
 const FoodCard = ({
   id,
