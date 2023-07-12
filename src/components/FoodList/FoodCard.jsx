@@ -55,7 +55,7 @@ const FoodCard = ({
         className="lg:w-full h-[300px] md:w-screen object-cover rounded-t-lg"
       />
 
-      <AddFoodItem
+      {/* <AddFoodItem
         sizeAndType={sizeAndType}
         setSizeAndType={setSizeAndType}
         name={name}
@@ -65,7 +65,7 @@ const FoodCard = ({
         weight={weight}
         onClickAddItemHandler={onClickAdd}
         count={addedCount}
-      />
+      /> */}
 
       {sizeAndType && (
         <FoodTypeAndSizeBlock
