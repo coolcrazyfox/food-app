@@ -112,18 +112,17 @@ const FoodCard = ({
           </div>
         </div>
       </div>
-      <h1 onClick={() => setSizeAndType(!sizeAndType)}>test</h1>
-      {
-        sizeAndType && 1
-        /* <FoodTypeAndSizeBlock
+
+      {sizeAndType && (
+        <FoodTypeAndSizeBlock
           types={types}
           sizes={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}
           setActiveType={setActiveType}
-        /> */
-      }
+        />
+      )}
     </div>
   );
 };
