@@ -112,19 +112,17 @@ const FoodCard = ({
           </div>
         </div>
       </div>
-      <div>
-        {sizeAndType &&
-          {
-            /* <FoodTypeAndSizeBlock
+
+      {sizeAndType && (
+        <FoodTypeAndSizeBlock
           types={types}
           sizes={sizes}
           activeType={activeType}
           activeSize={activeSize}
           setActiveSize={setActiveSize}
           setActiveType={setActiveType}
-        /> */
-          }}
-      </div>
+        />
+      )}
     </div>
   );
 };
