@@ -12,6 +12,8 @@ const SuperModal = () => {
         <div className="w-[300px] bg-slate-500 h-auto">
           <Dialog.Panel className={"w-[270px] h-auto bg-green-300"}>
             <Dialog.Title className={"text-white"}>Modal form</Dialog.Title>
+            <div>Text</div>
+            <button onClick={() => setOpenModal(false)}>X</button>
           </Dialog.Panel>
         </div>
       </Dialog>
