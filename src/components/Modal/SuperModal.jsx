@@ -2,10 +2,11 @@ import { Dialog } from "@headlessui/react";
 import React from "react";
 
 const SuperModal = () => {
+  const [openModal, setOpenModal] = React.useState(false);
   return (
     <div>
       <div>
-        <button>Open</button>
+        <button onClick={() => setOpenModal(true)}>Open</button>
       </div>
       <Dialog></Dialog>
     </div>
