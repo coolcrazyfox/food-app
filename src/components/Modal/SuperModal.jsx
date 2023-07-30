@@ -21,12 +21,20 @@ const SuperModal = () => {
               Modal form
             </Dialog.Title>
             <div>Text</div>
-            <button
-              className="cursor-pointer absolute"
-              onClick={() => setOpenModal(false)}
-            >
-              x
-            </button>
+            <div className="flex flex-row ">
+              <button
+                className="cursor-pointer mx-[5px]"
+                onClick={() => setOpenModal(false)}
+              >
+                Yes
+              </button>
+              <button
+                className="cursor-pointer mx-[5px]"
+                onClick={() => setOpenModal(false)}
+              >
+                No
+              </button>
+            </div>
           </Dialog.Panel>
         </div>
       </Dialog>
