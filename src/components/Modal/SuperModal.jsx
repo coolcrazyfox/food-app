@@ -9,11 +9,22 @@ const SuperModal = () => {
         <button onClick={() => setOpenModal(true)}>Open</button>
       </div>
       <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-        <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-[300px] bg-slate-500 h-auto">
-          <Dialog.Panel className={"w-[270px] h-auto bg-green-300"}>
-            <Dialog.Title className={"text-white"}>Modal form</Dialog.Title>
+        <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black h-auto">
+          <Dialog.Panel
+            className={
+              "flex flex-col  items-center justify-center w-[300px] h-[300px] bg-green-300"
+            }
+          >
+            <Dialog.Title className={"text-white text-lg font-bold"}>
+              Modal form
+            </Dialog.Title>
             <div>Text</div>
-            <button onClick={() => setOpenModal(false)}>X</button>
+            <button
+              className="cursor-pointer"
+              onClick={() => setOpenModal(false)}
+            >
+              Close
+            </button>
           </Dialog.Panel>
         </div>
       </Dialog>
