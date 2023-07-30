@@ -9,7 +9,7 @@ const SuperModal = () => {
         <button onClick={() => setOpenModal(true)}>Open</button>
       </div>
       <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-        <div className="fixed left-0 top-0 right-0 bottom-0 w-[300px] bg-slate-500 h-auto">
+        <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-[300px] bg-slate-500 h-auto">
           <Dialog.Panel className={"w-[270px] h-auto bg-green-300"}>
             <Dialog.Title className={"text-white"}>Modal form</Dialog.Title>
             <div>Text</div>
