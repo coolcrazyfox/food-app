@@ -22,10 +22,10 @@ const SuperModal = () => {
             </Dialog.Title>
             <div>Text</div>
             <button
-              className="cursor-pointer"
+              className="cursor-pointer absolute"
               onClick={() => setOpenModal(false)}
             >
-              Close
+              x
             </button>
           </Dialog.Panel>
         </div>
