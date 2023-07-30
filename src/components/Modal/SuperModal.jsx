@@ -6,7 +6,9 @@ const SuperModal = () => {
   return (
     <div>
       <div>
-        <button onClick={() => setOpenModal(true)}>Open</button>
+        <button className="cursor-pointer" onClick={() => setOpenModal(true)}>
+          Open
+        </button>
       </div>
       <Dialog open={openModal} onClose={() => setOpenModal(false)}>
         <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black h-auto">
