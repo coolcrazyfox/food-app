@@ -8,7 +8,7 @@ const SuperModal = () => {
       <div>
         <button onClick={() => setOpenModal(true)}>Open</button>
       </div>
-      <Dialog></Dialog>
+      <Dialog open={openModal} onClose={() => setOpenModal(false)}></Dialog>
     </div>
   );
 };
