@@ -14,10 +14,10 @@ const SuperModal = () => {
         <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black h-auto">
           <Dialog.Panel
             className={
-              "flex flex-col  items-center justify-center w-[300px] h-[300px] bg-green-300"
+              "flex flex-col  shadow-gray-400  shadow-lg rounded-lg items-center justify-center w-[300px] h-[300px] bg-gray-200"
             }
           >
-            <Dialog.Title className={"text-white text-lg font-bold"}>
+            <Dialog.Title className={"text-orange-500 text-lg font-bold"}>
               Modal form
             </Dialog.Title>
             <div>Text</div>
