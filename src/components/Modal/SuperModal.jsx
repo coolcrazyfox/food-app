@@ -1,19 +1,26 @@
 import { Dialog } from "@headlessui/react";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { setOpenModal } from "../../redux/store/Slices/cartSlice";
 
 const SuperModal = () => {
   const isOpenModal = useSelector((state) => state.cart.openModal);
   const dispatch = useDispatch();
-  const [openModal, setOpenModal] = React.useState(false);
+  const onClickOpenModal = () => {
+    dispatch(setOpenModal(true));
+  };
+  const onClickCloseModal = () => {
+    dispatch(setOpenModal(false));
+  };
+  // const [openModal, setOpenModal] = React.useState(false);
   return (
     <div>
       <div>
-        <button className="cursor-pointer" onClick={() => setOpenModal(true)}>
+        <button className="cursor-pointer" onClick={onClickOpenModal}>
           Open
         </button>
       </div>
-      <Dialog open={openModal} onClose={() => setOpenModal(false)}>
+      <Dialog open={isOpenModal} onClose={onClickCloseModal}>
         <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black/75 h-auto">
           <Dialog.Panel
             className={
@@ -27,13 +34,13 @@ const SuperModal = () => {
             <div className="flex flex-row ">
               <button
                 className="cursor-pointer mx-[5px]"
-                onClick={() => setOpenModal(false)}
+                onClick={onClickCloseModal}
               >
                 Yes
               </button>
               <button
                 className="cursor-pointer mx-[5px]"
-                onClick={() => setOpenModal(false)}
+                onClick={onClickCloseModal}
               >
                 No
               </button>
