@@ -23,22 +23,22 @@ const SuperModal = ({ children, onClickYesBtn }) => {
         <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black/75 h-auto">
           <Dialog.Panel
             className={
-              "flex flex-col  shadow-gray-400 opacity-100 shadow-lg rounded-lg items-center justify-center w-[300px] h-[300px] bg-gray-200"
+              "flex flex-col  shadow-gray-400 opacity-100 shadow-lg rounded-lg items-center justify-center w-[400px] h-[250px] bg-gray-200"
             }
           >
-            <Dialog.Title className={"text-orange-500 text-lg font-bold"}>
+            <Dialog.Title className={"text-orange-500 text-lg font-bold mb-4"}>
               Modal form
             </Dialog.Title>
-            <div>{children}</div>
-            <div className="flex flex-row ">
+            <div className="flex m-2">{children}</div>
+            <div className="flex flex-row mt-6">
               <button
-                className="cursor-pointer mx-[5px]"
+                className="cursor-pointer mx-[5px] border-orange-500 hover:text-white hover:bg-orange-500"
                 onClick={onClickYesBtn}
               >
                 Yes
               </button>
               <button
-                className="cursor-pointer mx-[5px]"
+                className="cursor-pointer mx-[5px] border-orange-500 hover:text-white hover:bg-orange-500"
                 onClick={onClickCloseModal}
               >
                 No
