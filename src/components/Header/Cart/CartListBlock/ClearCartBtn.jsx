@@ -3,14 +3,17 @@ import { HiShoppingCart } from "react-icons/hi";
 import { RiDeleteBinFill } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { clearItems } from "../../../../redux/store/Slices/cartSlice";
+import SuperModal from "../../../Modal/SuperModal";
 
 const ClearCartBtn = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
   const onClickClear = () => {
-    if (window.confirm("Empty the cart?")) {
-      dispatch(clearItems());
-    }
+    <SuperModal>Empty the cart?</SuperModal>;
+    dispatch(clearItems());
+    // if (window.confirm("Empty the cart?")) {
+    //   dispatch(clearItems());
+    // }
   };
   return (
     <>
