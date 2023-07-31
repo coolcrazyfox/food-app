@@ -32,13 +32,13 @@ const SuperModal = ({ children, onClickYesBtn }) => {
             <div className="flex m-2">{children}</div>
             <div className="flex flex-row mt-6">
               <button
-                className="cursor-pointer mx-[5px] border-orange-500 hover:text-white hover:bg-orange-500"
+                className="cursor-pointer mx-[25px] border  border-orange-500 shadow-gray-300 shadow-lg hover:text-white hover:bg-orange-500"
                 onClick={onClickYesBtn}
               >
                 Yes
               </button>
               <button
-                className="cursor-pointer mx-[5px] border-orange-500 hover:text-white hover:bg-orange-500"
+                className="cursor-pointer mx-[25px] border  border-orange-500 shadow-gray-300 shadow-lg hover:text-white hover:bg-orange-500"
                 onClick={onClickCloseModal}
               >
                 No
