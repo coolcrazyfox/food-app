@@ -58,7 +58,9 @@ const ClearCartBtn = () => {
           Clear the cart
         </div>
       </div>
-      <SuperModal onClickYesBtn={onClickYesBtn}>Empty the cart?</SuperModal>
+      <SuperModal onClickYesBtn={onClickYesBtn}>
+        Do you want to clean the basket?
+      </SuperModal>
     </>
   );
 };
