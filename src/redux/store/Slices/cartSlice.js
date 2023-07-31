@@ -45,6 +45,7 @@ export const cartSlice = createSlice({
   },
 });
 export const {
+  setOpenModal,
   setOpenSizeAndType,
   addItem,
   minusItem,
