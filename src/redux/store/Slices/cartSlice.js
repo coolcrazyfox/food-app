@@ -14,6 +14,9 @@ export const cartSlice = createSlice({
     setOpenSizeAndType(state, action) {
       state.openSizeAndType = action.payload;
     },
+    setOpenModal(state, action) {
+      state.openModal = action.payload;
+    },
     addItem(state, action) {
       const findItem = state.items.find((obj) => obj.id === action.payload.id);
       if (findItem) {
