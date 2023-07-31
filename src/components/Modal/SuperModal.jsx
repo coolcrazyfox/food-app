@@ -12,14 +12,13 @@ const SuperModal = ({ children, onClickYesBtn }) => {
   const onClickCloseModal = () => {
     dispatch(setOpenModal(false));
   };
-  // const [openModal, setOpenModal] = React.useState(false);
   return (
     <div>
-      <div>
+      {/* <div>
         <button className="cursor-pointer" onClick={onClickOpenModal}>
           Open
         </button>
-      </div>
+      </div> */}
       <Dialog open={isOpenModal} onClose={onClickCloseModal}>
         <div className="flex items-center justify-center fixed left-0 top-0 right-0 bottom-0 w-full bg-black/75 h-auto">
           <Dialog.Panel
@@ -34,7 +33,7 @@ const SuperModal = ({ children, onClickYesBtn }) => {
             <div className="flex flex-row ">
               <button
                 className="cursor-pointer mx-[5px]"
-                onClick={onClickCloseModal}
+                onClick={onClickYesBtn}
               >
                 Yes
               </button>

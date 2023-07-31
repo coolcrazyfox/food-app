@@ -9,12 +9,14 @@ import {
 import SuperModal from "../../../Modal/SuperModal";
 
 const ClearCartBtn = () => {
+  const onClickYesBtn = () => {
+    dispatch(clearItems());
+    dispatch(setOpenModal(false));
+  };
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
   const onClickClear = () => {
     dispatch(setOpenModal(true));
-    // <SuperModal>Empty the cart?</SuperModal>;
-
     // dispatch(clearItems());
     // if (window.confirm("Empty the cart?")) {
     //   dispatch(clearItems());
