@@ -12,7 +12,7 @@ const CartList = () => {
       {items.map((cart) => (
         <CartItem {...cart} key={cart.id} />
       ))}
-      <SuperModal></SuperModal>
+
       <CartInfoBlock />
     </>
   );

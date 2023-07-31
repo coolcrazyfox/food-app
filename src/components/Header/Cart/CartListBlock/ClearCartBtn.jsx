@@ -2,15 +2,20 @@ import React from "react";
 import { HiShoppingCart } from "react-icons/hi";
 import { RiDeleteBinFill } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
-import { clearItems } from "../../../../redux/store/Slices/cartSlice";
+import {
+  clearItems,
+  setOpenModal,
+} from "../../../../redux/store/Slices/cartSlice";
 import SuperModal from "../../../Modal/SuperModal";
 
 const ClearCartBtn = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.navbar.changeTheme);
   const onClickClear = () => {
-    <SuperModal>Empty the cart?</SuperModal>;
-    dispatch(clearItems());
+    dispatch(setOpenModal(true));
+    // <SuperModal>Empty the cart?</SuperModal>;
+
+    // dispatch(clearItems());
     // if (window.confirm("Empty the cart?")) {
     //   dispatch(clearItems());
     // }
@@ -51,6 +56,7 @@ const ClearCartBtn = () => {
           Clear the cart
         </div>
       </div>
+      <SuperModal onClickYesBtn={onClickYesBtn}>Empty the cart?</SuperModal>
     </>
   );
 };
