@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const SuperModal = () => {
-  const isOpenModal = useSelector();
+  const isOpenModal = useSelector((state) => state.cart.openModal);
   const [openModal, setOpenModal] = React.useState(false);
   return (
     <div>
