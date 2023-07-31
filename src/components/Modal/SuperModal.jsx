@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setOpenModal } from "../../redux/store/Slices/cartSlice";
 
-const SuperModal = () => {
+const SuperModal = ({ children }) => {
   const isOpenModal = useSelector((state) => state.cart.openModal);
   const dispatch = useDispatch();
   const onClickOpenModal = () => {
@@ -30,7 +30,7 @@ const SuperModal = () => {
             <Dialog.Title className={"text-orange-500 text-lg font-bold"}>
               Modal form
             </Dialog.Title>
-            <div>Text</div>
+            <div>{children}</div>
             <div className="flex flex-row ">
               <button
                 className="cursor-pointer mx-[5px]"
