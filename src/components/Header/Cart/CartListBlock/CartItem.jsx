@@ -84,7 +84,6 @@ const CartItem = ({
           <div className="flex items-center  justify-center lg:mx-2 md:mx-1 font-bold   min-w-[60px] min-h-[40px] text-center text-lg ">
             {price * count}$
           </div>
-          {/* <RiCloseCircleLine className="flex h-full  justify-start items-start pb-[90px] text-gray-400 hover:text-orange-500 font-bold  text-center" /> */}
         </div>
       </div>
       <div className="flex  w-full  p-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
