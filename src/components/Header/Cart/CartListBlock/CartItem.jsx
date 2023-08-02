@@ -7,7 +7,6 @@ import {
   removeItem,
   setOpenModal,
 } from "../../../../redux/store/Slices/cartSlice";
-import { Dialog } from "@headlessui/react";
 import SuperModal from "../../../Modal/SuperModal";
 
 const CartItem = ({
