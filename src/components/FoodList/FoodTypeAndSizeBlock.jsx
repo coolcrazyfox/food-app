@@ -8,7 +8,7 @@ const FoodTypeAndSizeBlock = ({
   setActiveSize,
   setActiveType,
 }) => {
-  const typePizza = ["Thin-crust", "Thick-crust"];
+  const typePizza = ["'VOSS' water", "Thin-crust", "Thick-crust"];
   return (
     <>
       <div className="flex justify-between px-2 py-1">
