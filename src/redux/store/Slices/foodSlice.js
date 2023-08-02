@@ -11,45 +11,17 @@ export const foodSlice = createSlice({
   name: "food",
   initialState,
   reducers: {
-    setOpenSizeAndType(state, action) {
-      state.openSizeAndType = action.payload;
+    setSizeAndType(state, action) {
+      state.sizeAndType = action.payload;
     },
-    setOpenModal(state, action) {
-      state.openModal = action.payload;
+    setActiveType(state, action) {
+      state.activeType = action.payload;
     },
-    addItem(state, action) {
-      const findItem = state.items.find((obj) => obj.id === action.payload.id);
-      if (findItem) {
-        findItem.count++;
-      } else {
-        state.items.push({ ...action.payload, count: 1 });
-      }
-      state.totalPrice = state.items.reduce((sum, obj) => {
-        return obj.price * obj.count + sum;
-      }, 0);
-    },
-    minusItem(state, action) {
-      const findItem = state.items.find((obj) => obj.id === action.payload);
-      if (findItem) {
-        findItem.count--;
-      }
-    },
-
-    removeItem(state, action) {
-      state.items = state.items.filter((obj) => obj.id !== action.payload);
-    },
-    clearItems(state) {
-      state.items = [];
-      state.totalPrice = 0;
+    setActiveSize(state, action) {
+      state.activeSize = action.payload;
     },
   },
 });
-export const {
-  setOpenModal,
-  setOpenSizeAndType,
-  addItem,
-  minusItem,
-  removeItem,
-  clearItems,
-} = cartSlice.actions;
-export default cartSlice.reducer;
+export const { setSizeAndType, setActiveType, setActiveSize } =
+  foodSlice.actions;
+export default foodSlice.reducer;
