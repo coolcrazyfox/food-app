@@ -56,8 +56,13 @@ const CartItem = ({
       <div className="flex flex-row w-full items-center justify-center ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
           <span
+            disabled={false}
             onClick={onClickMinus}
-            className="flex items-center select-none justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg cursor-pointer"
+            className={
+              count > 0
+                ? "flex items-center select-none justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg cursor-pointer"
+                : "flex items-center bg-gray-300 select-none justify-center lg:mx-2 md:-mx-1 font-bold  border border-orange-500 rounded-lg min-w-[30px] text-center hover:text-white hover:bg-orange-500  hover:shadow-lg cursor-pointer"
+            }
           >
             -
           </span>
