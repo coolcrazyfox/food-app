@@ -84,6 +84,9 @@ const CartItem = ({
       <div className="flex  w-full  p-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
         <RiCloseCircleLine onClick={onClickRemoveItem} size={18} />
       </div>
+      <SuperModal onClickYesBtn={onClickYesBtn}>
+        Are you sure you want to remove?
+      </SuperModal>
     </div>
   );
 };

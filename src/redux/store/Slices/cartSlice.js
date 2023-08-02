@@ -34,6 +34,10 @@ export const cartSlice = createSlice({
       if (findItem) {
         findItem.count--;
       }
+      if (!findItem) {
+        state.items.push({ ...action.payload, count: 0 });
+      }
+      console.log("findItem", findItem.length);
     },
 
     removeItem(state, action) {
