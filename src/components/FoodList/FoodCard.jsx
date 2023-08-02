@@ -84,7 +84,6 @@ const FoodCard = ({
           <div className="flex mx-2 mb-1 text-orange-500 font-bold">
             {weight}g
           </div>
-
           <div className="flex flex-row w-full ">
             <div className=" flex flex-row select-none  justify-between ">
               {/* Add button */}
