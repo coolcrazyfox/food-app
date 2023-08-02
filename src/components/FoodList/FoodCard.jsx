@@ -108,7 +108,7 @@ const FoodCard = ({
               <RiStarSmileFill size={24} className="text-orange-500 ml-1" />
               <span className="text-base px-1 mr-[2px]">{rating}</span>
               {/* Size and Type */}
-              <span className=" text-center pt-1">
+              <span className=" text-center pt-1 px-2 cursor-pointer hover:text-orange-600">
                 <HiOutlineBarsArrowDown
                   onClick={onClickOpenDetails}
                   size={20}
