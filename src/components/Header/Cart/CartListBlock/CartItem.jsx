@@ -7,6 +7,7 @@ import {
   removeItem,
   setOpenModal,
 } from "../../../../redux/store/Slices/cartSlice";
+import SuperModal from "../../../Modal/SuperModal";
 
 const CartItem = ({
   id,
@@ -21,10 +22,7 @@ const CartItem = ({
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
-  const onClickYesBtn = () => {
-    dispatch(removeItem(id));
-    dispatch(setOpenModal(false));
-  };
+
   const onClickPlus = () => {
     dispatch(addItem({ id }));
   };
@@ -33,9 +31,14 @@ const CartItem = ({
   };
   const onClickRemoveItem = () => {
     dispatch(setOpenModal(true));
+    dispatch(removeItem(id));
     // if (window.confirm("Are you sure you want to remove?")) {
     //   dispatch(removeItem(id));
     // }
+  };
+  const onClickYesBt = () => {
+    dispatch(removeItem(id));
+    dispatch(setOpenModal(false));
   };
   return (
     <div
@@ -89,7 +92,7 @@ const CartItem = ({
       <div className="flex  w-full  p-1 justify-end  text-gray-400 hover:text-orange-500 font-bold  text-right">
         <RiCloseCircleLine onClick={onClickRemoveItem} size={18} />
       </div>
-      <SuperModal onClickYesBtn={onClickYesBtn}>
+      <SuperModal onClickYesBtn={onClickYesBt}>
         Are you sure you want to remove?
       </SuperModal>
     </div>
