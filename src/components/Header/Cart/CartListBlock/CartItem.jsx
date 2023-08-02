@@ -49,12 +49,12 @@ const CartItem = ({
       />
       <div className="flex flex-col text-lg px-7 my-3 h-auto lg:max-w-[500px] md:min-w-fit ">
         <h3 className="text-orange-500 font-bold">{name}</h3>
-        {type ? <h2> {type}</h2> : ""}
+        {type ? <h4 className="text-sm font-bold"> {type}</h4> : ""}
         <div className="flex flex-wrap h-auto text-sm lg:max-w-[300px]">
           {ingredients}
         </div>
         <div className="text-sm text-orange-500 font-bold">{weight}g</div>
-        {size ? <div>{size}cm.</div> : ""}
+        {size ? <div className="text-sm font-medium">{size}cm.</div> : ""}
       </div>
       <div className="flex flex-row w-full items-center justify-center ">
         <div className=" flex flex-row lg:mx-9 md:mx-0 justify-between items-center px-5 h-full ">
