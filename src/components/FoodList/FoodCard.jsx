@@ -84,8 +84,10 @@ const FoodCard = ({
           <div className="flex mx-2 mb-1 text-orange-500 font-bold">
             {weight}g
           </div>
+
           <div className="flex flex-row w-full ">
             <div className=" flex flex-row select-none  justify-between ">
+              {/* Add button */}
               <div
                 onClick={onClickAdd}
                 className="flex flex-row  mx-2 object-cover select-none border-2  border-orange-500 bg-white text-orange-500 px-2 rounded-full  h-7 cursor-pointer hover:bg-orange-500 hover:text-white "
