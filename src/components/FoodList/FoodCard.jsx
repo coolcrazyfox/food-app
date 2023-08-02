@@ -103,12 +103,10 @@ const FoodCard = ({
               <span className="text-base px-1 mr-[2px]">{rating}</span>
               {/* Size and Type */}
               <span className=" text-center pt-1">
-                {types && (
-                  <HiOutlineBarsArrowDown
-                    onClick={() => setSizeAndType(!sizeAndType)}
-                    size={20}
-                  />
-                )}
+                <HiOutlineBarsArrowDown
+                  onClick={() => setSizeAndType(!sizeAndType)}
+                  size={20}
+                />
               </span>
             </div>
           </div>
