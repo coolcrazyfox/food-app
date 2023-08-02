@@ -20,7 +20,6 @@ const FoodCard = ({
   // category,
 }) => {
   const typePizza = ["'VOSS' water", "Thin-crust", "Thick-crust"];
-  const sizePizza = [26, 30, 40];
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
   const cartItem = useSelector((state) =>
@@ -40,7 +39,7 @@ const FoodCard = ({
       rating,
       weight,
       type: typePizza[activeType],
-      size: activeSize,
+      size: sizes[activeSize],
       // category,
     };
     dispatch(addItem(item));
