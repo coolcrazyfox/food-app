@@ -5,6 +5,7 @@ import {
   minusItem,
   addItem,
   removeItem,
+  setOpenModal,
 } from "../../../../redux/store/Slices/cartSlice";
 
 const CartItem = ({
@@ -20,6 +21,10 @@ const CartItem = ({
 }) => {
   const theme = useSelector((state) => state.navbar.changeTheme);
   const dispatch = useDispatch();
+  const onClickYesBtn = () => {
+    dispatch(removeItem(id));
+    dispatch(setOpenModal(false));
+  };
   const onClickPlus = () => {
     dispatch(addItem({ id }));
   };
@@ -27,9 +32,10 @@ const CartItem = ({
     dispatch(minusItem(id));
   };
   const onClickRemoveItem = () => {
-    if (window.confirm("Are you sure you want to remove?")) {
-      dispatch(removeItem(id));
-    }
+    dispatch(setOpenModal(true));
+    // if (window.confirm("Are you sure you want to remove?")) {
+    //   dispatch(removeItem(id));
+    // }
   };
   return (
     <div
