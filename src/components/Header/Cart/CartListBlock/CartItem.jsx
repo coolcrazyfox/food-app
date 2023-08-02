@@ -31,7 +31,6 @@ const CartItem = ({
   };
   const onClickRemoveItem = () => {
     dispatch(setOpenModal(true));
-    dispatch(removeItem(id));
     // if (window.confirm("Are you sure you want to remove?")) {
     //   dispatch(removeItem(id));
     // }
