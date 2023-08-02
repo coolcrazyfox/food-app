@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/store/Slices/cartSlice";
 import { RiStarSmileFill } from "react-icons/ri";
 import { HiOutlineBarsArrowDown } from "react-icons/hi2";
+import FoodSize from "./FoodSize";
 
 const FoodCard = ({
   id,
@@ -114,14 +115,16 @@ const FoodCard = ({
       </div>
 
       {sizeAndType && (
-        <FoodTypeAndSizeBlock
-          types={types}
-          sizes={sizes}
-          activeType={activeType}
-          activeSize={activeSize}
-          setActiveSize={setActiveSize}
-          setActiveType={setActiveType}
-        />
+        <>
+          <FoodTypeAndSizeBlock
+            types={types}
+            activeType={activeType}
+            setActiveType={setActiveType}
+            sizes={sizes}
+            setActiveSize={setActiveSize}
+            activeSize={activeSize}
+          />
+        </>
       )}
     </div>
   );
