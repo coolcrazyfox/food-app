@@ -9,7 +9,7 @@ const FoodTypeAndSizeBlock = ({
   activeSize,
   setActiveSize,
 }) => {
-  const typePizza = ["'VOSS' water", "Thin-crust", "Thick-crust"];
+  const typePizza = ["NOTHING", "'VOSS' water", "Thin-crust", "Thick-crust"];
   return (
     <>
       <div className="flex justify-between px-2 py-1">
@@ -19,8 +19,8 @@ const FoodTypeAndSizeBlock = ({
               onClick={() => setActiveType(i)}
               className={
                 activeType === i
-                  ? "text-orange-500 mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
-                  : "mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
+                  ? "text-orange-500 text-sm mx-1 border-2 border-orange-500 rounded-md  w-full text-center cursor-pointer"
+                  : "text-sm mx-1 rounded-md bg-gray-100  w-full text-center cursor-pointer"
               }
               key={t}
             >
