@@ -25,21 +25,18 @@ const Food = () => {
     (state) => state.filter
   );
 
-  const fetchFood = () => {
+  const fetchFood = async () => {
     setIsLoading(true);
     const baseUrl = "https://64581bc81a4c152cf991b4a5.mockapi.io/card";
     const categoryBy = categoryId > 0 ? `category=${categoryId}` : "";
     const sortTypeBy = sortType.sortProperty.replace("-", "");
     const orderBy = sortType.sortProperty.includes("-") ? "asc" : "desc";
     const search = searchValue ? `&search=${searchValue}` : "";
-    axios
-      .get(
-        `${baseUrl}?sortBy=${sortTypeBy}&${categoryBy}&order=${orderBy}${search}`
-      )
-      .then((res) => {
-        setFoodItems(res.data);
-        setIsLoading(false);
-      });
+    const res = await axios.get(
+      `${baseUrl}?sortBy=${sortTypeBy}&${categoryBy}&order=${orderBy}${search}`
+    );
+    setFoodItems(res.data);
+    setIsLoading(false);
   };
   // React.useEffect(() => {
   //   if (window.location.search) {
