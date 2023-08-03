@@ -1,8 +1,5 @@
 import React from "react";
 
-import { useDispatch, useSelector } from "react-redux";
-import { setActiveSize } from "../../redux/store/Slices/foodSlice";
-
 const FoodSize = ({ sizes, activeSize, setActiveSize }) => {
   return (
     <div className="flex justify-between px-2 py-1">
