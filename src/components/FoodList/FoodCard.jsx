@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/store/Slices/cartSlice";
 import { RiStarSmileFill } from "react-icons/ri";
 import { HiOutlineBarsArrowDown } from "react-icons/hi2";
-import { setSizeAndType } from "../../redux/store/Slices/foodSlice";
 
 const FoodCard = ({
   id,
@@ -21,17 +20,14 @@ const FoodCard = ({
 }) => {
   const typePizza = ["'VOSS' water", "Thin-crust", "Thick-crust"];
   const theme = useSelector((state) => state.navbar.changeTheme);
-  const { activeSize, activeType, sizeAndType } = useSelector(
-    (state) => state.food
-  );
   const dispatch = useDispatch();
   const cartItem = useSelector((state) =>
     state.cart.items.find((obj) => obj.id === id)
   );
   const addedCount = cartItem ? cartItem.count : 0;
-  // const [activeType, setActiveType] = React.useState(0);
-  // const [activeSize, setActiveSize] = React.useState(0);
-  // const [sizeAndType, setSizeAndType] = React.useState(false);
+  const [activeType, setActiveType] = React.useState(0);
+  const [activeSize, setActiveSize] = React.useState(0);
+  const [sizeAndType, setSizeAndType] = React.useState(false);
   const onClickAdd = () => {
     const item = {
       id,
@@ -46,9 +42,6 @@ const FoodCard = ({
       // category,
     };
     dispatch(addItem(item));
-  };
-  const onClickOpenDetails = () => {
-    dispatch(setSizeAndType(!sizeAndType));
   };
   return (
     <div
@@ -110,7 +103,7 @@ const FoodCard = ({
               {/* Size and Type */}
               <span className=" text-center pt-1 px-2 cursor-pointer hover:text-orange-600">
                 <HiOutlineBarsArrowDown
-                  onClick={onClickOpenDetails}
+                  onClick={() => setSizeAndType(!sizeAndType)}
                   size={20}
                 />
               </span>
@@ -126,6 +119,8 @@ const FoodCard = ({
             activeType={activeType}
             sizes={sizes}
             activeSize={activeSize}
+            setActiveType={setActiveType}
+            setActiveSize={setActiveSize}
           />
         </>
       )}
