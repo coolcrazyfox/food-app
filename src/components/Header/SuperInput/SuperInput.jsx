@@ -10,7 +10,7 @@ const SuperInput = () => {
     <div className={s.main_container}>
       <div className={s.inputBox}>
         <input type="text" required />
-        <label>Wavy Input TextAnimation</label>
+        <label>Wavy&nbsp;Input&nbsp;TextAnimation</label>
       </div>
     </div>
   );
