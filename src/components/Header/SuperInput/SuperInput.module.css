@@ -32,4 +32,6 @@
 .inputBox label span {
   position: relative;
   display: inline-block;
+  flex-direction: row;
+  font-size: 1.25em;
 }
