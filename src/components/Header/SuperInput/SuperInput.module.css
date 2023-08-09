@@ -6,4 +6,11 @@
   background: rgba(0, 0, 0, 0.571);
 }
 .inputBox {
+  position: relative;
+  width: 350px;
+}
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 10px, 0;
 }
