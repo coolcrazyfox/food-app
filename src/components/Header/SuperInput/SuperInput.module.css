@@ -36,4 +36,5 @@
   flex-direction: row;
   font-size: 1.25em;
   letter-spacing: 0.05em;
+  transition: 0.25s;
 }
