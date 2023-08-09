@@ -38,3 +38,6 @@
   letter-spacing: 0.05em;
   transition: 0.25s;
 }
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span {
+}
